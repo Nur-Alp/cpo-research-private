@@ -67,7 +67,9 @@ cpo-research-private/
 │   ├── papers/
 │   ├── standards/
 │   ├── filings/
-│   └── product-materials/
+│   ├── product-materials/
+│   ├── videos/
+│   └── newsletters/
 ├── 02-architecture/
 ├── 03-components/
 ├── 04-packaging/
@@ -164,6 +166,10 @@ access_date
 source_type
 company
 technology_area
+priority
+sequence
+review_mode
+review_status
 main_claim
 important_numbers
 assumptions
