@@ -21,6 +21,7 @@ Do not mark confidence until the material has been reviewed. Important claims sh
 - `standards/`: standards documents and implementation agreements
 - `filings/`: company filings and official financial disclosures
 - `product-materials/`: official product documentation and vendor presentations
+- `conference-presentations/`: conference decks and market-analysis presentations
 - `videos/`: original notes from video or audio material
 - `newsletters/`: original notes from newsletters, industry analysis, and conference recaps
 
@@ -59,6 +60,12 @@ These are the highest-priority posts in the supplied list. Work through difficul
 2. [GTC 2026: The Inference Kingdom Expands](https://newsletter.semianalysis.com/p/nvidia-the-inference-kingdom-expands)
 
 Use these for CPO architecture, AI networking, NVIDIA platform context, and further diligence questions. Verify commercial status, roadmaps, performance claims, and investment conclusions using primary sources.
+
+### Conference presentations
+
+1. `PRS-001`: Yole Group, *Status of High-End Performance Packaging (2.5D & 3D) and Co-packaged Optics*, presented by Vishal Saroha at the SEMI 3D & Systems Summit, 2025.
+
+Use conference decks for orientation, market framing, and diligence questions. Treat market forecasts and third-party estimates cautiously, record their definitions, and reconcile them against physical unit assumptions where possible.
 
 ## Review method
 
