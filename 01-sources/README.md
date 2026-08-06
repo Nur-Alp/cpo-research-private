@@ -8,6 +8,8 @@ This directory contains the research source index, reading sequence, and any leg
 
 `claim-ledger.csv` is the canonical assertion database. Add only thesis-relevant claims and label each as fact, company claim, estimate, inference, opinion, or unknown. Every material adoption, timing, leadership, or financial conclusion should be traceable to this ledger.
 
+`source-gap-audit-2026-08-06.md` is the current evidence-coverage and company-leadership audit. It separates provisional category leaders from the evidence still needed to name a durable overall winner, and contains the university-download queue.
+
 The new workflow fields are:
 
 - `priority`: orientation, priority one, priority two, or supplementary
@@ -91,6 +93,21 @@ Read these after the academic core:
 - `PAP-008`: Jianying Zhou et al., *Performance Limitations and Optimizations of Linear Driver Optics for 200G/Lane and beyond*, OFC 2025, paper M2H.1.
 
 Both records are labelled `Abstract only` in the source log because full-text downloads were unavailable. Keep them in the acquisition queue and do not treat the publisher abstracts as equivalent to reviewed papers.
+
+### Current leadership-diligence packet
+
+Read these after the focused architecture sprint:
+
+1. `CMP-008`: NVIDIA Rubin platform press kit — integrated switch-platform and production-roadmap evidence.
+2. `CMP-009`: Broadcom OFC 2026 material — merchant CPO maturity and 400G-per-lane roadmap; URL-only because automated PDF retrieval was blocked.
+3. `CMP-010`: Lumentum fiscal Q2 2026 results — near-term CPO order and delivery signal.
+4. `PRS-003`: Coherent OFC 2026 investor deck — InP capacity, component breadth and customer-order claims.
+5. `FIL-001`: Marvell May 2026 10-Q — transaction facts and execution risk for the Celestial AI optical-I/O strategy.
+6. `CMP-011`: Meta–NVIDIA partnership — customer-side Spectrum-X evidence that does not isolate CPO volume.
+7. `CMP-012` and `CMP-013`: Ayar Labs and Lightmatter — private accelerator optical-I/O and NPO candidates; roadmap evidence only.
+8. `CMP-014`: TSMC COUPE — manufacturing-platform roadmap rather than a directly comparable end product.
+
+Use `STD-005` to test whether NPO remains technically viable at 400G per lane, `STD-006` for the external-laser management baseline, and `PAP-009` as an architectural countercase to the assumption that CPO is the only future optical fabric.
 
 ## Review method
 

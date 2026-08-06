@@ -1,6 +1,6 @@
 # CPO Company Leadership Scorecard
 
-**Status:** Framework only, no company ranked
+**Status:** Framework with provisional evidence-adjusted leadership view
 **Last updated:** 2026-08-06
 
 ## Purpose
@@ -83,6 +83,37 @@ Keep this separate from operational leadership.
 ## Initial company universe
 
 Begin with the existing company set, but do not assume every company belongs in every architecture or layer. Add a company only when its role can be mapped to a product, interface, customer route, and potential economic content.
+
+## Provisional leadership view as of 2026-08-06
+
+This is a triage result, not the completed weighted scorecard. Scores remain unpopulated because several decisive dimensions lack comparable evidence.
+
+| Leadership layer | Provisional leader or set | Evidence-adjusted interpretation |
+|---|---|---|
+| Switch-side CPO platform control | NVIDIA | Strongest full-stack system position and named platform adopters; CPO-specific customer volume remains unverified |
+| Merchant switch CPO maturity | Broadcom | Strongest multi-generation merchant-switch evidence and production-volume claim; independent customer and field proof remain absent |
+| External-laser commercial visibility | Lumentum | Clearest disclosed CPO order value and delivery window; customer, margin, and product boundary are undisclosed |
+| Photonic component breadth and manufacturing | Coherent | Broad SiPh, InP, VCSEL, detector, passive, fibre-attach, module, and test stack plus expanding 6-inch InP production |
+| Accelerator optical-I/O public-company option | Marvell | Celestial AI plus custom XPU, switching, DSP, and NVIDIA relationship create the strongest public-company strategic bundle; production proof remains weak |
+| Advanced photonics manufacturing platform | TSMC | Central foundry and advanced-packaging control point with COUPE; CPO-specific economics and customer qualification are undisclosed |
+| Private optical-I/O technology | No leader established | Ayar Labs and Lightmatter have differentiated working silicon and packaging approaches but no comparable independent production evidence |
+| Best public-equity opportunity | No decision | Consensus, valuation, earnings materiality, and downside work have not been completed |
+
+### Why NVIDIA does not automatically win every category
+
+NVIDIA controls the accelerator platform, network architecture, software, and an important customer route, but it relies on a broad photonics and manufacturing ecosystem. Supplier partners may capture scarce-component value, while NVIDIA's CPO earnings may be immaterial relative to its accelerator economics.
+
+### Why Broadcom does not automatically win every category
+
+Broadcom's third-generation CPO and merchant-switch position are strong technical and product-maturity signals. Public evidence still does not establish named production deployments, comparable field reliability, final-package yield, or incremental CPO gross profit.
+
+### Why Lumentum and Coherent matter
+
+External lasers and InP manufacturing may become a scarce, architecture-agnostic profit pool across switch CPO and accelerator optical I/O. Lumentum has the clearest disclosed order value; Coherent shows greater vertical component breadth and production-capacity evidence. Neither disclosure is sufficient to estimate sustainable gross profit yet.
+
+### Why Marvell is a different thesis
+
+Marvell is not currently the best-evidenced switch-CPO product leader. Its potential leadership case is accelerator-side optical I/O and custom connectivity after acquiring Celestial AI. That thesis requires customer production, revenue milestones, and a return-on-acquisition bridge.
 
 ## Ranking rules
 
