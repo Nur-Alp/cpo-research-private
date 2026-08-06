@@ -26,15 +26,28 @@ This project should not become only a general explanation of co-packaged optics.
 
 ### Central research question
 
-> At what bandwidth, topology, and system scale does co-packaged optics become economically preferable or technically necessary relative to retimed pluggables, linear pluggables, near-packaged optics, retimers, and active electrical cables, and which suppliers gain or lose profit content as that transition occurs?
+> Which CPO architecture, if any, will achieve commercially meaningful deployment first, in which application and year, and which company will capture the largest sustainable incremental profit pool when that happens?
 
 ### Final work should answer
 
-1. Where CPO is genuinely necessary
-2. When meaningful deployment occurs
-3. Which architecture wins in each use case
-4. Which companies capture or lose value
-5. What evidence would prove the thesis wrong
+1. Which architecture and deployment domain reach commercial proof first
+2. The probability of commercial proof and meaningful adoption in each year from 2026 to 2032
+3. Which technical, manufacturing, qualification, service, and economic gates determine timing
+4. Which company is the technical, qualification, volume, platform, and profit-pool leader
+5. Which public equity, if any, offers the strongest risk-adjusted opportunity relative to expectations
+6. What the market appears to expect and where the research view differs
+7. What evidence would prove the thesis wrong
+
+### Canonical scope files
+
+Use these files as the source of truth rather than duplicating working definitions:
+
+- `00-scope/research-question.md`: decision objective, primary question, outputs, and boundaries
+- `00-scope/terminology.md`: viability, adoption, commercial-stage, and leadership definitions
+- `00-scope/hypothesis-register.md`: falsifiable hypotheses and revision history
+- `00-scope/evidence-standard.md`: evidence hierarchy, claim labels, and forecast discipline
+- `08-model/adoption-timeline.md`: annual timeline and probability model
+- `07-companies/leader-scorecard.md`: operational leadership and investment-attractiveness scoring
 
 ---
 
@@ -60,7 +73,8 @@ cpo-research-private/
 ├── 00-scope/
 │   ├── research-question.md
 │   ├── hypothesis-register.md
-│   └── terminology.md
+│   ├── terminology.md
+│   └── evidence-standard.md
 ├── 01-sources/
 │   ├── source-log.csv
 │   ├── claim-ledger.csv
@@ -77,7 +91,9 @@ cpo-research-private/
 ├── 05-standards/
 ├── 06-industry-map/
 ├── 07-companies/
+│   └── leader-scorecard.md
 ├── 08-model/
+│   └── adoption-timeline.md
 ├── 09-primary-research/
 ├── 10-drafts/
 └── 11-figures/
@@ -96,42 +112,11 @@ Do not upload copyrighted PDFs to the public repository. Cite the original sourc
 
 ---
 
-## 3. Initial hypotheses
+## 3. Hypothesis discipline
 
-These are working hypotheses, not conclusions.
+The canonical hypotheses are maintained in `00-scope/hypothesis-register.md`. They cover adoption sequence, the binding constraints, coexistence with alternative architectures, standards, serviceability, economic value capture, leadership by layer, the lag between announcements and economics, and the difference between market leadership and equity returns.
 
-### H1
-
-Switch-side CPO will reach meaningful deployment before accelerator-side optical I/O.
-
-### H2
-
-CPO adoption is driven more by bandwidth density and electrical reach than by transceiver power alone.
-
-### H3
-
-Packaging yield, serviceability, and qualification are more important to adoption timing than raw photonic-device performance.
-
-### H4
-
-CPO reduces some conventional optical DSP and pluggable-module content while increasing value in lasers, photonic engines, packaging, fibre connectivity, and switch silicon.
-
-### H5
-
-Proprietary integration wins early deployments, but standards and multi-sourcing become more important as the market scales.
-
-### Hypothesis register format
-
-| Field | Description |
-|---|---|
-| Hypothesis | The statement being tested |
-| Supporting evidence | Evidence supporting the statement |
-| Contradicting evidence | Evidence against the statement |
-| Confidence | Low, medium, or high |
-| Observable milestone | A future event that would confirm or weaken the view |
-| Falsification condition | Evidence that would prove the hypothesis wrong |
-
-Do not rewrite original hypotheses after seeing the evidence. Record how and why the view changed.
+Do not rewrite an original hypothesis after seeing new evidence. Append the evidence, revise confidence, and record when and why the view changed.
 
 ---
 
@@ -228,15 +213,16 @@ Do not begin with company revenue modelling. First understand the physical syste
 
 | Phase | Main task | Required output |
 |---|---|---|
+| 0 | Decision scope and definitions | Canonical question, definitions, hypotheses, and evidence standard |
 | 1 | System architecture | Five architecture diagrams |
 | 2 | Photonics fundamentals | Optical-engine component map |
 | 3 | Packaging and reliability | Manufacturing flow and yield tree |
 | 4 | Standards | Standards and interface matrix |
 | 5 | Industry structure | Supplier and value-chain map |
-| 6 | Company research | Standardised company dossiers |
-| 7 | Adoption model | Bear, base, and bull scenarios |
+| 6 | Company research | Standardised dossiers and evidence-adjusted leader scorecards |
+| 7 | Adoption model | Annual 2026-2032 probability timeline and financial model |
 | 8 | Primary research | Interview evidence and contradiction log |
-| 9 | Investment synthesis | Thesis, catalysts, risks, and valuation implications |
+| 9 | Investment synthesis | Thesis, consensus, variant view, catalysts, risks, and valuation implications |
 
 Each phase should produce a visible deliverable.
 
@@ -516,6 +502,11 @@ Use the same structure for every company:
 13. Valuation sensitivity
 14. Claims requiring verification
 15. Upcoming milestones
+16. Commercial stage and proof of volume
+17. Independent customer evidence
+18. Operational leadership score and evidence multiplier
+19. Investment-attractiveness score
+20. Consensus expectation and variant view
 ```
 
 ### Filing review sequence
@@ -575,6 +566,8 @@ These terms are not interchangeable.
 # Phase 7: Adoption and financial modelling
 
 ## 14. Physical model first
+
+Build one annual path from 2026 to 2032 for each architecture, deployment domain, system type, customer type, and geography. Model commercial proof separately from meaningful adoption, and express uncertain timing as a probability distribution rather than a single date.
 
 ### System demand
 
@@ -656,6 +649,13 @@ Keep switch-side CPO and accelerator-side optical I/O separate.
 - Pluggable cannibalisation
 - Gross margin
 - Warranty expense
+- Critical-path milestones
+- Commercial maturity stage
+- Technical and commercial gate status
+- Scenario probability
+- Evidence quality
+- Consensus expectations
+- Valuation and earnings sensitivity
 
 ### Input format
 
@@ -704,9 +704,13 @@ Avoid unsupported point estimates.
 For each scenario, specify:
 
 - Technical trigger
-- Adoption year
+- Probability
+- Commercial-proof year
+- Meaningful-adoption year
 - Unit volume
 - Supplier content
+- Technical, qualification, volume, platform, and profit-pool leaders
+- Consensus expectation and variant view
 - Revenue consequence
 - Margin consequence
 - Valuation consequence
@@ -851,7 +855,11 @@ Do not publish the full report until it includes:
 - A value-chain map
 - At least five company dossiers
 - A three-scenario adoption model
+- An annual 2026-2032 milestone and probability timeline
+- Explicit technical, manufacturing, qualification, service, supply-chain, and economic viability gates
 - Explicit cannibalisation analysis
+- Separate operational-leadership and investment-attractiveness scorecards
+- An evidenced consensus and variant-perception section
 - A source log
 - A claim ledger
 - A list of unresolved questions
@@ -868,14 +876,14 @@ A rigorous industry framework with transparent uncertainty is stronger than an u
 
 | Week | Focus | Deliverable |
 |---|---|---|
-| 1 | Architecture and terminology | Five architecture diagrams |
+| 1 | Scope, definitions, and architectures | Decision framework and five architecture diagrams |
 | 2 | Photonics and link fundamentals | Component map and glossary |
-| 3 | Packaging, reliability, and yield | Manufacturing and yield memo |
-| 4 | Standards and interfaces | Standards matrix |
-| 5 | Value chain and companies | Industry map and five dossiers |
-| 6 | Adoption and financial modelling | Three-scenario model |
-| 7 | Primary research and contradiction testing | Interview log and revised hypotheses |
-| 8 | Writing and publication | First complete report |
+| 3 | Packaging, reliability, yield, and service | Manufacturing and critical-path memo |
+| 4 | Standards, interfaces, and viability gates | Standards matrix and gate assessment |
+| 5 | Value chain and companies | Industry map, five dossiers, and initial leader scores |
+| 6 | Adoption and financial modelling | 2026-2032 probability timeline and three scenarios |
+| 7 | Primary research, consensus, and contradiction testing | Interview log, consensus map, and revised hypotheses |
+| 8 | Investment synthesis and publication | First complete report and variant view |
 
 Write a two-page memo at the end of every week.
 
@@ -883,15 +891,15 @@ Write a two-page memo at the end of every week.
 
 ## 21. Immediate next actions
 
-1. Create the private research folder.
-2. Create `research-question.md`.
-3. Create `hypothesis-register.md`.
-4. Create `source-log.csv`.
-5. Create `claim-ledger.csv`.
-6. Read the main OIF co-packaging materials.
-7. Read a silicon-photonics roadmap paper.
-8. Draw the five signal-path architectures from memory.
-9. Write a two-page memo titled:
+1. Populate an architecture-by-deployment-domain decision matrix.
+2. Create and begin populating `01-sources/claim-ledger.csv`.
+3. Verify the current OIF and IEEE documents relevant to co-packaging and high-speed interfaces.
+4. Map every viability gate and identify the present critical path for each architecture.
+5. Build the 2026-2032 milestone tracker and assign initial evidence-based probabilities.
+6. Select at least five company dossiers across different value-chain layers.
+7. Collect independent customer, qualification, manufacturing, and volume evidence.
+8. Establish an evidenced consensus baseline before writing a variant view.
+9. Write a two-page decision memo titled:
 
 ```text
 What problem is co-packaged optics actually solving?
@@ -914,12 +922,17 @@ What would change my view
 When using this file as context, the assistant should:
 
 - Treat the project as ongoing research, not a completed thesis
+- Use the canonical scope, definitions, hypotheses, evidence standard, timeline, and scorecard files
 - Avoid inventing technical facts, market shares, shipment status, or forecasts
 - Separate facts, company claims, estimates, inferences, opinions, and unknowns
 - Prefer primary sources
 - Keep switch-side CPO separate from accelerator-side optical I/O
 - Compare CPO against retimed pluggables, linear pluggables, NPO, retimers, and AECs
 - Analyse both opportunity and cannibalisation
+- Distinguish technical, qualification, volume, platform, and profit-pool leadership
+- Never convert an announcement, demonstration, sample, or qualification into evidence of volume production
+- Express 2026-2032 timing as dated probabilities tied to observable milestones
+- Compare investment attractiveness with an evidenced consensus baseline
 - State what evidence would disprove each conclusion
 - Use British English
 - Avoid em dash characters

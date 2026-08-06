@@ -6,6 +6,8 @@ This directory contains the research source index, reading sequence, and any leg
 
 `source-log.csv` is the canonical source database. Each row records one item and distinguishes bibliographic metadata from unverified claims, limitations, relevance, and review status.
 
+`claim-ledger.csv` is the canonical assertion database. Add only thesis-relevant claims and label each as fact, company claim, estimate, inference, opinion, or unknown. Every material adoption, timing, leadership, or financial conclusion should be traceable to this ledger.
+
 The new workflow fields are:
 
 - `priority`: orientation, priority one, priority two, or supplementary
@@ -76,5 +78,5 @@ For each source:
 3. Record important numbers with their comparison baseline and units.
 4. Separate author assumptions from sourced facts.
 5. Record limitations and possible conflicts of interest.
-6. Add claims that matter to the thesis to a claim ledger once that file exists.
+6. Add claims that matter to the thesis to `claim-ledger.csv`.
 7. Identify the primary evidence needed to confirm or contradict the source.
