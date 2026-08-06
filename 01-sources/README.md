@@ -69,6 +69,16 @@ Use these for CPO architecture, AI networking, NVIDIA platform context, and furt
 
 Use conference decks for orientation, market framing, and diligence questions. Treat market forecasts and third-party estimates cautiously, record their definitions, and reconcile them against physical unit assumptions where possible.
 
+### Academic core
+
+Read the locally retained papers in this order:
+
+1. `PAP-003`: Ravi Mahajan et al., *Co-Packaged Photonics For High Performance Computing: Status, Challenges And Opportunities* (2022). Use its switch case study to establish the packaging, socketability, thermal, test, yield, and high-volume manufacturing framework.
+2. `PAP-001`: Min Tan et al., *Co-packaged optics (CPO): status, challenges, and solutions* (2023). Use it to map CPO and NPO architectures, integration approaches, thermal constraints, packaging, and standardisation.
+3. `PAP-002`: Brandon Buscaino et al., *External vs. Integrated Light Sources for Intra-Data Center Co-Packaged Optical Interfaces* (2021). Extract the 102.4T architecture assumptions, laser-placement trade-offs, temperature effects, reliability assumptions, fibre count, and optical link budgets.
+
+The OFC 2024 and OFC 2025 LPO papers are currently represented by their bibliographic references only because full-text downloads were unavailable. Do not treat an inaccessible conference abstract as equivalent to a reviewed full paper.
+
 ## Review method
 
 For each source:
