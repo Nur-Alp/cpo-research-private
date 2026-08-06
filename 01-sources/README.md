@@ -77,7 +77,20 @@ Read the locally retained papers in this order:
 2. `PAP-001`: Min Tan et al., *Co-packaged optics (CPO): status, challenges, and solutions* (2023). Use it to map CPO and NPO architectures, integration approaches, thermal constraints, packaging, and standardisation.
 3. `PAP-002`: Brandon Buscaino et al., *External vs. Integrated Light Sources for Intra-Data Center Co-Packaged Optical Interfaces* (2021). Extract the 102.4T architecture assumptions, laser-placement trade-offs, temperature effects, reliability assumptions, fibre count, and optical link budgets.
 
-The OFC 2024 and OFC 2025 LPO papers are currently represented by their bibliographic references only because full-text downloads were unavailable. Do not treat an inaccessible conference abstract as equivalent to a reviewed full paper.
+### Broader investment case
+
+Read these after the academic core:
+
+1. `PAP-006`: Pavlos Maniotis and Daniel M. Kuchta, *Exploring the benefits of using co-packaged optics in data center and AI supercomputer networks* (2024). Test whether CPO can create system value through higher radix, fewer switches, network locality, and throughput rather than through optical-module power alone.
+2. `PAP-005`: Benjamin G. Lee et al., *Beyond CPO: A Motivation and Approach for Bringing Optics Onto the Silicon Interposer* (2023). Map the possible migration from package-adjacent optics to interposer-level optical I/O and the resulting changes in suppliers, packaging, and thermal design.
+3. `PAP-004`: Lucas Yeary et al., *Co-packaged Optics on Glass Substrates for 102.4 Tb/s Data Center Switches* (2023). Evaluate glass substrates as a manufacturable and potentially lower-cost integration path, separating proposed architecture from demonstrated performance.
+
+### Inaccessible OFC comparators
+
+- `PAP-007`: Elaine Chou et al., *100G and 200G per Lane Linear Drive Optics for Data Center Applications*, OFC 2024, paper W4H.3.
+- `PAP-008`: Jianying Zhou et al., *Performance Limitations and Optimizations of Linear Driver Optics for 200G/Lane and beyond*, OFC 2025, paper M2H.1.
+
+Both records are labelled `Abstract only` in the source log because full-text downloads were unavailable. Keep them in the acquisition queue and do not treat the publisher abstracts as equivalent to reviewed papers.
 
 ## Review method
 
