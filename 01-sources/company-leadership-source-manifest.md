@@ -8,6 +8,8 @@ This manifest maps each provisional company-leadership conclusion to the locally
 |---|---|---|---|---|
 | `CMP-008` | NVIDIA | `product-materials/CMP-008-nvidia-rubin-cpo-production-2026.pdf` | Publisher PDF | <https://nvidianews.nvidia.com/news/rubin-platform-ai-supercomputer> |
 | `CMP-011` | Meta / NVIDIA | `product-materials/CMP-011-meta-nvidia-partnership-2026.html` | Publisher HTML | <https://about.fb.com/news/2026/02/meta-nvidia-announce-long-term-infrastructure-partnership/> |
+| `CMP-012` | Ayar Labs | `product-materials/CMP-012-publisher-original.html` | Publisher HTML | <https://ayarlabs.com/news/ayar-labs-unveils-worlds-first-ucie-optical-chiplet-for-ai-scale-up-architectures/> |
+| `CMP-013` | Lightmatter | `product-materials/CMP-013-publisher-original.html` | Publisher HTML | <https://lightmatter.co/press-release/lightmatter-expands-photonic-interconnect-roadmap-with-passage-l20-unified-optical-engine-for-npo-and-obo-applications/> |
 | `CMP-009` | Broadcom | `product-materials/CMP-009-broadcom-ofc-2026-cpo.pdf` | Publisher PDF | <https://investors.broadcom.com/node/64036/pdf> |
 | `CMP-010` | Lumentum | `product-materials/CMP-010-lumentum-q2-fy2026-results.html` | Publisher HTML | <https://investor.lumentum.com/financial-news-releases/news-details/2026/Lumentum-Announces-Second-Quarter-of-Fiscal-Year-2026-Financial-Results/default.aspx> |
 | `PRS-003` | Coherent | `conference-presentations/PRS-003-coherent-ofc-investor-event-2026.pdf` | Publisher PDF | Official Coherent OFC 2026 investor-event material |
@@ -26,6 +28,7 @@ This manifest maps each provisional company-leadership conclusion to the locally
 - HTML files are publisher pages saved as received. They may depend on remote styling or images, but their source text remains locally searchable.
 - TSMC returned HTTP 403 for both its official HTML page and attached PDF during automated retrieval. `CMP-014` therefore remains URL-canonical; the local note records the failed retrieval and the relevant source boundary without presenting reconstructed text as an original download.
 - The original Coherent and Lumentum product/announcement pages for `CMP-015` through `CMP-017` are retained locally. The source log links those retained originals and preserves the publisher URL in its notes.
+- The original Ayar Labs and Lightmatter pages for `CMP-012` and `CMP-013` are retained locally and contain the claimed product, architecture and/or sampling statements. They remain company claims, not evidence of customer qualification or volume production.
 - SEC returned HTTP 403 when this workspace attempted direct retention of `FIL-002` and `FIL-003`, including an ordinary browser user-agent request. Their official SEC links remain canonical and are retained in the source log and the relevant dossier; no reconstructed local copy was created.
 - Broadcom's `CMP-018` official web response was a JavaScript shell without the article text and its official investor PDF returned HTTP 403. The canonical publisher URL remains in the source log and dossier; the empty shell was discarded rather than retained as if it were the source.
 - NVIDIA's `CMP-019` original three-page publisher PDF was retained and verified with PDF text extraction.
