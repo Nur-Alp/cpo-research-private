@@ -110,7 +110,7 @@ These records are material for diligence, but cannot be multiplied into a profit
 
 ## Links to evidence
 
-Use the [CPO evidence-gate register](evidence-gate-register.md) as the active prioritized queue for the blocked inputs below.
+Use the [CPO evidence-gate register](evidence-gate-register.md) as the active prioritized queue for the blocked inputs below. The [engine yield waterfall template](engine-yield-waterfall-template.md) defines the cost-per-good-engine calculation without inventing values.
 
 - [Scale-Out Optical Engine and PIC Profit-Pool Thesis](../00-scope/scale-out-optical-engine-profit-pool-thesis.md)
 - [Broadcom and NVIDIA Switch-CPO Platform Dossier](../07-companies/broadcom-nvidia-switch-cpo-platform-dossier.md)
