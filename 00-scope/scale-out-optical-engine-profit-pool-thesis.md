@@ -105,18 +105,31 @@ Meta and other hyperscalers belong in the customer-requirements and adoption evi
 For every company, estimate:
 
 ```text
+Incremental CPO revenue
+= relevant systems
+x CPO adoption rate
+x engines per system
+x supplier content per engine
+x realised supplier share
+
 Incremental CPO gross profit
-= addressable systems
-x optical content per system
-x qualified market share
+= incremental CPO revenue
 x realised gross margin
 - cannibalised legacy gross profit
 - yield loss, warranty and support cost
+
+Incremental operating profit
+= incremental CPO gross profit
 - incremental research and qualification cost
+
+Incremental free-cash-flow bridge
+= incremental operating cash generation
 - attributable capital expenditure
 ```
 
-Technical superiority affects only some of these variables. A company can lead technically and still destroy value through poor yield, excessive capital intensity, customer concentration, price erosion or cannibalisation.
+Capital expenditure is deliberately outside gross profit: subtracting it there would mix an accounting-margin measure with a cash-return measure. Technical superiority affects only some variables. A company can lead technically and still destroy value through poor yield, excessive capital intensity, customer concentration, price erosion or cannibalisation.
+
+The evidence-gated input framework is in [Optical-Engine Profit-Pool Input Gates](../08-model/optical-engine-profit-pool-input-gates.md). As of this date it blocks a numerical company forecast: current disclosures do not provide an attributable combination of CPO system volume, supplier content, share, product margin, yield/warranty cost, cannibalisation and capital expenditure.[S23]
 
 ## Evidence required before increasing confidence
 
@@ -147,7 +160,7 @@ The primary workstream is therefore:
 
 > Which company can manufacture the lowest-total-cost, qualification-ready 200G/lane and later 400G/lane scale-out optical engine, and how much sustainable gross profit can it retain after customers, switch-platform owners and manufacturing partners take their shares?
 
-The PIC, laser and packaging evidence blocks are now established. The next comparative deep dive should apply the same boundaries to Broadcom, Coherent, Lumentum and NVIDIA. Intel, Cisco/Acacia and Ranovus should be added once their current scale-out products and commercial status are documented comparably.
+The PIC, laser and packaging evidence blocks are now established, as are first dossiers for Broadcom, Coherent, Lumentum and NVIDIA. The immediate work is to clear the economic input gates rather than manufacture an unsupported forecast. Intel, Cisco/Acacia and Ranovus should be added once their current scale-out products and commercial status are documented comparably.
 
 ## References
 
@@ -173,5 +186,6 @@ The PIC, laser and packaging evidence blocks are now established. The next compa
 - **[S20]** Jianying Zhou, Lei Xin and Jin Hong, [*Performance Limitations and Optimizations of Linear Driver Optics for 200G/Lane and beyond*](../01-sources/papers/PAP-008-zhou-linear-driver-optics-200g-2025.pdf), OFC 2025 paper M2H.1, DOI 10.1364/OFC.2025.M2H.1.
 - **[S21]** E. M. Kimber and E. Frlan, [*200G LPO: Design Challenges and Latest Test Data*](../01-sources/papers/PAP-010-kimber-frlan-200g-lpo-2026.pdf), OFC 2026 paper M2B.1, DOI 10.1364/OFC.2026.M2B.1.
 - **[S22]** Jianying Zhou et al., [*400G/lane for Linear-drive Optics Applications*](../01-sources/papers/PAP-011-zhou-400g-linear-drive-optics-2026.pdf), OFC 2026 paper Th1C.3, DOI 10.1364/OFC.2026.Th1C.3.
+- **[S23]** [Optical-Engine Profit-Pool Input Gates](../08-model/optical-engine-profit-pool-input-gates.md), 2026-08-07. Evidence-gated synthesis of company dossiers and claim-ledger records CLM-068 through CLM-083.
 
 Company announcements establish what the companies claim and disclose; they do not independently prove performance, production volume, yield or sustainable profit.

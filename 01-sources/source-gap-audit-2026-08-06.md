@@ -56,6 +56,12 @@ No company currently earns the label “best technology overall.” Switch CPO, 
 
 These sources or data would most change the architecture and company ranking.
 
+### 0. Economic input gate: completed first-pass company dossiers, still no valid forecast inputs
+
+The Broadcom/NVIDIA and Coherent/Lumentum dossiers now establish the correct product and evidence boundaries. They also confirm that a numerical CPO revenue, gross-profit or free-cash-flow forecast is not supportable from the current public set: the linked inputs for system volume, attributable content, supplier share, realised product margin, yield/warranty, cannibalisation and capacity capital expenditure are absent or non-comparable.[CLM-073][CLM-074][CLM-077][CLM-079][CLM-083][CLM-084]
+
+The governing model framework is [Optical-Engine Profit-Pool Input Gates](../08-model/optical-engine-profit-pool-input-gates.md). The next evidence order is: customer-side deployment/SKU confirmation; content map and supplier attribution; final-engine yield/service data; contract economics; then CPO-specific financial disclosure. Do not populate adoption probabilities or company valuation sensitivities before the architecture, product, manufacturing, commercial and financial gates are explicitly assessed.
+
 ### 1. Matched CPO versus LPO versus NPO system evidence
 
 Required boundary:
@@ -159,13 +165,14 @@ The next filings set should include Broadcom, NVIDIA, Marvell, Lumentum, Coheren
 
 ## Recommended research order
 
-1. Build matched company dossiers for Broadcom, Coherent, Lumentum and NVIDIA using the completed PIC, laser, packaging and LPO evidence gates.
-2. Build one matched evidence table for NVIDIA Spectrum-X Photonics and Broadcom TH6-Davisson.
-3. Obtain matched 200G LPO/NPO/CPO system evidence and seek 400G-lane measured-link results.
-4. Obtain the five additional packaging/reliability sources above and seek production-yield evidence.
-5. Build accelerator optical-I/O dossiers for Marvell/Celestial AI, Ayar Labs, Lightmatter, TSMC, and NVIDIA.
-6. Conduct primary research with system operators, OSATs, fibre-attach suppliers, and field-service engineers.
-7. Only then populate operational and investment scores and the 2026-2032 adoption probabilities.
+1. Obtain customer-side production/SKU confirmation and a component/content map for NVIDIA Spectrum-X Photonics and Broadcom TH6-Davisson.
+2. Obtain product-level yield, test, field-service and warranty evidence for the external optical-engine candidates.
+3. Obtain contract/order conversion, supply share, ASP and CPO-specific margin/capex evidence for Coherent and Lumentum.
+4. Obtain matched 200G LPO/NPO/CPO system evidence and seek 400G-lane measured-link results.
+5. Obtain the five additional packaging/reliability sources above and seek production-yield evidence.
+6. Build accelerator optical-I/O dossiers for Marvell/Celestial AI, Ayar Labs, Lightmatter, TSMC, and NVIDIA.
+7. Conduct primary research with system operators, OSATs, fibre-attach suppliers, and field-service engineers.
+8. Only then populate operational and investment scores and the 2026-2032 adoption probabilities.
 
 ## Public sources added in this audit
 
