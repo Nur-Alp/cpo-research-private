@@ -53,3 +53,14 @@ In research notes, cite the **canonical original webpage** (not the local render
 `CMP-025` and `CMP-026` are also HTML-only; cite the canonical NVIDIA pages and treat the partner list and performance figures as company claims with their stated boundaries.
 
 `CMP-027` is also HTML-only; cite the canonical NVIDIA page and treat the detailed engine/ELS counts and TSMC collaboration as company technical claims.
+
+## Newly retained academic packaging sources
+
+| Source | Readable local copy | Canonical original |
+|---|---|---|
+| `PAP-028` Psaila et al., detachable optical chiplet connector | HTML abstract: [local copy](papers/PAP-028-psaila-detachable-optical-chiplet-connector-2023.html) | [Optica record](https://opg.optica.org/jlt/abstract.cfm?uri=jlt-41-19-6315) |
+| `PAP-029` Li et al., 1.6 Tbps FOWLP photonic engine | HTML abstract: [local copy](papers/PAP-029-li-fowlp-silicon-photonic-engine-2024.html) | [Optica record](https://opg.optica.org/abstract.cfm?uri=ofc-2024-Tu3A.2) |
+| `PAP-030` Suda et al., polymer-waveguide reliability | HTML abstract: [local copy](papers/PAP-030-suda-polymer-waveguide-reliability-2025.html) | [Optica record](https://opg.optica.org/jlt/abstract.cfm?uri=jlt-43-10-4903) |
+| `PAP-031` Gupta et al., glass-interposer thermal/electrical study | [Author-hosted PDF](papers/PAP-031-gupta-glass-interposer-thermal-electrical-2025.pdf) | [IEEE DOI](https://doi.org/10.1109/TCPMT.2025.3533388) |
+
+The first three Optica records are abstract-only in this environment because the publisher requires institutional access for the full paper. The abstract HTML is retained for local indexing; use the canonical page or download the full PDF through university access before relying on details beyond the abstract.

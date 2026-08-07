@@ -100,7 +100,7 @@ PAP-015 through PAP-018 are now reviewed and establish attach-metrology, mechani
 4. *Thermal and Electrical Study of Glass Interposers in Co-Packaged Electronic-Photonic Systems*, IEEE TCPMT 15, 1625-1635 (2025), DOI 10.1109/TCPMT.2025.3533388.
 5. Peter O'Brien, *Photonic and Electronic Co-Packaging Technologies - From Research to Pilot Manufacturing*, OFC 2025, W4A.1, DOI 10.1364/OFC.2025.W4A.1. Obtain the presentation video if the proceedings contain only an abstract.
 
-Even these papers are unlikely to disclose production package yield. Primary research with packaging engineers, OSATs, fibre-attach suppliers, and system manufacturers will still be necessary.
+The first four records are now retained locally as `PAP-028`–`PAP-031`: Psaila's abstract HTML, Li's abstract HTML, Suda's open-access abstract HTML, and Gupta's author-hosted PDF. They add useful mechanism and prototype measurements, but do not clear production package yield. Primary research with packaging engineers, OSATs, fibre-attach suppliers, and system manufacturers will still be necessary. See the [packaging benchmark](../03-components/packaging-reliability-benchmark.md) and [source viewing guide](source-viewing-guide.md).
 
 ### 4. CPO-specific customer proof
 
