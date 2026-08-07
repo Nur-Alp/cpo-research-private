@@ -2,7 +2,7 @@
 
 **Owner:** Nur Alpys
 
-**As of:** 2026-08-07 (refreshed after the PAP-028–PAP-031 review)
+**As of:** 2026-08-07 (refreshed after the PAP-028–PAP-032 review)
 
 **Decision question:** Which architecture becomes commercially meaningful first, and which company captures the largest sustainable incremental profit pool?
 
@@ -100,7 +100,7 @@ PAP-015 through PAP-018 are now reviewed and establish attach-metrology, mechani
 4. *Thermal and Electrical Study of Glass Interposers in Co-Packaged Electronic-Photonic Systems*, IEEE TCPMT 15, 1625-1635 (2025), DOI 10.1109/TCPMT.2025.3533388.
 5. Peter O'Brien, *Photonic and Electronic Co-Packaging Technologies - From Research to Pilot Manufacturing*, OFC 2025, W4A.1, DOI 10.1364/OFC.2025.W4A.1. Obtain the presentation video if the proceedings contain only an abstract.
 
-The first four records are now retained locally as `PAP-028`–`PAP-031`: Psaila's abstract HTML, Li's abstract HTML, Suda's open-access abstract HTML, and Gupta's author-hosted PDF. They add useful mechanism and prototype measurements, but do not clear production package yield. The remaining high-value academic request is O'Brien's OFC 2025 pilot-manufacturing presentation; primary research with packaging engineers, OSATs, fibre-attach suppliers, and system manufacturers will still be necessary. See the [packaging benchmark](../03-components/packaging-reliability-benchmark.md), [academic evidence matrix](../03-components/academic-evidence-matrix.md), and [source viewing guide](source-viewing-guide.md).
+The first four records are now retained locally as `PAP-028`–`PAP-031`: Psaila's abstract HTML, Li's abstract HTML, Suda's open-access abstract HTML, and Gupta's author-hosted PDF. O'Brien's OFC 2025 pilot-manufacturing abstract is now retained as `PAP-032`; the full presentation/video remains inaccessible. These records add useful mechanism and manufacturing questions, but do not clear production package yield. Primary research with packaging engineers, OSATs, fibre-attach suppliers, and system manufacturers will still be necessary. See the [packaging benchmark](../03-components/packaging-reliability-benchmark.md), [academic evidence matrix](../03-components/academic-evidence-matrix.md), and [source viewing guide](source-viewing-guide.md).
 
 ### 4. CPO-specific customer proof
 
@@ -184,4 +184,4 @@ The next filings set should include Broadcom, NVIDIA, Marvell, Lumentum, Coheren
 - Coherent, *Technology Innovation Briefing*, OFC 2026.
 - NVIDIA, *NVIDIA Kicks Off the Next Generation of AI With Rubin*.
 
-The TSMC 2025 symposium paper, OCP short-reach photonics white paper, and Broadcom OFC 2026 release remain URL-indexed or retained in the product-materials folder. The PAP-028–PAP-031 packaging packet is now retained locally with its access limitations recorded; it should not be treated as production-yield evidence.
+The TSMC 2025 symposium paper, OCP short-reach photonics white paper, and Broadcom OFC 2026 release remain URL-indexed or retained in the product-materials folder. The PAP-028–PAP-032 packaging packet is now retained locally with its access limitations recorded; it should not be treated as production-yield evidence.

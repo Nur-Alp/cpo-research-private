@@ -105,7 +105,7 @@ All four local files were checked against their contents rather than filenames. 
 
 ### Focused PIC, packaging, and profit-pool expansion
 
-The verified `PAP-012` through `PAP-031` packet covers electronic-photonic co-optimisation, optical-I/O chiplets, interposers, fibre attach, thermomechanical reliability, detachable connectors, external lasers, switch-radix economics, microring and InP PICs, VCSELs, design tools, CMOS/silicon-photonics integration, FOWLP engines, polymer external-light distribution, and glass-interposer thermal/electrical behavior. `PAP-028`–`PAP-030` are locally retained publisher abstract archives because the full papers require institutional access; `PAP-031` is a full author-hosted PDF. Prioritise:
+The verified `PAP-012` through `PAP-032` packet covers electronic-photonic co-optimisation, optical-I/O chiplets, interposers, fibre attach, thermomechanical reliability, detachable connectors, external lasers, switch-radix economics, microring and InP PICs, VCSELs, design tools, CMOS/silicon-photonics integration, FOWLP engines, polymer external-light distribution, glass-interposer thermal/electrical behavior, and pilot-manufacturing equipment questions. `PAP-028`–`PAP-030` are locally retained publisher abstract archives because the full papers require institutional access; `PAP-031` is a full author-hosted PDF; `PAP-032` is an OFC abstract with the full presentation/video unavailable. Prioritise:
 
 1. `PAP-024` for the current device and integration map.
 2. `PAP-012`, `PAP-021`, `PAP-025`, and `PAP-013` for scale-out optical-engine and PIC design.
@@ -113,9 +113,9 @@ The verified `PAP-012` through `PAP-031` packet covers electronic-photonic co-op
 4. `PAP-019`, `PAP-022`, `PAP-026`, and `PAP-027` for external versus integrated laser technology and the supplier thesis.
 5. `PAP-014` and `PAP-023` for potential platform and tooling control points.
 6. `PAP-020` for the system-level value mechanism behind higher-radix CPO switches.
-7. `PAP-028`–`PAP-031` for detachable known-good-module flow, FOWLP engine construction, external-light waveguides, and glass-interposer thermal/RF boundaries. Treat them as mechanism or test-vehicle evidence, not final-engine yield or margin evidence.
+7. `PAP-028`–`PAP-032` for detachable known-good-module flow, FOWLP engine construction, external-light waveguides, glass-interposer thermal/RF boundaries, and pilot-manufacturing equipment questions. Treat them as abstract, mechanism, or test-vehicle evidence—not final-engine yield or margin evidence.
 
-The retained packet is not uniformly full-text: `PAP-028`–`PAP-030` are publisher abstract archives, while `PAP-031` is a full author-hosted PDF. The access boundary and remaining acquisition requests are recorded in `papers/acquisition-issues.md` and the [academic evidence matrix](../03-components/academic-evidence-matrix.md).
+The retained packet is not uniformly full-text: `PAP-028`–`PAP-030` are publisher abstract archives, `PAP-031` is a full author-hosted PDF, and `PAP-032` is an abstract-only OFC record. The access boundary and remaining acquisition requests are recorded in `papers/acquisition-issues.md` and the [academic evidence matrix](../03-components/academic-evidence-matrix.md).
 
 ### Current leadership-diligence packet
 
