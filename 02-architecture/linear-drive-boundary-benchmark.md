@@ -18,6 +18,14 @@ At 100G, 200G and 400G per lane, when does linear-drive optics keep a pluggable 
 
 The current evidence therefore supports a boundary view: LPO can defer CPO in a validated low-loss 100G and potentially 200G channel, while 400G/lane currently pulls the electrical boundary inward toward NPO/CPO. It does not establish adoption dates, full-system power, production yield, serviceability or which architecture will be more profitable.
 
+## Standards anchor: useful, but not a 400G/lane answer
+
+The OIF CEI-224G framework places the relevant topology boundary in physical terms: typically under 50 mm from die to an optical engine in an MCM/CPO package, under 150 mm for a nearby OE, and potentially over 200 mm of host trace plus a connector for a faceplate module. It also explicitly lists linear chip-to-OE interfaces as a possible path for CPO, NPO and VSR, and marks the historical 224G insertion-loss and pre-FEC BER entries as **TBD**.[STD-007][CLM-201][CLM-202][CLM-203]
+
+IEEE P802.3dj provides a standards-level 200G/lane anchor: the task force recorded a die-to-die insertion-loss objective of ≤40 dB at 53.125 GHz for the listed 200G/lane copper/backplane PHYs. That value has different endpoints and test context from the 106 GHz, 212.5-GBd model in `PAP-011`, so it cannot be used as a 400G/lane LPO limit.[STD-008][CLM-204]
+
+The practical conclusion is narrower than “the standard forces CPO”: standards work confirms that the electrical boundary is being formalized around 200G/lane, while the reviewed public material does not yet provide an adopted 400G/lane channel budget. The 400G gate therefore remains an end-to-end measurement question, not a settled standards number.[CLM-205]
+
 ## Comparison rules
 
 Do not compare a headline loss number without matching all of the following:
@@ -77,3 +85,5 @@ At 400G/lane, the present evidence shifts the diligence focus to short electrica
 - `PAP-008`: Jianying Zhou, Lei Xin and Jin Hong, [*Performance Limitations and Optimizations of Linear Driver Optics for 200G/Lane and beyond*](../01-sources/papers/PAP-008-zhou-linear-driver-optics-200g-2025.pdf), OFC 2025 paper M2H.1, DOI 10.1364/OFC.2025.M2H.1.
 - `PAP-010`: E. M. Kimber and E. Frlan, [*200G LPO: Design Challenges and Latest Test Data*](../01-sources/papers/PAP-010-kimber-frlan-200g-lpo-2026.pdf), OFC 2026 paper M2B.1, DOI 10.1364/OFC.2026.M2B.1.
 - `PAP-011`: Jianying Zhou et al., [*400G/lane for Linear-drive Optics Applications*](../01-sources/papers/PAP-011-zhou-400g-linear-drive-optics-2026.pdf), OFC 2026 paper Th1C.3, DOI 10.1364/OFC.2026.Th1C.3.
+- `STD-007`: OIF, [*Next Generation CEI-224G Framework*](../01-sources/standards/STD-007-oif-cei-224g-framework.pdf), OIF-FD-CEI-224G-01.0, 7 February 2022.
+- `STD-008`: IEEE P802.3dj, [*Key Motions*](../01-sources/standards/STD-008-ieee-p8023dj-key-motions-2024.pdf), compilation through 16 May 2024.
