@@ -21,6 +21,7 @@ An observed milestone records what a retained source says happened. A planned mi
 | MS-007 | Switch and inter-rack CPO roadmap | Lambda / NVIDIA | Lambda says future clusters are preparing to integrate Quantum-X and Spectrum-X Photonics | 2025-11-21 | Observed roadmap/preparation claim | `CMP-024`; `CLM-226`–`CLM-227` | Product; commercial | Spectrum-X remains roadmap/preparation evidence in this customer record |
 | MS-008 | Switch CPO, 200G/lane | NVIDIA | NVIDIA platform page says Spectrum-X reaches full production and names first adopters and technology partners | 2026 | Observed vendor platform claim | `CMP-025`; `CLM-228`–`CLM-229` | Commercial; supplier route | Ecosystem milestone; not a unit, BOM or yield disclosure |
 | MS-009 | Packaging / engine manufacturing | TSMC | COUPE-on-substrate CPO production milestone begins in 2026; engineering-sample 3D stacking yield exceeds 99% | 2026 target | Planned/company milestone | `PRI-029`–`PRI-031`; `CLM-213`–`CLM-216` | Manufacturing | Process checkpoint; not final-engine output or customer acceptance |
+| MS-010 | Scale-out/scale-up CPO/NPO engines | Coherent | Investor deck labels CPO/NPO engines as a new-revenue item in H2 2026 and estimates a $15B+ CPO SAM by 2030 | H2 2026 / 2030 estimate | Planned/market estimate | `PRS-003`; `CLM-250`–`CLM-251` | Commercial; market sizing | Management timing and SAM framing; not observed shipment, qualification, unit volume or revenue |
 
 ## Required next milestones
 
@@ -57,4 +58,3 @@ Do not convert a vendor roadmap date into an observed date. Do not convert a par
 - [CPO evidence-gate register](evidence-gate-register.md)
 - [Optical-engine profit-pool input gates](optical-engine-profit-pool-input-gates.md)
 - [Claim ledger](../01-sources/claim-ledger.csv)
-

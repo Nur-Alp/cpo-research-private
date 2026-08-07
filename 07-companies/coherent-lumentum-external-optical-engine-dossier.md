@@ -11,7 +11,7 @@ Which supplier has the stronger evidence that it can capture a durable external 
 
 ## Current answer
 
-**INFERENCE:** Coherent has the broader demonstrated component and manufacturing stack. Its company materials describe silicon photonics, high-power InP lasers, VCSELs, advanced packaging and a 6.4T (32 x 200G) socketed CPO demonstration, while it reports volume production on a six-inch InP line and planned capacity expansion through 2027. The executed March 2026 NVIDIA financing and collaboration add access to five additional CPO-related product families, but do not identify product allocation or realised CPO revenue.[CMP-015][PRS-003][PRI-026][CLM-197]
+**INFERENCE:** Coherent has the broader demonstrated component and manufacturing stack. Its company materials describe silicon photonics, high-power InP lasers, VCSELs, advanced packaging and a 6.4T (32 x 200G) socketed CPO demonstration, while it reports volume production on a six-inch InP line and planned capacity expansion through 2027. Its OFC 2026 investor deck also estimates a $15B+ CPO SAM by 2030 and labels CPO/NPO engines as a new-revenue item in H2 2026; these are market-sizing and roadmap claims, not realised CPO revenue or qualification evidence. The executed March 2026 NVIDIA financing and collaboration add access to five additional CPO-related product families, but do not identify product allocation or realised CPO revenue.[CMP-015][PRS-003][PRI-026][CLM-197][CLM-250][CLM-251]
 
 **INFERENCE:** Lumentum has the clearer narrow product-and-commercial signal for an external laser source: a serviceable ELSFP product boundary, specified UHP/SHP laser demonstrations, and a previously disclosed incremental multi-hundred-million-dollar CPO order for delivery in the first half of calendar 2027. The executed March 2026 NVIDIA financing and planned Greensboro 6-inch InP fab strengthen the capacity/customer-route case, but do not prove complete-engine content, yield or margin.[CMP-016][CMP-017][CMP-010][PRI-027][PRI-025][CLM-198][CLM-196]
 
@@ -35,7 +35,8 @@ Neither company has disclosed the information needed to call a sustainable CPO p
 
 1. **COMPANY CLAIM:** Coherent’s OFC 2026 CPO demonstration includes a 6.4T socketed silicon-photonics CPO system with 32 x 200G lanes, paired with its external laser source and high-power InP CW lasers. It also showed a multimode VCSEL CPO and an InP modulator on silicon at 400G.[CMP-015]
 2. **COMPANY CLAIM:** The company reports that its first six-inch InP line is in volume production, with stated total InP-output expansion in 2026 and 2027. This is meaningful capacity evidence for EMLs, CW lasers, photodiodes and PICs, but not proof of CPO-engine yield or allocation.[PRS-003]
-3. **FACT:** Coherent reported Q3 FY26 revenue of $1.806B, GAAP gross margin of 37.7%, non-GAAP gross margin of 39.6%, and Q4 non-GAAP gross-margin guidance of 39-41%.[FIL-002]
+3. **COMPANY MARKET/ROADMAP CLAIM:** Coherent's OFC 2026 deck estimates a $15B+ CPO SAM by 2030 and labels CPO/NPO engines as new revenue in H2 2026. The deck does not define an attributable unit denominator, customer, product SKU, qualification status or CPO-specific margin.[PRS-003][CLM-250][CLM-251]
+4. **FACT:** Coherent reported Q3 FY26 revenue of $1.806B, GAAP gross margin of 37.7%, non-GAAP gross margin of 39.6%, and Q4 non-GAAP gross-margin guidance of 39-41%.[FIL-002]
 
 ### Lumentum
 
