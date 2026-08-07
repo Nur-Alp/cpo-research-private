@@ -3,7 +3,7 @@
 **Owner:** Nur Alpys
 **Status:** In progress
 **Scope horizon:** 2026 to 2032
-**Last updated:** 2026-08-06
+**Last updated:** 2026-08-07
 
 ## Decision objective
 
@@ -18,6 +18,14 @@ The project is not complete when it can explain CPO. It is complete when it can 
 ## Primary research question
 
 > Which CPO architecture, if any, will achieve commercially meaningful deployment first, in which application and year, and which company will capture the largest sustainable incremental profit pool when that happens?
+
+## Current focused workstream
+
+The active workstream narrows the broader question to scale-out optical engines and PIC design:
+
+> Which company can manufacture the lowest-total-cost, qualification-ready 200G/lane and later 400G/lane scale-out optical engine, and how much sustainable gross profit can it retain after customers, switch-platform owners and manufacturing partners take their shares?
+
+The current provisional view, economic logic, required evidence and falsification conditions are documented in [Scale-Out Optical Engine and PIC Profit-Pool Thesis](scale-out-optical-engine-profit-pool-thesis.md).
 
 ## Three linked questions
 

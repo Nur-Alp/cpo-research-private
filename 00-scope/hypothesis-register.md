@@ -1,7 +1,7 @@
 # CPO Hypothesis Register
 
 **Status:** Initial hypotheses, not conclusions
-**Last updated:** 2026-08-06
+**Last updated:** 2026-08-07
 
 ## Update rules
 
@@ -25,6 +25,10 @@
 | H8 | No single company leads both switch-side CPO and accelerator-side optical I/O across every critical value-chain layer. | Unrated | Architecture-specific scorecards show multiple control points and leaders | One company establishes durable leadership across both architectures and the majority of economic content |
 | H9 | Announcements and demonstrations systematically precede economically relevant production by a material qualification and manufacturing interval. | Unrated | Product histories show measurable time between demonstration, qualification, and repeat volume orders | Multiple products progress from demonstration to meaningful adoption with no material interval |
 | H10 | The best public-equity opportunity is determined by incremental earnings relative to priced expectations, not by optical market share alone. | Unrated | Valuation and earnings bridge produces a different ranking from technology or shipment share | Technology or shipment leadership consistently maps directly to the best risk-adjusted equity outcome |
+| H11 | Within external scale-out photonics, complete optical-engine integration and manufacturing capability produces more durable economic differentiation than isolated PIC performance. | Unrated | Comparable products show persistent advantages in qualified yield, cost, reliability and retained gross margin | Standalone PIC leaders capture superior sustainable profit without controlling packaging, test or engine manufacturing |
+| H12 | High-power InP lasers and serviceable ELSFP architectures form a scarce secondary profit pool across multiple silicon-photonics engines. | Unrated | Repeat multi-customer orders convert into attractive-margin revenue while qualified supply remains concentrated | Lasers become readily multisourced, integrated alternatives dominate, or price erosion eliminates excess returns |
+| H13 | Platform owners capture the largest absolute CPO rent, while external optical-engine suppliers may offer greater CPO earnings materiality. | Unrated | Company-level content and margin work shows higher absolute profit for platform owners but greater earnings sensitivity for focused suppliers | External suppliers capture both the largest absolute profit and highest materiality, or platform owners retain little incremental value |
+| H14 | Coherent and Lumentum belong in the core scale-out optical-engine/PIC comparison, while Meta belongs only in customer and adoption evidence. | Unrated | Comparable engine, PIC, packaging and commercial evidence is established for Coherent and Lumentum | Neither company controls economically meaningful engine or PIC design, or Meta discloses a directly controlled competitive design |
 
 ## Evidence log template
 
