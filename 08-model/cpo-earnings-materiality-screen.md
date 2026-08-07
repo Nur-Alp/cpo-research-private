@@ -24,6 +24,7 @@ Use the most recent reviewed quarterly disclosure for each company. These figure
 | Lumentum | Q3 FY26 | $808.4M | 44.2% GAAP gross margin; total-company customer concentration disclosed | No CPO revenue/content/margin line | [CLM-073] |
 | Marvell | Q1 FY27 | $2.418B | 52.1% GAAP gross margin; Celestial results included from acquisition date | No Photonic Fabric/Celestial revenue/content/margin line | [CLM-096] |
 | Celestica | Q1 2026, ended 2026-03-31 | $4.047B | Approximately $1.7B HPS revenue; 6.7% GAAP operating margin | CPO hyperscaler program disclosed, but no CPO revenue/content/margin line | [CLM-263]–[CLM-264] |
+| TSMC | Q2 2026, ended 2026-06-30 | $40.20B | 67.7% gross margin; 77% of wafer revenue from 7nm-and-more-advanced technologies | No COUPE/CPO revenue, content, margin or capex line | [CLM-278]–[CLM-281] |
 
 The periods are not synchronized. This is acceptable for a first **scale** screen but not for valuation, growth comparisons or margin ranking.
 
@@ -44,6 +45,7 @@ Illustrative CPO revenue threshold
 | Lumentum | $4.0M | $8.1M | $40.4M | $80.8M | The disclosed order signal may matter sooner than it would to platform owners, but its product allocation and margin remain unknown. |
 | Marvell | $12.1M | $24.2M | $120.9M | $241.8M | Management's Celestial targets, if achieved, would be revenue-material; achievement and margin are unproven. |
 | Celestica | $20.2M | $40.5M | $202.4M | $404.7M | The planned CPO program could become visible at the HPS/company level only after units, revenue recognition and program margin are disclosed; thresholds are arithmetic denominators, not forecasts. |
+| TSMC | $201.0M | $402.0M | $2.010B | $4.020B | COUPE/CPO would need very large attributable revenue to move consolidated TSMC results; the company-scale margin is not a CPO margin proxy. |
 
 These calculations do not mean a threshold is reached, contracted, profitable, incremental or valuation-relevant. They simply prevent the common error of treating the same CPO revenue figure as equally material to a $0.8B quarterly company and an $81.6B quarterly company.
 

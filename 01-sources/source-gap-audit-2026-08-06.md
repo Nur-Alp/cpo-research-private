@@ -185,5 +185,7 @@ The next filings set should include Broadcom, NVIDIA, Marvell, Lumentum, Coheren
 - NVIDIA, *NVIDIA Kicks Off the Next Generation of AI With Rubin*.
 - Fabrinet, FY2025 Form 10-K and Q3 FY2026 Form 10-Q (`FIL-007`, `FIL-008`).
 - Celestica, Q1 2026 Form 10-Q (`FIL-009`), retaining HPS/CCS scale, capex and concentration boundaries separately from the CPO programme announcement.
+- TSMC, Q2 2026 financial results (`FIL-010`), retaining consolidated earnings scale separately from COUPE/CPO attribution.
+- TSMC, February 2026 board resolution (`FIL-011`), retaining advanced-packaging capex context separately from COUPE/CPO allocation.
 
 The TSMC 2025 symposium paper, OCP short-reach photonics white paper, and Broadcom OFC 2026 release remain URL-indexed or retained in the product-materials folder. The PAP-028–PAP-032 packaging packet is now retained locally with its access limitations recorded; it should not be treated as production-yield evidence.

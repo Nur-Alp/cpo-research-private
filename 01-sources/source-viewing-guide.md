@@ -42,6 +42,8 @@
 | `FIL-007` Fabrinet FY2025 10-K | [Original SEC HTML](filings/FIL-007-fabrinet-fy2025-10k.html) | [SEC original](https://www.sec.gov/Archives/edgar/data/1408710/000140871025000039/fn-20250627.htm) |
 | `FIL-008` Fabrinet Q3 FY2026 10-Q | [Original SEC HTML](filings/FIL-008-fabrinet-q3-fy2026-10q.html) | [SEC original](https://www.sec.gov/Archives/edgar/data/1408710/000140871026000016/fn-20260327.htm) |
 | `FIL-009` Celestica Q1 2026 10-Q | [Original SEC HTML](filings/FIL-009-celestica-q1-2026-10q.html) | [SEC original](https://www.sec.gov/Archives/edgar/data/1030894/000103089426000032/cls-20260331.htm) |
+| `FIL-010` TSMC Q2 2026 results | [Local evidence note](filings/FIL-010-tsmc-q2-2026-results-evidence-note.md) | [TSMC original](https://pr.tsmc.com/japanese/news/3326) |
+| `FIL-011` TSMC February 2026 board capacity resolution | [Local evidence note](filings/FIL-011-tsmc-feb-2026-board-capex-evidence-note.md) | [TSMC original](https://pr.tsmc.com/english/news/3287) |
 
 ## Citation rule
 
