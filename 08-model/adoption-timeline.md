@@ -125,6 +125,8 @@ Switch-side CPO has the strongest current commercial-maturity signal at 200G/lan
 
 ## Evidence links
 
+- [Critical-path milestone tracker](critical-path-milestone-tracker.md)
+- [CPO customer-proof register](customer-proof-register.md)
 - [Switch CPO platform dossier](../07-companies/broadcom-nvidia-switch-cpo-platform-dossier.md)
 - [External optical-engine supplier dossier](../07-companies/coherent-lumentum-external-optical-engine-dossier.md)
 - [102.4T switch CPO versus advanced pluggables](../02-architecture/102.4t-cpo-vs-advanced-pluggables.md)

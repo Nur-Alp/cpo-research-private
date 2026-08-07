@@ -82,6 +82,7 @@ Until then the correct conclusion is: **not yet investable on CPO alone; continu
 - [Source-gap audit](../01-sources/source-gap-audit-2026-08-06.md).
 - [CPO adoption timeline](../08-model/adoption-timeline.md).
 - [CPO customer-proof register](../08-model/customer-proof-register.md).
+- [Critical-path milestone tracker](../08-model/critical-path-milestone-tracker.md).
 - [Optical-engine profit-pool input gates](../08-model/optical-engine-profit-pool-input-gates.md).
 - [CPO earnings-materiality screen](../08-model/cpo-earnings-materiality-screen.md).
 - [Claim ledger](../01-sources/claim-ledger.csv), especially CLM-074, CLM-082, CLM-084 and CLM-093 through CLM-096.
