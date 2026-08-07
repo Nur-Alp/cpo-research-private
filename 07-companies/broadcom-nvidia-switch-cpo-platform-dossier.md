@@ -51,7 +51,7 @@ Neither company’s public evidence establishes CPO-specific economics, final op
 |---|---|---|---|
 | Platform and purchasing control | Merchant switch architecture, SerDes and CPO platform | Full AI-factory hardware, networking and software route | Actual system buyer decision rights and supplier-selection process |
 | CPO content per system | At least a switch ASIC plus integrated optical engines by architecture; dollar content undisclosed | System/platform CPO content and supplier split undisclosed | Engine count, content, ASP and retained gross profit |
-| External supplier dependence | Release references TSMC COUPE, ELSFP, Corning and ecosystem partners | Public materials do not identify CPO optical-engine or laser supplier content | Supplier names, qualification, dual sourcing and pricing power |
+| External supplier dependence | Release explicitly names TSMC COUPE technology-based optical engines, plus an ELSFP boundary and ecosystem partners; it does not establish who supplies the complete qualified engine | Public materials do not identify CPO optical-engine or laser supplier content | Supplier responsibility, qualification, dual sourcing and pricing power |
 | Cannibalisation | CPO can displace some optics, retimer and cable content even as Broadcom sells multiple alternatives | CPO may improve networking attach/content but is likely immaterial beside accelerator economics until units are known | Net incremental gross profit after displaced products and support cost |
 | Service/warranty exposure | ELSFP is replaceable; engine/package repair and warranty allocation undisclosed | CPO service and warranty model undisclosed | Field returns, spares, MTTR, service labour and warranty reserves |
 
@@ -68,6 +68,8 @@ Neither company’s public evidence establishes CPO-specific economics, final op
 ## Implication for the active optical-engine thesis
 
 Platform leadership does not make Broadcom or NVIDIA the external optical-engine profit-pool leader. The platform owner may capture the system-level rent while TSMC, laser suppliers, PIC/engine suppliers, fibre-attach partners and assemblers split the optical content. Conversely, vertical CPO integration may reduce the addressable content available to independent suppliers. The relevant diligence item is an explicit engine bill of materials and commercial responsibility map—not a claim that a CPO announcement proves supplier profit.
+
+Broadcom's TH6 release makes the control-point question sharper: TSMC COUPE is the named optical-engine technology route, while Broadcom owns the switch ASIC/platform and ELSFP system definition. This is evidence of a potential TSMC manufacturing/process-control position, not evidence that TSMC captures the complete engine ASP or that Broadcom outsources all optical content. Broadcom also describes a future 400G-per-channel fourth-generation roadmap, but no date or qualification result is public.[CLM-210][CLM-211]
 
 ## Falsification and next diligence
 
