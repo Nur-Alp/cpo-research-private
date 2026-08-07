@@ -11,6 +11,8 @@
 
 The key boundary is important: an EMS/ODM design-and-manufacturing award may capture system assembly, integration, test, service and supply-chain value without owning the switch ASIC, PIC, laser, optical engine or CPO architecture. The public sources do not identify Celestica's exact scope, customer, unit volume, transfer prices, supplier share, yield or margin. The 2027 ramp is therefore a milestone to track, not a revenue forecast.[CLM-255][CLM-256]
 
+Celestica's October 2024 disclosure provides earlier route context: it reported a major hyperscaler 1.6T switching program with revenue expected to ramp in 2026, but it did not call that program CPO. It must not be assumed to be the same program as the later CPO-specific disclosure.[CMP-030][CLM-258]
+
 ## Evidence boundary
 
 | Question | What the retained sources establish | What remains open |
@@ -28,6 +30,7 @@ The key boundary is important: an EMS/ODM design-and-manufacturing award may cap
 2. **Customer-proof ranking:** Celestica's disclosure is stronger than a generic collaborator quotation because it describes an awarded hyperscaler program and a planned production ramp. It is weaker than a customer-confirmed shipped SKU with units and repeat orders.[CLM-246][CLM-255][CLM-256]
 3. **Profit-pool scope:** Celestica should be tested as a system-integration/ODM value-capture candidate, not automatically added to the PIC or laser supplier ranking.
 4. **Alternative architecture control:** The DS6000 platform explicitly supports copper and optical interconnects. This creates a useful internal counterfactual: Celestica may capture system manufacturing value regardless of whether the customer selects CPO, optical pluggables or copper for a particular configuration.[CLM-257]
+5. **Chronology control:** The earlier 1.6T hyperscaler program is logged separately from the later CPO program. This prevents a broader 1.6T switch revenue ramp from being counted as CPO revenue.[CMP-030][CLM-258]
 
 ## Diligence gates
 
@@ -61,6 +64,7 @@ The next evidence request is therefore not another broad CPO announcement. It is
 
 - `CMP-028`: Celestica, [Q1 2026 results and hyperscaler CPO switch program](https://corporate.celestica.com/static-files/7e777cad-64eb-4ae4-90c7-c715a29d100d), 27 April 2026; `CLM-255`–`CLM-256`.
 - `CMP-029`: Celestica, [DS6000-series 1.6TbE switches available to order](https://corporate.celestica.com/news-releases/news-release-details/celestica-accelerates-ai-scale-networking-ds6000-series-16tbe), 29 April 2026; `CLM-257`.
+- `CMP-030`: Celestica, [Q3 2024 results and 1.6T program win](https://corporate.celestica.com/static-files/b8b34ab0-e623-4573-a592-41e16a49cf45), 23 October 2024; `CLM-258`.
 - `CMP-018`: Broadcom, [TH6-Davisson CPO announcement](https://www.broadcom.com/company/news/product-releases/63626); partner-route context.
 
 Official company sources establish what Celestica says about its program. They do not independently establish customer units, qualification, optical-engine economics, yield, field reliability or investment value.

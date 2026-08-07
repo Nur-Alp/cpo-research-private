@@ -31,6 +31,7 @@
 | `ARC-001` Broadcom TH6-Davisson announcement archive | [Local HTML archive](product-materials/CMP-018-broadcom-th6-davisson.html) | [Broadcom original](https://www.broadcom.com/company/news/product-releases/63626) |
 | `CMP-028` Celestica Q1 2026 hyperscaler CPO-switch program | [Official PDF](https://corporate.celestica.com/static-files/7e777cad-64eb-4ae4-90c7-c715a29d100d) | [Celestica official results PDF](https://corporate.celestica.com/static-files/7e777cad-64eb-4ae4-90c7-c715a29d100d) |
 | `CMP-029` Celestica DS6000 1.6TbE orderable platform | [Official HTML](https://corporate.celestica.com/news-releases/news-release-details/celestica-accelerates-ai-scale-networking-ds6000-series-16tbe) | [Celestica original](https://corporate.celestica.com/news-releases/news-release-details/celestica-accelerates-ai-scale-networking-ds6000-series-16tbe) |
+| `CMP-030` Celestica Q3 2024 1.6T program win | [Official PDF](https://corporate.celestica.com/static-files/b8b34ab0-e623-4573-a592-41e16a49cf45) | [Celestica official results PDF](https://corporate.celestica.com/static-files/b8b34ab0-e623-4573-a592-41e16a49cf45) |
 
 ## Filings and financial releases
 

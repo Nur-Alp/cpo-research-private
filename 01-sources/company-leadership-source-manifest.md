@@ -35,6 +35,7 @@ This manifest maps each provisional company-leadership conclusion to the locally
 | `CMP-027` | NVIDIA | `product-materials/CMP-027-nvidia-cpo-industry-collaboration.html` | Publisher HTML only; readable PDF snapshot not yet generated | <https://developer.nvidia.com/blog/how-industry-collaboration-fosters-nvidia-co-packaged-optics/> |
 | `CMP-028` | Celestica | Not locally retained; official publisher PDF link in source log | Official financial-results PDF | <https://corporate.celestica.com/static-files/7e777cad-64eb-4ae4-90c7-c715a29d100d> |
 | `CMP-029` | Celestica | Not locally retained; official publisher HTML link in source log | Official product announcement | <https://corporate.celestica.com/news-releases/news-release-details/celestica-accelerates-ai-scale-networking-ds6000-series-16tbe> |
+| `CMP-030` | Celestica | Not locally retained; official publisher PDF link in source log | Official Q3 2024 financial-results PDF | <https://corporate.celestica.com/static-files/b8b34ab0-e623-4573-a592-41e16a49cf45> |
 
 ## Preservation notes
 
