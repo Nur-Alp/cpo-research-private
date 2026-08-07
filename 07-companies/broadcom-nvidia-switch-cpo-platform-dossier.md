@@ -47,6 +47,8 @@ Neither company’s public evidence establishes CPO-specific economics, final op
 
 ## Economic-control map
 
+The layer-by-layer attribution control is maintained in the [CPO content-attribution map](../08-model/cpo-content-attribution-map.md). It should be read before converting the sixteen-engine TH6 architecture into any supplier revenue or margin assumption.
+
 | Economic question | Broadcom | NVIDIA | What remains unknown |
 |---|---|---|---|
 | Platform and purchasing control | Merchant switch architecture, SerDes and CPO platform | Full AI-factory hardware, networking and software route | Actual system buyer decision rights and supplier-selection process |

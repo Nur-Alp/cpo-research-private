@@ -128,6 +128,7 @@ Use the [CPO evidence-gate register](evidence-gate-register.md) as the active pr
 - [Broadcom and NVIDIA Switch-CPO Platform Dossier](../07-companies/broadcom-nvidia-switch-cpo-platform-dossier.md)
 - [Coherent and Lumentum External Optical-Engine Dossier](../07-companies/coherent-lumentum-external-optical-engine-dossier.md)
 - [Coherent versus Lumentum matched engine and profit bridge](coherent-lumentum-matched-engine-profit-bridge.md)
+- [CPO content-attribution map](cpo-content-attribution-map.md)
 - [CPO Company Leadership Scorecard](../07-companies/leader-scorecard.md)
 - [Company leadership source manifest](../01-sources/company-leadership-source-manifest.md)
 - [Claim ledger](../01-sources/claim-ledger.csv)

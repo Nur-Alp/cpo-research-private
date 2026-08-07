@@ -6,7 +6,7 @@
 This matrix prevents a company claim in one value-chain layer from being counted as proof in another. “Observed” means the retained record directly supports the stated boundary; “claimed” means the company states it; “missing” means the input is not publicly evidenced in the reviewed packet.
 
 | Required scorecard field | Broadcom | NVIDIA | Coherent | Lumentum | TSMC |
-|---|---|---|---|---|
+|---|---|---|---|---|---|
 | Defined product / architecture | Claimed 102.4T TH6-Davisson, 16 × 6.4T engines, 200G links | Claimed Spectrum-X Ethernet Photonics CPO, 200G SerDes | Claimed 6.4T socketed SiPh CPO, VCSEL CPO and 400G InP modulation | Observed product boundary for UHP/ELSFP; claimed CPO order and demonstrations | Claimed COUPE-on-substrate CPO, 200G MRM and 3D photonic/electrical stacking |
 | Customer / qualification evidence | Missing named production CPO customer and repeat units | Claimed ecosystem adopters; missing customer-side CPO confirmation and units | NVIDIA purchase/capacity agreement claimed; product allocation, qualification and repeat CPO volume missing | NVIDIA purchase/capacity agreement claimed; product allocation, qualification and repeat CPO volume missing | “Several customers” 200G result claimed; names, SKU, qualification and repeat units missing |
 | Measured complete-engine performance | Missing matched chassis/engine result | Missing matched chassis/engine result | Missing independent complete-engine result | Missing independent complete-engine result | Missing complete-engine result; >99% is stacking yield on engineering samples only |
