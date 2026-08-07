@@ -35,6 +35,7 @@
 | `CMP-034` Corning GlassBridge fiber-to-PIC platform | Evidence note: [local review](product-materials/CMP-034-corning-glassbridge-fiber-to-pic.md) | [Corning original](https://www.corning.com/oem-solutions/worldwide/en/home/products-solutions/optical-communication-components/next-generation-optics/glassbridge-connector.html) |
 
 | `WHT-001` Corning/Broadcom CPO fiber infrastructure | Evidence note: [local review](product-materials/WHT-001-corning-broadcom-cpo-fiber-infrastructure.md) | [Corning canonical PDF](https://www.corning.com/content/dam/corning/catalog/coc/documents/white-papers/LAN-3366-AEN.pdf) |
+| `STD-012` OIF EEI-112G-RTLR | [Retained PDF](standards/STD-012-oif-eei-112g-rtlr-2025.pdf) | [OIF original PDF](https://www.oiforum.com/wp-content/uploads/OIF-EEI-112G-RTLR-01.0.pdf) |
 
 ## Filings and financial releases
 
