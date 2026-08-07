@@ -109,6 +109,8 @@ Broadcom's third-generation CPO and merchant-switch position are strong technica
 
 ## Evidence-matched dossiers
 
+The cross-company evidence boundary is summarized in the [company evidence-gap matrix](company-evidence-gap-matrix.md). It is a diligence control, not a substitute for a weighted score.
+
 - [Broadcom and NVIDIA: Switch-Side CPO Platform Dossier](broadcom-nvidia-switch-cpo-platform-dossier.md)
 - [Coherent and Lumentum: External Optical-Engine Supplier Dossier](coherent-lumentum-external-optical-engine-dossier.md)
 - [Optical-Engine Profit-Pool Input Gates](../08-model/optical-engine-profit-pool-input-gates.md)
