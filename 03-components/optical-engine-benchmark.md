@@ -56,6 +56,14 @@ The benchmark separates a measured device result from a qualified engine and a c
 
 ## Integration trade-offs from the review literature
 
+### PAP-024 cross-platform evidence boundary
+
+The 2026 *Nature Reviews Electrical Engineering* synthesis is useful for mapping the integration stack, but it is not a matched optical-engine benchmark. It identifies the principal coupling and packaging gates: conventional grating couplers are roughly −2.2 dB with 30–40 nm bandwidth, advanced edge/grating demonstrations can be below 1 dB, and record devices may require non-standard foundry steps. Those figures are component results, so the benchmark must still obtain a multi-fibre loss distribution, attach cycle time, rework rate and final-package yield.
+
+The review also gives a mechanism for why integration depth matters. It associates 2D wire-bond paths with roughly 0.5–1.0 nH/mm parasitics and typical energy above 5 pJ/bit, while 3D stacking shortens the path but introduces thermal density and fine alignment constraints. Its cited 15–30 pJ/bit pluggable and approximately 40% LPO reduction are orientation only; they are not substitutes for the matched 102.4T scenario model. See `CLM-120` through `CLM-123`.
+
+Investment consequence: the scarce capability may be the process-control stack that jointly closes coupling loss, electrical parasitics, thermal path, wafer/package test and yield—not simply the PIC material or laser architecture with the best isolated headline number.
+
 | Integration approach | Potential advantage | Main evidence-backed constraint | Investment relevance |
 |---|---|---|---|
 | Hybrid assembly | Independent optimisation and pre-screening of III-V, PIC and electronics | Alignment, coupling loss, packaging bulk and thermal management | May favour suppliers with packaging, known-good-die and fibre-attach process control |
