@@ -20,6 +20,8 @@ This manifest maps each provisional company-leadership conclusion to the locally
 | `CMP-017` | Lumentum | `product-materials/CMP-017-lumentum-ofc-2026-ai-optics.html` | Publisher HTML | <https://investor.lumentum.com/financial-news-releases/news-details/2026/Lumentum-Demonstrates-Industry-Leading-Technologies-and-Products-for-Scale-Out-Scale-Up-and-Scale-Across-AI-Infrastructure-at-OFC-2026/default.aspx> |
 | `FIL-002` | Coherent | Not locally retrievable | Publisher/SEC link | <https://www.sec.gov/Archives/edgar/data/820318/000119312526208972/d57080dex991.htm> |
 | `FIL-003` | Lumentum | Not locally retrievable | Publisher/SEC link | <https://www.sec.gov/Archives/edgar/data/1633978/000162828026030777/lite-20260328.htm> |
+| `FIL-004` | Broadcom | Not locally retrievable | Official investor-results link | <https://investors.broadcom.com/news-releases/news-release-details/broadcom-inc-announces-second-quarter-fiscal-year-2026-financial> |
+| `FIL-005` | NVIDIA | Not locally retrievable | Official investor-results link | <https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-First-Quarter-Fiscal-2027/default.aspx> |
 | `CMP-018` | Broadcom | Not locally retrievable | Official publisher link | <https://www.broadcom.com/company/news/product-releases/63626> |
 | `CMP-019` | NVIDIA | `product-materials/CMP-019-nvidia-rubin-full-production-2026.pdf` | Publisher PDF | <https://nvidianews.nvidia.com/news/vera-rubin-full-production-agentic-ai-factory> |
 
@@ -30,6 +32,7 @@ This manifest maps each provisional company-leadership conclusion to the locally
 - The original Coherent and Lumentum product/announcement pages for `CMP-015` through `CMP-017` are retained locally. The source log links those retained originals and preserves the publisher URL in its notes.
 - The original Ayar Labs and Lightmatter pages for `CMP-012` and `CMP-013` are retained locally and contain the claimed product, architecture and/or sampling statements. They remain company claims, not evidence of customer qualification or volume production.
 - SEC returned HTTP 403 when this workspace attempted direct retention of `FIL-002` and `FIL-003`, including an ordinary browser user-agent request. Their official SEC links remain canonical and are retained in the source log and the relevant dossier; no reconstructed local copy was created.
+- Broadcom's and NVIDIA's investor-result pages for `FIL-004` and `FIL-005` returned HTTP 403 during direct retrieval. The canonical official pages were read through the investor-site search results and are logged; no reconstructed local copy was created.
 - Broadcom's `CMP-018` official web response was a JavaScript shell without the article text and its official investor PDF returned HTTP 403. The canonical publisher URL remains in the source log and dossier; the empty shell was discarded rather than retained as if it were the source.
 - NVIDIA's `CMP-019` original three-page publisher PDF was retained and verified with PDF text extraction.
 - Local retention does not convert company claims into independently verified facts. Continue to apply the limitations and confidence fields in `source-log.csv`.

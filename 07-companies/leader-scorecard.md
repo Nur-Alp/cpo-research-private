@@ -112,12 +112,15 @@ Broadcom's third-generation CPO and merchant-switch position are strong technica
 - [Broadcom and NVIDIA: Switch-Side CPO Platform Dossier](broadcom-nvidia-switch-cpo-platform-dossier.md)
 - [Coherent and Lumentum: External Optical-Engine Supplier Dossier](coherent-lumentum-external-optical-engine-dossier.md)
 - [Optical-Engine Profit-Pool Input Gates](../08-model/optical-engine-profit-pool-input-gates.md)
+- [CPO Earnings-Materiality Screen](../08-model/cpo-earnings-materiality-screen.md)
 
 ### Why Lumentum and Coherent matter
 
 External lasers and InP manufacturing may become a scarce, architecture-agnostic profit pool across switch CPO and accelerator optical I/O. Lumentum has the clearest disclosed order value; Coherent shows greater vertical component breadth and production-capacity evidence. Neither disclosure is sufficient to estimate sustainable gross profit yet.
 
 The input-gate framework now makes the scorecard boundary operational: no company should receive a numeric investment-attractiveness score until system volume, attributable content, supplier share, realised product margin, cannibalisation and the relevant cost/capital terms are traceably evidenced. Consolidated margin, a product demonstration, capacity expansion or an order headline is not a substitute.
+
+The first revenue-scale screen shows why platform leadership and investable earnings sensitivity must remain separate: a given CPO revenue figure is much less material to Broadcom and NVIDIA's reported quarterly scale than to Coherent's or Lumentum's. It is a denominator test only, not evidence of CPO revenue, profit or valuation impact. See [CPO Earnings-Materiality Screen](../08-model/cpo-earnings-materiality-screen.md).
 
 ### Why Marvell is a different thesis
 

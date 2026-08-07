@@ -59,6 +59,7 @@
 | 2026-08-07 | H7 | CLM-074; CLM-075; CLM-082 | Context only | Medium | Remains Unrated | Model platform rent and supplier earnings sensitivity separately | Different companies lead the disclosed platform, product-definition and external-laser roles, but content and economic capture remain unknown. |
 | 2026-08-07 | H9 | CLM-077; CLM-079; CLM-081 | Context only | Medium | Remains Unrated | Retain announcement, sampling, production claim and customer confirmation as separate states | The disclosures show material ambiguity between shipping/sampling, production claim and confirmed customer use, but do not measure the eventual time to repeat CPO volume. |
 | 2026-08-07 | H15 | CLM-073; CLM-074; CLM-077; CLM-079; CLM-082; CLM-083; CLM-084 | Supports | High | Remains Unrated pending product-level disclosure | Add an explicit numeric-model input gate before adoption or company economics are forecast | The reviewed company sources give architecture, product, order or consolidated-financial evidence, but not the linked company-level volume, content, margin, yield/warranty, cannibalisation and capital inputs. |
+| 2026-08-07 | H13 | CLM-070; CLM-073; CLM-074; CLM-075; CLM-083; CLM-087; CLM-088 | Context only | High | Remains Unrated | Add company revenue-scale thresholds before claiming earnings materiality | Broadcom and NVIDIA have much larger reported revenue bases than Coherent and Lumentum, but no source identifies CPO revenue, margin or profit; scale is not proof of CPO profit capture. |
 
 Allowed directions:
 
