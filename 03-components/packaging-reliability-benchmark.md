@@ -72,6 +72,8 @@ The new packaging packet tightens the model without changing that conclusion. Ps
 
 The Corning/Broadcom fiber-infrastructure white paper adds a system-level reliability boundary that is easy to miss in PIC-only comparisons: dense fiber count, bend radius, coating damage, routing and assembly handling can create failure and replacement exposure even when the optical engine and ELSFP meet their component requirements. Its proposed known-good-fiber cassettes and bend-control hardware are manufacturing hypotheses, not measured yield improvements.[CLM-291][CLM-292][CLM-293]
 
+Corning's current GlassBridge platform page supplies a distinct supplier-route signal: wafer-based passive alignment, a rematable TMT interface and a stated capacity above 24 optical channels. It is strategically relevant to known-good PIC testing, rework and serviceability, but the page supplies no loss, yield, cycle-life or commercial data, so it remains a route-to-qualification hypothesis rather than a ranked engine result.[CLM-294][CLM-295][CLM-296]
+
 ## Investment implication
 
 Packaging remains a credible control point but not yet a demonstrated standalone profit pool. The strongest potential differentiation is likely to come from a supplier that owns the coupled process window across PIC edge design, fibre attach, connector, assembly, in-line metrology, final test and rework. A low-loss connector record without qualified process yield is unlikely to guarantee durable margin.

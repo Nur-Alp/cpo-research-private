@@ -32,6 +32,9 @@
 | `CMP-028` Celestica Q1 2026 hyperscaler CPO-switch program | [Official PDF](https://corporate.celestica.com/static-files/7e777cad-64eb-4ae4-90c7-c715a29d100d) | [Celestica official results PDF](https://corporate.celestica.com/static-files/7e777cad-64eb-4ae4-90c7-c715a29d100d) |
 | `CMP-029` Celestica DS6000 1.6TbE orderable platform | [Official HTML](https://corporate.celestica.com/news-releases/news-release-details/celestica-accelerates-ai-scale-networking-ds6000-series-16tbe) | [Celestica original](https://corporate.celestica.com/news-releases/news-release-details/celestica-accelerates-ai-scale-networking-ds6000-series-16tbe) |
 | `CMP-030` Celestica Q3 2024 1.6T program win | [Official PDF](https://corporate.celestica.com/static-files/b8b34ab0-e623-4573-a592-41e16a49cf45) | [Celestica official results PDF](https://corporate.celestica.com/static-files/b8b34ab0-e623-4573-a592-41e16a49cf45) |
+| `CMP-034` Corning GlassBridge fiber-to-PIC platform | Evidence note: [local review](product-materials/CMP-034-corning-glassbridge-fiber-to-pic.md) | [Corning original](https://www.corning.com/oem-solutions/worldwide/en/home/products-solutions/optical-communication-components/next-generation-optics/glassbridge-connector.html) |
+
+| `WHT-001` Corning/Broadcom CPO fiber infrastructure | Evidence note: [local review](product-materials/WHT-001-corning-broadcom-cpo-fiber-infrastructure.md) | [Corning canonical PDF](https://www.corning.com/content/dam/corning/catalog/coc/documents/white-papers/LAN-3366-AEN.pdf) |
 
 ## Filings and financial releases
 
