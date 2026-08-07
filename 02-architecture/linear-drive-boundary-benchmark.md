@@ -81,6 +81,8 @@ OIF-EEI-112G-RTLR-01.0 supplies a standards-level comparator that should be kept
 
 OIF's OFC 2026 showcase further indicates that the ecosystem is advancing CEI-224G/448G, RTLR, unretimed linear optics, co-packaging, CMIS and ELSFP in parallel. This is evidence of interoperability activity, not evidence that one path has won on production cost or field reliability.[CLM-301][CLM-302][CLM-303]
 
+Oracle's March 2026 Acceleron architecture post is an important operator-side countercase: it selects multiplanar 400G/800G LPO/LRO with modular shuffle cabling and explicit fault-plane isolation, and claims 4–7 W direct savings per module. This reinforces that topology, serviceability and fault-domain design can keep LPO competitive even at very large AI-cluster scale; the figures remain operator claims without a matched CPO comparison.[CLM-324][CLM-325]
+
 ## Investment implication
 
 LPO is a real countercase to any thesis that power alone forces switch CPO. The relevant bottleneck moves with the electrical channel: packaging, host-SerDes, connector and module placement determine whether linear pluggables can retain sufficient margin. This makes 200G/lane a coexistence problem rather than a binary CPO-versus-pluggable decision.
