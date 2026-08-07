@@ -87,12 +87,27 @@ Read these after the academic core:
 2. `PAP-005`: Benjamin G. Lee et al., *Beyond CPO: A Motivation and Approach for Bringing Optics Onto the Silicon Interposer* (2023). Map the possible migration from package-adjacent optics to interposer-level optical I/O and the resulting changes in suppliers, packaging, and thermal design.
 3. `PAP-004`: Lucas Yeary et al., *Co-packaged Optics on Glass Substrates for 102.4 Tb/s Data Center Switches* (2023). Evaluate glass substrates as a manufacturable and potentially lower-cost integration path, separating proposed architecture from demonstrated performance.
 
-### Inaccessible OFC comparators
+### Linear-drive comparators
 
 - `PAP-007`: Elaine Chou et al., *100G and 200G per Lane Linear Drive Optics for Data Center Applications*, OFC 2024, paper W4H.3.
 - `PAP-008`: Jianying Zhou et al., *Performance Limitations and Optimizations of Linear Driver Optics for 200G/Lane and beyond*, OFC 2025, paper M2H.1.
+- `PAP-010`: E. M. Kimber and E. Frlan, *200G LPO: Design Challenges and Latest Test Data*, OFC 2026.
+- `PAP-011`: Jianying Zhou et al., *400G/lane for Linear-drive Optics Applications*, OFC 2026. This is a one-page digest, so weight it below full papers.
 
-Both records are labelled `Abstract only` in the source log because full-text downloads were unavailable. Keep them in the acquisition queue and do not treat the publisher abstracts as equivalent to reviewed papers.
+All four local files were checked against their contents rather than filenames. They are queued for analytical review; acquisition does not mean their claims have been accepted.
+
+### Focused PIC, packaging, and profit-pool expansion
+
+The verified `PAP-012` through `PAP-024` packet covers electronic-photonic co-optimisation, optical-I/O chiplets, interposers, fibre attach, thermomechanical reliability, detachable connectors, external lasers, switch-radix economics, microring PICs, design tools, and CMOS/silicon-photonics integration. Prioritise:
+
+1. `PAP-024` for the current device and integration map.
+2. `PAP-012`, `PAP-021`, and `PAP-013` for scale-out optical-engine and PIC design.
+3. `PAP-015`, `PAP-016`, `PAP-017`, and `PAP-018` for manufacturing, fibre attach, serviceability, and reliability.
+4. `PAP-019` and `PAP-022` for the external-laser technology and supplier thesis.
+5. `PAP-014` and `PAP-023` for potential platform and tooling control points.
+6. `PAP-020` for the system-level value mechanism behind higher-radix CPO switches.
+
+Three misleading partial downloads were rejected. See `papers/acquisition-issues.md` before attempting them again.
 
 ### Current leadership-diligence packet
 
