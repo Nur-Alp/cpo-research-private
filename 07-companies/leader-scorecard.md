@@ -84,7 +84,7 @@ Keep this separate from operational leadership.
 
 Begin with the existing company set, but do not assume every company belongs in every architecture or layer. Add a company only when its role can be mapped to a product, interface, customer route, and potential economic content.
 
-## Provisional leadership view as of 2026-08-06
+## Provisional leadership view as of 2026-08-07
 
 This is a triage result, not the completed weighted scorecard. Scores remain unpopulated because several decisive dimensions lack comparable evidence.
 
@@ -127,6 +127,9 @@ The cross-company evidence boundary is summarized in the [company evidence-gap m
 - [Broadcom and NVIDIA: Switch-Side CPO Platform Dossier](broadcom-nvidia-switch-cpo-platform-dossier.md)
 - [Coherent and Lumentum: External Optical-Engine Supplier Dossier](coherent-lumentum-external-optical-engine-dossier.md)
 - [Optical-Engine Profit-Pool Input Gates](../08-model/optical-engine-profit-pool-input-gates.md)
+- [Total-cost-per-delivered-bit gate](../08-model/tco-per-delivered-bit-gate.md)
+- [CPO customer-proof register](../08-model/customer-proof-register.md)
+- [Critical-path milestone tracker](../08-model/critical-path-milestone-tracker.md)
 - [CPO Earnings-Materiality Screen](../08-model/cpo-earnings-materiality-screen.md)
 - [NVIDIA CPO reference-content bridge](../08-model/nvidia-cpo-reference-content-bridge.md)
 - [Marvell / Celestial AI: Accelerator Optical-I/O Dossier](marvell-celestial-accelerator-optical-io-dossier.md)
