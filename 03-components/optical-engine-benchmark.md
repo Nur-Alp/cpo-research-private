@@ -76,8 +76,9 @@ The benchmark separates a measured device result from a qualified engine and a c
 
 ## Next candidates to add on the same boundary
 
-1. `PAP-019`, `PAP-022`, `PAP-026` and `PAP-027` — external CW laser, SOA-DFB, ELS splitter and VCSEL countercases.
-2. `PAP-015` through `PAP-018` — fibre attach, connector, assembly and reliability evidence.
+The laser papers are now compared separately in [CPO Laser-Architecture Benchmark](laser-architecture-benchmark.md), because source power, packaged efficiency and delivered engine-input power require a different boundary from modulated lane performance.
+
+The next candidates are `PAP-015` through `PAP-018` for fibre attach, connector, assembly and reliability evidence.
 
 ## Sources
 

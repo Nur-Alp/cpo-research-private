@@ -51,6 +51,21 @@ Academic work identifies packaging, thermal management, test, socketability and 
 | Foundry fabrication | Durable enabling role | High process barriers and broad customer access | Incremental CPO economics may be small relative to the foundry base |
 | Individual passive components | Lower expected rent | Necessary content with possible volume scale | Greater commoditisation and substitution risk |
 
+## Laser thesis after the first device comparison
+
+The first matched review weakens, but does not reject, the high-power external-laser profit-pool thesis. The detailed comparison is in [CPO Laser-Architecture Benchmark](../03-components/laser-architecture-benchmark.md).
+
+1. Lumentum has the strongest reviewed packaged result: its 1310 nm DFB prototype reached 580 mW ex-fibre at 50 C laser temperature, and module PCE was at least 10% at 400 mW across the reported conditions.[S11]
+2. Sumitomo is a credible competing InP source. Its SOA-integrated DFB exceeded 500 mW at 45 C and reported 25% PCE over 200-440 mW, but the output is not stated as fibre-coupled and the PCE boundary is insufficiently detailed for direct comparison with Lumentum.[S12]
+3. External-laser power is not the same as delivered engine-input power. An AIST polymer 1x4 splitter experiment tolerated more than +20 dBm input but showed approximately 10.5-15 dB total insertion loss and required a fibre amplifier; its 1.6 and 3.2 Tb/s figures were extrapolations rather than simultaneous aggregate links.[S13]
+4. A directly modulated 850 nm VCSEL demonstrated strong single-device power, bandwidth and optical-feedback tolerance, but remained at a 56 Gb/s eye rate and lacked array, temperature, lifetime, yield and package evidence. It is a longer-term short-reach countercase, not a current matched 200G-per-lane alternative.[S14]
+
+The provisional conclusion is therefore:
+
+> High-power InP ELS is a technically credible candidate profit pool, but current academic evidence does not prove durable scarcity or supplier pricing power. Profit depends on packaged ex-fibre efficiency, lifetime, qualified capacity and the complete distribution path.
+
+The laser scorecard must use cost per delivered optical watt over warranted life. Comparing unmatched chip-facet power or PCE figures would overstate technical and economic differentiation.
+
 ## Companies currently inside the core comparison
 
 | Company | Role in this thesis | Current evidence boundary |
@@ -125,5 +140,9 @@ The first comparative deep dive should cover Broadcom, Coherent, Lumentum and NV
 - **[S8]** Ravi Mahajan et al., [*Co-Packaged Photonics for High Performance Computing: Status, Challenges and Opportunities*](../01-sources/papers/PAP-003-mahajan-co-packaged-photonics-hpc-2022.pdf), *Journal of Lightwave Technology* 40(2), 2022, DOI 10.1109/JLT.2021.3104725.
 - **[S9]** Brandon Buscaino et al., [*External vs. Integrated Light Sources for Intra-Data Center Co-Packaged Optical Interfaces*](../01-sources/papers/PAP-002-buscaino-external-vs-integrated-light-sources-2021.pdf), *Journal of Lightwave Technology* 39(7), 2021, DOI 10.1109/JLT.2020.3043653.
 - **[S10]** OIF, [*Management of External Light Sources and Co-Packaged Optical Engines*](../01-sources/standards/STD-006-oif-elsfp-management.pdf). External-laser management and interoperability reference.
+- **[S11]** Wenjia Zhou et al., [*High Power CW Laser for Co-Packaged Optics*](../01-sources/papers/PAP-019-zhou-high-power-cw-laser-cpo-2022.pdf), CLEO 2022 paper SS2D.3, DOI 10.1364/CLEO_SI.2022.SS2D.3.
+- **[S12]** Daisuke Inoue et al., [*High Power SOA-integrated DFB Lasers for Co-packaged Optics*](../01-sources/papers/PAP-022-inoue-soa-dfb-lasers-cpo-2025.pdf), JSAP-Optica Joint Symposia 2025 abstract 8p-N203-6.
+- **[S13]** Satoshi Suda et al., [*High-Capacity Transmission with Single External Laser Source and Polymer-Based Splitters for Co-Packaged Optics*](../01-sources/papers/PAP-026-suda-external-laser-polymer-splitters-2024.pdf), CLEO 2024 paper SF3F.7.
+- **[S14]** Cheng-Wei Lin et al., [*Single-Mode VCSELs With Zn-Diffusion Apertures for Applications in Co-Packaged Optics Systems*](../01-sources/papers/PAP-027-lin-single-mode-vcsel-cpo-2025.pdf), *IEEE Journal of Selected Topics in Quantum Electronics* 31(2), 2025, DOI 10.1109/JSTQE.2024.3454318.
 
 Company announcements establish what the companies claim and disclose; they do not independently prove performance, production volume, yield or sustainable profit.
