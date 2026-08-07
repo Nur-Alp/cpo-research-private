@@ -114,7 +114,7 @@ Required evidence for NVIDIA and Broadcom:
 - measured power and link availability
 - replacement procedure and field failure rate
 
-Meta confirms adoption of NVIDIA Spectrum-X across its infrastructure, but the reviewed customer statement does not isolate Spectrum-X Photonics or quantify CPO deployment. NVIDIA and Broadcom production statements therefore need customer-side confirmation.
+Meta confirms adoption of NVIDIA Spectrum-X across its infrastructure, but the reviewed customer statement does not isolate Spectrum-X Photonics or quantify CPO deployment. CoreWeave now provides the strongest customer-side named deployment record for NVIDIA's 102.4T SN6600-LD/Vera Rubin boundary. Broadcom's TH6 announcement adds HPE, Celestica, Micas and Nexthop partner-route statements, but those quotations do not provide accepted SKU, units, deployment date or repeat shipments (`CLM-246`–`CLM-249`). NVIDIA and Broadcom production statements therefore still need customer-side unit and qualification confirmation.
 
 ### 5. Accelerator-side optical-I/O evidence
 
