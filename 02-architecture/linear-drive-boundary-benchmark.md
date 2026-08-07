@@ -28,6 +28,8 @@ The practical conclusion is narrower than “the standard forces CPO”: standar
 
 The newer IEEE 400GPL objectives make the boundary more concrete without changing that conclusion. They include optional single-lane 400G attachment-unit interfaces for both chip-to-module and chip-to-chip use, plus objectives for 500 m single-mode fibre and 1 m twin-axial copper. Because the AUI is optional and the document supplies no insertion-loss, FEC or measured-link result, it preserves implementation optionality rather than selecting LPO, NPO or CPO.[STD-009][CLM-206][CLM-207][CLM-208][CLM-209]
 
+An IEEE 400GPL contribution from China Mobile adds a useful mechanism-level constraint: at 400G/lane, its PAM4 example is approximately 212.5 GBaud with a 106.25 GHz Nyquist frequency, and it notes that removing a retimer requires rate/modulation alignment and changes where FEC functions can be hosted.[STD-010][CLM-259][CLM-260][CLM-261] This strengthens the reason to test NPO/CPO at a shortened electrical boundary, but it is not a measured link or an adopted standard. The contribution's 2027–2029 deployment language remains a diligence lead only.[CLM-262]
+
 ## Comparison rules
 
 Do not compare a headline loss number without matching all of the following:
@@ -73,7 +75,7 @@ The 22/23, 26 and 31 dB figures answer different questions under different chann
 |---|---|---|---|
 | 100G | LPO system operation measured, with non-uniform BER-floor outcome across preliminary designs | LPO is credible where channel and interoperability are validated | Field reliability, module power, service rate and multi-vendor qualification |
 | 200G | Multiple models indicate possible operation, but their loss envelopes are unmatched; Meta's long channel needs a Tx retimer | LPO may coexist with retimed pluggables and NPO/CPO by electrical topology | Matched multi-vendor 102.4T system, full channel and return-loss data, power, temperature and error statistics |
-| 400G | Component evidence is below the modeled gross rate; modeled 212.5 GBd margin collapses above 12 dB B2B loss | NPO/CPO is the stronger current technical direction; traditional LPO remains unproven | Measured 212.5 GBd/400G link, fibre reach, thermal, BER distribution, yield and serviceability |
+| 400G | Component evidence is below the modeled gross rate; modeled 212.5 GBd margin collapses above 12 dB B2B loss; IEEE 400GPL discussion places PAM4 Nyquist near 106.25 GHz and highlights rate/FEC alignment without a retimer | NPO/CPO is the stronger current technical direction; traditional LPO remains unproven | Measured 212.5 GBd/400G link, fibre reach, thermal, BER distribution, yield and serviceability |
 
 ## Investment implication
 
@@ -90,3 +92,4 @@ At 400G/lane, the present evidence shifts the diligence focus to short electrica
 - `STD-007`: OIF, [*Next Generation CEI-224G Framework*](../01-sources/standards/STD-007-oif-cei-224g-framework.pdf), OIF-FD-CEI-224G-01.0, 7 February 2022.
 - `STD-008`: IEEE P802.3dj, [*Key Motions*](../01-sources/standards/STD-008-ieee-p8023dj-key-motions-2024.pdf), compilation through 16 May 2024.
 - `STD-009`: IEEE 802.3 400GPL Study Group, [*400GPL SG Objectives*](../01-sources/standards/STD-009-ieee-400gpl-objectives-2026.pdf), approved 10 June 2026; project status updated July/August 2026.
+- `STD-010`: China Mobile, [*Consideration on NPO and CPO at 400G/Lane*](../01-sources/standards/STD-010-ieee-400gpl-npo-cpo-consideration-2026.md), IEEE 802.3 400GPL public contribution, May 2026.

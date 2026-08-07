@@ -16,6 +16,8 @@ This directory contains the research source index, reading sequence, and any leg
 
 `source-viewing-guide.md` is the reading index for publisher pages retained as HTML. It links each readable local PDF snapshot and its canonical publisher URL. Cite the publisher URL; use the PDF snapshot for local reading.
 
+The 400G/lane standards packet now includes `STD-009` (IEEE 400GPL objectives) and `STD-010` (China Mobile's IEEE 400GPL NPO/CPO contribution). `STD-010` is a study-group contribution, not a ratified standard or measured product result; use it only for the rate/modulation/FEC boundary and record its deployment statements as unverified.
+
 The new workflow fields are:
 
 - `priority`: orientation, priority one, priority two, or supplementary
