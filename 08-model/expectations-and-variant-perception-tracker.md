@@ -19,6 +19,7 @@ The investment question requires a dated comparison between what companies/marke
 | EXP-005 | NVIDIA, `CMP-025`, `CLM-228`–`CLM-229` | Spectrum-X Ethernet Photonics reaches full production and has named first adopters/technology partners | 2026 | Company platform claim | Platform/adopter/partner list | Customer units, exact SKU, repeat volume, supplier allocation, yield and margin | Tests whether ecosystem language converts into CPO deployment and supplier content |
 | EXP-006 | Marvell/Celestial, `CMP-020`, `CLM-095` | Meaningful revenue in H2 FY28; $500M annualized Q4 FY28; $1B annualized Q4 FY29 | FY28–FY29 | Management forecast and earnout case | Dated, falsifiable revenue targets | Production customer, units, ASP, margin, probability and achieved revenue | Strongest public-company accelerator optical-I/O expectation record |
 | EXP-007 | TSMC, `PRI-029`–`PRI-031`, `CLM-214`–`CLM-216` | COUPE-on-substrate CPO production milestone beginning in 2026 | 2026 | Company technology milestone | Process/stacking target and engineering-sample yield | Named SKU, shipped units, final-engine yield, package responsibility, ASP and margin | Tests process-control conversion rather than market adoption alone |
+| EXP-008 | Celestica, `CMP-028`, `CLM-255`–`CLM-256` | Design-and-manufacturing program for an unnamed hyperscaler CPO Ethernet switch; production ramp expected in 2027 | 2027 | Company program disclosure | Awarded program, 1.6T switch silicon, co-packaged optics and liquid cooling | Customer identity, SKU, units, qualification, repeat orders, optical BOM, supplier share, ASP and margin | Newest route-to-production checkpoint for switch-side CPO; planned ramp is not shipped volume |
 
 ## What is not yet in the tracker
 
@@ -57,6 +58,7 @@ source_id and claim_id
 - The clearest market-size framing is Coherent's $15B+ CPO SAM estimate for 2030, but it is not attributable revenue.
 - The clearest accelerator optical-I/O revenue aspiration is Marvell's FY28/FY29 Photonic Fabric case, but it remains an earnout-linked management forecast.
 - Broadcom, NVIDIA and TSMC provide important product/process milestones, but their CPO-specific earnings expectations are not separately disclosed.
+- Celestica adds a concrete 2027 planned production-ramp checkpoint for an unnamed hyperscaler CPO switch, but the disclosure is still insufficient for a volume or earnings estimate.
 
 No variant-perception conclusion is currently investable because the public expectation records are not yet matched to consensus, valuation, product economics or observed conversion.
 
@@ -68,4 +70,3 @@ No variant-perception conclusion is currently investable because the public expe
 - [Critical-path milestone tracker](critical-path-milestone-tracker.md)
 - [CPO decision-output completion audit](../00-scope/decision-output-completion-audit.md)
 - [Claim ledger](../01-sources/claim-ledger.csv)
-
