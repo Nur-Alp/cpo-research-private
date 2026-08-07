@@ -92,8 +92,8 @@ This is a triage result, not the completed weighted scorecard. Scores remain unp
 |---|---|---|
 | Switch-side CPO platform control | NVIDIA | Strongest full-stack system route and named early ecosystem adopters; CPO-specific customer volume remains unverified. See [platform dossier](broadcom-nvidia-switch-cpo-platform-dossier.md). |
 | Merchant switch CPO product definition | Broadcom | Most specific disclosed 102.4T CPO architecture; its own release says both “now shipping” and early-access sampling, so broad CPO volume remains unproven. See [platform dossier](broadcom-nvidia-switch-cpo-platform-dossier.md). |
-| External-laser commercial visibility | Lumentum | Clearest disclosed CPO order value and delivery window; customer, margin, and product boundary are undisclosed |
-| Photonic component breadth and manufacturing | Coherent | Broad SiPh, InP, VCSEL, detector, passive, fibre-attach, module, and test stack plus expanding 6-inch InP production |
+| External-laser commercial visibility | Lumentum | Clearest disclosed CPO order value and delivery window; the NVIDIA agreement adds a multibillion-dollar purchase commitment, capacity rights and a planned 6-inch InP fab ramp, but customer, margin, product allocation and conversion remain undisclosed |
+| Photonic component breadth and manufacturing | Coherent | Broad SiPh, InP, VCSEL, detector, passive, fibre-attach, module, and test stack; the NVIDIA agreement adds a multibillion-dollar purchase commitment, capacity rights and $2B investment, but product allocation, conversion and margin remain undisclosed |
 | Accelerator optical-I/O public-company option | Marvell | Celestial AI plus custom XPU, switching, DSP, and NVIDIA relationship create the strongest public-company strategic bundle; production proof remains weak |
 | Advanced photonics manufacturing platform | TSMC | Central foundry and advanced-packaging control point with COUPE; CPO-specific economics and customer qualification are undisclosed |
 | Private optical-I/O technology | No leader established | Ayar Labs and Lightmatter have differentiated working silicon and packaging approaches but no comparable independent production evidence |
@@ -119,7 +119,7 @@ The cross-company evidence boundary is summarized in the [company evidence-gap m
 
 ### Why Lumentum and Coherent matter
 
-External lasers and InP manufacturing may become a scarce, architecture-agnostic profit pool across switch CPO and accelerator optical I/O. Lumentum has the clearest disclosed order value; Coherent shows greater vertical component breadth and production-capacity evidence. Neither disclosure is sufficient to estimate sustainable gross profit yet.
+External lasers and InP manufacturing may become a scarce, architecture-agnostic profit pool across switch CPO and accelerator optical I/O. Both Lumentum and Coherent now have direct NVIDIA capacity/customer-route commitments, so the differentiator is no longer simply “who has a hyperscaler relationship.” Lumentum has the clearest external-laser order and planned 6-inch InP capacity milestone; Coherent has the broader publicly disclosed multi-technology engine stack. Neither disclosure identifies product allocation, qualified output, supplier share, ASP, cancellation protection or realised gross profit.
 
 The input-gate framework now makes the scorecard boundary operational: no company should receive a numeric investment-attractiveness score until system volume, attributable content, supplier share, realised product margin, cannibalisation and the relevant cost/capital terms are traceably evidenced. Consolidated margin, a product demonstration, capacity expansion or an order headline is not a substitute.
 

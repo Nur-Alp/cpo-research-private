@@ -8,16 +8,16 @@ This matrix prevents a company claim in one value-chain layer from being counted
 | Required scorecard field | Broadcom | NVIDIA | Coherent | Lumentum |
 |---|---|---|---|---|
 | Defined product / architecture | Claimed 102.4T TH6-Davisson, 16 × 6.4T engines, 200G links | Claimed Spectrum-X Ethernet Photonics CPO, 200G SerDes | Claimed 6.4T socketed SiPh CPO, VCSEL CPO and 400G InP modulation | Observed product boundary for UHP/ELSFP; claimed CPO order and demonstrations |
-| Customer / qualification evidence | Missing named production CPO customer and repeat units | Claimed ecosystem adopters; missing customer-side CPO confirmation and units | Missing named CPO customer, qualification and repeat volume | Missing customer identity, qualification and order conversion |
+| Customer / qualification evidence | Missing named production CPO customer and repeat units | Claimed ecosystem adopters; missing customer-side CPO confirmation and units | NVIDIA purchase/capacity agreement claimed; product allocation, qualification and repeat CPO volume missing | NVIDIA purchase/capacity agreement claimed; product allocation, qualification and repeat CPO volume missing |
 | Measured complete-engine performance | Missing matched chassis/engine result | Missing matched chassis/engine result | Missing independent complete-engine result | Missing independent complete-engine result |
 | PIC / laser ownership | Broadcom platform claim; supplier split missing | Platform route; supplier split missing | Broad SiPh, InP, VCSEL and packaging stack claimed | Strongest retained evidence in high-power InP/ELSFP layer |
 | Fibre attach / package yield | Missing | Missing | Missing final-engine yield and attach cycle time | Missing final-engine yield and attach cycle time |
 | Reliability / serviceability | ELSFP replaceability claimed; engine service missing | Service and warranty model missing | Socketed demonstration; field repair and warranty missing | ELSFP source serviceability claimed; engine/package service missing |
-| Capacity / capex | CPO-specific capacity allocation missing | CPO-specific capacity allocation missing | Six-inch InP volume production and expansion claimed; CPO allocation missing | Capacity/fab expansion disclosed; CPO allocation missing |
+| Capacity / capex | CPO-specific capacity allocation missing | CPO-specific capacity allocation missing | NVIDIA $2B investment and multibillion purchase/capacity commitment claimed; six-inch InP/CPO allocation and qualified output missing | NVIDIA $2B investment and multibillion purchase/capacity commitment claimed; Greensboro 6-inch InP ramp planned mid-2028; qualified output and CPO allocation missing |
 | Supplier share / content per system | Missing | Missing | Missing | Missing |
 | CPO-specific ASP / gross margin | Missing | Missing | Missing | Missing |
 | Cannibalisation / support cost | Missing | Missing | Missing | Missing |
-| Evidence-adjusted current read | Merchant CPO product-definition lead | Full-system/customer-route lead | Component breadth and capacity lead | External-laser commercial-visibility lead |
+| Evidence-adjusted current read | Merchant CPO product-definition lead | Full-system/customer-route lead | Component breadth plus newly strengthened NVIDIA capacity/customer-route evidence | External-laser commercial-visibility plus newly strengthened NVIDIA capacity/customer-route evidence |
 
 ## What can be concluded now
 
