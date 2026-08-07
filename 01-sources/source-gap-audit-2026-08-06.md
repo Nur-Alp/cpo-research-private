@@ -2,7 +2,7 @@
 
 **Owner:** Nur Alpys
 
-**As of:** 2026-08-06
+**As of:** 2026-08-07
 
 **Decision question:** Which architecture becomes commercially meaningful first, and which company captures the largest sustainable incremental profit pool?
 
@@ -41,11 +41,11 @@ No company currently earns the label “best technology overall.” Switch CPO, 
 |---|---|---|
 | CPO architecture and packaging reviews | Mahajan; Tan; Lee; Buscaino | Good conceptual base |
 | Switch-side 102.4T CPO | Broadcom and NVIDIA product material; architecture papers | Moderate, mostly company supplied |
-| LPO and advanced pluggables | OIF requirements; vendor demonstrations; OFC abstracts | Weak because the most decision-relevant OFC papers are not available in full |
+| LPO and advanced pluggables | OIF requirements; vendor demonstrations; complete PAP-007, PAP-008, PAP-010 and PAP-011 files queued for review | Weak pending matched review of the complete paper set |
 | NPO | IEEE 400GPL contribution and review material | Early standards framing only |
 | External lasers | OIF management document; Lumentum, Coherent, NVIDIA claims | Moderate on architecture, weak on lifetime and field statistics |
-| Optical packaging and manufacturability | Mahajan; glass substrate; Coherent capacity deck | Moderate on approaches, weak on actual yield and cost |
-| Reliability and serviceability | Review papers and vendor design descriptions | Weak on qualification and field data |
+| Optical packaging and manufacturability | Mahajan; IBM attach metrology; Cao assembly model; Corning and Furukawa detachable connectors | Moderate on mechanisms and laboratory results; weak on actual yield, cost and volume |
+| Reliability and serviceability | Assembly simulation plus short connector-cycle and single-reflow screens | Weak on qualification, lifetime and field data |
 | Network-level value | Maniotis and Kuchta simulation | Useful mechanism, no deployment validation |
 | Customer adoption | Meta Spectrum-X partnership; vendor early-access and production claims | Weak for CPO-specific deployed units |
 | Accelerator optical I/O | Marvell/Celestial, Ayar Labs, Lightmatter announcements | Major gap |
@@ -71,20 +71,20 @@ link-flap and error statistics
 
 No reviewed source meets this boundary. Until one does, vendor power multiples must remain company claims.
 
-### 2. Complete LPO papers
+### 2. Complete and review the LPO papers
 
-Download through university access:
+PAP-007, PAP-008, PAP-010 and PAP-011 are complete and queued for review:
 
-1. Elaine Chou et al., *100G and 200G per Lane Linear Drive Optics for Data Center Applications*, OFC 2024, W4H.3, DOI 10.1364/OFC.2024.W4H.3.
-2. Jianying Zhou et al., *Performance Limitations and Optimizations of Linear Driver Optics for 200G/Lane and beyond*, OFC 2025, M2H.1, DOI 10.1364/OFC.2025.M2H.1.
-3. E. M. Kimber and E. Frlan, *200G LPO: Design Challenges and Latest Test Data*, OFC 2026, M2B.1, DOI 10.1364/OFC.2026.M2B.1.
-4. Jianying Zhou et al., *400G/lane for Linear-drive Optics Applications*, OFC 2026, Th1C.3, DOI 10.1364/OFC.2026.Th1C.3.
+1. Elaine Chou et al., *100G and 200G per Lane Linear Drive Optics for Data Center Applications*, OFC 2024, W4H.3, DOI 10.1364/OFC.2024.W4H.3 — complete, queued.
+2. Jianying Zhou et al., *Performance Limitations and Optimizations of Linear Driver Optics for 200G/Lane and beyond*, OFC 2025, M2H.1, DOI 10.1364/OFC.2025.M2H.1 — complete, queued.
+3. E. M. Kimber and E. Frlan, *200G LPO: Design Challenges and Latest Test Data*, OFC 2026, M2B.1, DOI 10.1364/OFC.2026.M2B.1 — complete, queued.
+4. Jianying Zhou et al., *400G/lane for Linear-drive Optics Applications*, OFC 2026, Th1C.3, DOI 10.1364/OFC.2026.Th1C.3 — complete, queued.
 
 These papers determine how long advanced pluggables can defer NPO or CPO.
 
-### 3. Packaging yield, rework, and reliability
+### 3. Additional packaging yield, rework, and reliability evidence
 
-Download through university access where needed:
+PAP-015 through PAP-018 are now reviewed and establish attach-metrology, mechanical-model and detachable-connector mechanisms. They do not supply production yield or qualification. Obtain the following additional evidence through university access where needed:
 
 1. Nicholas Psaila et al., *Detachable Optical Chiplet Connector for Co-Packaged Photonics*, JLT 41, 6315-6323 (2023). This directly addresses yield compounding, known-good optical modules, rework, and detachable fibres.
 2. Xin Li et al., *1.6 Tbps FOWLP-Based Silicon Photonic Engine for Co-Packaged Optics*, JLT 43, 1979-1986 (2025). This tests a volume-manufacturable fan-out packaging route.
@@ -159,12 +159,13 @@ The next filings set should include Broadcom, NVIDIA, Marvell, Lumentum, Coheren
 
 ## Recommended research order
 
-1. Obtain the four LPO papers and five packaging/reliability papers above.
-2. Build one matched evidence table for NVIDIA Spectrum-X Photonics and Broadcom TH6-Davisson.
-3. Build external-laser dossiers for Lumentum and Coherent, anchored to order, capacity, qualification, and margin evidence.
-4. Build accelerator optical-I/O dossiers for Marvell/Celestial AI, Ayar Labs, Lightmatter, TSMC, and NVIDIA.
-5. Conduct primary research with system operators, OSATs, fibre-attach suppliers, and field-service engineers.
-6. Only then populate operational and investment scores and the 2026-2032 adoption probabilities.
+1. Review the complete PAP-007, PAP-008, PAP-010 and PAP-011 set on one matched LPO boundary.
+2. Build matched company dossiers for Broadcom, Coherent, Lumentum and NVIDIA using the completed PIC, laser and packaging evidence gates.
+3. Build one matched evidence table for NVIDIA Spectrum-X Photonics and Broadcom TH6-Davisson.
+4. Obtain the five additional packaging/reliability sources above and seek production-yield evidence.
+5. Build accelerator optical-I/O dossiers for Marvell/Celestial AI, Ayar Labs, Lightmatter, TSMC, and NVIDIA.
+6. Conduct primary research with system operators, OSATs, fibre-attach suppliers, and field-service engineers.
+7. Only then populate operational and investment scores and the 2026-2032 adoption probabilities.
 
 ## Public sources added in this audit
 

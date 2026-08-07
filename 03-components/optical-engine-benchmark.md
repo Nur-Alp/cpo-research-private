@@ -74,11 +74,11 @@ The benchmark separates a measured device result from a qualified engine and a c
 6. `PAP-021` shows why Lightmatter is relevant to PIC design: its monolithic circuit density is exceptional. It does not yet answer the 200G-per-lane scale-out engine question.
 7. `PAP-013` makes pre-assembly optical testing and fibre-attach yield explicit. The economic mechanism is plausible, but ten connector cycles and simulations do not demonstrate high-volume manufacturing.
 
-## Next candidates to add on the same boundary
+## Adjacent evidence blocks
 
 The laser papers are now compared separately in [CPO Laser-Architecture Benchmark](laser-architecture-benchmark.md), because source power, packaged efficiency and delivered engine-input power require a different boundary from modulated lane performance.
 
-The next candidates are `PAP-015` through `PAP-018` for fibre attach, connector, assembly and reliability evidence.
+Fibre attach, connector, assembly and serviceability evidence from `PAP-015` through `PAP-018` is now compared separately in [CPO Packaging, Fibre-Attach and Serviceability Benchmark](packaging-reliability-benchmark.md). The next optical-engine step is to apply these PIC, laser and packaging gates to matched company dossiers for Broadcom, Coherent, Lumentum and NVIDIA.
 
 ## Sources
 

@@ -66,6 +66,21 @@ The provisional conclusion is therefore:
 
 The laser scorecard must use cost per delivered optical watt over warranted life. Comparing unmatched chip-facet power or PCE figures would overstate technical and economic differentiation.
 
+## Packaging and serviceability thesis after the first process comparison
+
+The detailed review is in [CPO Packaging, Fibre-Attach and Serviceability Benchmark](../03-components/packaging-reliability-benchmark.md).
+
+1. IBM demonstrates that fibre attach creates a metrology and test-cost problem as well as an optical-loss problem. Its loopback-free OBR model reported 0.98 correlation and 0.4 dB average error across 1,178 observations, but it was evaluated on the same inputs used to build the model; independent false-pass and false-fail performance remains unknown.[S15]
+2. Large-package assembly feasibility is conditional on coupled mechanical choices. A modeled 51.2T assembly met its stated socket-warpage, solder-stress and terminal-force targets, but the design assumes an initially flat substrate and has no physical cycling or lifetime validation.[S16]
+3. Corning separately demonstrates a 0.86 +/- 0.13 dB sixteen-channel glass fan-out, a best 0.38 dB partial evanescent path and a 0.8 dB detachable connector. These results have different boundaries, and the complete fibre-to-PIC path was not assembled.[S17]
+4. Furukawa's twelve-channel detachable connector remained at or below 0.4 dB over ten mating cycles, and one PLC proxy showed less than 0.14 dB average loss change after a 260 C, 60-second exposure. Two connector pairs, one thermal sample and short cycle counts demonstrate feasibility, not reliability qualification.[S18]
+
+The provisional conclusion is:
+
+> Packaging is adoption-critical and may create differentiation when one supplier controls the complete process window across PIC design, attach, connector, assembly, in-line metrology, final test and rework. The reviewed papers do not yet prove a qualified manufacturing leader, durable packaging scarcity or retained supplier margin.
+
+This evidence strengthens the complete-engine thesis but does not prove the associated profit pool. The decisive company metrics are first-pass yield, final-engine yield, Cpk, automated cycle time, qualification, field returns, rework cost and packaging capital per good engine.
+
 ## Companies currently inside the core comparison
 
 | Company | Role in this thesis | Current evidence boundary |
@@ -126,7 +141,7 @@ The primary workstream is therefore:
 
 > Which company can manufacture the lowest-total-cost, qualification-ready 200G/lane and later 400G/lane scale-out optical engine, and how much sustainable gross profit can it retain after customers, switch-platform owners and manufacturing partners take their shares?
 
-The first comparative deep dive should cover Broadcom, Coherent, Lumentum and NVIDIA. Intel, Cisco/Acacia and Ranovus should be added once their current scale-out products and commercial status are documented on the same evidence boundary.
+The PIC, laser and packaging evidence blocks are now established. The next comparative deep dive should apply the same boundaries to Broadcom, Coherent, Lumentum and NVIDIA. Intel, Cisco/Acacia and Ranovus should be added once their current scale-out products and commercial status are documented comparably.
 
 ## References
 
@@ -144,5 +159,9 @@ The first comparative deep dive should cover Broadcom, Coherent, Lumentum and NV
 - **[S12]** Daisuke Inoue et al., [*High Power SOA-integrated DFB Lasers for Co-packaged Optics*](../01-sources/papers/PAP-022-inoue-soa-dfb-lasers-cpo-2025.pdf), JSAP-Optica Joint Symposia 2025 abstract 8p-N203-6.
 - **[S13]** Satoshi Suda et al., [*High-Capacity Transmission with Single External Laser Source and Polymer-Based Splitters for Co-Packaged Optics*](../01-sources/papers/PAP-026-suda-external-laser-polymer-splitters-2024.pdf), CLEO 2024 paper SF3F.7.
 - **[S14]** Cheng-Wei Lin et al., [*Single-Mode VCSELs With Zn-Diffusion Apertures for Applications in Co-Packaged Optics Systems*](../01-sources/papers/PAP-027-lin-single-mode-vcsel-cpo-2025.pdf), *IEEE Journal of Selected Topics in Quantum Electronics* 31(2), 2025, DOI 10.1109/JSTQE.2024.3454318.
+- **[S15]** Paul Gond-Charton et al., [*Fiber array attach for co-packaged optics: high volume production process control and performance*](../01-sources/papers/PAP-015-gond-charton-fiber-array-attach-cpo-2024.pdf), ECTC 2024, DOI 10.1109/ECTC51529.2024.00185.
+- **[S16]** Rui Cao et al., [*Thermomechanical and Compression Analyses for Large-Scale Co-Packaged Optics (CPO) Assembly*](../01-sources/papers/PAP-016-cao-thermomechanical-cpo-assembly-2024.pdf), *IEEE Transactions on Components, Packaging and Manufacturing Technology* 14(11), 2024, DOI 10.1109/TCPMT.2024.3488003.
+- **[S17]** Lars Brusberg et al., [*High-density Evanescent Chip Coupling with Detachable Fiber Connector for Co-packaged Optics*](../01-sources/papers/PAP-017-brusberg-evanescent-detachable-connector-2025.pdf), OFC 2025 paper Th3H.1.
+- **[S18]** Kengo Watanabe et al., [*Ultra-compact Reflow-compatible Detachable Optical Connector for Co-Packaged Optics*](../01-sources/papers/PAP-018-watanabe-reflow-detachable-connector-2025.pdf), OFC 2025 paper M4J.2, DOI 10.1364/OFC.2025.M4J.2.
 
 Company announcements establish what the companies claim and disclose; they do not independently prove performance, production volume, yield or sustainable profit.
