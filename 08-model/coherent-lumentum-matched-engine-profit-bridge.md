@@ -102,6 +102,10 @@ The latest Lumentum filing adds a useful negative constraint: consolidated capex
 
 Until those records exist, the evidence-adjusted conclusion remains:
 
+### Financial evidence added in the current batch
+
+Coherent's Q3 FY2026 revenue and gross margin establish a $1.806B / 37.7% GAAP company denominator, while Lumentum's Q3 filing establishes $808.4M revenue and 44.2% GAAP gross margin. Lumentum's utilization/mix disclosures, component-versus-system increase, cloud-transceiver growth, optical-circuit-switch shipments, customer concentration and $284.5M nine-month capex sharpen the operating context. None is allocated to a CPO engine, so consolidated margins and capex remain blocked inputs rather than model values.[CLM-335][CLM-336][CLM-337][CLM-338][CLM-339][CLM-340]
+
 > Coherent is the broader potential complete-engine content owner; Lumentum is the clearer external-laser/ELSFP and near-term commercial-conversion candidate. Neither is yet proven to capture the largest sustainable CPO profit pool.
 
 ## Linked controls

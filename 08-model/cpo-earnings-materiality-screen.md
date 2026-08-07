@@ -28,6 +28,10 @@ Use the most recent reviewed quarterly disclosure for each company. These figure
 
 The periods are not synchronized. This is acceptable for a first **scale** screen but not for valuation, growth comparisons or margin ranking.
 
+### Newly retained primary-financial packet
+
+The four local filing records now preserve the full SEC HTML and an evidence note: [Coherent FIL-002](../01-sources/filings/FIL-002-coherent-q3-fy2026-evidence-note.md), [Lumentum FIL-003](../01-sources/filings/FIL-003-lumentum-q3-fy2026-evidence-note.md), [Broadcom FIL-004](../01-sources/filings/FIL-004-broadcom-q2-fy2026-evidence-note.md), and [NVIDIA FIL-005](../01-sources/filings/FIL-005-nvidia-q1-fy2027-evidence-note.md). These records improve denominator, utilization, mix, capex and concentration context; none reports CPO-specific ASP, margin, content, units or yield.[CLM-335][CLM-344]
+
 ## Quarterly revenue thresholds
 
 The table calculates a purely arithmetic threshold:

@@ -64,6 +64,10 @@ The layer-by-layer attribution control is maintained in the [CPO content-attribu
 
 ## Evidence-adjusted readiness view
 
+### Earnings denominator update
+
+Broadcom's Q2 FY2026 results reported $22.187B consolidated revenue and $10.8B of company-defined AI-semiconductor revenue; NVIDIA's Q1 FY2027 results reported $81.615B revenue, $75.178B Data Center revenue and approximately $14.8B Data Center networking revenue. These figures make platform-scale materiality explicit, but neither filing isolates CPO content, units, ASP, gross margin, capex or earnings contribution. Platform/networking leadership therefore remains distinct from proof of optical-engine profit-pool capture.[CLM-341][CLM-342][CLM-343]
+
 | Gate | Broadcom | NVIDIA | Why no numeric leader score yet |
 |---|---|---|---|
 | Defined switch-CPO product | Medium to high | Medium | Both rely primarily on company product claims; comparison boundaries differ |

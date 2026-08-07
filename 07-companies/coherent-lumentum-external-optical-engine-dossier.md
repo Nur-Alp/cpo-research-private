@@ -61,6 +61,10 @@ The supplier disclosures are not yet apples-to-apples: Coherent's public unit is
 
 ## Evidence-adjusted readiness view
 
+### Financial denominator update
+
+The latest primary filings add scale and operating context without clearing the CPO economics gates: Coherent reported $1.806B Q3 FY2026 revenue and 37.7% GAAP gross margin; Lumentum reported $808.4M and 44.2%, with utilization/mix-driven margin improvement, broader Components/Systems and cloud-transceiver growth, optical-circuit-switch shipments, customer concentration and $284.5M nine-month capex. These are consolidated or broad-category disclosures, not CPO-engine revenue, ASP, yield, margin or attributable capacity.[CLM-335][CLM-336][CLM-337][CLM-338][CLM-339][CLM-340]
+
 Scores are intentionally not populated. The scorecard requires a comparable 0-5 record across all four core companies, and the decisive evidence is absent for both suppliers. Qualitative status is still useful:
 
 | Gate | Coherent | Lumentum | What would change the assessment |
