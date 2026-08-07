@@ -130,6 +130,7 @@ Use the [CPO evidence-gate register](evidence-gate-register.md) as the active pr
 - [Coherent versus Lumentum matched engine and profit bridge](coherent-lumentum-matched-engine-profit-bridge.md)
 - [CPO content-attribution map](cpo-content-attribution-map.md)
 - [NVIDIA CPO reference-content bridge](nvidia-cpo-reference-content-bridge.md)
+- [Total-cost-per-delivered-bit gate](tco-per-delivered-bit-gate.md)
 - [CPO Company Leadership Scorecard](../07-companies/leader-scorecard.md)
 - [Company leadership source manifest](../01-sources/company-leadership-source-manifest.md)
 - [Claim ledger](../01-sources/claim-ledger.csv)
