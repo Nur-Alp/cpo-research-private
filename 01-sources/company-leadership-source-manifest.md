@@ -27,6 +27,7 @@ This manifest maps each provisional company-leadership conclusion to the locally
 | `CMP-018` | Broadcom | Not locally retrievable | Official publisher link | <https://www.broadcom.com/company/news/product-releases/63626> |
 | `CMP-019` | NVIDIA | `product-materials/CMP-019-nvidia-rubin-full-production-2026.pdf` | Publisher PDF | <https://nvidianews.nvidia.com/news/vera-rubin-full-production-agentic-ai-factory> |
 | `CMP-021` | CoreWeave | `product-materials/CMP-021-coreweave-spectrum-x-photonics-cpo.html` | Publisher HTML only; readable PDF snapshot not yet generated | <https://www.coreweave.com/blog/why-ai-factories-need-proof-before-production> |
+| `CMP-022` | CoreWeave | `product-materials/CMP-022-coreweave-sn6600-ld-deployment.html` | Publisher HTML only; readable PDF snapshot not yet generated | <https://coreweave.com/blog/liquid-cooled-switching-doubles-ai-network-bandwidth-per-rack> |
 
 ## Preservation notes
 
@@ -39,4 +40,5 @@ This manifest maps each provisional company-leadership conclusion to the locally
 - Broadcom's `CMP-018` official web response was a JavaScript shell without the article text and its official investor PDF returned HTTP 403. The canonical publisher URL remains in the source log and dossier; the empty shell was discarded rather than retained as if it were the source.
 - NVIDIA's `CMP-019` original three-page publisher PDF was retained and verified with PDF text extraction.
 - CoreWeave's `CMP-021` customer blog was retained as the original HTML because the page is a dynamic Webflow article; its canonical URL remains the citation source. It is intentionally marked HTML-only until a faithful readable snapshot can be generated.
+- CoreWeave's `CMP-022` deployment blog is retained as original HTML for the same reason; it corroborates the named SN6600-LD/Vera Rubin deployment but remains a customer claim rather than an audited fleet record.
 - Local retention does not convert company claims into independently verified facts. Continue to apply the limitations and confidence fields in `source-log.csv`.
