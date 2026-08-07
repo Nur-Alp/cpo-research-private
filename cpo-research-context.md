@@ -4,7 +4,7 @@
 **Project:** Co-Packaged Optics Research  
 **Purpose:** Working context, research direction, project structure, and publication standard  
 **Status:** In progress  
-**Last updated:** 2026-08-06
+**Last updated:** 2026-08-07
 
 ---
 
