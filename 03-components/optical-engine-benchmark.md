@@ -24,6 +24,8 @@ The investment bridge for the PIC routes is in [PIC-design profit implications](
 4. Do not award manufacturability without final-package yield, test coverage, cycle time, rework and scrap evidence.
 5. Do not award commercial maturity without qualification, repeat production and customer evidence.
 
+For external-light architectures, the OIF ELSFP 2.0 agreement adds a standards-level service and qualification boundary: the module must be designed around a chosen 0–70°C, −5–85°C or −40–85°C case class, a 10-year field-life requirement, defined durability cycles and EIA-364-1000-based mechanical/environmental/electrical testing. Those requirements make replaceable laser serviceability more concrete, but they intentionally leave application-specific optical power, noise and wavelength requirements open; ELSFP compliance therefore cannot substitute for a complete delivered-power or 200G/400G link result.[CLM-287][CLM-288][CLM-289][CLM-290]
+
 ## Technical benchmark
 
 | Candidate | Source and evidence class | Intended use | PIC and integration | Laser architecture | Electrical and modulation boundary | Reported optical/link result | Temperature | Full-engine power | Evidence maturity |

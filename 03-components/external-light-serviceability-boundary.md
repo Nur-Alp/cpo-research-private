@@ -22,6 +22,8 @@ OIF's informative management architecture assigns the host-board controller—no
 
 The OIF document presents a 3.2T OE with four or eight CW-light inputs and ELSFP with up to sixteen outputs. It envisages one ELS powering one or two OEs in the near term, while allowing more flexible relationships.[CLM-098]
 
+The later OIF ELSFP 2.0 Implementation Agreement turns this conceptual boundary into a defined multi-vendor form factor: field-replaceable blind-mate CW-light modules, explicit 0–70°C/−5–85°C/−40–85°C case-temperature classes, a 10-year field-life requirement, connector/cage and module durability-cycle requirements, and EIA-364-1000-based mechanical, environmental and electrical tests.[CLM-287][CLM-288][CLM-289] These requirements strengthen the case that laser replacement can be engineered as a qualified interface. They still do not establish a complete-engine replacement procedure, laser lifetime distribution, optical-loss drift, MTTR, warranty cost or PIC/package serviceability. The IA also intentionally leaves application-specific optical power, noise and wavelength requirements open, so standards compliance cannot be used as a delivered-engine link-budget input.[CLM-290]
+
 This is not a 102.4T switch bill of materials. It must not be converted into a 16-engine fanout, laser-content figure, yield calculation or customer deployment assumption.
 
 ## Commercial implications to test
