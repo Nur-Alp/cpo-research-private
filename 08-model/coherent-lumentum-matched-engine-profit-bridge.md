@@ -88,7 +88,7 @@ The current evidence status is:
 | Qualified supplier share | Blocked | Blocked | Nonexclusive agreements and second-source status are not enough |
 | Realised product margin | Blocked | Blocked | Consolidated gross margins are not product margins [CLM-070; CLM-073] |
 | Yield/rework/warranty | Blocked | Blocked | No lot, field-return or repair data |
-| Incremental capex | Partial company-level signal | Partial company-level signal | Executed NVIDIA investments and Lumentum's fab plan are not CPO-attributable capacity or margin [CLM-194–CLM-198] |
+| Incremental capex | Partial company-level signal | Partial company-level signal: Lumentum reported $284.5M of consolidated nine-month capex versus $177.1M prior year, but did not allocate it to CPO [CLM-219] | Executed NVIDIA investments, total-company capex and Lumentum's fab plan are not CPO-attributable capacity or margin [CLM-194–CLM-198; CLM-219] |
 
 ## What would change the ranking
 
@@ -97,6 +97,8 @@ The current evidence status is:
 3. A lot-level yield waterfall reports die yield, attach yield, package yield, test escape, rework and qualified acceptance.
 4. A contract or product disclosure supplies ASP, price-down schedule, second-source status, warranty allocation and realised margin.
 5. Facility disclosures connect capex and qualified capacity to the relevant product family rather than to general AI optics.
+
+The latest Lumentum filing adds a useful negative constraint: consolidated capex rose to $284.5M for the nine months ended March 28, 2026 from $177.1M in the prior-year period, but the filing does not identify what portion supports CPO, lasers, Greensboro or other products [CLM-219]. This is evidence that capital intensity must remain in the diligence queue; it is not an allowable CPO free-cash-flow input.
 
 Until those records exist, the evidence-adjusted conclusion remains:
 
