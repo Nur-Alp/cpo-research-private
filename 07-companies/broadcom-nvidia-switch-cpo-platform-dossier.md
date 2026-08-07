@@ -30,6 +30,8 @@ Neither company’s public evidence establishes CPO-specific economics, final op
 
 ## Product and maturity evidence
 
+Broadcom's March 2026 production-volume announcement says the Tomahawk 6 family is shipping in production volume (`CMP-031`; `CLM-284`). This advances the switch-family maturity checkpoint, but it does not resolve the CPO denominator: the release does not identify CPO units, customer deployments, optical-engine supplier, final-engine yield, or CPO versus copper/pluggable mix. Keep the CPO-specific state at “not independently verified volume” until that denominator is disclosed.
+
 ### Broadcom
 
 1. **COMPANY CLAIM:** TH6-Davisson is described as Broadcom’s third-generation CPO Ethernet switch. The company specifies 102.4 Tb/s switching capacity, sixteen 6.4T Davisson DR engines, 200 Gb/s per link and field-replaceable ELSFP lasers.[CMP-018]
