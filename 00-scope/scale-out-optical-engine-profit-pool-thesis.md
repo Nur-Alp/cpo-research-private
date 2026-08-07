@@ -16,6 +16,8 @@ NVIDIA's 2026 technical material provides a first-party anchor for both sides of
 
 The March 2026 NVIDIA agreements with both Coherent and Lumentum were subsequently confirmed in SEC 8-Ks as completed $2B private placements. Coherent's filing additionally records access to five product families related to CPO. These filings materially strengthen the executed capacity/customer-route evidence for the optical-engine supply chain. They do not identify which products receive purchase commitments or how much value accrues to a PIC, laser, ELSFP, complete engine or NVIDIA's platform. The investment case therefore shifts from “which supplier has a hyperscaler relationship?” to “which supplier converts that relationship into qualified good devices and protected margin?” [PRI-026; PRI-027; CLM-197; CLM-198]
 
+TSMC's 2025 Annual Report and 2026 technology update add a distinct manufacturing-control layer. TSMC reports 200G COUPE transmission with several customers, greater than 99% 3D-stacking yield on engineering samples, and a COUPE-on-substrate CPO production milestone beginning in 2026. This strengthens TSMC's process/stacking-control case, but the yield is not a final-engine yield and no complete-engine commercial allocation is disclosed. [PRI-029; PRI-030; CLM-213–CLM-217]
+
 This changes the research priority from a single universal CPO winner to a domain-gated question: which architecture first clears its own technical, qualification, service and total-cost gates, and which supplier controls the scarce content in that domain?
 
 ## Thesis in one sentence
@@ -60,7 +62,7 @@ Academic work identifies packaging, thermal management, test, socketability and 
 | Complete optical engine plus PIC and package | High external-supplier potential | High content, difficult co-design and direct control of engine yield and performance | Standardisation, multisourcing and customer bargaining power |
 | High-power InP laser plus ELSFP | Potentially high bottleneck value | Difficult reliability and thermal requirements; useful across multiple SiPh engines | Lower content per system, dual sourcing and possible integration alternatives |
 | Fibre attach and specialist packaging | Necessary but uncertain rent | Directly controls loss, assembly yield and manufacturability | Capital intensity and contract-manufacturing price pressure |
-| Foundry fabrication | Durable enabling role | High process barriers and broad customer access | Incremental CPO economics may be small relative to the foundry base |
+| Foundry fabrication and 3D stacking | Durable enabling role with a clearer COUPE control point | High process/packaging barriers, customer-linked 200G evidence and a 2026 production milestone | Incremental CPO economics may be small relative to the foundry base; final-engine share and margin remain unknown |
 | Individual passive components | Lower expected rent | Necessary content with possible volume scale | Greater commoditisation and substitution risk |
 
 ## Laser thesis after the first device comparison

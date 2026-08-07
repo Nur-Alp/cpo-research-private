@@ -99,6 +99,19 @@ This is a triage result, not the completed weighted scorecard. Scores remain unp
 | Private optical-I/O technology | No leader established | Ayar Labs and Lightmatter have differentiated working silicon and packaging approaches but no comparable independent production evidence |
 | Best public-equity opportunity | No decision | Consensus, valuation, earnings materiality, and downside work have not been completed |
 
+## Control-point view for the scale-out optical-engine profit pool
+
+The current evidence supports a layered control map rather than a single “winner.” TSMC’s COUPE evidence is now stronger than a generic foundry roadmap: it reports 200G transmission with several customers in 2025, greater than 99% 3D-stacking yield on engineering samples, and a COUPE-on-substrate CPO production milestone beginning in 2026. Those facts make TSMC the clearest public **process/stacking control point**, but they still do not establish complete-engine ASP, supplier share or final-engine yield.[CLM-210][CLM-213][CLM-214][CLM-215][CLM-216]
+
+| Control point | Current evidence-adjusted leader | What the evidence actually supports | Missing gate before profit leadership |
+|---|---|---|---|
+| Switch platform and purchasing decision | Broadcom / NVIDIA, domain-dependent | Broadcom has the most explicit 102.4T merchant CPO definition; NVIDIA has the strongest integrated platform/customer route | Customer-confirmed CPO units, platform margin and supplier-content map |
+| COUPE/3D photonics stacking and package process | TSMC | Customer-linked 200G result, engineering-sample stacking yield and dated CPO-on-substrate production milestone | Actual 2026 output, final-engine yield, package responsibility, ASP and margin |
+| Complete external optical-engine breadth | Coherent | Public demonstrations span SiPh, InP, VCSEL, lasers, attach and packaging | Qualified production engine, yield, content ownership and realised margin |
+| External laser / ELSFP layer | Lumentum | Clearest disclosed ELSFP boundary, high-power laser evidence and near-term CPO order signal | Order conversion, laser share of the engine, qualified output, warranty and price protection |
+| Qualified high-volume 200G/lane engine | No leader established | Public records now show multiple routes and milestones, but no matched customer-qualified final-engine lot | End-to-end qualification, repeat shipments and field/service economics |
+| Sustainable incremental profit pool | No leader established | Technical and process control are visible, but supplier content, ASP, margin, cannibalisation and capex remain blocked | Full five-input economic bundle in the profit-pool gates |
+
 ### Why NVIDIA does not automatically win every category
 
 NVIDIA controls the accelerator platform, network architecture, software, and an important customer route, but it relies on a broad photonics and manufacturing ecosystem. Supplier partners may capture scarce-component value, while NVIDIA's CPO earnings may be immaterial relative to its accelerator economics.
