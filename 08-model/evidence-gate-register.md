@@ -45,4 +45,5 @@ Until that bundle exists, the correct output is a ranked diligence queue and a q
 - [Optical-engine profit-pool input gates](optical-engine-profit-pool-input-gates.md)
 - [Company evidence-gap matrix](../07-companies/company-evidence-gap-matrix.md)
 - [CPO adoption timeline](adoption-timeline.md)
+- [CPO customer-proof register](customer-proof-register.md)
 - [Claim ledger](../01-sources/claim-ledger.csv)
