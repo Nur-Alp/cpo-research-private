@@ -11,7 +11,7 @@ Which company has the stronger public case for switch-side CPO platform control 
 
 ## Current answer
 
-**INFERENCE:** Broadcom has the stronger disclosed merchant-switch CPO product definition. Its TH6-Davisson materials specify a 102.4T switch, sixteen 6.4T optical engines, 200G-per-link operation and field-replaceable ELSFP laser modules. The announcement nevertheless describes the device as sampling to early-access customers, despite saying it is “now shipping.”[CMP-018]
+**INFERENCE:** Broadcom has the stronger disclosed merchant-switch CPO product definition. Its TH6-Davisson materials specify a 102.4T switch, sixteen 6.4T optical engines, 200G-per-link operation and field-replaceable ELSFP laser modules. Broadcom also reports a historical 100G/lane TH5-Bailly volume-production baseline with Micas and Delta partner systems. The TH6 announcement nevertheless describes the 200G device as sampling to early-access customers, despite saying it is “now shipping.”[CMP-018][PRI-028][CLM-199][CLM-200]
 
 **INFERENCE:** NVIDIA has the stronger disclosed full-system route to CPO adoption. Its May 2026 announcement explicitly identifies Spectrum-X Ethernet Photonics as a 200Gb/s-SerDes CPO switch now in production and names CoreWeave, Lambda and Oracle Cloud Infrastructure as first ecosystem partners/adopters. This is still an NVIDIA company claim, and the document says production shipments of Vera Rubin begin in the fall; no CPO unit count, customer-side CPO confirmation, or field-reliability statistic is disclosed.[CMP-019]
 
@@ -23,7 +23,7 @@ Neither company’s public evidence establishes CPO-specific economics, final op
 |---|---|---|---|
 | CPO role | Merchant Ethernet switch ASIC, 200G SerDes, CPO engine/package integration and ELSFP interface | CPO switch platform, AI networking fabric, system software and AI-factory customer route | Platform control and external-engine supply are separate layers |
 | Defined product boundary | **COMPANY CLAIM:** TH6-Davisson: 102.4T, 16 x 6.4T DR engines, 200G/link, ELSFP, stated IEEE 802.3 interoperability | **COMPANY CLAIM:** Spectrum-X Ethernet Photonics CPO switch with 200Gb/s SerDes in the Vera Rubin platform | Broadcom is more explicit about the optical-engine count; neither discloses engine supplier, cost, yield or margin |
-| Stated commercial status | Same October 2025 release says “now shipping” and “currently sampling ... to early access customers” | May 2026 release says CPO switches “now in production”; availability says Rubin production shipments start in fall | Treat both as company status claims and retain the precise wording rather than label either broad CPO volume deployment |
+| Stated commercial status | 100G/lane TH5-Bailly has partner-reported volume production; 200G/lane TH6 release says “now shipping” and “currently sampling ... to early access customers” | May 2026 release says CPO switches “now in production”; availability says Rubin production shipments start in fall | Treat 100G production and 200G status as separate states; neither 200G claim is customer-confirmed broad volume |
 | Customer evidence | Partner quotations from ecosystem suppliers/integrators; no disclosed customer CPO units or named production deployment | Company names CoreWeave, Lambda and OCI as first ecosystem partners/adopters; Meta confirms Spectrum-X platform use, not photonics/CPO use | Customer-route evidence is stronger for NVIDIA, but no customer-side evidence proves CPO volumes |
 | Serviceability | Field-replaceable ELSFP modules; engine replacement procedure not disclosed | No CPO-engine or laser service procedure is disclosed in reviewed sources | ELSFP limits the laser failure domain only |
 | Architecture alternatives | Broadcom also markets 200G retimers/AECs, 400G optical DSP and VCSEL NPO | Spectrum-X contains CPO alongside conventional networking products and broader platform options | Both have incentives to serve multiple interconnect architectures; neither is a pure CPO exposure |
@@ -36,6 +36,7 @@ Neither company’s public evidence establishes CPO-specific economics, final op
 2. **COMPANY CLAIM:** The same release asserts a 70% optical-interconnect power reduction and more than 3.5x lower power than traditional pluggables, plus improved link-flap behaviour based on a TH5-Bailly study. These are not a controlled TH6-versus-pluggable system comparison at matched reach, workload, thermal and power boundaries.[CMP-018]
 3. **FACT about disclosure wording:** The release’s lead says TH6-Davisson is “now shipping,” whereas its availability section says the BCM78919 device is “currently sampling” to early-access customers and partners. The conservative maturity label is therefore **early-access sampling disclosed; broad CPO volume not independently established**.[CMP-018]
 4. **COMPANY CLAIM:** Broadcom’s OFC 2026 statement describes the wider Tomahawk 6 switch as shipping in production volume, while separately listing TH6-Davisson CPO in the portfolio. This does not prove that the CPO variant itself is in production volume.[CMP-009]
+5. **COMPANY/PARTNER CLAIM:** Broadcom’s May 2025 release describes TH5-Bailly as the first volume-production 100G/lane CPO solution and records Micas and Delta production milestones, plus Foxconn production release of CPO sockets and laser-source cages/connectors. This is a 100G/lane baseline and does not establish 200G/lane TH6 volume.[PRI-028][CLM-199][CLM-200]
 
 ### NVIDIA
 
@@ -86,5 +87,6 @@ Next evidence required: named customer SKU and units, exact CPO optical-engine a
 - `CMP-011`: Meta and NVIDIA, [long-term infrastructure partnership](../01-sources/product-materials/CMP-011-meta-nvidia-partnership-2026.html), 17 February 2026.
 - `CMP-018`: Broadcom, [TH6-Davisson CPO announcement](https://www.broadcom.com/company/news/product-releases/63626), 8 October 2025. Direct publisher link retained because automated retrieval returned only a JavaScript shell and the official PDF download returned HTTP 403.
 - `CMP-019`: NVIDIA, [Vera Rubin ramps into full production](../01-sources/product-materials/CMP-019-nvidia-rubin-full-production-2026.pdf), 31 May 2026.
+- `PRI-028`: Broadcom, [TH5-Bailly 100G/lane volume-production baseline](../01-sources/product-materials/PRI-028-broadcom-th5-volume-production.md), 15 May 2025.
 
 Company sources establish what the companies claim and disclose; they do not independently establish CPO units, commercial economics, final-engine yield, field reliability or an investment ranking.
