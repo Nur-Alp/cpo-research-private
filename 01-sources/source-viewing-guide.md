@@ -28,6 +28,7 @@
 | `CMP-025` NVIDIA Silicon Photonics partners | HTML-only: [raw archive](product-materials/CMP-025-nvidia-silicon-photonics-partners.html) | [NVIDIA original](https://www.nvidia.com/en-us/networking/products/silicon-photonics/) |
 | `CMP-026` NVIDIA CPO power-efficiency technical blog | HTML-only: [raw archive](product-materials/CMP-026-nvidia-cpo-power-efficiency.html) | [NVIDIA original](https://developer.nvidia.com/blog/scaling-ai-factories-with-co-packaged-optics-for-better-power-efficiency/) |
 | `CMP-027` NVIDIA CPO industry-collaboration technical blog | HTML-only: [raw archive](product-materials/CMP-027-nvidia-cpo-industry-collaboration.html) | [NVIDIA original](https://developer.nvidia.com/blog/how-industry-collaboration-fosters-nvidia-co-packaged-optics/) |
+| `ARC-001` Broadcom TH6-Davisson announcement archive | [Local HTML archive](product-materials/CMP-018-broadcom-th6-davisson.html) | [Broadcom original](https://www.broadcom.com/company/news/product-releases/63626) |
 
 ## Filings and financial releases
 

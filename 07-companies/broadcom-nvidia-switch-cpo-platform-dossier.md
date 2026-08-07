@@ -90,7 +90,7 @@ Next evidence required: deployed customer SKU and unit count, repeat deployment 
 - `CMP-008`: NVIDIA, [Rubin platform press kit](../01-sources/product-materials/CMP-008-nvidia-rubin-cpo-production-2026.pdf), 5 January 2026.
 - `CMP-009`: Broadcom, [OFC 2026 AI-infrastructure announcement](../01-sources/product-materials/CMP-009-broadcom-ofc-2026-cpo.pdf), 12 March 2026.
 - `CMP-011`: Meta and NVIDIA, [long-term infrastructure partnership](../01-sources/product-materials/CMP-011-meta-nvidia-partnership-2026.html), 17 February 2026.
-- `CMP-018`: Broadcom, [TH6-Davisson CPO announcement](https://www.broadcom.com/company/news/product-releases/63626), 8 October 2025. Direct publisher link retained because automated retrieval returned only a JavaScript shell and the official PDF download returned HTTP 403.
+- `CMP-018`: Broadcom, [TH6-Davisson CPO announcement](https://www.broadcom.com/company/news/product-releases/63626), 8 October 2025. The [local HTML archive](../01-sources/product-materials/CMP-018-broadcom-th6-davisson.html) is retained as `ARC-001`; cite the canonical publisher page for external use.
 - `CMP-019`: NVIDIA, [Vera Rubin ramps into full production](../01-sources/product-materials/CMP-019-nvidia-rubin-full-production-2026.pdf), 31 May 2026.
 - `PRI-028`: Broadcom, [TH5-Bailly 100G/lane volume-production baseline](../01-sources/product-materials/PRI-028-broadcom-th5-volume-production.md), 15 May 2025.
 
