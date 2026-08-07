@@ -22,6 +22,12 @@ This matters because the current 102.4T switch power scenario has only a narrow 
 
 The first result cannot be credited to switch-side CPO alone because the model co-packages at accelerator points as well. The second is more directly relevant to switch radix, but is still a simulation rather than a customer deployment.
 
+### PAP-020 switch-radix and locality model
+
+IBM's earlier MOTION study provides a more explicit scale-out topology boundary. It compares a baseline 25.6 Tb/s spine / 6.4 Tb/s leaf network with 272 switch ASICs against a modeled 51.2 Tb/s, 128-port, 400 Gb/s CPO-enabled network. Under the paper's 12,288-endpoint, 3:1-oversubscribed configuration, the CPO topology has four times the bisection bandwidth and 41% fewer switches; VM-trace placement puts some applications under up to 50% fewer first-level switches. All-to-all simulations report speedup up to 7.1 in a specific 96-node/16 KiB case and application execution-time reductions up to 26% or 42.7% at stated communication ratios.[CLM-129][CLM-130][CLM-131][CLM-132]
+
+These results are **system simulations**, not production CPO measurements. They demonstrate a plausible customer value mechanism beyond optical power, but the model does not price CPO engines, cooling, service, transition cost, qualification or supplier share. It also assumes a MOTION hardware path whose first generation was 56 Gb/s NRZ and whose second generation was a 112 Gb/s PAM4 target—not a measured 200G/400G-per-lane commercial engine. The correct investment use is a topology/workload diligence gate, not a switch-unit or optical-supplier revenue forecast.
+
 ## Investment implication
 
 Topology/locality should be a separate adoption gate, alongside electrical channel loss and total cost:
@@ -51,3 +57,4 @@ A customer case becomes investable only after this is evaluated for a defined to
 - [102.4T Switch-Side CPO Versus Advanced Pluggables](102.4t-cpo-vs-advanced-pluggables.md).
 - [102.4T Switch-Side Power Model](../08-model/102.4t-switch-side-power-model.md).
 - [Claim ledger](../01-sources/claim-ledger.csv), CLM-089 and CLM-090.
+- `PAP-020`: Pavlos Maniotis et al., [*Toward higher-radix switches with co-packaged optics for improved network locality in data center and HPC networks*](../01-sources/papers/PAP-020-maniotis-higher-radix-cpo-2022.pdf), *Journal of Optical Communications and Networking* 14(6), 2022, DOI `10.1364/JOCN.451449`; see `CLM-129` through `CLM-133`.
