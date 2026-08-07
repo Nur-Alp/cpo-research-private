@@ -128,6 +128,7 @@ The cross-company evidence boundary is summarized in the [company evidence-gap m
 - [Coherent and Lumentum: External Optical-Engine Supplier Dossier](coherent-lumentum-external-optical-engine-dossier.md)
 - [Optical-Engine Profit-Pool Input Gates](../08-model/optical-engine-profit-pool-input-gates.md)
 - [CPO Earnings-Materiality Screen](../08-model/cpo-earnings-materiality-screen.md)
+- [NVIDIA CPO reference-content bridge](../08-model/nvidia-cpo-reference-content-bridge.md)
 - [Marvell / Celestial AI: Accelerator Optical-I/O Dossier](marvell-celestial-accelerator-optical-io-dossier.md)
 
 ### Why Lumentum and Coherent matter
