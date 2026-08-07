@@ -6,6 +6,12 @@
 **Technology horizon:** 102.4T and 204.8T switch generations, 2026 to 2032  
 **Last updated:** 2026-08-07
 
+## Synthesis update after the secondary-source pass
+
+The reviewed secondary industry material sharpens, but does not overturn, the thesis. Scale-out switch CPO has the strongest current public commercial signal, yet its economic case remains vulnerable to serviceability, reliability, supplier margin stacking and customer bargaining power. Scale-up and inter-rack CPO may offer the larger strategic value because the benefit is expansion of accelerator-domain size, not merely lower optical watts; however, the public evidence remains roadmap-level and must stay separate from switch-side CPO and accelerator optical-I/O chiplets. [NWS-009; NWS-010; CLM-177; CLM-178; CLM-183; CLM-188]
+
+This changes the research priority from a single universal CPO winner to a domain-gated question: which architecture first clears its own technical, qualification, service and total-cost gates, and which supplier controls the scarce content in that domain?
+
 ## Thesis in one sentence
 
 > Within scale-out photonics, the most defensible external-supplier profit pool is likely to accrue to companies that can repeatedly manufacture a complete optical-engine platform - PIC, driver and TIA co-design, laser interface, fibre attach, package, test and control - at superior yield, reliability and cost, rather than to the company with the best isolated PIC result.

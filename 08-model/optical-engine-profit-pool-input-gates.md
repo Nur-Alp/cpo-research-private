@@ -11,6 +11,16 @@ This document converts the four initial company dossiers into a disciplined econ
 
 It covers only the incremental economics of a scale-out optical engine or its directly supplied components. It does not estimate the value of an entire AI system, switch ASIC, GPU, data-centre network, or company.
 
+## Domain partition update
+
+The secondary-source review confirms that one profit-pool model cannot cover every CPO use case. Keep at least three separate economic cases:
+
+1. **Switch-side CPO / Ethernet scale-out:** primarily a transceiver-replacement and switch-platform decision; test TCO, serviceability, blast radius, supplier margin stacking and customer bargaining power.
+2. **Inter-rack scale-up CPO:** primarily a world-size and reach decision; test workload benefit, rack topology, optical endpoint count, copper/AEC alternatives, service model and roadmap confidence.
+3. **Accelerator optical I/O / NPO chiplets:** primarily a host-package and chiplet-interface decision; test PIC/EIC ownership, optical-I/O content, hybrid bonding, yield, protocol and customer qualification.
+
+Do not transfer an engine ASP, adoption rate, pJ/bit result or supplier share from one domain into another without a matched product and economic boundary. [CLM-177; CLM-178; CLM-183; CLM-185]
+
 ## The two financial bridges
 
 Do not subtract capital expenditure from gross profit. Gross profit and cash return answer different questions.
@@ -56,6 +66,8 @@ The first two lines are model identities, not currently populated predictions. â
 | Incremental R&D and qualification | Annual directly attributable operating expense | Operating profit | Filing disclosure, management evidence or rigorously sourced primary research | Blocked |
 | Attributable capital expenditure | Cash investment required for incremental InP, SiPh, attach, packaging, test and reliability capacity | Free cash flow / return | Project-level disclosure or primary research | Blocked |
 | Customer concentration and cancellation protection | Revenue dependence, order firmness and cancellation terms | Risk adjustment | Filing, contract or direct management/customer evidence | Partially disclosed at total-company boundary for Lumentum [CLM-073] |
+| Margin-stack and bargaining-power boundary | Supplier, switch-platform, FAU/shuffle, service and customer margin layers applied to the same content | TCO / profit pool | Contract, realised pricing, channel structure or bounded primary supply-chain research | Blocked; SemiAnalysis scenario only [CLM-180] |
+| Domain-specific workload benefit | Network-layer reduction or accelerator-world-size/collective-communication benefit attributable to CPO | Adoption and value capture | Customer workload benchmark, topology and system cost/power evidence | Blocked; scale-up rationale remains a hypothesis [CLM-178; CLM-187] |
 
 ## Company-by-company economic boundary
 
