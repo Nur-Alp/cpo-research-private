@@ -45,6 +45,12 @@ The source with the highest laboratory output or efficiency does not automatical
 
 ## Provisional architecture assessment
 
+### Modeled external versus integrated boundary
+
+`PAP-002` is a peer-reviewed architecture model, not a device or product benchmark. At its stated 53.125-Gbaud O-band assumptions, cooled external lasers have higher modeled source output than integrated lasers, but external-source designs encounter the finite fibre-attachment limit earlier. The resulting WDM, coupling and multiplexing losses produce modeled external-source link budgets 1-5 dB below integrated-source architectures in the relevant cases. The same model finds integrated sources can consume less *system* electrical power despite worse individual source efficiency because they avoid input coupling and can use more sources at lower operating power.[CLM-105][CLM-106]
+
+This is a decisive diligence rule, not a 2026 product conclusion. Source efficiency, ex-fibre output and replaceability must be reconciled with attachment count, splitter/coupler loss, wavelength count, thermal environment, backup sources, PIC yield and field repair. The model's 70 C integrated-PIC case loses 2-4 dB of link budget and requires a backup source under the authors' assumed failure criterion; that is a reliability sensitivity, not a reported fleet failure rate.[CLM-107]
+
 ### High-power external InP source
 
 The evidence supports technical feasibility, not scarcity rent. Lumentum has the strongest reviewed packaged ex-fibre result. Sumitomo demonstrates a potentially more efficient SOA-DFB device, but on a different boundary. At least two credible architectures and suppliers therefore exist before considering other public sources.
@@ -66,6 +72,7 @@ The reviewed VCSEL is a real technical countercase for dense short-reach links, 
 3. Optical distribution can shift value toward connectors, splitters and packaging, but high loss can also destroy system efficiency and force amplification.
 4. Integrated lasers trade serviceability for fewer high-power interfaces; the economic winner depends on failure correlation, rework and final-package yield.
 5. VCSELs may create a separate short-reach profit pool rather than directly displacing O-band ELS in the first scale-out CPO deployments.
+6. Fibre-attachment capacity can overturn a source-level ranking. External sources add a delivery boundary; an integrated source removes it but moves heat and failure correlation into the engine.
 
 ## Evidence required to rank suppliers
 
@@ -91,3 +98,4 @@ No reviewed paper establishes lifetime, high-volume yield, qualified capacity, c
 - `PAP-026`: Satoshi Suda et al., [*High-Capacity Transmission with Single External Laser Source and Polymer-Based Splitters for Co-Packaged Optics*](../01-sources/papers/PAP-026-suda-external-laser-polymer-splitters-2024.pdf), CLEO 2024 paper SF3F.7.
 - `PAP-027`: Cheng-Wei Lin et al., [*Single-Mode VCSELs With Zn-Diffusion Apertures for Applications in Co-Packaged Optics Systems*](../01-sources/papers/PAP-027-lin-single-mode-vcsel-cpo-2025.pdf), *IEEE Journal of Selected Topics in Quantum Electronics* 31(2), 2025, DOI `10.1109/JSTQE.2024.3454318`.
 - `PAP-025`: S. Porto et al., [*1.6 Tb/s Monolithic InP Transmitter PIC with DFB, MZM, and SOA Arrays*](../01-sources/papers/PAP-025-porto-monolithic-inp-transmitter-pic-2026.pdf), OFC 2026 paper Th1C.4.
+- `PAP-002`: Brandon Buscaino et al., [*External vs. Integrated Light Sources for Intra-Data Center Co-Packaged Optical Interfaces*](../01-sources/papers/PAP-002-buscaino-external-vs-integrated-light-sources-2021.pdf), *Journal of Lightwave Technology* 39(7), 2021, DOI `10.1109/JLT.2020.3043653`. Model assumptions and outputs; not a current product or supplier comparison.
