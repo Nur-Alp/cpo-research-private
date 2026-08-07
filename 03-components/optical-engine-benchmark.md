@@ -14,6 +14,8 @@ Which optical-engine architecture can meet the required link performance at the 
 
 The benchmark separates a measured device result from a qualified engine and a commercial product. A blank or `Unknown` cell is an evidence gap, not a zero. The supporting paper-by-paper classification is in the [academic evidence matrix](academic-evidence-matrix.md).
 
+The investment bridge for the PIC routes is in [PIC-design profit implications](pic-design-profit-implications.md). It keeps isolated device performance separate from cost-per-qualified-good-engine and supplier profit capture.
+
 ## Comparison rules
 
 1. Compare the same direction, lane count, modulation, reach, temperature, BER/FEC and power boundary.

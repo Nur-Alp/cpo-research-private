@@ -39,6 +39,7 @@ The claim IDs point to the detailed wording and limitations in [`claim-ledger.cs
 ## Linked model gates
 
 - [Optical-engine benchmark](optical-engine-benchmark.md)
+- [PIC-design profit implications](pic-design-profit-implications.md)
 - [Laser architecture benchmark](laser-architecture-benchmark.md)
 - [Packaging and reliability benchmark](packaging-reliability-benchmark.md)
 - [Engine yield waterfall template](../08-model/engine-yield-waterfall-template.md)
