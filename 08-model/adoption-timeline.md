@@ -45,6 +45,8 @@ Do not add their shares together. They have different electrical channels, servi
 
 The maturity state is deliberately conservative. A company’s use of “production” is recorded as a company claim unless customer-side evidence identifies the configuration, deployment and repeat volume.[CLM-077][CLM-079][CLM-081]
 
+TSMC’s COUPE evidence should be read as a manufacturing-enabler checkpoint, not as a ninth adoption denominator. TSMC reports a 200G result with several customers, >99% 3D-stacking yield on engineering samples, and COUPE-on-substrate CPO beginning production in 2026. These records strengthen the process/stacking readiness of a 200G engine route, but they do not establish a shipped switch, final-engine yield, customer qualification or supplier revenue.[CLM-213][CLM-214][CLM-215][CLM-216]
+
 ## Evidence-calibrated critical path
 
 | Architecture | Next observable milestone | Earliest source-supported timing | Gate affected | What would upgrade the state |
@@ -57,6 +59,7 @@ The maturity state is deliberately conservative. A company’s use of “product
 | Accelerator optical I/O | Named production XPU/rack deployment using an optical chiplet | No source-supported date | Product; manufacturing; commercial | Customer, topology, qualified yield, repeat volume and field use. [CLM-085] |
 | MOSAIC wide-and-slow optical | Simultaneous 800 Gb/s hardware with production microLED/CMOS bonding, imaging-fibre termination and reliability data | No source-supported date | Product; manufacturing; reliability | Measured aggregate module, qualified packaging, yield, service model and customer deployment. [CLM-116; CLM-118; CLM-119] |
 | Inter-rack scale-up CPO | Customer or NVIDIA confirmation of an NVL576-class production deployment after the Polyphe prototype | NVIDIA primary roadmap and prototype evidence; no source-supported production date [CLM-190; CLM-191] | Commercial; manufacturing; serviceability | Named system, rack topology, optical endpoints, supplier content, qualification and repeat deployment. [CLM-190; CLM-191] |
+| TSMC COUPE process / engine route | Actual conversion of the 2026 COUPE-on-substrate milestone into a qualified customer product | Beginning production is a company milestone; no source-supported shipped volume date [CLM-215; CLM-216] | Manufacturing; product; commercial | Named SKU, shipped units, final-engine yield, package responsibility, ASP and margin. |
 
 ## Why no annual percentage is populated yet
 
@@ -118,7 +121,7 @@ disconfirming_evidence
 
 ## Research conclusion today
 
-Switch-side CPO has the strongest current commercial-maturity signal at 200G/lane, but no public evidence set yet proves the commercial-proof threshold. Broadcom's primary Meta characterization materially improves the reliability evidence while leaving field, population and service-cost gates open. NVIDIA's primary Vera Rubin/NVLink material upgrades inter-rack scale-up CPO from a secondary roadmap interpretation to a first-party roadmap with a functional NVL576 prototype; it still does not establish customer production. SemiAnalysis adds an important economic distinction: scale-out CPO may face a TCO/serviceability and margin-stack hurdle, while inter-rack scale-up CPO has a stronger strategic rationale because it expands accelerator-domain size. 100G LPO has stronger system evidence than 200G or 400G LPO, while 200G/400G LPO remains bounded by incomplete/modeled electrical-link evidence. NPO and accelerator optical-I/O remain earlier public maturity states despite credible product announcements. This is a maturity and domain-value ranking, not a forecast of adoption or a company investment conclusion. [CLM-177; CLM-178; CLM-190; CLM-191; CLM-192]
+Switch-side CPO has the strongest current commercial-maturity signal at 200G/lane, but no public evidence set yet proves the commercial-proof threshold. Broadcom's primary Meta characterization materially improves the reliability evidence while leaving field, population and service-cost gates open. TSMC's COUPE milestones strengthen the process/stacking route behind a 200G CPO engine, but remain a manufacturing checkpoint rather than customer-confirmed switch adoption. NVIDIA's primary Vera Rubin/NVLink material upgrades inter-rack scale-up CPO from a secondary roadmap interpretation to a first-party roadmap with a functional NVL576 prototype; it still does not establish customer production. SemiAnalysis adds an important economic distinction: scale-out CPO may face a TCO/serviceability and margin-stack hurdle, while inter-rack scale-up CPO has a stronger strategic rationale because it expands accelerator-domain size. 100G LPO has stronger system evidence than 200G or 400G LPO, while 200G/400G LPO remains bounded by incomplete/modeled electrical-link evidence. NPO and accelerator optical-I/O remain earlier public maturity states despite credible product announcements. This is a maturity and domain-value ranking, not a forecast of adoption or a company investment conclusion. [CLM-177; CLM-178; CLM-190; CLM-191; CLM-192; CLM-213–CLM-216]
 
 ## Evidence links
 
