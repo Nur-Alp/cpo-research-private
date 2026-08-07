@@ -5,6 +5,7 @@
 **Decision domain:** AI data-centre scale-out optical links
 
 **Generation:** 200G per lane and 1.6T engines, with a later 400G-per-lane extension
+
 **Last updated:** 2026-08-07
 
 ## Decision question
@@ -27,6 +28,9 @@ The benchmark separates a measured device result from a qualified engine and a c
 |---|---|---|---|---|---|---|---:|---:|---|
 | Nokia monolithic InP transmitter | `PAP-025`; measured conference result | 1.6T LPO O-band transmitter | Monolithic InP PIC: 4 DFBs, 8 MZMs, 8 SOAs and 8 power-monitor taps; separate SiGe driver | Four integrated DFBs, each feeding two channels; per-channel SOA for boost, control and shuttering | Representative channel: 106.25 GBd PAM4, direct linear drive; RF Vpi below 1.5 V; 15-tap FFE at both Tx and Rx | Representative channel: about 3 dB TDECQ, 0.97 RLM, 3.5 dB outer ER and 3-5 dBm fibre-coupled output. Packaged all-channel output: 2.8-3.0 dBm; complete eight-channel RF results pending | 60 C | Unknown | Component/partial-engine demonstration |
 | CMOS-integrated silicon-photonics design space | `PAP-024`; peer-reviewed review synthesis | Pluggable, LPO, CPO and optical I/O | Hybrid, heterogeneous, monolithic, 2D, 2.5D and 3D options; no single compared product | External, bonded III-V/silicon, monolithic and comb-source options | Review spans IMDD and coherent links across non-matched nodes and lane rates | Not a product result. Review identifies submodule performance and integration mechanisms but cannot supply a matched engine score | Varies | Not comparable | Architecture and diligence reference |
+| Modeled laser-forwarded coherent transmitter | `PAP-012`; peer-reviewed model/projection | O-band short-reach CPO; spectral-efficiency countercase | Assumes monolithic electronic-photonic OTRX with MZM IQ transmitter and coherent receiver | External laser split between Tx and forwarded local oscillator | 56 GSym/s PAM4 electrical I/Q inputs produce 224 Gb/s QAM-16; modeled one-tap FFE/DFE in host SerDes | Projected Tx driver plus laser energy: 2.27 pJ/bit unequalised, 1.63 with Tx FFE, 1.35 with DFE; no fabricated 224 Gb/s link | Modeled, unspecified | Not reported; host SerDes, Rx, tuning and control excluded | Architecture model |
+| Lightmatter monolithic microring Tx+Rx | `PAP-021`; measured conference result | High-density 3D CPO beneath an XPU or switch | Inductorless Tx driver/MRM and Ge-PD/MRR AFE monolithically integrated in GF 45SPCLO; 0.006 mm2 total active area | Off-chip laser; integrated heaters and automatic ring locking | Single-wavelength NRZ: 56 Gb/s open eye without equalisation; 64 Gb/s only with three-tap software Rx FFE | On-chip Tx-to-Rx path; at 56 Gb/s, 84.4 mW excluding laser and 1.51 pJ/bit; no fibre reach or multi-wavelength result | Unspecified | Partial boundary only | Single-channel circuit demonstration |
+| Ayar TeraPHY known-good connectorized chiplet | `PAP-013`; company-authored measured/simulated conference result | Accelerator/compute optical I/O chiplet packaging | GF Fotonix chiplet with V-groove passive fibre attach, fibre bundle and MOLA lens connector; electrical/optical test before final MCP assembly | Not evaluated in this paper | Connector has 12 fibres and is described as scalable to 24; current lens array uses active alignment | Simulated 0.2 dB-penalty tolerances: 6 um translation, +/-0.2 degrees tilt and +/-600 um separation; early samples show less than 0.1 dB repeatability standard deviation over ten mating cycles; no data-link result | Unspecified | Not reported | Early connector/process proof of concept |
 
 ## Nokia measurement boundary
 
@@ -41,6 +45,14 @@ The benchmark separates a measured device result from a qualified engine and a c
 | Thermals | Representative operation and all-channel DC testing at 60 C | Full module thermal gradients, hot spots, cooling and lifetime acceleration |
 | Economics | No evidence | Die area, wafer yield, package cost, ASP, gross margin, capex and warranty |
 | Commercial stage | Demonstrated | Qualification, customer, production volume and repeat orders |
+
+## Comparator measurement boundaries
+
+| Candidate | What is established | What remains unknown |
+|---|---|---|
+| Modeled coherent transmitter | A reproducible co-optimisation framework exposes interactions among driver strength, MZM bandwidth and length, external-laser split, receiver noise and host equalisation | Fabricated 224 Gb/s performance; receiver, host-SerDes, tuning and control power; matched reach; total cost; yield; reliability and qualification |
+| Lightmatter microring Tx+Rx | A compact 45 nm monolithic circuit produces a 56 Gb/s NRZ open eye without equalisation; reported Tx+Rx power is 84.4 mW excluding laser | Multi-wavelength operation, fibre reach, 200G-per-lane modulation, direct 64 Gb/s BER, heater/laser power, package thermals, production yield and lifetime |
+| Ayar KGCC and MOLA | A specific test-before-final-assembly flow and early connector geometry/repeatability evidence | Fibre-attach yield, alignment cycle time, number of samples, environmental/lifetime qualification, passive lens alignment, rework, cost and production volume |
 
 ## Integration trade-offs from the review literature
 
@@ -58,16 +70,19 @@ The benchmark separates a measured device result from a qualified engine and a c
 2. `PAP-025` makes integrated InP a serious countercase to an external-laser-only thesis because it combines source, modulation, amplification and monitoring on one PIC.
 3. The Nokia paper does not yet show the metrics that determine sustainable profit: full-engine power, final yield, automated fibre attach, qualification, lifetime, cost or volume.
 4. The correct classification is therefore **technically promising component/partial-engine demonstration**, not qualification-ready product.
+5. `PAP-012` reinforces that energy is a system co-design output, not a standalone PIC metric. Its best number cannot be compared with complete-engine power because host-SerDes, receiver, tuning and control are outside the boundary.
+6. `PAP-021` shows why Lightmatter is relevant to PIC design: its monolithic circuit density is exceptional. It does not yet answer the 200G-per-lane scale-out engine question.
+7. `PAP-013` makes pre-assembly optical testing and fibre-attach yield explicit. The economic mechanism is plausible, but ten connector cycles and simulations do not demonstrate high-volume manufacturing.
 
 ## Next candidates to add on the same boundary
 
-1. `PAP-012` — electronic-photonic co-optimisation and complete link-energy boundary.
-2. `PAP-021` — monolithic microring Tx/Rx and 3D CPO density.
-3. `PAP-013` — Ayar Labs connectorized optical-I/O chiplet and known-good-chiplet packaging.
-4. `PAP-019`, `PAP-022`, `PAP-026` and `PAP-027` — external CW laser, SOA-DFB, ELS splitter and VCSEL countercases.
-5. `PAP-015` through `PAP-018` — fibre attach, connector, assembly and reliability evidence.
+1. `PAP-019`, `PAP-022`, `PAP-026` and `PAP-027` — external CW laser, SOA-DFB, ELS splitter and VCSEL countercases.
+2. `PAP-015` through `PAP-018` — fibre attach, connector, assembly and reliability evidence.
 
 ## Sources
 
 - `PAP-024`: Yating Wan et al., [*Integrating silicon photonics with complementary metal-oxide-semiconductor technologies*](../01-sources/papers/PAP-024-wan-integrating-silicon-photonics-cmos-2026.pdf), *Nature Reviews Electrical Engineering*, volume 3, 2026, DOI `10.1038/s44287-025-00223-0`.
 - `PAP-025`: S. Porto et al., [*1.6 Tb/s Monolithic InP Transmitter PIC with DFB, MZM, and SOA Arrays*](../01-sources/papers/PAP-025-porto-monolithic-inp-transmitter-pic-2026.pdf), OFC 2026 paper Th1C.4.
+- `PAP-012`: Antroy Roy Chowdhury, Wahid Rahman and Vladimir Stojanovic, [*Electronic-Photonic Co-Optimization of Linear Drive Laser-Forwarded Coherent Silicon Photonic Transmitters for Co-Packaged Optical (CPO) Links*](../01-sources/papers/PAP-012-chowdhury-electronic-photonic-cooptimization-2025.pdf), *Journal of Lightwave Technology* 43(9), 2025, DOI `10.1109/JLT.2025.3532994`.
+- `PAP-021`: Reza Baghdadi et al., [*Monolithically Integrated Microring Transmitter and Receiver for High-Density 3D Co-Packaged Optics*](../01-sources/papers/PAP-021-baghdadi-microring-3d-cpo-2025.pdf), OFC 2025 paper Tu3J.6.
+- `PAP-013`: Chong Zhang et al., [*Connectorized Optical I/O Chiplet with V-groove for AI and High Performance Computing*](../01-sources/papers/PAP-013-zhang-connectorized-optical-io-chiplet-2025.pdf), OFC 2025 paper Th3H.2.
