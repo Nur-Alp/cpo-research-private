@@ -114,7 +114,7 @@ The current evidence supports a layered control map rather than a single “winn
 
 ### Why NVIDIA does not automatically win every category
 
-NVIDIA controls the accelerator platform, network architecture, software, and an important customer route, but it relies on a broad photonics and manufacturing ecosystem. Supplier partners may capture scarce-component value, while NVIDIA's CPO earnings may be immaterial relative to its accelerator economics.
+NVIDIA controls the accelerator platform, network architecture, software, and an important customer route, but it relies on a broad photonics and manufacturing ecosystem. Its own technical architecture record now provides a detailed reference denominator—32 Spectrum-X engines, eight-laser ELS modules and detachable optical connectors—while still leaving partner allocation, final yield and product economics undisclosed [CLM-235–CLM-238]. Supplier partners may capture scarce-component value, while NVIDIA's CPO earnings may be immaterial relative to its accelerator economics.
 
 ### Why Broadcom does not automatically win every category
 

@@ -32,6 +32,7 @@ This manifest maps each provisional company-leadership conclusion to the locally
 | `CMP-024` | Lambda | `product-materials/CMP-024-lambda-spectrum-x-photonics-roadmap.html` | Publisher HTML only; readable PDF snapshot not yet generated | <https://lambda.ai/blog/silicon-photonics-for-ai-clusters-performance> |
 | `CMP-025` | NVIDIA | `product-materials/CMP-025-nvidia-silicon-photonics-partners.html` | Publisher HTML only; readable PDF snapshot not yet generated | <https://www.nvidia.com/en-us/networking/products/silicon-photonics/> |
 | `CMP-026` | NVIDIA | `product-materials/CMP-026-nvidia-cpo-power-efficiency.html` | Publisher HTML only; readable PDF snapshot not yet generated | <https://developer.nvidia.com/blog/scaling-ai-factories-with-co-packaged-optics-for-better-power-efficiency/> |
+| `CMP-027` | NVIDIA | `product-materials/CMP-027-nvidia-cpo-industry-collaboration.html` | Publisher HTML only; readable PDF snapshot not yet generated | <https://developer.nvidia.com/blog/how-industry-collaboration-fosters-nvidia-co-packaged-optics/> |
 
 ## Preservation notes
 
@@ -48,4 +49,5 @@ This manifest maps each provisional company-leadership conclusion to the locally
 - Lambda's `CMP-023` GTC announcement is retained as original HTML; it is customer-side production-scale evidence for Quantum-X InfiniBand Photonics CPO and is kept separate from switch-side Spectrum-X Ethernet evidence.
 - Lambda's `CMP-024` technology blog is retained as original HTML; it names Spectrum-X Photonics Ethernet in preparation/roadmap language, not as a production deployment. This negative boundary is used to prevent domain overcounting.
 - NVIDIA's `CMP-025` platform page and `CMP-026` technical blog are retained as original HTML. They are company ecosystem, architecture and roadmap claims; neither is treated as independent supplier or performance verification.
+- NVIDIA's `CMP-027` technical blog is retained as original HTML. Its engine, ELS, packaging and TSMC-collaboration details are the strongest public NVIDIA content map, but remain company technical claims rather than audited production economics.
 - Local retention does not convert company claims into independently verified facts. Continue to apply the limitations and confidence fields in `source-log.csv`.

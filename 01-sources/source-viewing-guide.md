@@ -27,6 +27,7 @@
 | `CMP-024` Lambda Spectrum-X Photonics roadmap | HTML-only: [raw archive](product-materials/CMP-024-lambda-spectrum-x-photonics-roadmap.html) | [Lambda original](https://lambda.ai/blog/silicon-photonics-for-ai-clusters-performance) |
 | `CMP-025` NVIDIA Silicon Photonics partners | HTML-only: [raw archive](product-materials/CMP-025-nvidia-silicon-photonics-partners.html) | [NVIDIA original](https://www.nvidia.com/en-us/networking/products/silicon-photonics/) |
 | `CMP-026` NVIDIA CPO power-efficiency technical blog | HTML-only: [raw archive](product-materials/CMP-026-nvidia-cpo-power-efficiency.html) | [NVIDIA original](https://developer.nvidia.com/blog/scaling-ai-factories-with-co-packaged-optics-for-better-power-efficiency/) |
+| `CMP-027` NVIDIA CPO industry-collaboration technical blog | HTML-only: [raw archive](product-materials/CMP-027-nvidia-cpo-industry-collaboration.html) | [NVIDIA original](https://developer.nvidia.com/blog/how-industry-collaboration-fosters-nvidia-co-packaged-optics/) |
 
 ## Filings and financial releases
 
@@ -50,3 +51,5 @@ In research notes, cite the **canonical original webpage** (not the local render
 `CMP-024` is also HTML-only; cite its canonical Lambda page and treat its Spectrum-X Photonics language as preparation/roadmap evidence, not production.
 
 `CMP-025` and `CMP-026` are also HTML-only; cite the canonical NVIDIA pages and treat the partner list and performance figures as company claims with their stated boundaries.
+
+`CMP-027` is also HTML-only; cite the canonical NVIDIA page and treat the detailed engine/ELS counts and TSMC collaboration as company technical claims.
