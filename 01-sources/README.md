@@ -27,6 +27,19 @@ The new workflow fields are:
 
 Do not mark confidence until the material has been reviewed. Important claims should be checked against standards, filings, official documentation, papers, or other primary evidence.
 
+## Source-retention rule
+
+Every valuable source used in the research must leave a durable audit trail:
+
+1. Retain the original PDF or HTML locally when permitted. If local retention is not permitted or technically unavailable, retain the canonical direct URL and create a local evidence note describing what was reviewed and what could not be verified.
+2. Add a row to `source-log.csv` before relying on the source in analysis. Record the source type, date, access status, canonical URL, local path, and review status.
+3. Add only decision-relevant assertions to `claim-ledger.csv`. Record the claim type, exact evidence boundary, limitations, confidence, and whether the claim is measured, modelled, planned, or merely asserted.
+4. Link the source from the relevant scope, architecture, company dossier, model, or milestone file so a reader can reproduce the reasoning.
+5. Preserve the original publisher URL alongside any readable local PDF snapshot. A converted or extracted copy is a reading aid, not a substitute for the canonical source.
+6. Never promote a company claim, abstract, roadmap, market estimate, or model output into a production, yield, reliability, margin, adoption, or leadership fact without stronger evidence.
+
+This rule applies to newly found sources as well as user-supplied downloads. Acquisition is not acceptance: every source must be checked against its contents and its limitations recorded.
+
 ## Source types
 
 - `papers/`: peer-reviewed papers and conference proceedings
