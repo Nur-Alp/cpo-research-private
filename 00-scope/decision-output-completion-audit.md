@@ -50,6 +50,7 @@ No decision output should be upgraded by substituting company announcements for 
 | Coherent | Broadest disclosed external component/manufacturing stack. | Production CPO customer, final-engine yield and margin. |
 | Lumentum | Clearest external-laser commercial order signal. | Customer/product allocation, conversion, margin and retention of profit. |
 | Marvell / Celestial | Clearest public-company accelerator optical-I/O revenue aspiration and transaction stake. | Product qualification, shipped revenue, margin, customer and earnout probability. |
+| Celestica | Credible system-design/manufacturing route with an unnamed hyperscaler CPO program and planned 2027 ramp. | Customer/SKU, units, optical scope, yield, CPO revenue, margin, capex and warranty allocation. |
 
 No company is an evidence-supported overall **profit-pool leader** or **best public-equity opportunity** today.
 
