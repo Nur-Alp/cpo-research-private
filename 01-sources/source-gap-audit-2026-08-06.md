@@ -145,7 +145,7 @@ Current public evidence is too heterogeneous to rank their measured technology.
 | TSMC | COUPE integration platform and central foundry/advanced-packaging position | Qualification status by customer product, yield, capacity, pricing, process ownership, and revenue materiality |
 | Ayar Labs | 8 Tb/s UCIe optical chiplet and thermal/BER company testing | Independent test report, named production customer, package yield, volume capacity, economics and deployment date |
 | Lightmatter | Passage roadmap, 3D integration, manufacturing partnerships, sampling and rack demonstrations | Named production customer, independent measured comparison, yield, qualification, field data, and unit economics |
-| Fabrinet | NVIDIA photonics ecosystem membership and high-volume optical manufacturing capability | CPO-specific programme, content, customer, revenue, margins, capital intensity, and warranty exposure |
+| Fabrinet | NVIDIA photonics ecosystem membership, end-to-end optical packaging capability, current DCI/HPC revenue and disclosed yield/warranty risk mechanics (`FIL-007`, `FIL-008`) | CPO-specific programme, content, customer, revenue, margins, capital intensity allocation, qualified yield and warranty exposure |
 | Cisco/Acacia, Intel, Ranovus | Relevant silicon-photonics assets and demonstrations | Current product status, strategic commitment, customer proof, and commercial scale |
 
 ## Investment analysis still required
@@ -163,7 +163,7 @@ Technology leadership alone cannot answer the equity question. For each public c
 9. Consensus revenue, margin, and valuation assumptions
 10. Bear-case value if CPO is delayed or the architecture changes
 
-The next filings set should include Broadcom, NVIDIA, Marvell, Lumentum, Coherent, TSMC, and Fabrinet. Use SEC or company filings rather than third-party financial summaries.
+The next filings set should include Broadcom, NVIDIA, Marvell, Lumentum, Coherent, TSMC, and Fabrinet. Fabrinet's FY2025 10-K and Q3 FY2026 10-Q are now retained as `FIL-007` and `FIL-008`; use them for manufacturing-route denominators and risk gates, not as CPO revenue evidence. Use SEC or company filings rather than third-party financial summaries.
 
 ## Recommended research order
 
@@ -183,5 +183,7 @@ The next filings set should include Broadcom, NVIDIA, Marvell, Lumentum, Coheren
 - Microsoft Research, *MOSAIC: Breaking the Optics versus Copper Trade-off with a Wide-and-Slow Architecture and MicroLEDs*.
 - Coherent, *Technology Innovation Briefing*, OFC 2026.
 - NVIDIA, *NVIDIA Kicks Off the Next Generation of AI With Rubin*.
+- Fabrinet, FY2025 Form 10-K and Q3 FY2026 Form 10-Q (`FIL-007`, `FIL-008`).
+- Celestica, Q1 2026 Form 10-Q (`FIL-009`), retaining HPS/CCS scale, capex and concentration boundaries separately from the CPO programme announcement.
 
 The TSMC 2025 symposium paper, OCP short-reach photonics white paper, and Broadcom OFC 2026 release remain URL-indexed or retained in the product-materials folder. The PAP-028–PAP-032 packaging packet is now retained locally with its access limitations recorded; it should not be treated as production-yield evidence.

@@ -39,6 +39,9 @@
 |---|---|---|
 | `FIL-001` Marvell FY2027 Q1 10-Q | [PDF snapshot](filings/FIL-001-marvell-2026-05-02-10q-web-archive.pdf) | [Marvell/SEC-hosted original](https://investor.marvell.com/sec-filings/all-sec-filings/content/0001835632-26-000019/mrvl-20260502.htm) |
 | `FIL-006` Marvell FY2027 Q1 results | [PDF snapshot](filings/FIL-006-marvell-q1-fy2027-results-web-archive.pdf) | [Marvell/SEC-hosted original](https://investor.marvell.com/sec-filings/all-sec-filings/content/0001835632-26-000014/q127_8kx522026ex-991.htm) |
+| `FIL-007` Fabrinet FY2025 10-K | [Original SEC HTML](filings/FIL-007-fabrinet-fy2025-10k.html) | [SEC original](https://www.sec.gov/Archives/edgar/data/1408710/000140871025000039/fn-20250627.htm) |
+| `FIL-008` Fabrinet Q3 FY2026 10-Q | [Original SEC HTML](filings/FIL-008-fabrinet-q3-fy2026-10q.html) | [SEC original](https://www.sec.gov/Archives/edgar/data/1408710/000140871026000016/fn-20260327.htm) |
+| `FIL-009` Celestica Q1 2026 10-Q | [Original SEC HTML](filings/FIL-009-celestica-q1-2026-10q.html) | [SEC original](https://www.sec.gov/Archives/edgar/data/1030894/000103089426000032/cls-20260331.htm) |
 
 ## Citation rule
 

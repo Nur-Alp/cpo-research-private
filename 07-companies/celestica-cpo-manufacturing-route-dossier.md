@@ -23,6 +23,7 @@ Celestica's October 2024 disclosure provides earlier route context: it reported 
 | Manufacturing role | Celestica states design and manufacturing responsibility for the program; its release describes broader design, engineering and manufacturing capabilities | Which steps Celestica performs: board/system assembly, CPO package integration, fibre attach, optical test, burn-in, final acceptance or field service |
 | Optical content | Co-packaged optical interconnects are part of the switch program | PIC/EIC, laser/ELSFP, optical-engine, connector, package and test suppliers; Celestica's retained content and ASP |
 | Economics | CPO program is relevant to Celestica's future HPS route | Program revenue, gross margin, capex, working capital, warranty, customer concentration and cannibalisation |
+| Financial denominator and concentration | Q1 2026 HPS revenue was approximately $1.7B (42% of total), gross margin 10.8%, CCS margin 8.6%, and top ten customers 84% of revenue [`CLM-273`–`CLM-276`](../01-sources/claim-ledger.csv) | These figures cover broad HPS/CCS activity and do not attribute the CPO programme |
 
 ## What this changes in the company comparison
 
@@ -66,5 +67,6 @@ The next evidence request is therefore not another broad CPO announcement. It is
 - `CMP-029`: Celestica, [DS6000-series 1.6TbE switches available to order](https://corporate.celestica.com/news-releases/news-release-details/celestica-accelerates-ai-scale-networking-ds6000-series-16tbe), 29 April 2026; `CLM-257`.
 - `CMP-030`: Celestica, [Q3 2024 results and 1.6T program win](https://corporate.celestica.com/static-files/b8b34ab0-e623-4573-a592-41e16a49cf45), 23 October 2024; `CLM-258`.
 - `CMP-018`: Broadcom, [TH6-Davisson CPO announcement](https://www.broadcom.com/company/news/product-releases/63626); partner-route context.
+- `FIL-009`: Celestica, [Q1 2026 Form 10-Q](https://www.sec.gov/Archives/edgar/data/1030894/000103089426000032/cls-20260331.htm); financial, capex and concentration boundary; `CLM-273`–`CLM-277`.
 
 Official company sources establish what Celestica says about its program. They do not independently establish customer units, qualification, optical-engine economics, yield, field reliability or investment value.
