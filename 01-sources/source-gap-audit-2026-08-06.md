@@ -41,7 +41,7 @@ No company currently earns the label “best technology overall.” Switch CPO, 
 |---|---|---|
 | CPO architecture and packaging reviews | Mahajan; Tan; Lee; Buscaino | Good conceptual base |
 | Switch-side 102.4T CPO | Broadcom and NVIDIA product material; architecture papers | Moderate, mostly company supplied |
-| LPO and advanced pluggables | OIF requirements; vendor demonstrations; complete PAP-007, PAP-008, PAP-010 and PAP-011 files queued for review | Weak pending matched review of the complete paper set |
+| LPO and advanced pluggables | OIF requirements plus reviewed PAP-007, PAP-008, PAP-010 and PAP-011 academic papers | Moderate on electrical mechanisms; weak on matched production-system proof |
 | NPO | IEEE 400GPL contribution and review material | Early standards framing only |
 | External lasers | OIF management document; Lumentum, Coherent, NVIDIA claims | Moderate on architecture, weak on lifetime and field statistics |
 | Optical packaging and manufacturability | Mahajan; IBM attach metrology; Cao assembly model; Corning and Furukawa detachable connectors | Moderate on mechanisms and laboratory results; weak on actual yield, cost and volume |
@@ -71,16 +71,16 @@ link-flap and error statistics
 
 No reviewed source meets this boundary. Until one does, vendor power multiples must remain company claims.
 
-### 2. Complete and review the LPO papers
+### 2. LPO: completed paper review, unresolved system proof
 
-PAP-007, PAP-008, PAP-010 and PAP-011 are complete and queued for review:
+PAP-007, PAP-008, PAP-010 and PAP-011 have been reviewed on a matched evidence boundary:
 
-1. Elaine Chou et al., *100G and 200G per Lane Linear Drive Optics for Data Center Applications*, OFC 2024, W4H.3, DOI 10.1364/OFC.2024.W4H.3 — complete, queued.
-2. Jianying Zhou et al., *Performance Limitations and Optimizations of Linear Driver Optics for 200G/Lane and beyond*, OFC 2025, M2H.1, DOI 10.1364/OFC.2025.M2H.1 — complete, queued.
-3. E. M. Kimber and E. Frlan, *200G LPO: Design Challenges and Latest Test Data*, OFC 2026, M2B.1, DOI 10.1364/OFC.2026.M2B.1 — complete, queued.
-4. Jianying Zhou et al., *400G/lane for Linear-drive Optics Applications*, OFC 2026, Th1C.3, DOI 10.1364/OFC.2026.Th1C.3 — complete, queued.
+1. Elaine Chou et al., *100G and 200G per Lane Linear Drive Optics for Data Center Applications*, OFC 2024, W4H.3, DOI 10.1364/OFC.2024.W4H.3 — 100G switch measurements, 200G simulation.
+2. Jianying Zhou et al., *Performance Limitations and Optimizations of Linear Driver Optics for 200G/Lane and beyond*, OFC 2025, M2H.1, DOI 10.1364/OFC.2025.M2H.1 — 200G VPI model.
+3. E. M. Kimber and E. Frlan, *200G LPO: Design Challenges and Latest Test Data*, OFC 2026, M2B.1, DOI 10.1364/OFC.2026.M2B.1 — 200G design and simulation synthesis.
+4. Jianying Zhou et al., *400G/lane for Linear-drive Optics Applications*, OFC 2026, Th1C.3, DOI 10.1364/OFC.2026.Th1C.3 — 160/180 GBd component measurement and 212.5 GBd model.
 
-These papers determine how long advanced pluggables can defer NPO or CPO.
+They establish a conditional technical boundary, not how long advanced pluggables can defer NPO/CPO commercially. Still required: matched 200G multi-vendor systems at stated loss/return-loss/FEC/reach/temperature boundaries, 212.5 GBd measured links, module and chassis power, field reliability, qualification, service and cost data.
 
 ### 3. Additional packaging yield, rework, and reliability evidence
 
@@ -159,9 +159,9 @@ The next filings set should include Broadcom, NVIDIA, Marvell, Lumentum, Coheren
 
 ## Recommended research order
 
-1. Review the complete PAP-007, PAP-008, PAP-010 and PAP-011 set on one matched LPO boundary.
-2. Build matched company dossiers for Broadcom, Coherent, Lumentum and NVIDIA using the completed PIC, laser and packaging evidence gates.
-3. Build one matched evidence table for NVIDIA Spectrum-X Photonics and Broadcom TH6-Davisson.
+1. Build matched company dossiers for Broadcom, Coherent, Lumentum and NVIDIA using the completed PIC, laser, packaging and LPO evidence gates.
+2. Build one matched evidence table for NVIDIA Spectrum-X Photonics and Broadcom TH6-Davisson.
+3. Obtain matched 200G LPO/NPO/CPO system evidence and seek 400G-lane measured-link results.
 4. Obtain the five additional packaging/reliability sources above and seek production-yield evidence.
 5. Build accelerator optical-I/O dossiers for Marvell/Celestial AI, Ayar Labs, Lightmatter, TSMC, and NVIDIA.
 6. Conduct primary research with system operators, OSATs, fibre-attach suppliers, and field-service engineers.

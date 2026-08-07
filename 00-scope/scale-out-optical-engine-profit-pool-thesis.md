@@ -81,6 +81,12 @@ The provisional conclusion is:
 
 This evidence strengthens the complete-engine thesis but does not prove the associated profit pool. The decisive company metrics are first-pass yield, final-engine yield, Cpk, automated cycle time, qualification, field returns, rework cost and packaging capital per good engine.
 
+## LPO countercase and the electrical boundary
+
+LPO prevents this thesis from treating CPO adoption as inevitable merely because retimed pluggables consume more power. A Meta paper directly measures 100G/lane LPO system operation, but its 200G analysis is modelled and points to a roughly 22-23 dB electrical-loss boundary before a transmit retimer is needed on its longer planned path. Hisense and Semtech model different 200G envelopes up to 31 dB and 26 dB under different technology and equalisation assumptions; those results are not a commercial ranking. At 400G/lane, the reviewed direct measurements stop at 180 GBd, while the 212.5 GBd model works only to 12 dB B2B loss.[S19][S20][S21][S22]
+
+The investment implication is conditional: a superior PIC alone is insufficient if the host-to-engine electrical channel lets LPO retain acceptable margin and serviceability. Conversely, as the channel becomes too lossy at 200G or 400G, profit may shift toward suppliers that can integrate a short-path NPO/CPO engine, its packaging and its test flow. The key company question is therefore not “who has the best PIC?” but “who can qualify the lowest-total-cost engine at the electrical boundary required by the customer topology?”
+
 ## Companies currently inside the core comparison
 
 | Company | Role in this thesis | Current evidence boundary |
@@ -163,5 +169,9 @@ The PIC, laser and packaging evidence blocks are now established. The next compa
 - **[S16]** Rui Cao et al., [*Thermomechanical and Compression Analyses for Large-Scale Co-Packaged Optics (CPO) Assembly*](../01-sources/papers/PAP-016-cao-thermomechanical-cpo-assembly-2024.pdf), *IEEE Transactions on Components, Packaging and Manufacturing Technology* 14(11), 2024, DOI 10.1109/TCPMT.2024.3488003.
 - **[S17]** Lars Brusberg et al., [*High-density Evanescent Chip Coupling with Detachable Fiber Connector for Co-packaged Optics*](../01-sources/papers/PAP-017-brusberg-evanescent-detachable-connector-2025.pdf), OFC 2025 paper Th3H.1.
 - **[S18]** Kengo Watanabe et al., [*Ultra-compact Reflow-compatible Detachable Optical Connector for Co-Packaged Optics*](../01-sources/papers/PAP-018-watanabe-reflow-detachable-connector-2025.pdf), OFC 2025 paper M4J.2, DOI 10.1364/OFC.2025.M4J.2.
+- **[S19]** Elaine S. Chou et al., [*100G and 200G per Lane Linear Drive Optics for Data Center Applications*](../01-sources/papers/PAP-007-chou-linear-drive-optics-100g-200g-2024.pdf), OFC 2024 paper W4H.3, DOI 10.1364/OFC.2024.W4H.3.
+- **[S20]** Jianying Zhou, Lei Xin and Jin Hong, [*Performance Limitations and Optimizations of Linear Driver Optics for 200G/Lane and beyond*](../01-sources/papers/PAP-008-zhou-linear-driver-optics-200g-2025.pdf), OFC 2025 paper M2H.1, DOI 10.1364/OFC.2025.M2H.1.
+- **[S21]** E. M. Kimber and E. Frlan, [*200G LPO: Design Challenges and Latest Test Data*](../01-sources/papers/PAP-010-kimber-frlan-200g-lpo-2026.pdf), OFC 2026 paper M2B.1, DOI 10.1364/OFC.2026.M2B.1.
+- **[S22]** Jianying Zhou et al., [*400G/lane for Linear-drive Optics Applications*](../01-sources/papers/PAP-011-zhou-400g-linear-drive-optics-2026.pdf), OFC 2026 paper Th1C.3, DOI 10.1364/OFC.2026.Th1C.3.
 
 Company announcements establish what the companies claim and disclose; they do not independently prove performance, production volume, yield or sustainable profit.

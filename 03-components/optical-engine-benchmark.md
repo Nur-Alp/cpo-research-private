@@ -80,6 +80,8 @@ The laser papers are now compared separately in [CPO Laser-Architecture Benchmar
 
 Fibre attach, connector, assembly and serviceability evidence from `PAP-015` through `PAP-018` is now compared separately in [CPO Packaging, Fibre-Attach and Serviceability Benchmark](packaging-reliability-benchmark.md). The next optical-engine step is to apply these PIC, laser and packaging gates to matched company dossiers for Broadcom, Coherent, Lumentum and NVIDIA.
 
+The electrical-channel countercase is recorded in [Linear-Drive Optics Boundary Benchmark](../02-architecture/linear-drive-boundary-benchmark.md). It matters here because an excellent PIC does not create an automatic CPO profit pool if a customer can retain LPO margin at its required topology and service boundary.
+
 ## Sources
 
 - `PAP-024`: Yating Wan et al., [*Integrating silicon photonics with complementary metal-oxide-semiconductor technologies*](../01-sources/papers/PAP-024-wan-integrating-silicon-photonics-cmos-2026.pdf), *Nature Reviews Electrical Engineering*, volume 3, 2026, DOI `10.1038/s44287-025-00223-0`.
