@@ -113,6 +113,7 @@ Broadcom's third-generation CPO and merchant-switch position are strong technica
 - [Coherent and Lumentum: External Optical-Engine Supplier Dossier](coherent-lumentum-external-optical-engine-dossier.md)
 - [Optical-Engine Profit-Pool Input Gates](../08-model/optical-engine-profit-pool-input-gates.md)
 - [CPO Earnings-Materiality Screen](../08-model/cpo-earnings-materiality-screen.md)
+- [Marvell / Celestial AI: Accelerator Optical-I/O Dossier](marvell-celestial-accelerator-optical-io-dossier.md)
 
 ### Why Lumentum and Coherent matter
 

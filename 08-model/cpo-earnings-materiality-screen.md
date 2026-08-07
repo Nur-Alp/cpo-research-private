@@ -22,6 +22,7 @@ Use the most recent reviewed quarterly disclosure for each company. These figure
 | NVIDIA | Q1 FY27, ended 2026-04-26 | $81.615B | $75.178B Data Center revenue; 74.9% GAAP gross margin | No CPO revenue, content, margin or capex line | [CLM-088] |
 | Coherent | Q3 FY26 | $1.806B | 37.7% GAAP gross margin | No CPO revenue/content/margin line | [CLM-070] |
 | Lumentum | Q3 FY26 | $808.4M | 44.2% GAAP gross margin; total-company customer concentration disclosed | No CPO revenue/content/margin line | [CLM-073] |
+| Marvell | Q1 FY27 | $2.418B | 52.1% GAAP gross margin; Celestial results included from acquisition date | No Photonic Fabric/Celestial revenue/content/margin line | [CLM-096] |
 
 The periods are not synchronized. This is acceptable for a first **scale** screen but not for valuation, growth comparisons or margin ranking.
 
@@ -40,6 +41,7 @@ Illustrative CPO revenue threshold
 | NVIDIA | $408.1M | $816.2M | $4.081B | $8.162B | CPO is likely immaterial at the consolidated-company level for a long time; Data Center is a more relevant but still very large denominator. |
 | Coherent | $9.0M | $18.1M | $90.3M | $180.6M | A successful CPO/engine program could become revenue-material at a much lower absolute level. |
 | Lumentum | $4.0M | $8.1M | $40.4M | $80.8M | The disclosed order signal may matter sooner than it would to platform owners, but its product allocation and margin remain unknown. |
+| Marvell | $12.1M | $24.2M | $120.9M | $241.8M | Management's Celestial targets, if achieved, would be revenue-material; achievement and margin are unproven. |
 
 These calculations do not mean a threshold is reached, contracted, profitable, incremental or valuation-relevant. They simply prevent the common error of treating the same CPO revenue figure as equally material to a $0.8B quarterly company and an $81.6B quarterly company.
 
@@ -69,6 +71,10 @@ Their platform roles may capture substantial *system* value, but reported consol
 
 Their smaller reported revenue bases make a defined external optical-engine or external-laser program potentially more earnings-material. That is not proof that they capture the profit pool: final-engine content, customer identity, yield, price, warranty and CPO margin are all still unknown.[CLM-074][CLM-075][CLM-083]
 
+### Marvell / Celestial AI
+
+Marvell's current denominator is between the focused optical suppliers and platform owners. Its announced $500M and $1B annualized Photonic Fabric targets would be material if achieved, but they are management forecasts tied to an acquisition/earnout case rather than reported revenue.[CLM-095][CLM-096] See the [Marvell / Celestial accelerator optical-I/O dossier](../07-companies/marvell-celestial-accelerator-optical-io-dossier.md).
+
 ## Required next records before a valuation overlay
 
 1. A CPO revenue line, product-content map or contract evidence linking CPO units to an attributable supplier.
@@ -84,4 +90,3 @@ Until then, a claim that CPO is “material” to a company or already reflected
 - [Claim ledger](../01-sources/claim-ledger.csv), CLM-070, CLM-073 through CLM-075, CLM-082 through CLM-084, CLM-087 and CLM-088.
 - [Company leadership source manifest](../01-sources/company-leadership-source-manifest.md), FIL-002 through FIL-005.
 - [Optical-Engine Profit-Pool Input Gates](optical-engine-profit-pool-input-gates.md).
-

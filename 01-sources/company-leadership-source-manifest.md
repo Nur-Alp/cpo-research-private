@@ -22,6 +22,8 @@ This manifest maps each provisional company-leadership conclusion to the locally
 | `FIL-003` | Lumentum | Not locally retrievable | Publisher/SEC link | <https://www.sec.gov/Archives/edgar/data/1633978/000162828026030777/lite-20260328.htm> |
 | `FIL-004` | Broadcom | Not locally retrievable | Official investor-results link | <https://investors.broadcom.com/news-releases/news-release-details/broadcom-inc-announces-second-quarter-fiscal-year-2026-financial> |
 | `FIL-005` | NVIDIA | Not locally retrievable | Official investor-results link | <https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-First-Quarter-Fiscal-2027/default.aspx> |
+| `CMP-020` | Marvell | `product-materials/CMP-020-marvell-celestial-ai-acquisition.html` | Publisher HTML | <https://investor.marvell.com/news-events/press-releases/detail/1000/marvell-to-acquire-celestial-ai-accelerating-scale-up-connectivity-for-next-generation-data-centers> |
+| `FIL-006` | Marvell | `filings/FIL-006-marvell-q1-fy2027-results.html` | Publisher-hosted Exhibit 99.1 HTML | <https://investor.marvell.com/sec-filings/all-sec-filings/content/0001835632-26-000014/q127_8kx522026ex-991.htm> |
 | `CMP-018` | Broadcom | Not locally retrievable | Official publisher link | <https://www.broadcom.com/company/news/product-releases/63626> |
 | `CMP-019` | NVIDIA | `product-materials/CMP-019-nvidia-rubin-full-production-2026.pdf` | Publisher PDF | <https://nvidianews.nvidia.com/news/vera-rubin-full-production-agentic-ai-factory> |
 
