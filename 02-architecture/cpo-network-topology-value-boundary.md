@@ -28,6 +28,10 @@ IBM's earlier MOTION study provides a more explicit scale-out topology boundary.
 
 These results are **system simulations**, not production CPO measurements. They demonstrate a plausible customer value mechanism beyond optical power, but the model does not price CPO engines, cooling, service, transition cost, qualification or supplier share. It also assumes a MOTION hardware path whose first generation was 56 Gb/s NRZ and whose second generation was a 112 Gb/s PAM4 target—not a measured 200G/400G-per-lane commercial engine. The correct investment use is a topology/workload diligence gate, not a switch-unit or optical-supplier revenue forecast.
 
+### Customer-side scale-up checkpoint
+
+Lambda's March 2026 customer announcement provides a separate commercial checkpoint: it says a production-scale GB300 NVL72 supercluster with more than 10,000 GPUs uses NVIDIA Quantum-X InfiniBand Photonics CPO switches and that the photonics fabric is running in production.[CLM-224] This is meaningful customer-side evidence that CPO can be selected for an inter-rack scale-up fabric, but it does not validate the IBM topology simulations, prove switch-side Spectrum-X Ethernet adoption, or disclose switch count, optical-engine supplier, yield, service cost or economics. Keep this record in the inter-rack scale-up domain rather than transferring it into the switch-side profit pool.
+
 ## Investment implication
 
 Topology/locality should be a separate adoption gate, alongside electrical channel loss and total cost:
@@ -58,3 +62,4 @@ A customer case becomes investable only after this is evaluated for a defined to
 - [102.4T Switch-Side Power Model](../08-model/102.4t-switch-side-power-model.md).
 - [Claim ledger](../01-sources/claim-ledger.csv), CLM-089 and CLM-090.
 - `PAP-020`: Pavlos Maniotis et al., [*Toward higher-radix switches with co-packaged optics for improved network locality in data center and HPC networks*](../01-sources/papers/PAP-020-maniotis-higher-radix-cpo-2022.pdf), *Journal of Optical Communications and Networking* 14(6), 2022, DOI `10.1364/JOCN.451449`; see `CLM-129` through `CLM-133`.
+- `CMP-023`: Lambda, [*Lambda at NVIDIA GTC 2026: building the Superintelligence Cloud*](../01-sources/product-materials/CMP-023-lambda-quantum-x-photonics-production.html), 16 March 2026; customer-side production-scale Quantum-X Photonics CPO claim. See `CLM-224` and `CLM-225`.

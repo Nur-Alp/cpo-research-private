@@ -23,6 +23,7 @@
 | `CMP-020` Marvell acquisition of Celestial AI | [PDF snapshot](product-materials/CMP-020-marvell-celestial-ai-acquisition-web-archive.pdf) | [Marvell original](https://investor.marvell.com/news-events/press-releases/detail/1000/marvell-to-acquire-celestial-ai-accelerating-scale-up-connectivity-for-next-generation-data-centers) |
 | `CMP-021` CoreWeave Spectrum-X Photonics CPO deployment | HTML-only: [raw archive](product-materials/CMP-021-coreweave-spectrum-x-photonics-cpo.html) | [CoreWeave original](https://www.coreweave.com/blog/why-ai-factories-need-proof-before-production) |
 | `CMP-022` CoreWeave SN6600-LD deployment | HTML-only: [raw archive](product-materials/CMP-022-coreweave-sn6600-ld-deployment.html) | [CoreWeave original](https://coreweave.com/blog/liquid-cooled-switching-doubles-ai-network-bandwidth-per-rack) |
+| `CMP-023` Lambda Quantum-X Photonics production-scale cluster | HTML-only: [raw archive](product-materials/CMP-023-lambda-quantum-x-photonics-production.html) | [Lambda original](https://lambda.ai/blog/lambda-at-gtc-2026-building-the-superintelligence-cloud) |
 
 ## Filings and financial releases
 
@@ -40,3 +41,5 @@ In research notes, cite the **canonical original webpage** (not the local render
 `CMP-021` is an HTML-only preservation exception; cite the canonical CoreWeave page and use the raw local archive for searchable text. No unverified text-to-PDF conversion is presented as a faithful snapshot.
 
 `CMP-022` is also HTML-only; cite its canonical CoreWeave page and use the raw local archive for searchable text.
+
+`CMP-023` is also HTML-only; cite its canonical Lambda page and use the raw local archive for searchable text. Its domain is inter-rack scale-up CPO, not switch-side Spectrum-X Ethernet.
