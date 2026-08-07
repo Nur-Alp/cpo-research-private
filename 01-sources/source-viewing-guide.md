@@ -21,6 +21,7 @@
 | `CMP-016` Lumentum UHP lasers for CPO | [PDF snapshot](product-materials/CMP-016-lumentum-uhp-lasers-cpo-web-archive.pdf) | [Lumentum original](https://www.lumentum.com/en/products/data-center/cw-lasers/uhp-lasers-cpo) |
 | `CMP-017` Lumentum AI optics at OFC 2026 | [PDF snapshot](product-materials/CMP-017-lumentum-ofc-2026-ai-optics-web-archive.pdf) | [Lumentum original](https://investor.lumentum.com/financial-news-releases/news-details/2026/Lumentum-Demonstrates-Industry-Leading-Technologies-and-Products-for-Scale-Out-Scale-Up-and-Scale-Across-AI-Infrastructure-at-OFC-2026/default.aspx) |
 | `CMP-020` Marvell acquisition of Celestial AI | [PDF snapshot](product-materials/CMP-020-marvell-celestial-ai-acquisition-web-archive.pdf) | [Marvell original](https://investor.marvell.com/news-events/press-releases/detail/1000/marvell-to-acquire-celestial-ai-accelerating-scale-up-connectivity-for-next-generation-data-centers) |
+| `CMP-021` CoreWeave Spectrum-X Photonics CPO deployment | HTML-only: [raw archive](product-materials/CMP-021-coreweave-spectrum-x-photonics-cpo.html) | [CoreWeave original](https://www.coreweave.com/blog/why-ai-factories-need-proof-before-production) |
 
 ## Filings and financial releases
 
@@ -34,3 +35,5 @@
 In research notes, cite the **canonical original webpage** (not the local rendered snapshot) and include the source ID. Use the snapshot only as a convenient, locally retained reading copy. Example:
 
 > Lumentum, *Lumentum Announces Second Quarter Fiscal 2026 Financial Results*, 3 February 2026, `CMP-010`, [original webpage](https://investor.lumentum.com/financial-news-releases/news-details/2026/Lumentum-Announces-Second-Quarter-of-Fiscal-Year-2026-Financial-Results/default.aspx); local readable snapshot retained.
+
+`CMP-021` is an HTML-only preservation exception; cite the canonical CoreWeave page and use the raw local archive for searchable text. No unverified text-to-PDF conversion is presented as a faithful snapshot.

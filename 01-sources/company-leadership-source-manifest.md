@@ -26,6 +26,7 @@ This manifest maps each provisional company-leadership conclusion to the locally
 | `FIL-006` | Marvell | `filings/FIL-006-marvell-q1-fy2027-results.html` and `FIL-006-marvell-q1-fy2027-results-web-archive.pdf` | Publisher-hosted Exhibit 99.1 HTML + readable local PDF snapshot | <https://investor.marvell.com/sec-filings/all-sec-filings/content/0001835632-26-000014/q127_8kx522026ex-991.htm> |
 | `CMP-018` | Broadcom | Not locally retrievable | Official publisher link | <https://www.broadcom.com/company/news/product-releases/63626> |
 | `CMP-019` | NVIDIA | `product-materials/CMP-019-nvidia-rubin-full-production-2026.pdf` | Publisher PDF | <https://nvidianews.nvidia.com/news/vera-rubin-full-production-agentic-ai-factory> |
+| `CMP-021` | CoreWeave | `product-materials/CMP-021-coreweave-spectrum-x-photonics-cpo.html` | Publisher HTML only; readable PDF snapshot not yet generated | <https://www.coreweave.com/blog/why-ai-factories-need-proof-before-production> |
 
 ## Preservation notes
 
@@ -37,4 +38,5 @@ This manifest maps each provisional company-leadership conclusion to the locally
 - Broadcom's and NVIDIA's investor-result pages for `FIL-004` and `FIL-005` returned HTTP 403 during direct retrieval. The canonical official pages were read through the investor-site search results and are logged; no reconstructed local copy was created.
 - Broadcom's `CMP-018` official web response was a JavaScript shell without the article text and its official investor PDF returned HTTP 403. The canonical publisher URL remains in the source log and dossier; the empty shell was discarded rather than retained as if it were the source.
 - NVIDIA's `CMP-019` original three-page publisher PDF was retained and verified with PDF text extraction.
+- CoreWeave's `CMP-021` customer blog was retained as the original HTML because the page is a dynamic Webflow article; its canonical URL remains the citation source. It is intentionally marked HTML-only until a faithful readable snapshot can be generated.
 - Local retention does not convert company claims into independently verified facts. Continue to apply the limitations and confidence fields in `source-log.csv`.
