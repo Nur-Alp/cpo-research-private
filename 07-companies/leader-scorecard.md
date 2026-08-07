@@ -96,6 +96,7 @@ This is a triage result, not the completed weighted scorecard. Scores remain unp
 | Photonic component breadth and manufacturing | Coherent | Broad SiPh, InP, VCSEL, detector, passive, fibre-attach, module, and test stack; the NVIDIA agreement adds a multibillion-dollar purchase commitment, capacity rights and $2B investment, but product allocation, conversion and margin remain undisclosed |
 | Accelerator optical-I/O public-company option | Marvell | Celestial AI plus custom XPU, switching, DSP, and NVIDIA relationship create the strongest public-company strategic bundle; production proof remains weak |
 | Advanced photonics manufacturing platform | TSMC | Central foundry and advanced-packaging control point with COUPE; CPO-specific economics and customer qualification are undisclosed |
+| CPO system design/manufacturing route | Celestica | Awarded unnamed hyperscaler CPO-switch design/manufacturing program with planned 2027 ramp; exact system, optical scope, units, yield and margin remain undisclosed. See [Celestica dossier](celestica-cpo-manufacturing-route-dossier.md). |
 | Private optical-I/O technology | No leader established | Ayar Labs and Lightmatter have differentiated working silicon and packaging approaches but no comparable independent production evidence |
 | Best public-equity opportunity | No decision | Consensus, valuation, earnings materiality, and downside work have not been completed |
 
