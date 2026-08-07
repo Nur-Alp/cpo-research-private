@@ -12,7 +12,7 @@
 
 Which optical-engine architecture can meet the required link performance at the lowest total qualified cost, and which supplier can retain durable gross profit after yield loss, packaging, test, warranty, customer concentration and capital intensity?
 
-The benchmark separates a measured device result from a qualified engine and a commercial product. A blank or `Unknown` cell is an evidence gap, not a zero.
+The benchmark separates a measured device result from a qualified engine and a commercial product. A blank or `Unknown` cell is an evidence gap, not a zero. The supporting paper-by-paper classification is in the [academic evidence matrix](academic-evidence-matrix.md).
 
 ## Comparison rules
 
