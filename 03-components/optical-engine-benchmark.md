@@ -90,6 +90,8 @@ The laser papers are now compared separately in [CPO Laser-Architecture Benchmar
 
 Fibre attach, connector, assembly and serviceability evidence from `PAP-015` through `PAP-018` is now compared separately in [CPO Packaging, Fibre-Attach and Serviceability Benchmark](packaging-reliability-benchmark.md). The next optical-engine step is to apply these PIC, laser and packaging gates to matched company dossiers for Broadcom, Coherent, Lumentum and NVIDIA.
 
+The additional packaging records `PAP-028`–`PAP-031` reinforce why the rows above cannot be scored on PIC bandwidth alone: detachable known-good-module testing, FOWLP engine construction, external-light polymer distribution and glass-interposer thermal/RF behavior each improve a different part of the engine flow. Their reported losses, short-duration stability and test-vehicle temperatures remain non-comparable to a qualified 200G/lane or 400G/lane engine, so they are constraints and design options rather than ranking inputs. See `CLM-239`–`CLM-245` and the [packaging benchmark](packaging-reliability-benchmark.md).
+
 The electrical-channel countercase is recorded in [Linear-Drive Optics Boundary Benchmark](../02-architecture/linear-drive-boundary-benchmark.md). It matters here because an excellent PIC does not create an automatic CPO profit pool if a customer can retain LPO margin at its required topology and service boundary.
 
 The first supplier comparison is in [Coherent and Lumentum External Optical-Engine Supplier Dossier](../07-companies/coherent-lumentum-external-optical-engine-dossier.md). It keeps demonstrated component breadth and ELSFP serviceability separate from unknown complete-engine yield, qualification and CPO-specific profitability.
