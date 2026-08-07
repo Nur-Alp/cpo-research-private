@@ -10,7 +10,9 @@ This directory contains the research source index, reading sequence, and any leg
 
 `../03-components/optical-engine-benchmark.md` is the working matched-boundary comparison for scale-out optical engines. It distinguishes measured device results from full-engine validation, qualification and commercial production.
 
-`source-gap-audit-2026-08-06.md` is the current evidence-coverage and company-leadership audit. It separates provisional category leaders from the evidence still needed to name a durable overall winner, and contains the university-download queue.
+`source-gap-audit-2026-08-06.md` is the current evidence-coverage and company-leadership audit. It separates provisional category leaders from the evidence still needed to name a durable overall winner, and contains the remaining university-download queue.
+
+`../03-components/academic-evidence-matrix.md` classifies the retained academic packet by measured, modelled, and target evidence. Use it to avoid carrying a component or research result into a production, yield, or margin conclusion.
 
 `source-viewing-guide.md` is the reading index for publisher pages retained as HTML. It links each readable local PDF snapshot and its canonical publisher URL. Cite the publisher URL; use the PDF snapshot for local reading.
 
@@ -113,7 +115,7 @@ The verified `PAP-012` through `PAP-031` packet covers electronic-photonic co-op
 6. `PAP-020` for the system-level value mechanism behind higher-radix CPO switches.
 7. `PAP-028`–`PAP-031` for detachable known-good-module flow, FOWLP engine construction, external-light waveguides, and glass-interposer thermal/RF boundaries. Treat them as mechanism or test-vehicle evidence, not final-engine yield or margin evidence.
 
-The three previously incomplete downloads have now been replaced by verified full papers. See `papers/acquisition-issues.md` for the audit trail.
+The retained packet is not uniformly full-text: `PAP-028`–`PAP-030` are publisher abstract archives, while `PAP-031` is a full author-hosted PDF. The access boundary and remaining acquisition requests are recorded in `papers/acquisition-issues.md` and the [academic evidence matrix](../03-components/academic-evidence-matrix.md).
 
 ### Current leadership-diligence packet
 

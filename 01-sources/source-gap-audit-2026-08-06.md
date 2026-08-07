@@ -2,13 +2,13 @@
 
 **Owner:** Nur Alpys
 
-**As of:** 2026-08-07
+**As of:** 2026-08-07 (refreshed after the PAP-028–PAP-031 review)
 
 **Decision question:** Which architecture becomes commercially meaningful first, and which company captures the largest sustainable incremental profit pool?
 
 ## Executive conclusion
 
-The current library is adequate for explaining why CPO may be needed and for framing a 102.4T switch comparison. It is not yet adequate for declaring one company the durable technology or investment leader.
+The current library is adequate for explaining why CPO may be needed and for framing a 102.4T switch comparison. The academic packet is now classified in the [academic evidence matrix](../03-components/academic-evidence-matrix.md), which explicitly separates measured demonstrations, modeled results and research targets. The library is still not adequate for declaring one company the durable technology or investment leader.
 
 The full required-output status is now maintained in [CPO Decision-Output Completion Audit](../00-scope/decision-output-completion-audit.md). The immediate research priority remains evidence that converts architecture and company claims into measurable customer, manufacturing and economic outcomes.
 
@@ -90,7 +90,7 @@ PAP-007, PAP-008, PAP-010 and PAP-011 have been reviewed on a matched evidence b
 
 They establish a conditional technical boundary, not how long advanced pluggables can defer NPO/CPO commercially. Still required: matched 200G multi-vendor systems at stated loss/return-loss/FEC/reach/temperature boundaries, 212.5 GBd measured links, module and chassis power, field reliability, qualification, service and cost data.
 
-### 3. Additional packaging yield, rework, and reliability evidence
+### 3. Packaging yield, rework, and reliability evidence
 
 PAP-015 through PAP-018 are now reviewed and establish attach-metrology, mechanical-model and detachable-connector mechanisms. They do not supply production yield or qualification. Obtain the following additional evidence through university access where needed:
 
@@ -100,7 +100,7 @@ PAP-015 through PAP-018 are now reviewed and establish attach-metrology, mechani
 4. *Thermal and Electrical Study of Glass Interposers in Co-Packaged Electronic-Photonic Systems*, IEEE TCPMT 15, 1625-1635 (2025), DOI 10.1109/TCPMT.2025.3533388.
 5. Peter O'Brien, *Photonic and Electronic Co-Packaging Technologies - From Research to Pilot Manufacturing*, OFC 2025, W4A.1, DOI 10.1364/OFC.2025.W4A.1. Obtain the presentation video if the proceedings contain only an abstract.
 
-The first four records are now retained locally as `PAP-028`–`PAP-031`: Psaila's abstract HTML, Li's abstract HTML, Suda's open-access abstract HTML, and Gupta's author-hosted PDF. They add useful mechanism and prototype measurements, but do not clear production package yield. Primary research with packaging engineers, OSATs, fibre-attach suppliers, and system manufacturers will still be necessary. See the [packaging benchmark](../03-components/packaging-reliability-benchmark.md) and [source viewing guide](source-viewing-guide.md).
+The first four records are now retained locally as `PAP-028`–`PAP-031`: Psaila's abstract HTML, Li's abstract HTML, Suda's open-access abstract HTML, and Gupta's author-hosted PDF. They add useful mechanism and prototype measurements, but do not clear production package yield. The remaining high-value academic request is O'Brien's OFC 2025 pilot-manufacturing presentation; primary research with packaging engineers, OSATs, fibre-attach suppliers, and system manufacturers will still be necessary. See the [packaging benchmark](../03-components/packaging-reliability-benchmark.md), [academic evidence matrix](../03-components/academic-evidence-matrix.md), and [source viewing guide](source-viewing-guide.md).
 
 ### 4. CPO-specific customer proof
 
@@ -171,7 +171,7 @@ The next filings set should include Broadcom, NVIDIA, Marvell, Lumentum, Coheren
 2. Obtain product-level yield, test, field-service and warranty evidence for the external optical-engine candidates.
 3. Obtain contract/order conversion, supply share, ASP and CPO-specific margin/capex evidence for Coherent and Lumentum.
 4. Obtain matched 200G LPO/NPO/CPO system evidence and seek 400G-lane measured-link results.
-5. Obtain the five additional packaging/reliability sources above and seek production-yield evidence.
+5. Obtain O'Brien's OFC 2025 pilot-manufacturing presentation if the proceedings or university access provide it, and seek production-yield evidence from primary sources.
 6. Build accelerator optical-I/O dossiers for Marvell/Celestial AI, Ayar Labs, Lightmatter, TSMC, and NVIDIA.
 7. Conduct primary research with system operators, OSATs, fibre-attach suppliers, and field-service engineers.
 8. Only then populate operational and investment scores and the 2026-2032 adoption probabilities.
@@ -184,4 +184,4 @@ The next filings set should include Broadcom, NVIDIA, Marvell, Lumentum, Coheren
 - Coherent, *Technology Innovation Briefing*, OFC 2026.
 - NVIDIA, *NVIDIA Kicks Off the Next Generation of AI With Rubin*.
 
-The TSMC 2025 symposium paper, OCP short-reach photonics white paper, Broadcom OFC 2026 release, and the two open-access JLT PDFs were readable online but rejected automated file download. They remain URL-indexed or in the university-download queue.
+The TSMC 2025 symposium paper, OCP short-reach photonics white paper, and Broadcom OFC 2026 release remain URL-indexed or retained in the product-materials folder. The PAP-028–PAP-031 packaging packet is now retained locally with its access limitations recorded; it should not be treated as production-yield evidence.
