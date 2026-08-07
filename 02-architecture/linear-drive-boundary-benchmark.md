@@ -26,6 +26,8 @@ IEEE P802.3dj provides a standards-level 200G/lane anchor: the task force record
 
 The practical conclusion is narrower than “the standard forces CPO”: standards work confirms that the electrical boundary is being formalized around 200G/lane, while the reviewed public material does not yet provide an adopted 400G/lane channel budget. The 400G gate therefore remains an end-to-end measurement question, not a settled standards number.[CLM-205]
 
+The newer IEEE 400GPL objectives make the boundary more concrete without changing that conclusion. They include optional single-lane 400G attachment-unit interfaces for both chip-to-module and chip-to-chip use, plus objectives for 500 m single-mode fibre and 1 m twin-axial copper. Because the AUI is optional and the document supplies no insertion-loss, FEC or measured-link result, it preserves implementation optionality rather than selecting LPO, NPO or CPO.[STD-009][CLM-206][CLM-207][CLM-208][CLM-209]
+
 ## Comparison rules
 
 Do not compare a headline loss number without matching all of the following:
@@ -87,3 +89,4 @@ At 400G/lane, the present evidence shifts the diligence focus to short electrica
 - `PAP-011`: Jianying Zhou et al., [*400G/lane for Linear-drive Optics Applications*](../01-sources/papers/PAP-011-zhou-400g-linear-drive-optics-2026.pdf), OFC 2026 paper Th1C.3, DOI 10.1364/OFC.2026.Th1C.3.
 - `STD-007`: OIF, [*Next Generation CEI-224G Framework*](../01-sources/standards/STD-007-oif-cei-224g-framework.pdf), OIF-FD-CEI-224G-01.0, 7 February 2022.
 - `STD-008`: IEEE P802.3dj, [*Key Motions*](../01-sources/standards/STD-008-ieee-p8023dj-key-motions-2024.pdf), compilation through 16 May 2024.
+- `STD-009`: IEEE 802.3 400GPL Study Group, [*400GPL SG Objectives*](../01-sources/standards/STD-009-ieee-400gpl-objectives-2026.pdf), approved 10 June 2026; project status updated July/August 2026.
