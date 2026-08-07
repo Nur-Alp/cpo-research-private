@@ -79,6 +79,8 @@ The 22/23, 26 and 31 dB figures answer different questions under different chann
 
 OIF-EEI-112G-RTLR-01.0 supplies a standards-level comparator that should be kept separate from unretimed LPO: it combines a retimed transmitter with a linear receiver, supports 53.125 GSym/s PAM4 and 200G/400G/800G host IDs, and allocates 11.9 dB of the recommended 16 dB ball-to-ball budget to host PCB/cable losses while preserving hot plug and module interoperability.[CLM-297][CLM-298][CLM-299][CLM-300] This does not establish a power or cost win, but it prevents the CPO thesis from treating every 200G/lane electrical reach problem as a binary CPO-versus-pluggable choice.
 
+OIF's OFC 2026 showcase further indicates that the ecosystem is advancing CEI-224G/448G, RTLR, unretimed linear optics, co-packaging, CMIS and ELSFP in parallel. This is evidence of interoperability activity, not evidence that one path has won on production cost or field reliability.[CLM-301][CLM-302][CLM-303]
+
 ## Investment implication
 
 LPO is a real countercase to any thesis that power alone forces switch CPO. The relevant bottleneck moves with the electrical channel: packaging, host-SerDes, connector and module placement determine whether linear pluggables can retain sufficient margin. This makes 200G/lane a coexistence problem rather than a binary CPO-versus-pluggable decision.

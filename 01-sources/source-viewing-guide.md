@@ -36,6 +36,7 @@
 
 | `WHT-001` Corning/Broadcom CPO fiber infrastructure | Evidence note: [local review](product-materials/WHT-001-corning-broadcom-cpo-fiber-infrastructure.md) | [Corning canonical PDF](https://www.corning.com/content/dam/corning/catalog/coc/documents/white-papers/LAN-3366-AEN.pdf) |
 | `STD-012` OIF EEI-112G-RTLR | [Retained PDF](standards/STD-012-oif-eei-112g-rtlr-2025.pdf) | [OIF original PDF](https://www.oiforum.com/wp-content/uploads/OIF-EEI-112G-RTLR-01.0.pdf) |
+| `STD-013` OIF OFC 2026 interoperability showcase | Evidence note: [local review](standards/STD-013-oif-ofc-2026-interoperability-showcase.md) | [OIF original report](https://www.oiforum.com/oif-validates-critical-interoperability-live-at-ofc-2026-through-multi-vendor-demonstrations-and-expert-panels/) |
 
 ## Filings and financial releases
 
