@@ -70,6 +70,8 @@ The new packaging packet tightens the model without changing that conclusion. Ps
 - No result establishes that specialist packaging suppliers retain pricing power rather than competing as capital-intensive manufacturing vendors.
 - No reviewed experiment compares the same connector and attach flow across competing PIC platforms on a matched cost and reliability boundary.
 
+The Corning/Broadcom fiber-infrastructure white paper adds a system-level reliability boundary that is easy to miss in PIC-only comparisons: dense fiber count, bend radius, coating damage, routing and assembly handling can create failure and replacement exposure even when the optical engine and ELSFP meet their component requirements. Its proposed known-good-fiber cassettes and bend-control hardware are manufacturing hypotheses, not measured yield improvements.[CLM-291][CLM-292][CLM-293]
+
 ## Investment implication
 
 Packaging remains a credible control point but not yet a demonstrated standalone profit pool. The strongest potential differentiation is likely to come from a supplier that owns the coupled process window across PIC edge design, fibre attach, connector, assembly, in-line metrology, final test and rework. A low-loss connector record without qualified process yield is unlikely to guarantee durable margin.
