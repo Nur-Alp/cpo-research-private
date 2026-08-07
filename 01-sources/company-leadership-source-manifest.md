@@ -13,9 +13,16 @@ This manifest maps each provisional company-leadership conclusion to the locally
 | `PRS-003` | Coherent | `conference-presentations/PRS-003-coherent-ofc-investor-event-2026.pdf` | Publisher PDF | Official Coherent OFC 2026 investor-event material |
 | `FIL-001` | Marvell | `filings/FIL-001-marvell-2026-05-02-10q.html` | Publisher-hosted SEC filing HTML | <https://investor.marvell.com/sec-filings/all-sec-filings/content/0001835632-26-000019/mrvl-20260502.htm> |
 | `CMP-014` | TSMC | `product-materials/CMP-014-tsmc-coupe-source-note.md` | Local retrieval note | <https://pr.tsmc.com/english/news/3136> |
+| `CMP-015` | Coherent | `product-materials/CMP-015-coherent-cpo-ofc-2026.html` | Publisher HTML | <https://www.coherent.com/news/press-releases/coherent-co-packaged-optics-cpo-technologies-ofc-2026> |
+| `CMP-016` | Lumentum | `product-materials/CMP-016-lumentum-uhp-lasers-cpo.html` | Publisher HTML | <https://www.lumentum.com/en/products/data-center/cw-lasers/uhp-lasers-cpo> |
+| `CMP-017` | Lumentum | `product-materials/CMP-017-lumentum-ofc-2026-ai-optics.html` | Publisher HTML | <https://investor.lumentum.com/financial-news-releases/news-details/2026/Lumentum-Demonstrates-Industry-Leading-Technologies-and-Products-for-Scale-Out-Scale-Up-and-Scale-Across-AI-Infrastructure-at-OFC-2026/default.aspx> |
+| `FIL-002` | Coherent | Not locally retrievable | Publisher/SEC link | <https://www.sec.gov/Archives/edgar/data/820318/000119312526208972/d57080dex991.htm> |
+| `FIL-003` | Lumentum | Not locally retrievable | Publisher/SEC link | <https://www.sec.gov/Archives/edgar/data/1633978/000162828026030777/lite-20260328.htm> |
 
 ## Preservation notes
 
 - HTML files are publisher pages saved as received. They may depend on remote styling or images, but their source text remains locally searchable.
 - TSMC returned HTTP 403 for both its official HTML page and attached PDF during automated retrieval. `CMP-014` therefore remains URL-canonical; the local note records the failed retrieval and the relevant source boundary without presenting reconstructed text as an original download.
+- The original Coherent and Lumentum product/announcement pages for `CMP-015` through `CMP-017` are retained locally. The source log links those retained originals and preserves the publisher URL in its notes.
+- SEC returned HTTP 403 when this workspace attempted direct retention of `FIL-002` and `FIL-003`, including an ordinary browser user-agent request. Their official SEC links remain canonical and are retained in the source log and the relevant dossier; no reconstructed local copy was created.
 - Local retention does not convert company claims into independently verified facts. Continue to apply the limitations and confidence fields in `source-log.csv`.
