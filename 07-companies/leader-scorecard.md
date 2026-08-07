@@ -1,7 +1,7 @@
 # CPO Company Leadership Scorecard
 
 **Status:** Framework with provisional evidence-adjusted leadership view
-**Last updated:** 2026-08-06
+**Last updated:** 2026-08-07
 
 ## Purpose
 
@@ -90,8 +90,8 @@ This is a triage result, not the completed weighted scorecard. Scores remain unp
 
 | Leadership layer | Provisional leader or set | Evidence-adjusted interpretation |
 |---|---|---|
-| Switch-side CPO platform control | NVIDIA | Strongest full-stack system position and named platform adopters; CPO-specific customer volume remains unverified |
-| Merchant switch CPO maturity | Broadcom | Strongest multi-generation merchant-switch evidence and production-volume claim; independent customer and field proof remain absent |
+| Switch-side CPO platform control | NVIDIA | Strongest full-stack system route and named early ecosystem adopters; CPO-specific customer volume remains unverified. See [platform dossier](broadcom-nvidia-switch-cpo-platform-dossier.md). |
+| Merchant switch CPO product definition | Broadcom | Most specific disclosed 102.4T CPO architecture; its own release says both “now shipping” and early-access sampling, so broad CPO volume remains unproven. See [platform dossier](broadcom-nvidia-switch-cpo-platform-dossier.md). |
 | External-laser commercial visibility | Lumentum | Clearest disclosed CPO order value and delivery window; customer, margin, and product boundary are undisclosed |
 | Photonic component breadth and manufacturing | Coherent | Broad SiPh, InP, VCSEL, detector, passive, fibre-attach, module, and test stack plus expanding 6-inch InP production |
 | Accelerator optical-I/O public-company option | Marvell | Celestial AI plus custom XPU, switching, DSP, and NVIDIA relationship create the strongest public-company strategic bundle; production proof remains weak |
@@ -106,6 +106,11 @@ NVIDIA controls the accelerator platform, network architecture, software, and an
 ### Why Broadcom does not automatically win every category
 
 Broadcom's third-generation CPO and merchant-switch position are strong technical and product-maturity signals. Public evidence still does not establish named production deployments, comparable field reliability, final-package yield, or incremental CPO gross profit.
+
+## Evidence-matched dossiers
+
+- [Broadcom and NVIDIA: Switch-Side CPO Platform Dossier](broadcom-nvidia-switch-cpo-platform-dossier.md)
+- [Coherent and Lumentum: External Optical-Engine Supplier Dossier](coherent-lumentum-external-optical-engine-dossier.md)
 
 ### Why Lumentum and Coherent matter
 
