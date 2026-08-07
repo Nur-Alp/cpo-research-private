@@ -34,6 +34,9 @@
 
 | Date | Hypothesis ID | Evidence ID | Direction | Evidence quality | Effect on confidence | Model change | Notes |
 |---|---|---|---|---|---|---|---|
+| 2026-08-07 | H3 | CLM-019; CLM-020 | Supports | Medium | Remains Unrated pending primary manufacturing data | None | The review identifies thermal pathways, yield, burn-in and test as scale constraints, but supplies no matched production economics. |
+| 2026-08-07 | H11 | CLM-021; CLM-022; CLM-023; CLM-024 | Mixed | Medium | Remains Unrated | Add monolithic InP transmitter as a benchmark architecture | Nokia demonstrates substantial functional integration and controlled output, but full-engine yield, qualification, reliability and cost are unknown. |
+| 2026-08-07 | H12 | CLM-021; CLM-022 | Mixed | Medium | Remains Unrated | Add integrated InP as an explicit ELS countercase | A capable integrated-laser transmitter architecture weakens any assumption that external lasers are the only viable high-power pathway; it does not establish comparative reliability or economics. |
 
 Allowed directions:
 

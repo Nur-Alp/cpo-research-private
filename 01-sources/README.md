@@ -8,6 +8,8 @@ This directory contains the research source index, reading sequence, and any leg
 
 `claim-ledger.csv` is the canonical assertion database. Add only thesis-relevant claims and label each as fact, company claim, estimate, inference, opinion, or unknown. Every material adoption, timing, leadership, or financial conclusion should be traceable to this ledger.
 
+`../03-components/optical-engine-benchmark.md` is the working matched-boundary comparison for scale-out optical engines. It distinguishes measured device results from full-engine validation, qualification and commercial production.
+
 `source-gap-audit-2026-08-06.md` is the current evidence-coverage and company-leadership audit. It separates provisional category leaders from the evidence still needed to name a durable overall winner, and contains the university-download queue.
 
 The new workflow fields are:
