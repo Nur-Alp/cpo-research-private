@@ -98,16 +98,16 @@ All four local files were checked against their contents rather than filenames. 
 
 ### Focused PIC, packaging, and profit-pool expansion
 
-The verified `PAP-012` through `PAP-024` packet covers electronic-photonic co-optimisation, optical-I/O chiplets, interposers, fibre attach, thermomechanical reliability, detachable connectors, external lasers, switch-radix economics, microring PICs, design tools, and CMOS/silicon-photonics integration. Prioritise:
+The verified `PAP-012` through `PAP-027` packet covers electronic-photonic co-optimisation, optical-I/O chiplets, interposers, fibre attach, thermomechanical reliability, detachable connectors, external lasers, switch-radix economics, microring and InP PICs, VCSELs, design tools, and CMOS/silicon-photonics integration. Prioritise:
 
 1. `PAP-024` for the current device and integration map.
-2. `PAP-012`, `PAP-021`, and `PAP-013` for scale-out optical-engine and PIC design.
+2. `PAP-012`, `PAP-021`, `PAP-025`, and `PAP-013` for scale-out optical-engine and PIC design.
 3. `PAP-015`, `PAP-016`, `PAP-017`, and `PAP-018` for manufacturing, fibre attach, serviceability, and reliability.
-4. `PAP-019` and `PAP-022` for the external-laser technology and supplier thesis.
+4. `PAP-019`, `PAP-022`, `PAP-026`, and `PAP-027` for external versus integrated laser technology and the supplier thesis.
 5. `PAP-014` and `PAP-023` for potential platform and tooling control points.
 6. `PAP-020` for the system-level value mechanism behind higher-radix CPO switches.
 
-Three misleading partial downloads were rejected. See `papers/acquisition-issues.md` before attempting them again.
+The three previously incomplete downloads have now been replaced by verified full papers. See `papers/acquisition-issues.md` for the audit trail.
 
 ### Current leadership-diligence packet
 
