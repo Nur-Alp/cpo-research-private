@@ -11,9 +11,9 @@ Which supplier has the stronger evidence that it can capture a durable external 
 
 ## Current answer
 
-**INFERENCE:** Coherent has the broader demonstrated component and manufacturing stack. Its company materials describe silicon photonics, high-power InP lasers, VCSELs, advanced packaging and a 6.4T (32 x 200G) socketed CPO demonstration, while it reports volume production on a six-inch InP line and planned capacity expansion through 2027. The March 2026 NVIDIA agreement adds a multibillion-dollar purchase commitment, future capacity rights and a $2B investment, but does not identify product allocation or realised CPO revenue.[CMP-015][PRS-003][PRI-023][CLM-194]
+**INFERENCE:** Coherent has the broader demonstrated component and manufacturing stack. Its company materials describe silicon photonics, high-power InP lasers, VCSELs, advanced packaging and a 6.4T (32 x 200G) socketed CPO demonstration, while it reports volume production on a six-inch InP line and planned capacity expansion through 2027. The executed March 2026 NVIDIA financing and collaboration add access to five additional CPO-related product families, but do not identify product allocation or realised CPO revenue.[CMP-015][PRS-003][PRI-026][CLM-197]
 
-**INFERENCE:** Lumentum has the clearer narrow product-and-commercial signal for an external laser source: a serviceable ELSFP product boundary, specified UHP/SHP laser demonstrations, and a previously disclosed incremental multi-hundred-million-dollar CPO order for delivery in the first half of calendar 2027. The March 2026 NVIDIA agreement and planned Greensboro 6-inch InP fab strengthen the capacity/customer-route case, but do not prove complete-engine content, yield or margin.[CMP-016][CMP-017][CMP-010][PRI-024][PRI-025][CLM-195][CLM-196]
+**INFERENCE:** Lumentum has the clearer narrow product-and-commercial signal for an external laser source: a serviceable ELSFP product boundary, specified UHP/SHP laser demonstrations, and a previously disclosed incremental multi-hundred-million-dollar CPO order for delivery in the first half of calendar 2027. The executed March 2026 NVIDIA financing and planned Greensboro 6-inch InP fab strengthen the capacity/customer-route case, but do not prove complete-engine content, yield or margin.[CMP-016][CMP-017][CMP-010][PRI-027][PRI-025][CLM-198][CLM-196]
 
 Neither company has disclosed the information needed to call a sustainable CPO profit-pool leader: customer-confirmed CPO deployment, final optical-engine yield, automated fibre-attach and test cost, warranty/field-return data, CPO content per system, contract margin, or a CPO revenue line. The appropriate present status is **Coherent leads on breadth and reported capacity; Lumentum leads on external-laser commercial visibility; no overall supplier leader is established.**
 
@@ -94,5 +94,7 @@ The next evidence to obtain is a customer-side CPO confirmation, CPO-specific co
 - `PRI-023`: Coherent, [NVIDIA strategic optics agreement](../01-sources/product-materials/PRI-023-nvidia-coherent-strategic-partnership.md), 2 March 2026.
 - `PRI-024`: Lumentum, [NVIDIA strategic optics agreement](../01-sources/product-materials/PRI-024-nvidia-lumentum-strategic-partnership.md), 2 March 2026.
 - `PRI-025`: Lumentum, [Greensboro InP facility](../01-sources/product-materials/PRI-025-lumentum-greensboro-fab.md), 26 March 2026.
+- `PRI-026`: Coherent, [NVIDIA investment and CPO collaboration SEC 8-K](../01-sources/product-materials/PRI-026-coherent-nvidia-8k.md), 2 March 2026.
+- `PRI-027`: Lumentum, [NVIDIA investment and optics collaboration SEC 8-K](../01-sources/product-materials/PRI-027-lumentum-nvidia-8k.md), 2 March 2026.
 
 Company materials establish disclosed product claims and financial statements establish corporate-level financial facts; neither independently validates CPO performance, volume, yield, reliability or profitability.

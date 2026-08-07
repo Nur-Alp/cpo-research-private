@@ -34,7 +34,7 @@ The first comparable unit should be a bidirectional 6.4-Tb/s optical engine (32 
 | Dimension | Coherent | Lumentum | Current interpretation |
 |---|---|---|---|
 | Technical breadth | SiPh CPO, ELS/high-power InP, VCSEL CPO, InP-on-silicon 400G modulation and packaging demonstrations [CMP-015; PRS-003] | UHP/SHP lasers, ELSFP, 200G EMLs, DWDM external-light demonstrations [CMP-016; CMP-017] | Coherent has broader disclosed engine options; Lumentum has a sharper light-source boundary |
-| Customer route | NVIDIA agreement with multibillion-dollar purchase commitment, future capacity rights and $2B investment [PRI-023; CLM-194] | NVIDIA agreement with multibillion-dollar purchase commitment, future laser-capacity rights and $2B investment [PRI-024; CLM-195] | Both now have primary NVIDIA route evidence; neither release allocates products or volume |
+| Customer route | Executed $2B NVIDIA private placement plus access to five additional Coherent product families related to CPO; multibillion purchase/capacity commitment remains product-unallocated [PRI-026; CLM-197] | Executed $2B NVIDIA private placement plus multibillion purchase/capacity rights for advanced laser components [PRI-027; CLM-198] | Both now have executed primary NVIDIA route evidence; neither filing allocates product quantities or volume |
 | Manufacturing signal | Six-inch InP volume-production claim and expansion; CPO allocation and qualified yield missing [PRS-003] | Greensboro 6-inch InP facility planned to ramp mid-2028; hundreds of millions of dollars planned; qualified output missing [PRI-025; CLM-196] | Coherent has earlier disclosed capacity; Lumentum has a dated future fab milestone |
 | Commercial signal | Very-high-volume multi-year CPO order claim, customer and terms undisclosed [PRS-003] | Multi-hundred-million-dollar CPO order for first-half 2027 delivery; product and customer undisclosed [CMP-010; CLM-083] | Lumentum has the clearer order magnitude/timing; neither has product-level conversion |
 | Potential content capture | Could span PIC, laser, package, fibre attach and test if Coherent supplies the complete engine | Most clearly captures laser/ELSFP content; complete-engine share is not shown | Coherent has higher potential content but more unproven process boundaries |
@@ -88,7 +88,7 @@ The current evidence status is:
 | Qualified supplier share | Blocked | Blocked | Nonexclusive agreements and second-source status are not enough |
 | Realised product margin | Blocked | Blocked | Consolidated gross margins are not product margins [CLM-070; CLM-073] |
 | Yield/rework/warranty | Blocked | Blocked | No lot, field-return or repair data |
-| Incremental capex | Partial company-level signal | Partial company-level signal | Coherent $2B investment and Lumentum hundreds-of-millions fab plan are not CPO-attributable capex [CLM-194–CLM-196] |
+| Incremental capex | Partial company-level signal | Partial company-level signal | Executed NVIDIA investments and Lumentum's fab plan are not CPO-attributable capacity or margin [CLM-194–CLM-198] |
 
 ## What would change the ranking
 
