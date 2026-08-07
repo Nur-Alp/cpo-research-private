@@ -30,6 +30,8 @@ This manifest maps each provisional company-leadership conclusion to the locally
 | `CMP-022` | CoreWeave | `product-materials/CMP-022-coreweave-sn6600-ld-deployment.html` | Publisher HTML only; readable PDF snapshot not yet generated | <https://coreweave.com/blog/liquid-cooled-switching-doubles-ai-network-bandwidth-per-rack> |
 | `CMP-023` | Lambda | `product-materials/CMP-023-lambda-quantum-x-photonics-production.html` | Publisher HTML only; readable PDF snapshot not yet generated | <https://lambda.ai/blog/lambda-at-gtc-2026-building-the-superintelligence-cloud> |
 | `CMP-024` | Lambda | `product-materials/CMP-024-lambda-spectrum-x-photonics-roadmap.html` | Publisher HTML only; readable PDF snapshot not yet generated | <https://lambda.ai/blog/silicon-photonics-for-ai-clusters-performance> |
+| `CMP-025` | NVIDIA | `product-materials/CMP-025-nvidia-silicon-photonics-partners.html` | Publisher HTML only; readable PDF snapshot not yet generated | <https://www.nvidia.com/en-us/networking/products/silicon-photonics/> |
+| `CMP-026` | NVIDIA | `product-materials/CMP-026-nvidia-cpo-power-efficiency.html` | Publisher HTML only; readable PDF snapshot not yet generated | <https://developer.nvidia.com/blog/scaling-ai-factories-with-co-packaged-optics-for-better-power-efficiency/> |
 
 ## Preservation notes
 
@@ -45,4 +47,5 @@ This manifest maps each provisional company-leadership conclusion to the locally
 - CoreWeave's `CMP-022` deployment blog is retained as original HTML for the same reason; it corroborates the named SN6600-LD/Vera Rubin deployment but remains a customer claim rather than an audited fleet record.
 - Lambda's `CMP-023` GTC announcement is retained as original HTML; it is customer-side production-scale evidence for Quantum-X InfiniBand Photonics CPO and is kept separate from switch-side Spectrum-X Ethernet evidence.
 - Lambda's `CMP-024` technology blog is retained as original HTML; it names Spectrum-X Photonics Ethernet in preparation/roadmap language, not as a production deployment. This negative boundary is used to prevent domain overcounting.
+- NVIDIA's `CMP-025` platform page and `CMP-026` technical blog are retained as original HTML. They are company ecosystem, architecture and roadmap claims; neither is treated as independent supplier or performance verification.
 - Local retention does not convert company claims into independently verified facts. Continue to apply the limitations and confidence fields in `source-log.csv`.

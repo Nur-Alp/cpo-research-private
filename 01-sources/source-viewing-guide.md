@@ -25,6 +25,8 @@
 | `CMP-022` CoreWeave SN6600-LD deployment | HTML-only: [raw archive](product-materials/CMP-022-coreweave-sn6600-ld-deployment.html) | [CoreWeave original](https://coreweave.com/blog/liquid-cooled-switching-doubles-ai-network-bandwidth-per-rack) |
 | `CMP-023` Lambda Quantum-X Photonics production-scale cluster | HTML-only: [raw archive](product-materials/CMP-023-lambda-quantum-x-photonics-production.html) | [Lambda original](https://lambda.ai/blog/lambda-at-gtc-2026-building-the-superintelligence-cloud) |
 | `CMP-024` Lambda Spectrum-X Photonics roadmap | HTML-only: [raw archive](product-materials/CMP-024-lambda-spectrum-x-photonics-roadmap.html) | [Lambda original](https://lambda.ai/blog/silicon-photonics-for-ai-clusters-performance) |
+| `CMP-025` NVIDIA Silicon Photonics partners | HTML-only: [raw archive](product-materials/CMP-025-nvidia-silicon-photonics-partners.html) | [NVIDIA original](https://www.nvidia.com/en-us/networking/products/silicon-photonics/) |
+| `CMP-026` NVIDIA CPO power-efficiency technical blog | HTML-only: [raw archive](product-materials/CMP-026-nvidia-cpo-power-efficiency.html) | [NVIDIA original](https://developer.nvidia.com/blog/scaling-ai-factories-with-co-packaged-optics-for-better-power-efficiency/) |
 
 ## Filings and financial releases
 
@@ -46,3 +48,5 @@ In research notes, cite the **canonical original webpage** (not the local render
 `CMP-023` is also HTML-only; cite its canonical Lambda page and use the raw local archive for searchable text. Its domain is inter-rack scale-up CPO, not switch-side Spectrum-X Ethernet.
 
 `CMP-024` is also HTML-only; cite its canonical Lambda page and treat its Spectrum-X Photonics language as preparation/roadmap evidence, not production.
+
+`CMP-025` and `CMP-026` are also HTML-only; cite the canonical NVIDIA pages and treat the partner list and performance figures as company claims with their stated boundaries.
