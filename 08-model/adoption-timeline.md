@@ -39,7 +39,7 @@ Do not add their shares together. They have different electrical channels, servi
 | NPO/OBO, 224G-class scale-up and scale-out | Lightmatter announced a 6.4-Tb/s-per-direction NPO/OBO engine and expected late-2026 sampling; a Huawei IEEE contribution proposes a short exposed NPO electrical boundary at 400G/lane. [CLM-086; CLM-091] | 0 — announced roadmap | A dated product milestone and a plausible interoperability direction exist. | Observed samples, qualification, production or customer deployment; an adopted interface. |
 | Accelerator optical I/O, scale-up | Ayar Labs claims an 8-Tb/s UCIe optical-I/O chiplet; Marvell claims a 16-Tb/s Celestial Photonic Fabric chiplet and forecasts a FY28/FY29 commercial ramp. [CLM-085; CLM-094; CLM-095] | 1 — component/product announcement | Multiple credible public technical candidates and a dated management revenue case exist. | Customer-qualified production, system volume, yield, installed base or achieved revenue. |
 | MOSAIC wide-and-slow microLED optical links, rack-scale countercase | Microsoft reports a measured 100-channel prototype and simulates an 800 Gb/s pluggable module to 50 m. [CLM-116; CLM-117; CLM-119] | 1 — prototype plus architecture simulation | A non-laser optical path could reduce link power and add channel redundancy. | No qualified 800 Gb/s module, CPO implementation, production yield, customer or ecosystem evidence. |
-| Inter-rack scale-up CPO, NVIDIA roadmap | SemiAnalysis interprets NVIDIA's GTC 2026 roadmap as copper within racks and CPO between racks for larger-world-size systems such as NVL576/NVL1152. [CLM-183; CLM-185] | 1 — roadmap / low-confidence milestone | A defined deployment domain and architecture boundary exist in secondary roadmap analysis. | No observed production system, customer confirmation, firm date, optical-engine content, yield, service or economics. |
+| Inter-rack scale-up CPO, NVIDIA roadmap | NVIDIA describes 200G CPO in Spectrum-6, a fully functional Polyphe NVL576 prototype using direct optical connections, and a Kyber/NVL1152 direct-optical roadmap. [CLM-189–CLM-191] | 2 — primary roadmap plus functional prototype; no observed production | A defined deployment domain, a first-party architecture boundary and a functional prototype exist. | No observed NVL576/NVL1152 production system, customer confirmation, firm shipment date, optical-engine content, yield, service or economics. |
 
 The maturity state is deliberately conservative. A company’s use of “production” is recorded as a company claim unless customer-side evidence identifies the configuration, deployment and repeat volume.[CLM-077][CLM-079][CLM-081]
 
@@ -54,7 +54,7 @@ The maturity state is deliberately conservative. A company’s use of “product
 | NPO/OBO | Lightmatter Passage L20 sample availability | Late 2026 is the company’s expected date, not observed delivery. [CLM-086] | Product | Observed sample, named qualification and measured system evidence. |
 | Accelerator optical I/O | Named production XPU/rack deployment using an optical chiplet | No source-supported date | Product; manufacturing; commercial | Customer, topology, qualified yield, repeat volume and field use. [CLM-085] |
 | MOSAIC wide-and-slow optical | Simultaneous 800 Gb/s hardware with production microLED/CMOS bonding, imaging-fibre termination and reliability data | No source-supported date | Product; manufacturing; reliability | Measured aggregate module, qualified packaging, yield, service model and customer deployment. [CLM-116; CLM-118; CLM-119] |
-| Inter-rack scale-up CPO | Primary NVIDIA confirmation of copper-within-rack/CPO-between-rack topology, then observed low-volume NVL576-class deployment | Secondary analysis points to a roadmap; no source-supported observed date | Commercial; manufacturing; serviceability | Named system, rack topology, optical endpoints, supplier content, qualification and repeat deployment. [CLM-183; CLM-184; CLM-188] |
+| Inter-rack scale-up CPO | Customer or NVIDIA confirmation of an NVL576-class production deployment after the Polyphe prototype | NVIDIA primary roadmap and prototype evidence; no source-supported production date [CLM-190; CLM-191] | Commercial; manufacturing; serviceability | Named system, rack topology, optical endpoints, supplier content, qualification and repeat deployment. [CLM-190; CLM-191] |
 
 ## Why no annual percentage is populated yet
 
@@ -76,7 +76,7 @@ The entries below are *highest evidence-supported state*, not probabilities or s
 | NPO/OBO, 224G-class | 0; sampling expected late 2026 | — | — | — | — | — | — |
 | Accelerator optical I/O, scale-up | 1 | — | — | — | — | — | — |
 | MOSAIC wide-and-slow optical | 1 | — | — | — | — | — | — |
-| Inter-rack scale-up CPO | 1; roadmap / no observed production | — | — | — | — | — | — |
+| Inter-rack scale-up CPO | 2; primary roadmap plus functional prototype, no observed production | — | — | — | — | — | — |
 
 ## Conditions for scenario probabilities
 
@@ -115,7 +115,7 @@ disconfirming_evidence
 
 ## Research conclusion today
 
-Switch-side CPO has the strongest current commercial-maturity signal at 200G/lane, but no public evidence set yet proves the commercial-proof threshold. SemiAnalysis adds an important economic distinction: scale-out CPO may face a TCO/serviceability and margin-stack hurdle, while inter-rack scale-up CPO has a stronger strategic rationale because it expands accelerator-domain size. That does not make scale-up CPO more mature; it is currently a low-confidence roadmap state. 100G LPO has stronger system evidence than 200G or 400G LPO, while 200G/400G LPO remains bounded by incomplete/modeled electrical-link evidence. NPO and accelerator optical-I/O remain earlier public maturity states despite credible product announcements. This is a maturity and domain-value ranking, not a forecast of adoption or a company investment conclusion. [CLM-177; CLM-178; CLM-183; CLM-188]
+Switch-side CPO has the strongest current commercial-maturity signal at 200G/lane, but no public evidence set yet proves the commercial-proof threshold. Broadcom's primary Meta characterization materially improves the reliability evidence while leaving field, population and service-cost gates open. NVIDIA's primary Vera Rubin/NVLink material upgrades inter-rack scale-up CPO from a secondary roadmap interpretation to a first-party roadmap with a functional NVL576 prototype; it still does not establish customer production. SemiAnalysis adds an important economic distinction: scale-out CPO may face a TCO/serviceability and margin-stack hurdle, while inter-rack scale-up CPO has a stronger strategic rationale because it expands accelerator-domain size. 100G LPO has stronger system evidence than 200G or 400G LPO, while 200G/400G LPO remains bounded by incomplete/modeled electrical-link evidence. NPO and accelerator optical-I/O remain earlier public maturity states despite credible product announcements. This is a maturity and domain-value ranking, not a forecast of adoption or a company investment conclusion. [CLM-177; CLM-178; CLM-190; CLM-191; CLM-192]
 
 ## Evidence links
 

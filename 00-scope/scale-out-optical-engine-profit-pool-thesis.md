@@ -10,6 +10,10 @@
 
 The reviewed secondary industry material sharpens, but does not overturn, the thesis. Scale-out switch CPO has the strongest current public commercial signal, yet its economic case remains vulnerable to serviceability, reliability, supplier margin stacking and customer bargaining power. Scale-up and inter-rack CPO may offer the larger strategic value because the benefit is expansion of accelerator-domain size, not merely lower optical watts; however, the public evidence remains roadmap-level and must stay separate from switch-side CPO and accelerator optical-I/O chiplets. [NWS-009; NWS-010; CLM-177; CLM-178; CLM-183; CLM-188]
 
+### Primary-source update
+
+NVIDIA's 2026 technical material provides a first-party anchor for both sides of the boundary: 200G CPO is described in Spectrum-6 scale-out networking racks, while a fully functional Polyphe prototype and the Kyber/NVL1152 roadmap use direct optical links for larger inter-rack scale-up domains. This upgrades the scale-up case from secondary interpretation to primary roadmap evidence, but not to customer production. Broadcom's 2025 release adds a primary reliability signal by reporting one million flap-free 400G-equivalent port-device hours at Meta's high-temperature lab characterization environment. That result is useful for the reliability gate, but it lacks the population, field, service and economic data needed to infer realised margin or durable profit-pool capture. [PRI-021; PRI-022; CLM-189–CLM-193]
+
 This changes the research priority from a single universal CPO winner to a domain-gated question: which architecture first clears its own technical, qualification, service and total-cost gates, and which supplier controls the scarce content in that domain?
 
 ## Thesis in one sentence
