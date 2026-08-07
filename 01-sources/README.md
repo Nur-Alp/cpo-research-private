@@ -90,6 +90,7 @@ Read these after the academic core:
 1. `PAP-006`: Pavlos Maniotis and Daniel M. Kuchta, *Exploring the benefits of using co-packaged optics in data center and AI supercomputer networks* (2024). Test whether CPO can create system value through higher radix, fewer switches, network locality, and throughput rather than through optical-module power alone.
 2. `PAP-005`: Benjamin G. Lee et al., *Beyond CPO: A Motivation and Approach for Bringing Optics Onto the Silicon Interposer* (2023). Map the possible migration from package-adjacent optics to interposer-level optical I/O and the resulting changes in suppliers, packaging, and thermal design.
 3. `PAP-004`: Lucas Yeary et al., *Co-packaged Optics on Glass Substrates for 102.4 Tb/s Data Center Switches* (2023). Evaluate glass substrates as a manufacturable and potentially lower-cost integration path, separating proposed architecture from demonstrated performance.
+4. `PAP-009`: Kaoutar Benyahya et al., *MOSAIC: Breaking the Optics versus Copper Trade-off with a Wide-and-Slow Architecture and MicroLEDs* (ACM SIGCOMM 2025). Use as an architectural countercase: it reports a measured 100-channel prototype and models an 800 Gb/s microLED/imaging-fibre link, but does not demonstrate a qualified CPO product.
 
 ### Linear-drive comparators
 
