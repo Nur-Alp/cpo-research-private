@@ -1,8 +1,10 @@
 # Scale-Out Optical-Engine Benchmark
 
-**Status:** Initial evidence build; not a company ranking  
-**Decision domain:** AI data-centre scale-out optical links  
-**Generation:** 200G per lane and 1.6T engines, with a later 400G-per-lane extension  
+**Status:** Initial evidence build; not a company ranking
+
+**Decision domain:** AI data-centre scale-out optical links
+
+**Generation:** 200G per lane and 1.6T engines, with a later 400G-per-lane extension
 **Last updated:** 2026-08-07
 
 ## Decision question
