@@ -21,6 +21,8 @@ Vendor production language and partner quotations are not interchangeable with c
 | NVIDIA platform page, `CMP-025`, `CLM-228`–`CLM-229` | Spectrum-X and Quantum-X product/ecosystem route | NVIDIA says Spectrum-X reaches full production, names first adopters, and lists technology partners | Customer acceptance, units, exact partner-to-layer mapping, BOM, ASP, yield or margin | **Vendor ecosystem evidence** |
 | Broadcom, `CMP-018`, `CLM-076`–`CLM-078` | Merchant switch-side Ethernet; TH6-Davisson BCM78919 | Broadcom defines a 102.4T, sixteen-engine, 200G/link CPO product and reports both “now shipping” and early-access sampling language | Named customer deployment, accepted SKU, units, repeat shipments, qualification, supplier content, yield or margin | **Early-access/product-definition evidence** |
 | Broadcom partners, `CMP-018`, `CLM-246`–`CLM-249` | TH6 solution and integrator route | HPE, Celestica, Micas and Nexthop are quoted as collaborators or solution-route partners; Micas separately references extensive TH5 testing | None of the quotations identifies a completed TH6 customer deployment, units, date, repeat order or field population | **Partner-route evidence only** |
+| Celestica Q1 2026, `CMP-028`, `CLM-255`–`CLM-256` | Switch-side Ethernet CPO; unnamed hyperscaler program | Celestica reports an awarded design-and-manufacturing program for a CPO Ethernet switch using 1.6T switch silicon, co-packaged optical interconnects and liquid cooling; production ramp is expected in 2027 | Customer identity, SKU, units, qualification completion, repeat order, optical BOM, supplier share, ASP, margin and field history | **Customer-program evidence; planned ramp, not shipped volume** |
+| Celestica DS6000, `CMP-029`, `CLM-257` | TH6 1.6TbE platform; 102.4T; optical or copper interconnects | Celestica says the platform is available for order to initial customers and has 64 × 1.6TbE ports; it explicitly supports both copper and optical interconnects | CPO-specific configuration, customer identity, units, qualification, repeat order, optical-engine content or economics | **Orderable platform; architecture ambiguity remains** |
 
 ## Minimum fields for a cleared commercial-proof record
 
@@ -48,6 +50,7 @@ Fields 5–7 are needed to connect adoption to the optical-engine profit pool ra
 - **Strongest inter-rack scale-up production-scale record:** Lambda's Quantum-X Photonics statement for a 10,000+ GPU GB300 cluster; it is not switch-side Spectrum-X evidence.
 - **Strongest merchant product definition:** Broadcom TH6-Davisson; its current public record remains conservative early-access sampling because “now shipping” and sampling language coexist.
 - **Strongest partner-route map:** Broadcom's HPE/Celestica/Micas/Nexthop quotations and NVIDIA's broader partner/adopter list; neither clears customer shipment gates.
+- **Strongest new named-program evidence:** Celestica's unnamed hyperscaler CPO-switch design/manufacturing award with an expected 2027 production ramp. It advances the route-to-production gate but still supplies no units or realized economics.
 
 These are different leadership dimensions. No record currently clears a repeat-volume or optical-engine profit-pool gate.
 
@@ -58,4 +61,3 @@ These are different leadership dimensions. No record currently clears a repeat-v
 - [NVIDIA CPO reference-content bridge](nvidia-cpo-reference-content-bridge.md)
 - [Optical-engine profit-pool input gates](optical-engine-profit-pool-input-gates.md)
 - [Claim ledger](../01-sources/claim-ledger.csv)
-

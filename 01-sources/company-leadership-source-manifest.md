@@ -33,6 +33,8 @@ This manifest maps each provisional company-leadership conclusion to the locally
 | `CMP-025` | NVIDIA | `product-materials/CMP-025-nvidia-silicon-photonics-partners.html` | Publisher HTML only; readable PDF snapshot not yet generated | <https://www.nvidia.com/en-us/networking/products/silicon-photonics/> |
 | `CMP-026` | NVIDIA | `product-materials/CMP-026-nvidia-cpo-power-efficiency.html` | Publisher HTML only; readable PDF snapshot not yet generated | <https://developer.nvidia.com/blog/scaling-ai-factories-with-co-packaged-optics-for-better-power-efficiency/> |
 | `CMP-027` | NVIDIA | `product-materials/CMP-027-nvidia-cpo-industry-collaboration.html` | Publisher HTML only; readable PDF snapshot not yet generated | <https://developer.nvidia.com/blog/how-industry-collaboration-fosters-nvidia-co-packaged-optics/> |
+| `CMP-028` | Celestica | Not locally retained; official publisher PDF link in source log | Official financial-results PDF | <https://corporate.celestica.com/static-files/7e777cad-64eb-4ae4-90c7-c715a29d100d> |
+| `CMP-029` | Celestica | Not locally retained; official publisher HTML link in source log | Official product announcement | <https://corporate.celestica.com/news-releases/news-release-details/celestica-accelerates-ai-scale-networking-ds6000-series-16tbe> |
 
 ## Preservation notes
 

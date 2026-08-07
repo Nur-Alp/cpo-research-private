@@ -29,6 +29,8 @@
 | `CMP-026` NVIDIA CPO power-efficiency technical blog | HTML-only: [raw archive](product-materials/CMP-026-nvidia-cpo-power-efficiency.html) | [NVIDIA original](https://developer.nvidia.com/blog/scaling-ai-factories-with-co-packaged-optics-for-better-power-efficiency/) |
 | `CMP-027` NVIDIA CPO industry-collaboration technical blog | HTML-only: [raw archive](product-materials/CMP-027-nvidia-cpo-industry-collaboration.html) | [NVIDIA original](https://developer.nvidia.com/blog/how-industry-collaboration-fosters-nvidia-co-packaged-optics/) |
 | `ARC-001` Broadcom TH6-Davisson announcement archive | [Local HTML archive](product-materials/CMP-018-broadcom-th6-davisson.html) | [Broadcom original](https://www.broadcom.com/company/news/product-releases/63626) |
+| `CMP-028` Celestica Q1 2026 hyperscaler CPO-switch program | [Official PDF](https://corporate.celestica.com/static-files/7e777cad-64eb-4ae4-90c7-c715a29d100d) | [Celestica official results PDF](https://corporate.celestica.com/static-files/7e777cad-64eb-4ae4-90c7-c715a29d100d) |
+| `CMP-029` Celestica DS6000 1.6TbE orderable platform | [Official HTML](https://corporate.celestica.com/news-releases/news-release-details/celestica-accelerates-ai-scale-networking-ds6000-series-16tbe) | [Celestica original](https://corporate.celestica.com/news-releases/news-release-details/celestica-accelerates-ai-scale-networking-ds6000-series-16tbe) |
 
 ## Filings and financial releases
 
