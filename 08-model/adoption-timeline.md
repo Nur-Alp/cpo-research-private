@@ -8,13 +8,14 @@
 
 The final question is not whether an architecture has a product announcement. It is which architecture first reaches commercial proof and then meaningful adoption in a defined deployment domain. Those are different observations and must use different denominators.
 
-This model keeps five architecture/domain combinations separate:
+This model keeps six architecture/domain combinations separate:
 
 1. Retimed and advanced pluggables — Ethernet scale-out.
 2. LPO — Ethernet scale-out, separated by 100G, 200G and 400G per lane.
 3. Switch-side CPO — highly optically attached Ethernet scale-out.
 4. NPO/OBO — switch or XPU-adjacent scale-out/scale-up where a near-package electrical path is sufficient.
 5. Accelerator optical I/O — scale-up chiplet/inter-XPU fabric.
+6. MOSAIC wide-and-slow microLED links — rack-scale optical countercase.
 
 Do not add their shares together. They have different electrical channels, service models, suppliers and adoption denominators.
 
@@ -36,6 +37,7 @@ Do not add their shares together. They have different electrical channels, servi
 | Switch-side CPO, 200G/lane Ethernet scale-out | Broadcom documents TH6-Davisson’s 102.4T/16-engine configuration; NVIDIA claims 200G-SerDes CPO switches are in production. [CLM-076; CLM-077; CLM-079] | 3 to 4 — sampling / vendor-asserted limited production | A credible integrated CPO product path exists and vendors claim commercial progress. | Customer-confirmed CPO units, repeat production, field reliability, economics or meaningful system adoption. |
 | NPO/OBO, 224G-class scale-up and scale-out | Lightmatter announced a 6.4-Tb/s-per-direction NPO/OBO engine and expected late-2026 sampling; a Huawei IEEE contribution proposes a short exposed NPO electrical boundary at 400G/lane. [CLM-086; CLM-091] | 0 — announced roadmap | A dated product milestone and a plausible interoperability direction exist. | Observed samples, qualification, production or customer deployment; an adopted interface. |
 | Accelerator optical I/O, scale-up | Ayar Labs claims an 8-Tb/s UCIe optical-I/O chiplet; Marvell claims a 16-Tb/s Celestial Photonic Fabric chiplet and forecasts a FY28/FY29 commercial ramp. [CLM-085; CLM-094; CLM-095] | 1 — component/product announcement | Multiple credible public technical candidates and a dated management revenue case exist. | Customer-qualified production, system volume, yield, installed base or achieved revenue. |
+| MOSAIC wide-and-slow microLED optical links, rack-scale countercase | Microsoft reports a measured 100-channel prototype and simulates an 800 Gb/s pluggable module to 50 m. [CLM-116; CLM-117; CLM-119] | 1 — prototype plus architecture simulation | A non-laser optical path could reduce link power and add channel redundancy. | No qualified 800 Gb/s module, CPO implementation, production yield, customer or ecosystem evidence. |
 
 The maturity state is deliberately conservative. A company’s use of “production” is recorded as a company claim unless customer-side evidence identifies the configuration, deployment and repeat volume.[CLM-077][CLM-079][CLM-081]
 
@@ -49,6 +51,7 @@ The maturity state is deliberately conservative. A company’s use of “product
 | Switch CPO | Customer-side confirmation of a named TH6-Davisson or Spectrum-X Photonics deployment | No source-supported date | Commercial; reliability | Units/ports, customer, service history and repeat order/operating evidence. |
 | NPO/OBO | Lightmatter Passage L20 sample availability | Late 2026 is the company’s expected date, not observed delivery. [CLM-086] | Product | Observed sample, named qualification and measured system evidence. |
 | Accelerator optical I/O | Named production XPU/rack deployment using an optical chiplet | No source-supported date | Product; manufacturing; commercial | Customer, topology, qualified yield, repeat volume and field use. [CLM-085] |
+| MOSAIC wide-and-slow optical | Simultaneous 800 Gb/s hardware with production microLED/CMOS bonding, imaging-fibre termination and reliability data | No source-supported date | Product; manufacturing; reliability | Measured aggregate module, qualified packaging, yield, service model and customer deployment. [CLM-116; CLM-118; CLM-119] |
 
 ## Why no annual percentage is populated yet
 
@@ -69,6 +72,7 @@ The entries below are *highest evidence-supported state*, not probabilities or s
 | Switch-side CPO, 200G/lane Ethernet | 3–4 | — | — | — | — | — | — |
 | NPO/OBO, 224G-class | 0; sampling expected late 2026 | — | — | — | — | — | — |
 | Accelerator optical I/O, scale-up | 1 | — | — | — | — | — | — |
+| MOSAIC wide-and-slow optical | 1 | — | — | — | — | — | — |
 
 ## Conditions for scenario probabilities
 
@@ -116,6 +120,7 @@ Switch-side CPO has the strongest current commercial-maturity signal at 200G/lan
 - [102.4T switch CPO versus advanced pluggables](../02-architecture/102.4t-cpo-vs-advanced-pluggables.md)
 - [Linear-drive boundary benchmark](../02-architecture/linear-drive-boundary-benchmark.md)
 - [Optical-engine profit-pool input gates](optical-engine-profit-pool-input-gates.md)
+- [MOSAIC microLED countercase](../02-architecture/mosaic-microled-countercase.md)
 - [Source log](../01-sources/source-log.csv) and [claim ledger](../01-sources/claim-ledger.csv)
 
 All source IDs and claim IDs are defined in the linked records. Company announcements establish what companies say; they do not, by themselves, prove adoption, field performance or sustainable economics.
