@@ -12,6 +12,13 @@ Checked against the actual PDF text, first- and last-page renderings, page count
 
 Partial Downloads copies were not retained as additional repository files. The defective PAP-011 and PAP-018 repository copies were replaced in place and remain recoverable from Git history.
 
+## New open-access packet retained
+
+1. **PAP-038 — C2PO:** downloaded from arXiv as a complete nine-page PDF; metadata and extracted text confirm the title, authors, 200/400 Gb/s modeled link boundary and 25 Gb/s fabricated proof of concept.
+2. **PAP-039 — SiON/Si optical interposer:** downloaded from arXiv as a complete nine-page PDF; extracted text confirms the four-channel 400 Gb/s aggregate experiment, 50°C TDECQ, receiver sensitivity and coupling measurements.
+3. **PAP-040 — GRIN couplers:** downloaded from arXiv as a complete 21-page PDF; extracted text confirms that the headline coupling and alignment figures are 3D-FDTD simulations, not fabricated measurements.
+4. **PAP-041 — IBM single-mode polymer waveguide:** the official IBM Research record and abstract were retained as a Markdown evidence note because the full IEDM paper is not openly downloadable in this environment. The note preserves the publisher URL and the abstract's insertion-loss and thermomechanical-testing boundary.
+
 ## Duplicate excluded
 
 `10.1364:OFC.2024.W4H.3.pdf` and `100G and 200G per Lane Linear Drive Optics for Data Center Applications.pdf` contain the same three-page Chou et al. paper. Only one normalized copy was retained as `PAP-007`.
