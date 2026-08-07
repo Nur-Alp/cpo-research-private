@@ -8,15 +8,16 @@
 
 The final question is not whether an architecture has a product announcement. It is which architecture first reaches commercial proof and then meaningful adoption in a defined deployment domain. Those are different observations and must use different denominators.
 
-This model keeps seven architecture/domain combinations separate:
+This model keeps eight architecture/domain combinations separate:
 
 1. Retimed and advanced pluggables — Ethernet scale-out.
 2. LPO — Ethernet scale-out, separated by 100G, 200G and 400G per lane.
 3. Switch-side CPO — highly optically attached Ethernet scale-out.
-4. NPO/OBO — switch or XPU-adjacent scale-out/scale-up where a near-package electrical path is sufficient.
-5. Accelerator optical I/O — scale-up chiplet/inter-XPU fabric.
-6. MOSAIC wide-and-slow microLED links — rack-scale optical countercase.
-7. Inter-rack scale-up CPO — accelerator-world-size expansion, distinct from switch-side Ethernet CPO and accelerator optical I/O chiplets.
+4. Switch-side CPO — 100G/lane historical production baseline, kept separate from 200G/lane.
+5. NPO/OBO — switch or XPU-adjacent scale-out/scale-up where a near-package electrical path is sufficient.
+6. Accelerator optical I/O — scale-up chiplet/inter-XPU fabric.
+7. MOSAIC wide-and-slow microLED links — rack-scale optical countercase.
+8. Inter-rack scale-up CPO — accelerator-world-size expansion, distinct from switch-side Ethernet CPO and accelerator optical I/O chiplets.
 
 Do not add their shares together. They have different electrical channels, service models, suppliers and adoption denominators.
 
@@ -35,6 +36,7 @@ Do not add their shares together. They have different electrical channels, servi
 | LPO, 100G/lane Ethernet scale-out | Meta’s reviewed academic work measures a 51.2T 100G/lane LPO system; later LPO literature reports an indirectly cited initial-production claim. [CLM-056; CLM-064] | 2 to 3 — system demonstration / indirect initial-production evidence | 100G LPO has stronger system evidence than 200G/400G LPO. | Named customer, repeat volume, field reliability or a broadly defined adoption rate. |
 | LPO, 200G/lane Ethernet scale-out | Reviewed work supplies conditional models/design studies, not a matched measured complete system. [CLM-057; CLM-059; CLM-063; CLM-067] | 1 to 2 — component/system modelling | Electrical-loss and return-loss requirements are central. | Qualified 200G LPO production, durability or adoption timing. |
 | LPO, 400G/lane Ethernet scale-out | 160/180-GBd components were measured; 212.5-GBd/400G link behaviour is modeled only. [CLM-065; CLM-066; CLM-067] | 1 — component demonstration | A short electrical path is likely important at this lane rate. | A complete 400G/lane LPO implementation. |
+| Switch-side CPO, 100G/lane Ethernet scale-out | Broadcom reports TH5-Bailly as a 100G/lane volume-production CPO solution and cites Micas/Delta production systems. [CLM-199; CLM-200] | 4 — partner-reported volume-production baseline | A switch-side CPO product reached a reported production state at 100G/lane. | Audited units, repeat orders, customer identity, final-engine yield, margin and field/service economics. |
 | Switch-side CPO, 200G/lane Ethernet scale-out | Broadcom documents TH6-Davisson’s 102.4T/16-engine configuration; NVIDIA claims 200G-SerDes CPO switches are in production. Broadcom separately reports a 100G/lane TH5-Bailly volume-production baseline with Micas/Delta partner systems. [CLM-076; CLM-077; CLM-079; CLM-199; CLM-200] | 3 to 4 — 100G/lane partner-reported volume baseline; 200G/lane vendor-asserted limited production | A credible integrated CPO product path exists, with historical 100G production evidence and 200G commercial progress. | Customer-confirmed 200G CPO units, repeat production, field reliability, economics or meaningful 200G system adoption. |
 | NPO/OBO, 224G-class scale-up and scale-out | Lightmatter announced a 6.4-Tb/s-per-direction NPO/OBO engine and expected late-2026 sampling; a Huawei IEEE contribution proposes a short exposed NPO electrical boundary at 400G/lane. [CLM-086; CLM-091] | 0 — announced roadmap | A dated product milestone and a plausible interoperability direction exist. | Observed samples, qualification, production or customer deployment; an adopted interface. |
 | Accelerator optical I/O, scale-up | Ayar Labs claims an 8-Tb/s UCIe optical-I/O chiplet; Marvell claims a 16-Tb/s Celestial Photonic Fabric chiplet and forecasts a FY28/FY29 commercial ramp. [CLM-085; CLM-094; CLM-095] | 1 — component/product announcement | Multiple credible public technical candidates and a dated management revenue case exist. | Customer-qualified production, system volume, yield, installed base or achieved revenue. |
@@ -76,6 +78,7 @@ The entries below are *highest evidence-supported state*, not probabilities or s
 | NPO/OBO, 224G-class | 0; sampling expected late 2026 | — | — | — | — | — | — |
 | Accelerator optical I/O, scale-up | 1 | — | — | — | — | — | — |
 | MOSAIC wide-and-slow optical | 1 | — | — | — | — | — | — |
+| Switch-side CPO, 100G/lane Ethernet | 4; partner-reported volume-production baseline | — | — | — | — | — | — |
 | Inter-rack scale-up CPO | 2; primary roadmap plus functional prototype, no observed production | — | — | — | — | — | — |
 
 ## Conditions for scenario probabilities
