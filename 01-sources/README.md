@@ -12,6 +12,8 @@ This directory contains the research source index, reading sequence, and any leg
 
 `source-gap-audit-2026-08-06.md` is the current evidence-coverage and company-leadership audit. It separates provisional category leaders from the evidence still needed to name a durable overall winner, and contains the university-download queue.
 
+`source-viewing-guide.md` is the reading index for publisher pages retained as HTML. It links each readable local PDF snapshot and its canonical publisher URL. Cite the publisher URL; use the PDF snapshot for local reading.
+
 The new workflow fields are:
 
 - `priority`: orientation, priority one, priority two, or supplementary
