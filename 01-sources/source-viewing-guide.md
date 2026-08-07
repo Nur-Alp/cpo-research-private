@@ -24,6 +24,7 @@
 | `CMP-021` CoreWeave Spectrum-X Photonics CPO deployment | HTML-only: [raw archive](product-materials/CMP-021-coreweave-spectrum-x-photonics-cpo.html) | [CoreWeave original](https://www.coreweave.com/blog/why-ai-factories-need-proof-before-production) |
 | `CMP-022` CoreWeave SN6600-LD deployment | HTML-only: [raw archive](product-materials/CMP-022-coreweave-sn6600-ld-deployment.html) | [CoreWeave original](https://coreweave.com/blog/liquid-cooled-switching-doubles-ai-network-bandwidth-per-rack) |
 | `CMP-023` Lambda Quantum-X Photonics production-scale cluster | HTML-only: [raw archive](product-materials/CMP-023-lambda-quantum-x-photonics-production.html) | [Lambda original](https://lambda.ai/blog/lambda-at-gtc-2026-building-the-superintelligence-cloud) |
+| `CMP-024` Lambda Spectrum-X Photonics roadmap | HTML-only: [raw archive](product-materials/CMP-024-lambda-spectrum-x-photonics-roadmap.html) | [Lambda original](https://lambda.ai/blog/silicon-photonics-for-ai-clusters-performance) |
 
 ## Filings and financial releases
 
@@ -43,3 +44,5 @@ In research notes, cite the **canonical original webpage** (not the local render
 `CMP-022` is also HTML-only; cite its canonical CoreWeave page and use the raw local archive for searchable text.
 
 `CMP-023` is also HTML-only; cite its canonical Lambda page and use the raw local archive for searchable text. Its domain is inter-rack scale-up CPO, not switch-side Spectrum-X Ethernet.
+
+`CMP-024` is also HTML-only; cite its canonical Lambda page and treat its Spectrum-X Photonics language as preparation/roadmap evidence, not production.

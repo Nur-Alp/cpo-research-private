@@ -29,6 +29,7 @@ This manifest maps each provisional company-leadership conclusion to the locally
 | `CMP-021` | CoreWeave | `product-materials/CMP-021-coreweave-spectrum-x-photonics-cpo.html` | Publisher HTML only; readable PDF snapshot not yet generated | <https://www.coreweave.com/blog/why-ai-factories-need-proof-before-production> |
 | `CMP-022` | CoreWeave | `product-materials/CMP-022-coreweave-sn6600-ld-deployment.html` | Publisher HTML only; readable PDF snapshot not yet generated | <https://coreweave.com/blog/liquid-cooled-switching-doubles-ai-network-bandwidth-per-rack> |
 | `CMP-023` | Lambda | `product-materials/CMP-023-lambda-quantum-x-photonics-production.html` | Publisher HTML only; readable PDF snapshot not yet generated | <https://lambda.ai/blog/lambda-at-gtc-2026-building-the-superintelligence-cloud> |
+| `CMP-024` | Lambda | `product-materials/CMP-024-lambda-spectrum-x-photonics-roadmap.html` | Publisher HTML only; readable PDF snapshot not yet generated | <https://lambda.ai/blog/silicon-photonics-for-ai-clusters-performance> |
 
 ## Preservation notes
 
@@ -43,4 +44,5 @@ This manifest maps each provisional company-leadership conclusion to the locally
 - CoreWeave's `CMP-021` customer blog was retained as the original HTML because the page is a dynamic Webflow article; its canonical URL remains the citation source. It is intentionally marked HTML-only until a faithful readable snapshot can be generated.
 - CoreWeave's `CMP-022` deployment blog is retained as original HTML for the same reason; it corroborates the named SN6600-LD/Vera Rubin deployment but remains a customer claim rather than an audited fleet record.
 - Lambda's `CMP-023` GTC announcement is retained as original HTML; it is customer-side production-scale evidence for Quantum-X InfiniBand Photonics CPO and is kept separate from switch-side Spectrum-X Ethernet evidence.
+- Lambda's `CMP-024` technology blog is retained as original HTML; it names Spectrum-X Photonics Ethernet in preparation/roadmap language, not as a production deployment. This negative boundary is used to prevent domain overcounting.
 - Local retention does not convert company claims into independently verified facts. Continue to apply the limitations and confidence fields in `source-log.csv`.
