@@ -87,6 +87,12 @@ LPO prevents this thesis from treating CPO adoption as inevitable merely because
 
 The investment implication is conditional: a superior PIC alone is insufficient if the host-to-engine electrical channel lets LPO retain acceptable margin and serviceability. Conversely, as the channel becomes too lossy at 200G or 400G, profit may shift toward suppliers that can integrate a short-path NPO/CPO engine, its packaging and its test flow. The key company question is therefore not “who has the best PIC?” but “who can qualify the lowest-total-cost engine at the electrical boundary required by the customer topology?”
 
+## Wide-and-slow optical countercase
+
+Microsoft's MOSAIC paper adds a different challenge to the laser-based CPO thesis. Its measured prototype uses 100 directly modulated microLED/CMOS channels at 2 Gb/s each and reaches 20 m with a median BER below 2×10^-8; the proposed 800 Gb/s module and 50 m reach remain simulated. The authors estimate lower link power by replacing high-speed DSP, ADC/DAC and CDR functions with many slow channels, imaging fibre and lightweight redundancy.[S24]
+
+This is not a current 200G/400G-per-lane engine competitor. It is a long-run option value that could cap pricing power if dense microLED/CMOS bonding, TIR micro-optics, imaging-fibre termination and reliability can be industrialised. The paper provides no qualified module, production yield, customer, ASP, service or margin evidence. Therefore it belongs in the falsification and adoption model as a separate architecture, not in the present supplier ranking.[S24]
+
 ## Companies currently inside the core comparison
 
 | Company | Role in this thesis | Current evidence boundary |
@@ -187,5 +193,6 @@ The PIC, laser and packaging evidence blocks are now established, as are first d
 - **[S21]** E. M. Kimber and E. Frlan, [*200G LPO: Design Challenges and Latest Test Data*](../01-sources/papers/PAP-010-kimber-frlan-200g-lpo-2026.pdf), OFC 2026 paper M2B.1, DOI 10.1364/OFC.2026.M2B.1.
 - **[S22]** Jianying Zhou et al., [*400G/lane for Linear-drive Optics Applications*](../01-sources/papers/PAP-011-zhou-400g-linear-drive-optics-2026.pdf), OFC 2026 paper Th1C.3, DOI 10.1364/OFC.2026.Th1C.3.
 - **[S23]** [Optical-Engine Profit-Pool Input Gates](../08-model/optical-engine-profit-pool-input-gates.md), 2026-08-07. Evidence-gated synthesis of company dossiers and claim-ledger records CLM-068 through CLM-083.
+- **[S24]** Kaoutar Benyahya et al., [*MOSAIC: Breaking the Optics versus Copper Trade-off with a Wide-and-Slow Architecture and MicroLEDs*](../01-sources/papers/PAP-009-microsoft-mosaic-microled-2025.pdf), ACM SIGCOMM 2025, DOI `10.1145/3718958.3750510`; see `CLM-116` through `CLM-119` for measured-versus-modeled boundaries.
 
 Company announcements establish what the companies claim and disclose; they do not independently prove performance, production volume, yield or sustainable profit.
