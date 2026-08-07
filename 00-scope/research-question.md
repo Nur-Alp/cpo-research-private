@@ -118,6 +118,10 @@ Next thesis-changing catalyst:
 
 Do not force a company winner when evidence is insufficient. `No decision`, `no durable leader`, and `not yet investable` are valid conclusions.
 
+## Completion audit
+
+The current requirement-by-requirement evidence status and research sequence are maintained in [CPO Decision-Output Completion Audit](decision-output-completion-audit.md). This prevents the study from being treated as complete merely because its framework or source library is extensive.
+
 ## Scope controls
 
 - Use public and compliant primary research only.

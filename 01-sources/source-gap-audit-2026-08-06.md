@@ -10,6 +10,8 @@
 
 The current library is adequate for explaining why CPO may be needed and for framing a 102.4T switch comparison. It is not yet adequate for declaring one company the durable technology or investment leader.
 
+The full required-output status is now maintained in [CPO Decision-Output Completion Audit](../00-scope/decision-output-completion-audit.md). The immediate research priority remains evidence that converts architecture and company claims into measurable customer, manufacturing and economic outcomes.
+
 The largest imbalance is that the research contains architecture reviews, standards, demonstrations, and company claims, but very little independent evidence on:
 
 - customer qualification and named production deployments

@@ -1,0 +1,86 @@
+# CPO Decision-Output Completion Audit
+
+**Owner:** Nur Alpys
+**As of:** 2026-08-07
+**Purpose:** Test the current library against the required decision outputs in [CPO Research Question and Decision Scope](research-question.md). This is an evidence audit, not a claim that the study is complete.
+
+## Overall finding
+
+The research has a credible technical/economic framework and several evidence-matched company dossiers. It is **not yet capable of a dated probability-weighted investment conclusion**. The missing evidence is concentrated in customer deployment, final-engine manufacturing, total cost, product economics, and market expectations—not basic CPO explanation.
+
+## Required-output status
+
+| Required output | Current status | Evidence now available | What prevents completion |
+|---|---|---|---|
+| 1. Architecture trigger matrix | Partial | LPO electrical boundaries, NPO interoperability logic, switch-CPO product paths and topology mechanism are documented. | Matched all-in CPO/LPO/NPO/copper technical and economic comparison at a shared domain. |
+| 2. Technical/commercial viability gates | Partial | Gate definitions and company-specific blocks are explicit. | Final engine yield, thermal/reliability, service, customer qualification and total-cost evidence. |
+| 3. 2026-2032 probability-weighted adoption timeline | Not numerically eligible | Evidence-calibrated state/milestone model. | System numerator/denominator, customer confirmation and economic gates. |
+| 4. Critical-path milestone tracker | Partial | Architecture-specific milestones and dated management targets exist. | Observed customer, qualification, production, yield and field milestones. |
+| 5. Manufacturing/yield/reliability/service model | Partial | Packaging, attach, laser and serviceability benchmarks identify the variables. | Yield waterfall, cycle time, Cpk, field return, warranty and repair-cost data. |
+| 6. Total cost per delivered bit comparison | Not complete | A transparent 102.4T power scenario and architecture boundaries exist. | Matched capex, module/engine cost, cooling, spares, repair and yield inputs. |
+| 7. Value-chain profit-pool map | Partial | Platform, engine, laser, packaging and foundry control points are mapped. | Attributable content, supplier share, ASP, product margin and cannibalisation. |
+| 8. Operational-leadership scorecard | Framework only | Leadership layers and evidence multipliers are defined; dossier conclusions are separated by role. | Comparable customer, production, yield, reliability and ecosystem data to populate scores. |
+| 9. Investment-attractiveness scorecard | Not eligible | Revenue-scale materiality screen and company input gates exist. | CPO earnings bridge, consensus/valuation data and downside sensitivity. |
+| 10. Revenue/gross-profit/earnings/valuation bridge | Partial framework only | Mathematical bridge and revenue-scale thresholds. | All product-specific economics and current valuation/consensus inputs. |
+| 11. Consensus/variant-perception tracker | Not started | None that is sufficiently auditable. | Dated consensus, investor expectations, price/valuation and expectation-source retention. |
+| 12. Falsification dashboard/thesis-change log | Partial | Hypothesis register, claim ledger and dated company target tests exist. | Regular observed-versus-expected milestone record and probability revisions. |
+
+## Evidence-quality constraint
+
+No decision output should be upgraded by substituting company announcements for customer-side proof. The current source set has vendor product claims, demonstrations, standards contributions, academic simulations and some filings. It does not yet contain the linked evidence required for a valid company profit forecast: system volume, content, share, realised product margin, yield/warranty, cannibalisation and attributable capital expenditure.[CLM-084]
+
+## Architecture status snapshot
+
+| Architecture/domain | Current evidence-adjusted position | Governing reference |
+|---|---|---|
+| Advanced retimed pluggables, 102.4T Ethernet | Technically plausible; commercial economics unproven. | [102.4T comparison](../02-architecture/102.4t-cpo-vs-advanced-pluggables.md) |
+| LPO, 100G/lane | Stronger system evidence than later lanes; no verified broad production/adoption denominator. | [Linear-drive benchmark](../02-architecture/linear-drive-boundary-benchmark.md) |
+| LPO, 200G/lane | Conditional modeled/design feasibility, not a matched qualified production system. | [Linear-drive benchmark](../02-architecture/linear-drive-boundary-benchmark.md) |
+| LPO, 400G/lane | Measured components below a modeled end-to-end rate; conventional LPO not established. | [Linear-drive benchmark](../02-architecture/linear-drive-boundary-benchmark.md) |
+| NPO/OBO | Plausible serviceable/interoperable bridge; product/standard/adoption proof absent. | [NPO boundary](../02-architecture/npo-interoperability-boundary.md) |
+| Switch-side CPO | Strongest 200G commercial-maturity signal, but commercial-proof threshold is not met publicly. | [Platform dossier](../07-companies/broadcom-nvidia-switch-cpo-platform-dossier.md) |
+| Accelerator optical I/O | Credible public candidates and Marvell management targets; no qualified-volume proof. | [Marvell/Celestial dossier](../07-companies/marvell-celestial-accelerator-optical-io-dossier.md) |
+
+## Company conclusion status
+
+| Company/group | What can be said now | What must remain open |
+|---|---|---|
+| Broadcom | Merchant switch-CPO product-definition leader in current evidence. | CPO units, customer deployment, CPO revenue/margin and engine profit capture. |
+| NVIDIA | Integrated platform/customer-route leader in current evidence. | CPO-specific adoption, engine supplier/content, CPO economics and earnings materiality. |
+| Coherent | Broadest disclosed external component/manufacturing stack. | Production CPO customer, final-engine yield and margin. |
+| Lumentum | Clearest external-laser commercial order signal. | Customer/product allocation, conversion, margin and retention of profit. |
+| Marvell / Celestial | Clearest public-company accelerator optical-I/O revenue aspiration and transaction stake. | Product qualification, shipped revenue, margin, customer and earnout probability. |
+
+No company is an evidence-supported overall **profit-pool leader** or **best public-equity opportunity** today.
+
+## Prioritized next evidence work
+
+1. **Customer proof:** customer-side CPO/NPO/optical-I/O deployment, exact SKU, topology, units/ports, repeat order and service history.
+2. **Engine manufacturing:** final yield waterfall, fibre attach/test throughput, reliability qualification, rework and warranty allocation.
+3. **Matched architecture economics:** common 200G and later 400G lane system boundary spanning CPO, NPO, LPO, retimed optics and copper/AEC.
+4. **Supplier economics:** content map, ASP, supplier share, price-down, customer concentration, margin, capex and cannibalisation.
+5. **Accelerator optical-I/O comparables:** build the same evidence-matched dossiers for Ayar Labs, Lightmatter, TSMC and NVIDIA.
+6. **Investment overlay:** retain dated estimates, price/valuation and expectation sources only after the product economics are sufficiently bounded.
+
+## Completion gate
+
+The study may state a final, dated investment conclusion only when each final-answer field has a direct linked evidence basis:
+
+```text
+Architecture and domain -> comparable technical + commercial gate evidence
+Commercial-proof and meaningful-adoption year/probability -> customer/volume denominator + calibrated scenario
+Technical and volume leader -> comparable performance + qualification/units
+Profit-pool leader -> content + share + realised economics + return/cost bridge
+Best equity -> profit bridge + dated consensus/valuation + downside/catalyst analysis
+```
+
+Until then the correct conclusion is: **not yet investable on CPO alone; continue evidence acquisition against the listed gates.**
+
+## References
+
+- [CPO Research Question and Decision Scope](research-question.md).
+- [Source-gap audit](../01-sources/source-gap-audit-2026-08-06.md).
+- [CPO adoption timeline](../08-model/adoption-timeline.md).
+- [Optical-engine profit-pool input gates](../08-model/optical-engine-profit-pool-input-gates.md).
+- [CPO earnings-materiality screen](../08-model/cpo-earnings-materiality-screen.md).
+- [Claim ledger](../01-sources/claim-ledger.csv), especially CLM-074, CLM-082, CLM-084 and CLM-093 through CLM-096.
