@@ -131,6 +131,7 @@ The cross-company evidence boundary is summarized in the [company evidence-gap m
 - [CPO customer-proof register](../08-model/customer-proof-register.md)
 - [Critical-path milestone tracker](../08-model/critical-path-milestone-tracker.md)
 - [CPO Earnings-Materiality Screen](../08-model/cpo-earnings-materiality-screen.md)
+- [Expectations and variant-perception tracker](../08-model/expectations-and-variant-perception-tracker.md)
 - [NVIDIA CPO reference-content bridge](../08-model/nvidia-cpo-reference-content-bridge.md)
 - [Marvell / Celestial AI: Accelerator Optical-I/O Dossier](marvell-celestial-accelerator-optical-io-dossier.md)
 

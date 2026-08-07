@@ -22,7 +22,7 @@ The research has a credible technical/economic framework and several evidence-ma
 | 8. Operational-leadership scorecard | Framework only | Leadership layers and evidence multipliers are defined; dossier conclusions are separated by role. | Comparable customer, production, yield, reliability and ecosystem data to populate scores. |
 | 9. Investment-attractiveness scorecard | Not eligible | Revenue-scale materiality screen and company input gates exist. | CPO earnings bridge, consensus/valuation data and downside sensitivity. |
 | 10. Revenue/gross-profit/earnings/valuation bridge | Partial framework only | Mathematical bridge and revenue-scale thresholds. | All product-specific economics and current valuation/consensus inputs. |
-| 11. Consensus/variant-perception tracker | Not started | None that is sufficiently auditable. | Dated consensus, investor expectations, price/valuation and expectation-source retention. |
+| 11. Consensus/variant-perception tracker | Management-expectation register started; consensus/valuation not complete | Dated management, company and partner expectations are recorded in the [expectations tracker](../08-model/expectations-and-variant-perception-tracker.md). | Dated sell-side consensus, price/valuation, share count, probability-weighted conversion and downside sensitivity. |
 | 12. Falsification dashboard/thesis-change log | Partial | Hypothesis register, claim ledger and dated company target tests exist. | Regular observed-versus-expected milestone record and probability revisions. |
 
 ## Evidence-quality constraint
