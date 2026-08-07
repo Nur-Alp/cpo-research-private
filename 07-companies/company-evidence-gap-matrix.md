@@ -26,6 +26,14 @@ This matrix prevents a company claim in one value-chain layer from being counted
 - TSMC can now be compared on COUPE process/stacking control and dated production milestones, but not on complete-engine content, final yield or profit capture.
 - No company passes the five conditions for a base-case profit forecast in `08-model/optical-engine-profit-pool-input-gates.md`.
 
+## Second-group extension
+
+| Company / route | What is now evidenced | What remains blocked |
+|---|---|---|
+| Intel OCI/PIC | Live-data OCI chiplet prototype co-packaged with a CPU; Intel also claims more than 8 million PICs and 32 million integrated lasers shipped in pluggable products (`CMP-035`, `CLM-304`–`CLM-305`). | OCI/CPO production units, complete-engine yield, attach/test cycle time, qualification, field reliability, ASP and margin. |
+| Ranovus / Jabil ODIN | Monolithic EPIC architecture and a planned Jabil high-volume manufacturing route for CPO/NPO optical engines (`CMP-036`, `CLM-306`). | Shipped volume, customer SKU, qualified yield, process ownership, content share, ASP, margin and service data. |
+| Cisco / Acacia | Cisco reports system-level LPO/CPO qualification and supply-chain approach; Acacia separately announced 200G/lane silicon-photonic engines and reported prior volume of more than one million 100G/lane engines (`CMP-037`–`CMP-038`, `CLM-307`–`CLM-311`). | 200G/lane production and qualification, PIC/laser/package ownership, fibre-attach loss and yield, CPO attribution, ASP and margin. |
+
 ## Highest-value missing records
 
 1. Customer-confirmed SKU, production date, unit count and repeat order.
