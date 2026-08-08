@@ -12,7 +12,7 @@ The research has a credible technical/economic framework and several evidence-ma
 
 | Required output | Current status | Evidence now available | What prevents completion |
 |---|---|---|---|
-| 1. Architecture trigger matrix | Partial | LPO electrical boundaries, NPO interoperability logic, switch-CPO product paths and topology mechanism are documented. | Matched all-in CPO/LPO/NPO/copper technical and economic comparison at a shared domain. |
+| 1. Architecture trigger matrix | Evidence-gated matrix added; not numerically complete | Lane/domain trigger matrix now separates 100G, 200G, 400G and accelerator scale-up and records electrical, system, manufacturing, service and economic gates. | Matched all-in CPO/LPO/NPO/copper technical and economic comparison at a shared domain. |
 | 2. Technical/commercial viability gates | Partial | Gate definitions and company-specific blocks are explicit. | Final engine yield, thermal/reliability, service, customer qualification and total-cost evidence. |
 | 3. 2026-2032 probability-weighted adoption timeline | Not numerically eligible | Evidence-calibrated state/milestone model. | System numerator/denominator, customer confirmation and economic gates. |
 | 4. Critical-path milestone tracker | Partial | Architecture-specific milestones and dated management targets exist. | Observed customer, qualification, production, yield and field milestones. |
@@ -80,6 +80,7 @@ Until then the correct conclusion is: **not yet investable on CPO alone; continu
 ## References
 
 - [CPO Research Question and Decision Scope](research-question.md).
+- [Architecture trigger matrix](../02-architecture/architecture-trigger-matrix.md).
 - [Source-gap audit](../01-sources/source-gap-audit-2026-08-06.md).
 - [CPO adoption timeline](../08-model/adoption-timeline.md).
 - [CPO customer-proof register](../08-model/customer-proof-register.md).
