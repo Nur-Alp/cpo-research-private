@@ -1,0 +1,1259 @@
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
+<!DOCTYPE html>
+<html
+	lang="en"
+	data-page-template="article"
+	
+ data-page-id="ci_ef4f5fbc60b4996dbac70f3fdd693c61e4de226430c6408b38e5b26d9aa53406" data-confluence-content-id="3488153844"
+		data-color-scheme="light"
+>
+<head>
+	<meta charset="UTF-8">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<meta name="color-scheme" content="light dark">
+
+						<link id="pageTreeSource" rel="preload" href="/sn6000hw/__pagetree.json" as="fetch" type="application/json" crossorigin="anonymous">
+
+		<meta name="site-path" content="/sn6000hw">
+
+					<link rel="x-site-path" href="/sn6000hw">
+	<link rel="x-root-path" href="/">
+
+	<meta name="site-default-language" content="en">
+		<meta name="site-languages" content="en">
+		<meta name="confluence-content-type" content="page">
+		<meta name="confluence-base-url" content="https://nvidia.atlassian.net/wiki">
+		<meta name="confluence-space-key" content="SN6000HWUMdocs">
+
+
+
+
+	<link rel="icon" href="/sn6000hw/__theme/c_6c29734e-d941-4613-9296-918e7e587582/help-center-theme-nvidia-fork/19/nvidia/favicon.ico">
+
+
+
+
+
+
+
+
+
+
+
+		<title>Data Interfaces and High Power Transceivers Support | NVIDIA Spectrum-6 SN6000 Switch Systems Hardware User Manual</title>
+		<meta property="og:title" content="Data Interfaces and High Power Transceivers Support | NVIDIA Spectrum-6 SN6000 Switch Systems Hardware User Manual">
+		<meta property="twitter:title" content="Data Interfaces and High Power Transceivers Support | NVIDIA Spectrum-6 SN6000 Switch Systems Hardware User Manual">
+
+		<link rel="canonical" href="https://networking-docs.nvidia.com/sn6000hw/data-interfaces-and-high-power-transceivers-support">
+		<meta property="og:url" content="https://networking-docs.nvidia.com/sn6000hw/data-interfaces-and-high-power-transceivers-support">
+
+		<meta name="description" content="Data Interfaces The data interfaces can be used with OSFP modules or transceivers. For a complete list of interfaces per system, refer to Speed and Switching C…">
+		<meta property="og:description" content="Data Interfaces The data interfaces can be used with OSFP modules or transceivers. For a complete list of interfaces per system, refer to Speed and Switching C…">
+		<meta property="twitter:description" content="Data Interfaces The data interfaces can be used with OSFP modules or transceivers. For a complete list of interfaces per system, refer to Speed and Switching C…">
+
+		<meta property="og:image" content="https://networking-docs.nvidia.com/sn6000hw/__theme/c_6c29734e-d941-4613-9296-918e7e587582/help-center-theme-nvidia-fork/19/nvidia/nvidia-og-image-1200.png">
+		<meta property="twitter:image" content="https://networking-docs.nvidia.com/sn6000hw/__theme/c_6c29734e-d941-4613-9296-918e7e587582/help-center-theme-nvidia-fork/19/nvidia/nvidia-og-image-1200.png">
+
+	<meta property="og:type" content="website">
+	<meta property="twitter:card" content="summary_large_image">
+
+		<meta name="page-last-modified" content="2026-07-01T12:09:49.857Z">
+
+		<script>
+		(function () {
+			const defaultLanguageMeta = /** @type {string|undefined} */(document.querySelector('meta[name="site-default-language"]')?.content);
+			const availableLanguagesMeta = /** @type {string|undefined} */(document.querySelector('meta[name="site-languages"]')?.content);
+			const fallbackLanguage = defaultLanguageMeta ?? 'en';
+			const supportedLanguagesFromMeta = availableLanguagesMeta?.split(',') ?? [];
+			const supportedLanguages = [...new Set([fallbackLanguage, ...supportedLanguagesFromMeta])].filter(Boolean);
+			const detectedLanguage = new URLSearchParams(self.location.search).get('l') || document.documentElement.lang;
+			const resolvedLanguage = supportedLanguages.includes(detectedLanguage) ? detectedLanguage : fallbackLanguage;
+			document.documentElement.lang = resolvedLanguage;
+			const sheet = new CSSStyleSheet();
+			document.adoptedStyleSheets.push(sheet);
+			// Hide any element with a `data-lang` attribute that does NOT match the detected language
+			sheet.replaceSync('[data-lang]:not([data-lang="' + resolvedLanguage + '"]) { display: none; }');
+		})();
+	</script>
+
+		<script>
+		(function() {
+			/** @typedef {'light'|'dark'} ColorScheme */
+			/** @type {ColorScheme[]} */
+			const availableColorSchemes = document.documentElement.querySelector('meta[name="color-scheme"]').content.split(' ').filter(Boolean);
+			/** @type {ColorScheme|'system'} */
+			const userPreference = localStorage?.getItem('color-scheme-preference') ?? 'system';
+			// Clean-up user preference in case there's nothing to choose from
+			// Fall back to the HTML document's default color theme
+			if (availableColorSchemes.length <= 1 || ![...availableColorSchemes, 'system'].includes(userPreference)) {
+				localStorage?.removeItem('color-scheme-preference');
+				return;
+			}
+			// Override default HTML document with client-side user preference
+			if (userPreference === 'system') {
+				updateThemeAttribute(self.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark')
+			} else {
+				updateThemeAttribute(userPreference)
+			}
+			/** @param {ColorScheme} colorScheme */
+			function updateThemeAttribute(colorScheme) {
+				document.documentElement.setAttribute('data-color-scheme', colorScheme);
+			}
+		})();
+	</script>
+
+		<script>
+		
+		function sortContentSources(a, b) {
+			let result = a.precedence - b.precedence;
+
+			if (result === 0) {
+				result = a.value.localeCompare(b.value);
+			}
+
+			return result;
+		}
+
+		
+		function applyContentSourceOrderToElements({ parent, children }) {
+			const contentSourceElements = [...children];
+
+			contentSourceElements
+				.sort((a, b) => (
+					sortContentSources(
+						{ value: a.dataset.orderValue, precedence: a.dataset.orderPrecedence },
+						{ value: b.dataset.orderValue, precedence: b.dataset.orderPrecedence }
+					)
+				))
+				.forEach((element) => {
+					delete element.dataset.orderValue;
+					delete element.dataset.orderPrecedence;
+				});
+
+			parent.replaceChildren(...contentSourceElements);
+		}
+	</script>
+
+<script>
+	(() => {
+		if (isInAppHelpEnabled()) {
+			document.documentElement.dataset.inAppHelp = 'true';
+
+			if (isTitleHidden()) {
+				document.documentElement.dataset.hideTitle = 'true';
+			}
+		}
+
+		function isInAppHelpEnabled() {
+			return new URLSearchParams(location.search).get('inAppHelp') === 'true';
+		}
+
+		function isTitleHidden() {
+			return new URLSearchParams(location.search).get('title') === 'false';
+		}
+	})();
+</script>
+
+<link rel="stylesheet" href="/sn6000hw/__theme/c_6c29734e-d941-4613-9296-918e7e587582/help-center-theme-nvidia-fork/19/in-app-help.css"/>
+<script type="module" src="/sn6000hw/__theme/c_6c29734e-d941-4613-9296-918e7e587582/help-center-theme-nvidia-fork/19/in-app-help.js"></script>
+
+	<link rel="stylesheet" href="/sn6000hw/__theme/c_6c29734e-d941-4613-9296-918e7e587582/help-center-theme-nvidia-fork/19/styles.css">
+	<link rel="stylesheet" href="/sn6000hw/__theme/c_6c29734e-d941-4613-9296-918e7e587582/help-center-theme-nvidia-fork/19/fonts.css">
+	<link rel="stylesheet" href="/sn6000hw/__theme/c_6c29734e-d941-4613-9296-918e7e587582/help-center-theme-nvidia-fork/19/search-styles-bundle.css">
+
+
+	<style>
+		@layer overrides {
+			:root {
+				--theme-headline-font: "NVIDIA";
+				--theme-text-font: "NVIDIA";
+				--theme-headline-scale: calc(100 / 100);
+				--theme-text-scale: calc(100 / 100);
+			}
+		}
+	</style>
+
+	<style>
+		@layer overrides {
+			:root, :host {
+					--theme-header-logo-size: 48px;
+					--theme-footer-logo-size: 48px;
+			}
+
+			:root[data-color-scheme='light'],
+			:host([data-color-scheme='light']) {
+					--theme-header-text-color: #000c34;
+					--theme-header-background-color: #ffffff;
+					--theme-footer-text-color: #000c34;
+					--theme-footer-background-color: #FFFFFF;
+			}
+
+			:root[data-color-scheme='dark'],
+			:host([data-color-scheme='dark']) {
+					--theme-header-text-color: #FFFFFF;
+					--theme-header-background-color: #0a0b0c;
+					--theme-footer-text-color: #FFFFFF;
+					--theme-footer-background-color: #0a0b0c;
+			}
+		}
+	</style>
+
+	 
+
+
+
+
+
+<script data-site-data="content-sources" type="application/json">
+{
+	"collection": {
+		"members": [
+
+
+	{
+	"name": "NVIDIA Spectrum-6 SN6000 Switch Systems Hardware User Manual",
+	"id": "8a0a81c7-c8ae-4fd4-bbda-e9851d68e8a9",
+	"key": "SN6000HWUMdocs",
+	"path": "/sn6000hw/",
+		"prefix": "/sn6000hw/",
+	"isSingleVersion": true,
+	"isSingleVariant": false,
+		"current": true,
+	"versions": {
+		"available": [
+				{
+					"name": "1.0",
+					"current": true
+
+				}
+		]
+	},
+	"variants": {
+		"available": [
+		]
+	},
+	"languages": {
+		"available": [
+		]
+	}
+}
+
+		]
+	}
+}
+</script>
+
+
+<script data-theme-placeholder="site" type="application/json">
+	{
+		"id": "ac31e99d-e371-4421-8f28-8c372f5a136e",
+		"path": "/sn6000hw",
+		"url": "/sn6000hw",
+		"domain": "networking-docs.nvidia.com",
+		"aiSearchEnabled": false,
+		"visibleToSearchEngines": true
+	}
+</script>
+ 
+<script data-config="cookieconsent" type="application/json">
+{
+	"enabled": false,
+	"mode": "opt-in",
+	"heading": "",
+	"description": "",
+	"links": [
+	]
+}
+</script>
+
+	<script type="module" src="/sn6000hw/__theme/c_6c29734e-d941-4613-9296-918e7e587582/help-center-theme-nvidia-fork/19/main.js"></script>
+	<script type="module" src="/sn6000hw/__theme/c_6c29734e-d941-4613-9296-918e7e587582/help-center-theme-nvidia-fork/19/page-tree.js" fetchpriority="high"></script>
+	<script type="module" src="/sn6000hw/__theme/c_6c29734e-d941-4613-9296-918e7e587582/help-center-theme-nvidia-fork/19/search-bundle.js"></script>
+
+							<script type="module" src="/sn6000hw/__theme/c_6c29734e-d941-4613-9296-918e7e587582/help-center-theme-nvidia-fork/19/article.js"></script>
+
+		<link rel="stylesheet" href="/sn6000hw/__theme/c_6c29734e-d941-4613-9296-918e7e587582/help-center-theme-nvidia-fork/19/ai-actions.css">
+		<script type="module" src="/sn6000hw/__theme/c_6c29734e-d941-4613-9296-918e7e587582/help-center-theme-nvidia-fork/19/ai-actions.js"></script>
+
+
+
+
+
+
+
+
+<script>
+	(() => {
+		if (new URLSearchParams(location.search).has('disable-custom-overrides')) {
+			return;
+		}
+
+		document.querySelectorAll('[data-custom-overrides]').forEach(template => {
+			const type = template.getAttribute('data-type');
+
+			if (type === 'code-asset') {
+				const assetElement = template.content.cloneNode(true).firstElementChild;
+				const appendAsset = () => document.head.appendChild(assetElement);
+
+				if (assetElement.tagName === 'SCRIPT') {
+															if (document.readyState === 'complete') {
+						appendAsset();
+					} else {
+												document.addEventListener('DOMContentLoaded', appendAsset, { once: true });
+					}
+				} else {
+					appendAsset();
+				}
+			}
+		});
+	})();
+</script>
+
+
+			
+
+
+
+
+
+
+
+
+
+
+
+
+			</head>
+<body>
+	<a href="#content" class="skip-link">
+		<i18n-message i18nkey="navigation.skip.to.main.label">Skip to main content</i18n-message>
+	</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
+<header data-component="header" class="header">
+
+<div class="header-site-branding">
+	<i18n-message id="d05a1cb9087b7602-2" class="sr-only" i18nkey="header.home.label"></i18n-message>
+
+	<a href="https://docs.nvidia.com/" aria-labelledby="d05a1cb9087b7602-2">
+
+
+
+
+		<img class="header-logo header-logo--dark" src="/sn6000hw/__theme/c_6c29734e-d941-4613-9296-918e7e587582/help-center-theme-nvidia-fork/19/nvidia/nvidia-logo-horiz-rgb-wht-for-screen.svg" alt="">
+
+		<img class="header-logo header-logo--light" src="/sn6000hw/__theme/c_6c29734e-d941-4613-9296-918e7e587582/help-center-theme-nvidia-fork/19/nvidia/nvidia-logo-horiz-rgb-blk-for-screen.svg" alt="">
+	</a>
+
+			<a href="/" class="header-site-name">Networking</a>
+			<a href="/sn6000hw/" class="header-site-name">
+				NVIDIA Spectrum-6 SN6000 Switch Systems Hardware User Manual
+			</a>
+</div>
+	<div class="header-content">
+
+		<div class="header-pickers">
+
+		</div>
+
+			<div class="header-search">
+				<search-bar quicksearch></search-bar>
+			</div>
+
+			<div class="header-pickers">
+	<mode-picker>
+
+
+
+
+							<i18n-message replacecontent="d05a1cb9087b7602-3" i18nkey="colorMode.picker.option.system.label" hidden></i18n-message>
+			<i18n-message replacecontent="d05a1cb9087b7602-4" i18nkey="colorMode.picker.option.light.label" hidden></i18n-message>
+			<i18n-message replacecontent="d05a1cb9087b7602-5" i18nkey="colorMode.picker.option.dark.label" hidden></i18n-message>
+
+
+		<i18n-message i18nkey="colorMode.picker.label" attribute="value" targetelement="d05a1cb9087b7602-6" hidden></i18n-message>
+
+		<theme-tooltip id="d05a1cb9087b7602-6" value="Color mode">
+
+	<auto-width-select class="picker picker--icon-only">
+
+	<svg role="img" aria-hidden="true" data-component="icon" class="icon icon-system-color-scheme picker-icon picker-option-icon picker-prefix picker-icon--d05a1cb9087b7602-3">
+		<use href="/sn6000hw/__theme/c_6c29734e-d941-4613-9296-918e7e587582/help-center-theme-nvidia-fork/19/icons.svg#system-color-scheme"></use>
+	</svg>
+	<svg role="img" aria-hidden="true" data-component="icon" class="icon icon-light_mode picker-icon picker-option-icon picker-prefix picker-icon--d05a1cb9087b7602-4">
+		<use href="/sn6000hw/__theme/c_6c29734e-d941-4613-9296-918e7e587582/help-center-theme-nvidia-fork/19/icons.svg#light_mode"></use>
+	</svg>
+	<svg role="img" aria-hidden="true" data-component="icon" class="icon icon-dark_mode picker-icon picker-option-icon picker-prefix picker-icon--d05a1cb9087b7602-5">
+		<use href="/sn6000hw/__theme/c_6c29734e-d941-4613-9296-918e7e587582/help-center-theme-nvidia-fork/19/icons.svg#dark_mode"></use>
+	</svg>
+
+		<label class="sr-only" for="d05a1cb9087b7602-7">
+			<i18n-message i18nkey="colorMode.picker.label"></i18n-message>
+		</label>
+
+		<select id="d05a1cb9087b7602-7" name="color-mode"  >
+				<option id="d05a1cb9087b7602-3"  value="system"  >
+					Auto
+				</option>
+				<option id="d05a1cb9087b7602-4"  value="light"  selected="">
+					Light
+				</option>
+				<option id="d05a1cb9087b7602-5"  value="dark"  >
+					Dark
+				</option>
+		</select>
+
+		<script>
+			/**
+			 * Manages the visibility of picker option icons.
+			 * 1. Each option can have an optional icon assigned
+			 * 2. The currently selected option's icon becomes the picker's main icon
+			 */
+			(() => {
+				const select = document.getElementById('d05a1cb9087b7602-7');
+				if(select.parentElement.querySelectorAll('.picker-option-icon').length <= 0) {
+					return;
+				}
+				const sheet = new CSSStyleSheet();
+				document.adoptedStyleSheets.push(sheet);
+				select.addEventListener('change', updateIconVisibility);
+				updateIconVisibility();
+				function updateIconVisibility() {
+					sheet.replaceSync('.picker:has(select[id="' + select.id + '"]) .picker-option-icon:not(.picker-icon--' + select.selectedOptions[0].id + ')' + '{ display: none; }')
+				}
+			})();
+		</script>
+
+	<svg role="img" aria-hidden="true" data-component="icon" class="icon icon-caret_down picker-icon picker-marker">
+		<use href="/sn6000hw/__theme/c_6c29734e-d941-4613-9296-918e7e587582/help-center-theme-nvidia-fork/19/icons.svg#caret_down"></use>
+	</svg>
+	</auto-width-select>
+		</theme-tooltip>
+	</mode-picker>
+			</div>
+
+				<button type="button" aria-controls="drawer-d05a1cb9087b7602-1" aria-haspopup="dialog" aria-expanded="false" class="header-nav-toggle" onclick="self['drawer-d05a1cb9087b7602-1'].showModal()">
+	<svg role="img" aria-hidden="true" data-component="icon" class="icon icon-menu ">
+		<use href="/sn6000hw/__theme/c_6c29734e-d941-4613-9296-918e7e587582/help-center-theme-nvidia-fork/19/icons.svg#menu"></use>
+	</svg>
+			<i18n-message class="sr-only" i18nkey="navigation.main.label">Main navigation</i18n-message>
+		</button>
+	</div>
+
+	
+
+<dialog id="drawer-d05a1cb9087b7602-1" class="drawer">
+	<header data-component="header" class="header">
+
+<div class="header-site-branding">
+	<i18n-message id="d05a1cb9087b7602-8" class="sr-only" i18nkey="header.home.label"></i18n-message>
+
+	<a href="https://docs.nvidia.com/" aria-labelledby="d05a1cb9087b7602-8">
+
+
+
+
+		<img class="header-logo header-logo--dark" src="/sn6000hw/__theme/c_6c29734e-d941-4613-9296-918e7e587582/help-center-theme-nvidia-fork/19/nvidia/nvidia-logo-horiz-rgb-wht-for-screen.svg" alt="">
+
+		<img class="header-logo header-logo--light" src="/sn6000hw/__theme/c_6c29734e-d941-4613-9296-918e7e587582/help-center-theme-nvidia-fork/19/nvidia/nvidia-logo-horiz-rgb-blk-for-screen.svg" alt="">
+	</a>
+
+			<a href="/" class="header-site-name">Networking</a>
+			<a href="/sn6000hw/" class="header-site-name">
+				NVIDIA Spectrum-6 SN6000 Switch Systems Hardware User Manual
+			</a>
+</div>
+
+		<div class="header-content">
+				<div class="header-pickers">
+	<mode-picker>
+
+
+
+
+							<i18n-message replacecontent="d05a1cb9087b7602-9" i18nkey="colorMode.picker.option.system.label" hidden></i18n-message>
+			<i18n-message replacecontent="d05a1cb9087b7602-10" i18nkey="colorMode.picker.option.light.label" hidden></i18n-message>
+			<i18n-message replacecontent="d05a1cb9087b7602-11" i18nkey="colorMode.picker.option.dark.label" hidden></i18n-message>
+
+
+		<i18n-message i18nkey="colorMode.picker.label" attribute="value" targetelement="d05a1cb9087b7602-12" hidden></i18n-message>
+
+		<theme-tooltip id="d05a1cb9087b7602-12" value="Color mode">
+
+	<auto-width-select class="picker picker--icon-only">
+
+	<svg role="img" aria-hidden="true" data-component="icon" class="icon icon-system-color-scheme picker-icon picker-option-icon picker-prefix picker-icon--d05a1cb9087b7602-9">
+		<use href="/sn6000hw/__theme/c_6c29734e-d941-4613-9296-918e7e587582/help-center-theme-nvidia-fork/19/icons.svg#system-color-scheme"></use>
+	</svg>
+	<svg role="img" aria-hidden="true" data-component="icon" class="icon icon-light_mode picker-icon picker-option-icon picker-prefix picker-icon--d05a1cb9087b7602-10">
+		<use href="/sn6000hw/__theme/c_6c29734e-d941-4613-9296-918e7e587582/help-center-theme-nvidia-fork/19/icons.svg#light_mode"></use>
+	</svg>
+	<svg role="img" aria-hidden="true" data-component="icon" class="icon icon-dark_mode picker-icon picker-option-icon picker-prefix picker-icon--d05a1cb9087b7602-11">
+		<use href="/sn6000hw/__theme/c_6c29734e-d941-4613-9296-918e7e587582/help-center-theme-nvidia-fork/19/icons.svg#dark_mode"></use>
+	</svg>
+
+		<label class="sr-only" for="d05a1cb9087b7602-13">
+			<i18n-message i18nkey="colorMode.picker.label"></i18n-message>
+		</label>
+
+		<select id="d05a1cb9087b7602-13" name="color-mode"  >
+				<option id="d05a1cb9087b7602-9"  value="system"  >
+					Auto
+				</option>
+				<option id="d05a1cb9087b7602-10"  value="light"  selected="">
+					Light
+				</option>
+				<option id="d05a1cb9087b7602-11"  value="dark"  >
+					Dark
+				</option>
+		</select>
+
+		<script>
+			/**
+			 * Manages the visibility of picker option icons.
+			 * 1. Each option can have an optional icon assigned
+			 * 2. The currently selected option's icon becomes the picker's main icon
+			 */
+			(() => {
+				const select = document.getElementById('d05a1cb9087b7602-13');
+				if(select.parentElement.querySelectorAll('.picker-option-icon').length <= 0) {
+					return;
+				}
+				const sheet = new CSSStyleSheet();
+				document.adoptedStyleSheets.push(sheet);
+				select.addEventListener('change', updateIconVisibility);
+				updateIconVisibility();
+				function updateIconVisibility() {
+					sheet.replaceSync('.picker:has(select[id="' + select.id + '"]) .picker-option-icon:not(.picker-icon--' + select.selectedOptions[0].id + ')' + '{ display: none; }')
+				}
+			})();
+		</script>
+
+	<svg role="img" aria-hidden="true" data-component="icon" class="icon icon-caret_down picker-icon picker-marker">
+		<use href="/sn6000hw/__theme/c_6c29734e-d941-4613-9296-918e7e587582/help-center-theme-nvidia-fork/19/icons.svg#caret_down"></use>
+	</svg>
+	</auto-width-select>
+		</theme-tooltip>
+	</mode-picker>
+				</div>
+			<button type="button" aria-controls="drawer-d05a1cb9087b7602-1" aria-haspopup="dialog" aria-expanded="true" autofocus class="drawer-toggle" onclick="self['drawer-d05a1cb9087b7602-1'].close()">
+	<svg role="img" aria-hidden="true" data-component="icon" class="icon icon-close ">
+		<use href="/sn6000hw/__theme/c_6c29734e-d941-4613-9296-918e7e587582/help-center-theme-nvidia-fork/19/icons.svg#close"></use>
+	</svg>
+				<i18n-message class="sr-only" i18nkey="navigation.close.label">Close navigation</i18n-message>
+			</button>
+		</div>
+	</header>
+
+	<div class="drawer-section drawer-search">
+		<search-bar quicksearch></search-bar>
+	</div>
+
+		<div class="drawer-section drawer-pickers">
+
+		</div>
+
+	<nav id="drawer-nav" class="drawer-section drawer-nav tree" aria-labelledby="drawer-nav-label">
+		<i18n-message id="drawer-nav-label" class="sr-only" i18nkey="navigation.main.label">Main</i18n-message>
+
+						<copy-page-tree target="articleTree"></copy-page-tree>
+	</nav>
+
+	</dialog>
+
+</header>
+		<section class="article-page body" data-has-page-tree="${$template.pageTreeEnabled}">
+		<theme-navigator class="navigator">
+			<button id="navigator-toggle" class="navigator-toggle" aria-controls="navigator-nav" aria-labelledby="navigator-nav-label" aria-expanded="true">
+	<svg role="img" aria-hidden="true" data-component="icon" class="icon icon-menu navigator-icon-closed">
+		<use href="/sn6000hw/__theme/c_6c29734e-d941-4613-9296-918e7e587582/help-center-theme-nvidia-fork/19/icons.svg#menu"></use>
+	</svg>
+	<svg role="img" aria-hidden="true" data-component="icon" class="icon icon-chevron_left navigator-icon-opened">
+		<use href="/sn6000hw/__theme/c_6c29734e-d941-4613-9296-918e7e587582/help-center-theme-nvidia-fork/19/icons.svg#chevron_left"></use>
+	</svg>
+			</button>
+						<nav id="navigator-nav" class="navigator-body tree" aria-labelledby="navigator-nav-label">
+				<i18n-message id="navigator-nav-label" class="sr-only" i18nkey="navigation.main.label">Main</i18n-message>
+				<theme-page-tree id="articleTree">
+<ul  >
+		<li class="tree-item">
+			<div class="tree-item-header">
+				<a id="d05a1cb9087b7602-14" href="/sn6000hw/ordering-information" >Ordering Information</a>
+			</div>
+
+		</li>
+		<li class="tree-item">
+			<div class="tree-item-header">
+				<a id="d05a1cb9087b7602-15" href="/sn6000hw/introduction" >Introduction</a>
+			</div>
+
+		</li>
+		<li class="tree-item">
+			<div class="tree-item-header">
+					<button
+						class="tree-action"
+						type="button"
+						aria-expanded="false"
+						aria-labelledby="d05a1cb9087b7602-16"
+aria-busy="true" aria-disabled="true"					></button>
+				<a id="d05a1cb9087b7602-16" href="/sn6000hw/installation" >Installation</a>
+			</div>
+
+		</li>
+		<li class="tree-item">
+			<div class="tree-item-header">
+					<button
+						class="tree-action"
+						type="button"
+						aria-expanded="true"
+aria-controls="d05a1cb9087b7602-19"						aria-labelledby="d05a1cb9087b7602-18"
+					></button>
+				<a id="d05a1cb9087b7602-18" href="/sn6000hw/interfaces" >Interfaces</a>
+			</div>
+
+<ul  id="d05a1cb9087b7602-19" >
+		<li class="tree-item">
+			<div class="tree-item-header">
+				<a id="d05a1cb9087b7602-20" href="/sn6000hw/data-interfaces-and-high-power-transceivers-support" aria-current="page">Data Interfaces and High Power Transceivers Support</a>
+			</div>
+
+		</li>
+		<li class="tree-item">
+			<div class="tree-item-header">
+				<a id="d05a1cb9087b7602-21" href="/sn6000hw/led-notifications" >LED Notifications</a>
+			</div>
+
+		</li>
+		<li class="tree-item">
+			<div class="tree-item-header">
+				<a id="d05a1cb9087b7602-22" href="/sn6000hw/inventory-information" >Inventory Information</a>
+			</div>
+
+		</li>
+</ul>
+		</li>
+		<li class="tree-item">
+			<div class="tree-item-header">
+				<a id="d05a1cb9087b7602-23" href="/sn6000hw/software-management" >Software Management</a>
+			</div>
+
+		</li>
+		<li class="tree-item">
+			<div class="tree-item-header">
+				<a id="d05a1cb9087b7602-24" href="/sn6000hw/troubleshooting" >Troubleshooting</a>
+			</div>
+
+		</li>
+		<li class="tree-item">
+			<div class="tree-item-header">
+				<a id="d05a1cb9087b7602-25" href="/sn6000hw/specifications" >Specifications</a>
+			</div>
+
+		</li>
+		<li class="tree-item">
+			<div class="tree-item-header">
+					<button
+						class="tree-action"
+						type="button"
+						aria-expanded="false"
+						aria-labelledby="d05a1cb9087b7602-26"
+aria-busy="true" aria-disabled="true"					></button>
+				<a id="d05a1cb9087b7602-26" href="/sn6000hw/appendixes" >Appendixes</a>
+			</div>
+
+		</li>
+		<li class="tree-item">
+			<div class="tree-item-header">
+				<a id="d05a1cb9087b7602-28" href="/sn6000hw/document-revision-history" >Document Revision History</a>
+			</div>
+
+		</li>
+</ul>
+				</theme-page-tree>
+			</nav>
+		</theme-navigator>
+
+		<main class="main-content">
+			<div class="topbar">
+
+	
+
+
+	
+	
+
+
+<theme-breadcrumbs class="breadcrumbs" itemsbeforecollapse="2" maxitems="4">
+	<i18n-message id="d05a1cb9087b7602-29" class="sr-only" i18nkey="breadcrumbs.label">Breadcrumbs</i18n-message>
+	<nav aria-labelledby="d05a1cb9087b7602-29">
+		<ol>
+					<li>
+						<a href="/">
+								Networking
+						</a>
+					</li>
+					<li>
+						<a href="/switches">
+								Networking Switches
+						</a>
+					</li>
+					<li>
+						<a href="/sn6000hw/">
+								<i18n-message key="breadcrumbs.home.label">NVIDIA Spectrum-6 SN6000 Switch Systems Hardware User Manual</i18n-message>
+						</a>
+					</li>
+										<li>
+						<a href="/sn6000hw/interfaces">
+								Interfaces
+						</a>
+					</li>
+					<li>
+						<a href="/sn6000hw/data-interfaces-and-high-power-transceivers-support">
+								Data Interfaces and High Power Transceivers Support
+						</a>
+					</li>
+		</ol>
+	</nav>
+</theme-breadcrumbs>
+					<script src="/sn6000hw/__theme/c_6c29734e-d941-4613-9296-918e7e587582/help-center-theme-nvidia-fork/19/breadcrumbs.js"></script>
+			</div>
+			<div class="article-actions">
+		<ai-actions class="ai-actions"></ai-actions>
+			</div>
+		<div class="sidebar">
+			<div class="sidebar-actions">
+		<ai-actions class="ai-actions"></ai-actions>
+			</div>
+
+		<nav class="toc sticky" data-component="toc" aria-labelledby="d05a1cb9087b7602-30">
+			<h2 class="toc-heading" id="d05a1cb9087b7602-30">
+				<i18n-message i18nkey="page.article.toc.label">On this Page</i18n-message>
+			</h2>
+			<theme-toc for="content"></theme-toc>
+		</nav>
+		</div>
+			<article id="content" tabindex="-1" class="fb-layout-container">
+				<header>
+					<h1>Data Interfaces and High Power Transceivers Support</h1>
+				</header>
+				<section class="article-body fb-layout-body" data-searchable-content>
+		
+
+	
+	
+
+	
+
+	
+	
+
+
+	
+	
+	
+	
+	
+	
+		
+		
+	
+	
+	
+
+						
+		
+
+
+				
+
+
+						
+		
+
+
+				
+
+
+	
+	
+	
+	<h2 id="Data-Interfaces"><span id="DataInterfacesandHighPowerTransceiversSupport-DataInterfaces"></span>Data Interfaces
+ <i18n-message i18nkey="clipboard.copyLink.label" attribute="description">
+  <copy-clipboard class="anchor-copy-button" value="https://networking-docs.nvidia.com/sn6000hw/data-interfaces-and-high-power-transceivers-support#Data-Interfaces">
+   <svg role="img" aria-hidden="true" data-component="icon" class="icon icon-link copy-headline-link-icon">
+    <use href="/sn6000hw/__theme/c_6c29734e-d941-4613-9296-918e7e587582/help-center-theme-nvidia-fork/19/icons.svg#link"></use>
+   </svg>
+  </copy-clipboard>
+ </i18n-message></h2>
+<p>The data interfaces can be used with OSFP modules or transceivers. For a complete list of interfaces per system, refer to&nbsp;<a href="https://nvidia.atlassian.net/wiki/spaces/SN6000HWUM/pages/3488153620/Introduction#speeds" data-scope="external" rel="external noreferrer">Speed and Switching Capabilities</a>.</p>
+<p>As detailed in the following table, for additional data interfaces, each OSFP port can be connected with an OSFP cable or module to SFP (Dynamix QSA™) adapters, hybrid, or splitter cables.</p>
+<div class="theme-table" style="--width: 1536px;">
+ <table-expand>
+  <scroll-shadow>
+   <table-sort>
+    <div data-component="table" data-align="center" data-number-column="false">
+     <table>
+      <colgroup>
+       <col style="width: 249px">
+       <col style="width: 275px">
+       <col style="width: 1007px">
+      </colgroup>
+      <tbody>
+       <tr>
+        <th>
+         <p><strong>Model Family</strong></p>
+        </th>
+        <th>
+         <p><strong>Ports</strong></p>
+        </th>
+        <th>
+         <p><strong>Maximum Speed</strong></p>
+        </th>
+       </tr>
+       <tr>
+        <td rowspan="5">
+         <p>SN6600 &nbsp; &nbsp;</p>
+         <p>
+          <br>
+         </p>
+        </td>
+        <td>
+         <p>128</p>
+        </td>
+        <td>
+         <p>800GbE&nbsp;</p>
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <p>256</p>
+        </td>
+        <td>
+         <p>400GbE&nbsp;</p>
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <p>512+2</p>
+        </td>
+        <td>
+         <p>200GbE</p>
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <p>512+2</p>
+        </td>
+        <td>
+         <p>100GbE</p>
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <p>2</p>
+        </td>
+        <td>
+         <p>25GbE/10GbE/1GbE</p>
+        </td>
+       </tr>
+       <tr>
+        <td rowspan="4">
+         <p>SN6600-LD &nbsp; &nbsp;</p>
+        </td>
+        <td>
+         <p>128</p>
+        </td>
+        <td>
+         <p>800GbE&nbsp;</p>
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <p>256</p>
+        </td>
+        <td>
+         <p>400GbE&nbsp;</p>
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <p>512</p>
+        </td>
+        <td>
+         <p>200GbE</p>
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <p>512+2</p>
+        </td>
+        <td>
+         <p>100GbE</p>
+        </td>
+       </tr>
+       <tr>
+        <td rowspan="4">
+         <p>SN6810-LD &nbsp; &nbsp;</p>
+         <p>
+          <br>
+         </p>
+        </td>
+        <td>
+         <p>128</p>
+        </td>
+        <td>
+         <p>800GbE&nbsp;</p>
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <p>256</p>
+        </td>
+        <td>
+         <p>400GbE&nbsp;</p>
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <p>512</p>
+        </td>
+        <td>
+         <p>200GbE</p>
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <p>512+2</p>
+        </td>
+        <td>
+         <p>100GbE</p>
+        </td>
+       </tr>
+       <tr>
+        <td rowspan="2">
+         <p>SN6800-LD</p>
+        </td>
+        <td>
+         <p>2048</p>
+        </td>
+        <td>
+         <p>200GbE</p>
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <p>2048+8</p>
+        </td>
+        <td>
+         <p>100GbE</p>
+        </td>
+       </tr>
+      </tbody>
+     </table>
+    </div>
+   </table-sort>
+  </scroll-shadow>
+ </table-expand>
+</div>
+<h2 id="High-Power-Transceivers-Support"><span id="DataInterfacesandHighPowerTransceiversSupport-HighPowerTransceiversSupport"></span>High Power Transceivers Support
+ <i18n-message i18nkey="clipboard.copyLink.label" attribute="description">
+  <copy-clipboard class="anchor-copy-button" value="https://networking-docs.nvidia.com/sn6000hw/data-interfaces-and-high-power-transceivers-support#High-Power-Transceivers-Support">
+   <svg role="img" aria-hidden="true" data-component="icon" class="icon icon-link copy-headline-link-icon">
+    <use href="/sn6000hw/__theme/c_6c29734e-d941-4613-9296-918e7e587582/help-center-theme-nvidia-fork/19/icons.svg#link"></use>
+   </svg>
+  </copy-clipboard>
+ </i18n-message></h2>
+<p>The systems offer several high-power ports for optical transceivers that require such support. The following table specifies each system's ports max power capabilities:</p>
+<div class="theme-table" style="--width: 4000px;">
+ <table-expand>
+  <scroll-shadow>
+   <table-sort>
+    <div data-component="table" data-align="unset" data-number-column="false">
+     <table>
+      <colgroup>
+       <col style="width: 570px">
+       <col style="width: 2096px">
+       <col style="width: 1333px">
+      </colgroup>
+      <tbody>
+       <tr>
+        <th>
+         <p><strong>Model Family</strong></p>
+        </th>
+        <th>
+         <p><strong>Ports</strong></p>
+        </th>
+        <th>
+         <p>Maximum High Power Support</p>
+        </th>
+       </tr>
+       <tr>
+        <td rowspan="3">
+         <p>SN6600 &nbsp; &nbsp;</p>
+        </td>
+        <td>
+         <p>64x OSFP ports&nbsp;</p>
+        </td>
+        <td>
+         <p>30W</p>
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <p>1x QSFP-112</p>
+        </td>
+        <td>
+         <p>10W</p>
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <p>2x SFP28</p>
+        </td>
+        <td>
+         <p>2.5W</p>
+        </td>
+       </tr>
+       <tr>
+        <td rowspan="2">
+         <p>SN6600-LD &nbsp; &nbsp;</p>
+        </td>
+        <td>
+         <p>&nbsp;64x OSFP ports</p>
+        </td>
+        <td>
+         <p>30W</p>
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <p>1x QSFP-112</p>
+        </td>
+        <td>
+         <p>10W</p>
+        </td>
+       </tr>
+      </tbody>
+     </table>
+    </div>
+   </table-sort>
+  </scroll-shadow>
+ </table-expand>
+</div>
+<p>
+ <br>
+</p>
+
+					<p class="article-last-updated">
+						Last updated: <time datetime="2026-07-01T12:09:49.857Z">July 01, 2026</time>
+					</p>
+
+																				<script>
+						// Mark block images on the first level as breakout so they can grow wider than the article content.
+						document.querySelectorAll('.article-body > .theme-block-image [data-component="image"]').forEach((element) => {
+							const propertyValue = element.style.getPropertyValue('--width');
+							if (!propertyValue) {
+								return;
+							}
+							if (parseInt(propertyValue) >= 760) {
+								element.closest('.theme-block-image').classList.add('theme-block-image--breakout');
+							}
+						});
+
+						// Remove the inline size on page layouts as this would lead to layouts breaking out of the article content.
+						document.querySelectorAll('.article-body [data-component="layout-section"]').forEach((element) => {
+							const propertyValue = element.style.getPropertyValue('--inline-size');
+							if (!propertyValue) {
+								return;
+							}
+							// ONLY for this very specific width (Confluence default)
+							if (parseInt(propertyValue) === 760) {
+								element.style.removeProperty('--inline-size');
+							}
+						})
+
+						// Set the initial state of the navigation toggle to prevent shifting in the UI
+						try {
+							const navigationToggle = document.querySelector('#navigator-toggle');
+							const navigationState = localStorage.getItem('theme-navigation-state');
+
+							if (navigationState === 'collapsed' && navigationToggle) {
+								navigationToggle.setAttribute('aria-expanded', 'false');
+							}
+						} catch (error) {
+							console.error(error);
+						}
+					</script>
+																			</section>
+				<footer>
+
+
+	<i18n-message id="d05a1cb9087b7602-31" class="sr-only" i18nkey="pagination.label">Pagination</i18n-message>
+	<nav data-component="page-pagination" class="page-pagination" aria-labelledby="d05a1cb9087b7602-31">
+		<ul class="page-pagination-items">
+				<li class="page-pagination-item">
+					<a rel="prev" href="/sn6000hw/interfaces">
+						<div class="page-pagination-icon">
+	<svg role="img" aria-hidden="true" data-component="icon" class="icon icon-arrow_left ">
+		<use href="/sn6000hw/__theme/c_6c29734e-d941-4613-9296-918e7e587582/help-center-theme-nvidia-fork/19/icons.svg#arrow_left"></use>
+	</svg>
+						</div>
+						<div>
+							<div class="page-pagination-label">
+								<i18n-message i18nkey="pagination.prev.label">Previous Page</i18n-message>
+							</div>
+							<div class="page-pagination-title">Interfaces</div>
+						</div>
+					</a>
+				</li>
+				<li class="page-pagination-item">
+					<a rel="next" href="/sn6000hw/led-notifications">
+						<div>
+							<div class="page-pagination-label">
+								<i18n-message i18nkey="pagination.next.label">Next Page</i18n-message>
+							</div>
+							<div class="page-pagination-title">LED Notifications</div>
+						</div>
+						<div class="page-pagination-icon">
+	<svg role="img" aria-hidden="true" data-component="icon" class="icon icon-arrow_right ">
+		<use href="/sn6000hw/__theme/c_6c29734e-d941-4613-9296-918e7e587582/help-center-theme-nvidia-fork/19/icons.svg#arrow_right"></use>
+	</svg>
+						</div>
+					</a>
+				</li>
+		</ul>
+	</nav>
+
+				</footer>
+			</article>
+		</main>
+	</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer data-component="footer" class="footer">
+
+
+
+
+
+		<img class="footer-logo footer-logo--dark" src="/sn6000hw/__theme/c_6c29734e-d941-4613-9296-918e7e587582/help-center-theme-nvidia-fork/19/nvidia/nvidia-logo-horiz-rgb-1c-wht-for-screen.svg" alt="">
+
+		<img class="footer-logo footer-logo--light" src="/sn6000hw/__theme/c_6c29734e-d941-4613-9296-918e7e587582/help-center-theme-nvidia-fork/19/nvidia/nvidia-logo-horiz-rgb-1c-blk-for-screen.svg" alt="">
+
+
+
+
+
+
+
+
+	<ul class="footer-links">
+			<li><a href="https://www.nvidia.com/en-us/about-nvidia/privacy-policy/" target="_blank" rel="noopener">Privacy Policy</a></li>
+			<li><a href="https://www.nvidia.com/en-us/about-nvidia/privacy-center/" target="_blank" rel="noopener">Your Privacy Choices</a></li>
+			<li><a href="https://www.nvidia.com/en-us/about-nvidia/terms-of-service/" target="_blank" rel="noopener">Terms of Service</a></li>
+			<li><a href="https://www.nvidia.com/en-us/about-nvidia/accessibility/" target="_blank" rel="noopener">Accessibility</a></li>
+			<li><a href="https://www.nvidia.com/en-us/about-nvidia/company-policies/" target="_blank" rel="noopener">Corporate Policies</a></li>
+			<li><a href="https://www.nvidia.com/en-us/product-security/" target="_blank" rel="noopener">Product Security</a></li>
+			<li><a href="https://www.nvidia.com/en-us/contact/" target="_blank" rel="noopener">Contact</a></li>
+	</ul>
+	<ul class="footer-content">
+		<li><i18n-message i18nkey="footer.copyright.label">Copyright</i18n-message> <current-year></current-year></li>		<li><i18n-message i18nkey="footer.poweredBy.label">Powered by</i18n-message> <a href="https://www.k15t.com/products/scroll-sites-for-confluence?utm_campaign=k15t-sts-attribution-line&utm_source=k15t-apps" rel="external nofollow">Scroll&nbsp;Sites</a> & <a href="https://www.atlassian.com/software/confluence" rel="external nofollow">Atlassian&nbsp;Confluence</a></li>
+	</ul>
+
+</footer>
+
+
+</body>
+</html>

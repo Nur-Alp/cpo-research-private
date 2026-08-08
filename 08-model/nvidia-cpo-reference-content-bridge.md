@@ -45,7 +45,7 @@ Quantum-X reference denominator ≠ Lambda shipped-unit denominator
 | Single-ASIC ELS boundary | 16 ELS modules; 8 lasers per ELS | 128 laser sources per reference package | Company technical claim; laser supplier and lifetime unknown [CLM-237] |
 | Quad-ASIC ELS boundary | 64 ELS modules; 8 lasers per ELS | 512 laser sources per reference package | Company technical claim; does not establish a shipped quad-ASIC system [CLM-237] |
 
-CoreWeave independently claims deployment of the 102.4T SN6600-LD with 64 x 1.6T ports and 200G SerDes.[CLM-221; CLM-223] That customer record confirms a named system boundary, but it does **not** establish that the deployed SN6600-LD uses NVIDIA's 32-engine Spectrum-X reference package, the 16-ELS single-ASIC boundary, or any particular supplier. Those relationships require a product BOM or customer qualification record.
+CoreWeave independently claims deployment of the 102.4T SN6600-LD with 64 x 1.6T ports and 200G SerDes.[CLM-221; CLM-223] A later CoreWeave post describes 128 x 800GbE, while NVIDIA's hardware manual separately lists 128 data interfaces and 64 high-power OSFP ports.[CLM-370; CLM-373–CLM-375] These records expose a physical/logical interface distinction but do **not** establish that the deployed SN6600-LD uses NVIDIA's 32-engine Spectrum-X reference package, the 16-ELS single-ASIC boundary, or any particular supplier. Those relationships require a product BOM or customer qualification record.
 
 ## Supplier and profit-pool bridge
 
