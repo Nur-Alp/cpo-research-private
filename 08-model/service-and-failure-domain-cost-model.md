@@ -64,7 +64,7 @@ The model must preserve correlated failures. A package or cooling failure can di
 
 ## Current conclusion
 
-Serviceability is a plausible CPO/NPO differentiator but not an established economic advantage. ELSFP improves the replaceability of the light source, while leaving optical-engine, fibre, package and control failures unresolved. Until failure and cost distributions are disclosed, service cost must remain an explicit blocked input in the [TCO-per-delivered-bit gate](tco-per-delivered-bit-gate.md), not a qualitative claim converted into a margin adjustment.
+Serviceability is a plausible CPO/NPO differentiator but not an established economic advantage. PAP-042 strengthens the engineering reliability boundary with full-module reflow and JEDEC stress evidence, while also showing that early process versions failed before later process/material changes; it supplies no fleet failure or repair-cost distribution. ELSFP improves the replaceability of the light source, while leaving optical-engine, fibre, package and control failures unresolved. Until failure and cost distributions are disclosed, service cost must remain an explicit blocked input in the [TCO-per-delivered-bit gate](tco-per-delivered-bit-gate.md), not a qualitative claim converted into a margin adjustment.
 
 ## References
 

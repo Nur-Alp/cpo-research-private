@@ -6,7 +6,11 @@
 
 **Deployment boundary:** Scale-out optical engines and adjacent CPO packaging
 
-**Last updated:** 2026-08-07
+**Last updated:** 2026-08-08
+
+## New full-module reliability packet
+
+IBM's full-build OTV record (`PAP-042`) strengthens the reliability boundary beyond an abstract: 50 µm-pitch polymer-waveguide modules were built through optics-first and optics-last flows; typical assembled channel insertion loss was 1.5–2.0 dB, some channels were below 1.2 dB, and measured 0–3-reflow changes were 0–0.25 dB. Early samples failed JEDEC parametric stress evaluation, while later OTV-1A/1B samples passed after process, adhesive, material and structural changes. The stated sequence included 1,000 thermal cycles, 1,000 hours damp heat and 1,000-hour storage tests. This is strong process/reliability evidence, but the paper does not supply HVM yield, sample-size distributions, automated cycle time, field FIT, warranty or margin. [CLM-357–CLM-359]
 
 ## Decision question
 
@@ -50,6 +54,7 @@ Intel's PIPES/CHIPS assembly record adds a supplier-role map around an open-cavi
 | NTT CPO inter-switch reliability model | `PAP-037`; technical-report record | Reliability model explicitly reflects CPO internal structure and compares it with a conventional link model | Provides a framework for allocating failure probabilities by component/failure domain | No measured fleet failure rate, MTBF, field replacement or warranty economics |
 | GRIN/evanescent passive coupler | `PAP-040`; 3D FDTD simulation | Below-0.27 dB simulated chip-to-chip coupling at 11 µm gap; 1 dB vertical tolerance ~2.38 µm and lateral ±2.24 µm; >360 nm bandwidth | Could widen passive-assembly window and reduce active-alignment cycle time | No fabricated coupler, measured loss distribution, automated yield, reflow or environmental qualification |
 | IBM single-mode polymer-waveguide CPO module | `PAP-041`; official IEDM abstract | Two substrate configurations, optics-last assembly, <1.2–2.0 dB insertion-loss statement and thermomechanical testing | Extends polymer-waveguide packaging toward a full-module reliability boundary | No sample count, stress duration, pass/fail, channel distribution, production yield, customer qualification or field reliability |
+| IBM full-build CPO OTV reliability packet | `PAP-042`; 13-page JECEC/arXiv paper with full-module results | 50 µm-pitch polymer-waveguide OTVs; typical 1.5–2.0 dB assembled-channel loss, some <1.2 dB; 0–0.25 dB change across 0–3 reflows; later OTV-1A/1B completed the stated JEDEC stress sequence after process/material changes | Connects optical loss, reflow compatibility and full-module stress testing to an explicit process-learning record | No production-lot yield, sample-size/pass-fail distribution, automated cycle time, FIT, customer qualification, warranty or field-return data |
 | SiON/Si 2.5D optical interposer | `PAP-039`; measured 400G aggregate research transceiver | Four flip-chip EML/PD channels, ~0.5 dB/facet fibre coupler loss and estimated ~−3.5 dB EML-to-SiON coupling | Provides a real interposer/active-chiplet assembly boundary for coupling and thermal diligence | Not a 200G/lane engine; no attach Cpk, final yield, rework or lifetime qualification |
 
 ## Measurement-boundary reconciliation
@@ -137,3 +142,4 @@ x realised price
 - `PAP-035`: John U. Knickerbocker et al., [*CPO Technology Full Module Test Vehicle Demonstrations*](../01-sources/papers/PAP-035-ibm-cpo-full-module-test-vehicle-ectc2025.md), IEEE ECTC 2025, DOI `10.1109/ECTC51687.2025.00052`. Official IBM abstract retained locally; full paper not available in this environment.
 - `PAP-036`: [*Demonstration of Co-Packaged Optics Assembly for Fiber-Based Optical Interconnect*](../01-sources/papers/PAP-036-intel-pipes-cpo-assembly-ectc2025.md), IEEE ECTC 2025, DOI `10.1109/ECTC51687.2025.00061`. Canonical bibliographic record retained; full paper not available in this environment.
 - `PAP-037`: Tsuyoshi Ito et al., [*Reliability Modeling of Inter Switch Links using Co-Packaged Optics (CPO) and Its Evaluations*](../01-sources/papers/PAP-037-ntt-cpo-inter-switch-reliability-model-2025.md), IEICE Technical Report PN2025-21. Canonical record retained; full report not available in this environment.
+- `PAP-042`: John U. Knickerbocker et al., [*Next generation Co-Packaged Optics Technology to Train & Run Generative AI Models in Data Centers and other computing applications*](../01-sources/papers/PAP-042-cpo-next-generation-jecec-reliability-2024-evidence-note.md), arXiv:2412.06570 / JECEC 2024. Full 13-page PDF retained locally; full-module loss, reflow and JEDEC stress evidence, but no production-lot yield or field-return distribution.

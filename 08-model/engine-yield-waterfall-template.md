@@ -2,7 +2,7 @@
 
 **Status:** Empty evidence-gated model; no forecast values populated  
 **Scope:** A defined 200G/lane or 400G/lane scale-out optical engine  
-**As of:** 2026-08-07
+**As of:** 2026-08-08
 
 This template is deliberately blank. It specifies the calculation needed to convert manufacturing evidence into cost per shipped engine; it does not substitute assumptions for missing company data.
 
@@ -79,6 +79,7 @@ The model is not eligible for a base-case company forecast until the evidence bu
 - `PAP-003` identifies assembly, test, thermal and manufacturability categories but does not provide a production yield waterfall.
 - `PAP-015` supplies a process-monitoring experiment with 1,178 observations and estimated measurement times; its model was evaluated on reused observations and does not clear production Cpk or yield.
 - `PAP-004`, `PAP-013`, `PAP-017` and `PAP-018` supply interface/connector measurements, not final-engine yield or field reliability.
+- `PAP-042` supplies a full-module OTV, reflow and JEDEC stress boundary, including early-failure/process-iteration evidence, but no production yield or field-return distribution.
 - Company dossiers disclose platform, capacity or order signals, but no reviewed company source supplies all inputs above.
 
 ## Source controls
