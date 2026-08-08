@@ -1,7 +1,7 @@
 # Company evidence-gap matrix
 
 **Status:** Cross-dossier diligence control; not a numeric ranking  
-**As of:** 2026-08-07
+**As of:** 2026-08-08
 
 This matrix prevents a company claim in one value-chain layer from being counted as proof in another. “Observed” means the retained record directly supports the stated boundary; “claimed” means the company states it; “missing” means the input is not publicly evidenced in the reviewed packet.
 
@@ -44,6 +44,8 @@ This matrix prevents a company claim in one value-chain layer from being counted
 6. TSMC COUPE production conversion: named SKU, shipped units, qualified line, final-engine yield and package responsibility.
 
 ## Sources
+
+- [Second-group optical-engine comparator dossier](second-group-optical-engine-comparators-dossier.md)
 
 - [Broadcom and NVIDIA switch-CPO dossier](broadcom-nvidia-switch-cpo-platform-dossier.md)
 - [Coherent and Lumentum external optical-engine dossier](coherent-lumentum-external-optical-engine-dossier.md)

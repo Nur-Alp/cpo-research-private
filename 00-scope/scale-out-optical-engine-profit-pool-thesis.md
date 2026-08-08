@@ -122,6 +122,8 @@ This is not a current 200G/400G-per-lane engine competitor. It is a long-run opt
 | Intel | Historical silicon-photonics, packaging and socketable-engine reference point | Current product, customer and economic position requires a fresh evidence review |
 | Cisco/Acacia and Ranovus | Additional scale-out PIC and optical-engine candidates | Require comparable product-boundary, production and customer evidence |
 
+The second-group comparator packet is now documented in [Intel, Cisco/Acacia and Ranovus/Jabil optical-engine comparators](../07-companies/second-group-optical-engine-comparators-dossier.md). It adds countercases without changing the core conclusion: no second-group route currently clears a customer-qualified 200G/lane engine, final yield, ASP or margin gate.
+
 Meta and other hyperscalers belong in the customer-requirements and adoption evidence set. They should not receive optical-engine or PIC technology-leadership scores unless they disclose a directly controlled design and its measurable results.
 
 ## Profit conversion test
@@ -184,7 +186,7 @@ The primary workstream is therefore:
 
 > Which company can manufacture the lowest-total-cost, qualification-ready 200G/lane and later 400G/lane scale-out optical engine, and how much sustainable gross profit can it retain after customers, switch-platform owners and manufacturing partners take their shares?
 
-The PIC, laser and packaging evidence blocks are now established, as are first dossiers for Broadcom, Coherent, Lumentum and NVIDIA. The immediate work is to clear the economic input gates rather than manufacture an unsupported forecast. Intel, Cisco/Acacia and Ranovus should be added once their current scale-out products and commercial status are documented comparably.
+The PIC, laser and packaging evidence blocks are now established, as are first dossiers for Broadcom, Coherent, Lumentum and NVIDIA. The second-group comparator layer now covers Intel, Cisco/Acacia and Ranovus/Jabil at their documented product boundaries. The immediate work is to clear the economic input gates rather than manufacture an unsupported forecast.
 
 ## References
 

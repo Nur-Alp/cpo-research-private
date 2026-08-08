@@ -19,7 +19,7 @@ The research has a credible technical/economic framework and several evidence-ma
 | 5. Manufacturing/yield/reliability/service model | Partial | Packaging, attach, laser and serviceability benchmarks identify the variables. | Yield waterfall, cycle time, Cpk, field return, warranty and repair-cost data. |
 | 6. Total cost per delivered bit comparison | Framework strengthened; not numerically complete | A transparent 102.4T power scenario plus a formal delivered-bit/TCO gate now exist. | Matched capex, module/engine cost, cooling, spares, repair, utilisation, availability and yield inputs. See [TCO gate](../08-model/tco-per-delivered-bit-gate.md). |
 | 7. Value-chain profit-pool map | Partial | Platform, engine, laser, packaging and foundry control points are mapped. | Attributable content, supplier share, ASP, product margin and cannibalisation. |
-| 8. Operational-leadership scorecard | Framework only | Leadership layers and evidence multipliers are defined; dossier conclusions are separated by role. | Comparable customer, production, yield, reliability and ecosystem data to populate scores. |
+| 8. Operational-leadership scorecard | Framework plus second-group comparator layer | Leadership layers and evidence multipliers are defined; core and second-group dossier conclusions are separated by role. | Comparable customer, production, yield, reliability and ecosystem data to populate scores. |
 | 9. Investment-attractiveness scorecard | Not eligible | Revenue-scale materiality screen, company input gates and a dated market-denominator snapshot now exist. | CPO earnings bridge, reconciled shares/ADR ratios, auditable consensus data and downside sensitivity. |
 | 10. Revenue/gross-profit/earnings/valuation bridge | Partial framework only | Mathematical bridge and revenue-scale thresholds. | All product-specific economics and current valuation/consensus inputs. |
 | 11. Consensus/variant-perception tracker | Management-expectation register plus market-denominator snapshot; consensus not complete | Dated management, company and partner expectations plus a 7 August 2026 feed snapshot are recorded in the [expectations tracker](../08-model/expectations-and-variant-perception-tracker.md). | Dated sell-side consensus, reconciled price/valuation/share count, probability-weighted conversion and downside sensitivity. |
@@ -60,7 +60,7 @@ No company is an evidence-supported overall **profit-pool leader** or **best pub
 2. **Engine manufacturing:** final yield waterfall, fibre attach/test throughput, reliability qualification, rework and warranty allocation.
 3. **Matched architecture economics:** common 200G and later 400G lane system boundary spanning CPO, NPO, LPO, retimed optics and copper/AEC.
 4. **Supplier economics:** content map, ASP, supplier share, price-down, customer concentration, margin, capex and cannibalisation.
-5. **Accelerator optical-I/O comparables:** build the same evidence-matched dossiers for Ayar Labs, Lightmatter, TSMC and NVIDIA.
+5. **Accelerator optical-I/O comparables:** extend the same evidence-matched treatment to Ayar Labs, Lightmatter, TSMC and NVIDIA; the Intel/Cisco/Acacia/Ranovus second-group comparator layer is now documented.
 6. **Investment overlay:** reconcile the dated market snapshot, then retain auditable consensus estimates only after the product economics are sufficiently bounded.
 
 ## Completion gate
