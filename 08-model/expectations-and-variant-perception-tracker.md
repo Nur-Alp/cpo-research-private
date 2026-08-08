@@ -2,7 +2,7 @@
 
 **Owner:** Nur Alpys  
 **Status:** Management-expectation register; not consensus or valuation  
-**As of:** 2026-08-07
+**As of:** 2026-08-08
 
 ## Purpose
 
@@ -62,6 +62,10 @@ source_id and claim_id
 - Celestica adds a concrete 2027 planned production-ramp checkpoint for an unnamed hyperscaler CPO switch, but the disclosure is still insufficient for a volume or earnings estimate.
 
 No variant-perception conclusion is currently investable because the public expectation records are not yet matched to consensus, valuation, product economics or observed conversion.
+
+## Market-denominator update
+
+The [7 August 2026 market snapshot](market-snapshot-2026-08-07.md) now records feed-level prices, market-cap outputs and P/E fields for COHR, LITE, AVGO, NVDA, MRVL, CLS and TSM. This is a dated denominator only. The feed requires independent share-count/ADR reconciliation, and no sell-side consensus or CPO-specific earnings estimate has been added. The snapshot therefore does not change the “investment conclusion not eligible” status.
 
 ## Linked controls
 

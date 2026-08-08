@@ -1,7 +1,7 @@
 # CPO Decision-Output Completion Audit
 
 **Owner:** Nur Alpys
-**As of:** 2026-08-07
+**As of:** 2026-08-08
 **Purpose:** Test the current library against the required decision outputs in [CPO Research Question and Decision Scope](research-question.md). This is an evidence audit, not a claim that the study is complete.
 
 ## Overall finding
@@ -20,9 +20,9 @@ The research has a credible technical/economic framework and several evidence-ma
 | 6. Total cost per delivered bit comparison | Framework strengthened; not numerically complete | A transparent 102.4T power scenario plus a formal delivered-bit/TCO gate now exist. | Matched capex, module/engine cost, cooling, spares, repair, utilisation, availability and yield inputs. See [TCO gate](../08-model/tco-per-delivered-bit-gate.md). |
 | 7. Value-chain profit-pool map | Partial | Platform, engine, laser, packaging and foundry control points are mapped. | Attributable content, supplier share, ASP, product margin and cannibalisation. |
 | 8. Operational-leadership scorecard | Framework only | Leadership layers and evidence multipliers are defined; dossier conclusions are separated by role. | Comparable customer, production, yield, reliability and ecosystem data to populate scores. |
-| 9. Investment-attractiveness scorecard | Not eligible | Revenue-scale materiality screen and company input gates exist. | CPO earnings bridge, consensus/valuation data and downside sensitivity. |
+| 9. Investment-attractiveness scorecard | Not eligible | Revenue-scale materiality screen, company input gates and a dated market-denominator snapshot now exist. | CPO earnings bridge, reconciled shares/ADR ratios, auditable consensus data and downside sensitivity. |
 | 10. Revenue/gross-profit/earnings/valuation bridge | Partial framework only | Mathematical bridge and revenue-scale thresholds. | All product-specific economics and current valuation/consensus inputs. |
-| 11. Consensus/variant-perception tracker | Management-expectation register started; consensus/valuation not complete | Dated management, company and partner expectations are recorded in the [expectations tracker](../08-model/expectations-and-variant-perception-tracker.md). | Dated sell-side consensus, price/valuation, share count, probability-weighted conversion and downside sensitivity. |
+| 11. Consensus/variant-perception tracker | Management-expectation register plus market-denominator snapshot; consensus not complete | Dated management, company and partner expectations plus a 7 August 2026 feed snapshot are recorded in the [expectations tracker](../08-model/expectations-and-variant-perception-tracker.md). | Dated sell-side consensus, reconciled price/valuation/share count, probability-weighted conversion and downside sensitivity. |
 | 12. Falsification dashboard/thesis-change log | Partial | Hypothesis register, claim ledger and dated company target tests exist. | Regular observed-versus-expected milestone record and probability revisions. |
 
 ## Evidence-quality constraint
@@ -61,7 +61,7 @@ No company is an evidence-supported overall **profit-pool leader** or **best pub
 3. **Matched architecture economics:** common 200G and later 400G lane system boundary spanning CPO, NPO, LPO, retimed optics and copper/AEC.
 4. **Supplier economics:** content map, ASP, supplier share, price-down, customer concentration, margin, capex and cannibalisation.
 5. **Accelerator optical-I/O comparables:** build the same evidence-matched dossiers for Ayar Labs, Lightmatter, TSMC and NVIDIA.
-6. **Investment overlay:** retain dated estimates, price/valuation and expectation sources only after the product economics are sufficiently bounded.
+6. **Investment overlay:** reconcile the dated market snapshot, then retain auditable consensus estimates only after the product economics are sufficiently bounded.
 
 ## Completion gate
 
