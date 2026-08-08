@@ -31,6 +31,14 @@ Vendor production language and partner quotations are not interchangeable with c
 
 ## Minimum fields for a cleared commercial-proof record
 
+## Operator-scale context (not a CPO numerator)
+
+CoreWeave's March 2026 investor presentation reports $66.8B of backlog, 43 active data centers, more than 850 MW of active power and more than 3.1 GW of contracted power; its FY2025 10-K describes the broader Quantum-X800, Quantum-2, Spectrum-X and liquid-cooling infrastructure context.[CLM-376–CLM-378] These records establish that CoreWeave is a large, repeat-capable operator, but they do **not** identify CPO switch units, optical-engine content, qualification, repeat CPO shipments or CPO economics. They therefore belong in the denominator/context layer, not in the customer-confirmed CPO numerator. See [customer scale and repeatability gate](customer-scale-repeatability-gate.md).
+
+### Interpretation control
+
+Do not multiply CoreWeave's data-center, power, backlog or GPU-scale figures by an assumed CPO penetration rate. A valid CPO numerator still requires an exact product/revision, a dated unit or port count and repeat deployment evidence at the same physical boundary.
+
 At least one customer-side record must identify:
 
 1. Exact product SKU and CPO/NPO/optical-engine configuration.
