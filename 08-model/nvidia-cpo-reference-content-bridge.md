@@ -3,7 +3,7 @@
 **Status:** Company-architecture denominator; not a shipment or revenue forecast  
 **Owner:** Nur Alpys  
 **Scope:** NVIDIA Quantum-X InfiniBand Photonics and Spectrum-X Ethernet Photonics  
-**As of:** 2026-08-07
+**As of:** 2026-08-08
 
 ## Purpose
 
@@ -27,6 +27,8 @@ Only the first is populated from the current public record. The other two remain
 ### Quantum-X external-light boundary
 
 NVIDIA says one ELS contains eight lasers and can power 32 of the Quantum-X switch's 576 transmit lanes.[CLM-237] The public record does not provide enough information to derive a complete Q3450 ELS-module count without making an unstated mapping between the reference lane count and the system configuration. Do not infer that count from the Spectrum-X 16/64 ELS-module statement.
+
+NVIDIA's May 2026 production release states that Spectrum-X Ethernet Photonics is a 200Gb/s-SerDes CPO switch now in production and names CoreWeave, Lambda and OCI among early ecosystem partners/adopters. This upgrades the timing evidence for the Spectrum-X reference architecture, but it does not establish that every named partner uses the 32-engine/16-ELS reference boundary or reveal supplier content, units or margin.[CLM-346]
 
 Lambda's customer announcement says a production-scale GB300 supercluster with more than 10,000 GPUs uses Quantum-X Photonics CPO, but it does not disclose switch count, engine count or ELS count.[CLM-224] Therefore:
 

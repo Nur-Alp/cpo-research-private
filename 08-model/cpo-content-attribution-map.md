@@ -3,7 +3,7 @@
 **Owner:** Nur Alpys  
 **Status:** Evidence-gated control map; not a revenue forecast  
 **Scope:** 102.4T switch-side CPO and 200G-per-lane optical-engine layers  
-**As of:** 2026-08-07
+**As of:** 2026-08-08
 
 ## Purpose
 
@@ -31,7 +31,7 @@ test, qualification, service and warranty
 
 | Layer | What is established | Company or route implicated | What cannot be attributed yet | Evidence gate |
 |---|---|---|---|---|
-| Switch ASIC and SerDes | Broadcom specifies the TH6-Davisson switch and 200G electrical links; NVIDIA separately claims a Spectrum-X Photonics CPO switch with 200G SerDes.[CLM-076; CLM-079] | Broadcom or NVIDIA platform owner | CPO-specific ASP, margin, optical-engine transfer price and displaced retimer/plug revenue | Platform SKU, units and customer confirmation |
+| Switch ASIC and SerDes | Broadcom specifies the TH6-Davisson switch and 200G electrical links; NVIDIA's 2026 release states Spectrum-X Ethernet Photonics is a 200Gb/s-SerDes CPO switch now in production.[CLM-076; CLM-346] | Broadcom or NVIDIA platform owner | CPO-specific ASP, margin, optical-engine transfer price and displaced retimer/plug revenue | Platform SKU, units and customer confirmation |
 | EIC / PIC integration | Broadcom names TSMC COUPE technology-based optical engines; TSMC describes COUPE as EIC/PIC integration and reports a customer-linked 200G result.[CLM-210; CLM-213; CLM-218] | TSMC process route; Broadcom platform integration | Whether TSMC supplies wafers, bonded dies, a complete engine or only a process; Broadcom's internal content and margin | Supplier responsibility map and qualified package boundary |
 | Optical engine count | Broadcom discloses sixteen 6.4T optical engines in TH6-Davisson; NVIDIA separately describes 3 COUPE engines per Quantum-X subassembly and 32 engines in a Spectrum-X package.[CLM-076; CLM-233; CLM-235] | Broadcom and NVIDIA platform architectures; TSMC COUPE route | Dollar content per engine, number of PICs/lasers per engine, good-engine output and supplier share; the counts are not interchangeable across platforms | Product BOM or teardown tied to a named SKU |
 | Laser / external light | Broadcom identifies field-replaceable ELSFP modules; Lumentum and Coherent disclose UHP/high-power InP and ELS/ELSFP routes.[CLM-071; CLM-068; CLM-083] | Broadcom system boundary; Lumentum/Coherent candidate suppliers | Which supplier is qualified, laser count, split ratio, delivered power after distribution, ASP and replacement/warranty allocation | Named SKU, qualification record and fibre-power tree |
@@ -63,6 +63,8 @@ These are control-point observations, not a profit ranking. The ranking changes 
 Until these records exist, use the system architecture to define the denominator only; do not multiply sixteen engines by a presumed supplier ASP or company-wide margin.
 
 The NVIDIA–Coherent and NVIDIA–Lumentum agreements are therefore **route evidence, not attribution evidence**. They increase the prior probability that each supplier can participate in future photonics volume, but they do not permit assigning customer deployments, CPO revenue or optical-engine profit to either supplier.[CLM-197][CLM-198]
+
+The May 2026 NVIDIA production statement changes the commercial-timing state but not the attribution rule: a production claim and named ecosystem partners still do not identify the exact customer SKU, optical BOM, supplier share, transfer price or final-engine yield.[CLM-346][CLM-350]
 
 ## Linked controls
 
