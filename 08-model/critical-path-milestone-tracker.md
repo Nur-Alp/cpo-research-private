@@ -42,6 +42,8 @@ An observed milestone records what a retained source says happened. A planned mi
 | MS-N06 | LPO/CPO boundary | Matched 200G/lane and later 400G/lane system measurement at defined loss, reach, FEC, temperature and power | Determines whether CPO is technically necessary rather than merely marketed | Open |
 | MS-N07 | Supplier economics | ASP, qualified share, second-source status, price-down and cancellation terms | Converts architecture content into supplier gross profit | Open |
 | MS-N08 | TSMC COUPE route | 2026 milestone reconciled to named customer SKU, shipped units, final-engine yield and package responsibility | Separates process readiness from attributable revenue | Open |
+| MS-P01 | POET Optical Interposer | Installed Malaysian optical-engine line capacity, 800G qualification/design-in claim and conditional EOI purchase-order framework reconciled to shipped units and output | Tests whether wafer-level integration converts into a qualified optical-engine supply route | Open; `CMP-042`–`CMP-044`; `CLM-360`–`CLM-366` |
+| MS-P02 | POET/Lumilens EOI | Late-2026 engineering sample and 2027 production targets checked against named hyperscaler SKU, qualification and repeat orders | Converts conditional commercial intent into an observable adoption milestone | Open |
 
 ## Change-log rule
 

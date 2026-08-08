@@ -51,6 +51,10 @@ ODIN is the clearest monolithic-engine countercase in this group because it inte
 4. Customer-side shipment units, repeat orders and field-service data for any of these routes.
 5. Product ASP, supplier share, warranty allocation, price-down and capex terms.
 
+## Emerging wafer-level manufacturing comparator: POET
+
+POET is tracked separately from the second-group public-company routes because its public record is centered on an Optical Interposer manufacturing thesis rather than a verified switch-CPO deployment. POET reports Malaysian wafer-level optical-engine assembly/test capacity, an 800G receive-engine qualification/design-in claim, and a conditional POET/Lumilens purchase-order framework. LITEON adds a partner-development route with a 2027 high-volume target. These records make POET useful for testing whether wafer-level, active-alignment-free integration can improve cost/yield/throughput, but they do not establish CPO units, production yield, customer qualification at the CPO boundary, ASP or margin. See the [POET Optical Interposer manufacturing comparator](poet-optical-interposer-manufacturing-dossier.md) and `CLM-360`–`CLM-366`.
+
 ## Sources
 
 - [Intel OCI and silicon-photonics platform record](../01-sources/product-materials/CMP-035-intel-oci-chiplet-ofc2024.md), `CMP-035`, `CLM-304`–`CLM-305`.
