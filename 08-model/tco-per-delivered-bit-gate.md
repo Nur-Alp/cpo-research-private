@@ -3,7 +3,7 @@
 **Owner:** Nur Alpys  
 **Status:** Framework only; no company forecast values populated  
 **Scope:** Matched 102.4T switch-side CPO, LPO, advanced/retimed pluggables and later 400G/lane alternatives  
-**As of:** 2026-08-07
+**As of:** 2026-08-08
 
 ## Decision question
 
@@ -102,11 +102,13 @@ Until these conditions are met, report only the power sensitivity and keep `TCO 
 
 The most important unresolved commercial question is not whether CPO can save watts. It is whether the small CPO-versus-LPO power delta survives the full qualified cost stack while the much larger CPO-versus-retimed advantage remains relevant to the customer's topology. This is why the optical-engine profit-pool thesis prioritises final yield, serviceability, supplier share and price—not isolated PIC performance.
 
+The service-cost boundary is now explicit in [Service and failure-domain cost model](service-and-failure-domain-cost-model.md). ELSFP can make the light source replaceable, but it does not establish replacement economics for the PIC/package, delivery fibre, connector, control map, cooling or correlated package failures. Those terms remain blocked in the TCO identity.
+
 ## Linked controls
 
 - [102.4T switch-side optical power model](102.4t-switch-side-power-model.md)
 - [Optical-engine profit-pool input gates](optical-engine-profit-pool-input-gates.md)
 - [Engine yield waterfall template](engine-yield-waterfall-template.md)
 - [CPO customer-proof register](customer-proof-register.md)
+- [Service and failure-domain cost model](service-and-failure-domain-cost-model.md)
 - [CPO decision-output completion audit](../00-scope/decision-output-completion-audit.md)
-
