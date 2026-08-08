@@ -60,7 +60,7 @@ No company is an evidence-supported overall **profit-pool leader** or **best pub
 2. **Engine manufacturing:** final yield waterfall, fibre attach/test throughput, reliability qualification, rework and warranty allocation.
 3. **Matched architecture economics:** common 200G and later 400G lane system boundary spanning CPO, NPO, LPO, retimed optics and copper/AEC.
 4. **Supplier economics:** content map, ASP, supplier share, price-down, customer concentration, margin, capex and cannibalisation.
-5. **Accelerator optical-I/O comparables:** extend the same evidence-matched treatment to Ayar Labs, Lightmatter, TSMC and NVIDIA; the Intel/Cisco/Acacia/Ranovus second-group comparator layer is now documented.
+5. **Accelerator optical-I/O comparables:** the Ayar Labs, Lightmatter, Marvell/Celestial, Intel, NVIDIA and TSMC comparator layer is now documented; continue with customer/product qualification and economics.
 6. **Investment overlay:** reconcile the dated market snapshot, then retain auditable consensus estimates only after the product economics are sufficiently bounded.
 
 ## Completion gate

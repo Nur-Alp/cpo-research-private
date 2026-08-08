@@ -46,6 +46,7 @@ This matrix prevents a company claim in one value-chain layer from being counted
 ## Sources
 
 - [Second-group optical-engine comparator dossier](second-group-optical-engine-comparators-dossier.md)
+- [Accelerator optical-I/O and NPO comparator dossier](accelerator-optical-io-comparator-dossier.md)
 
 - [Broadcom and NVIDIA switch-CPO dossier](broadcom-nvidia-switch-cpo-platform-dossier.md)
 - [Coherent and Lumentum external optical-engine dossier](coherent-lumentum-external-optical-engine-dossier.md)

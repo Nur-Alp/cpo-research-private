@@ -140,6 +140,7 @@ The cross-company evidence boundary is summarized in the [company evidence-gap m
 - [NVIDIA CPO reference-content bridge](../08-model/nvidia-cpo-reference-content-bridge.md)
 - [Marvell / Celestial AI: Accelerator Optical-I/O Dossier](marvell-celestial-accelerator-optical-io-dossier.md)
 - [Second-group optical-engine comparators: Intel, Cisco/Acacia and Ranovus/Jabil](second-group-optical-engine-comparators-dossier.md)
+- [Accelerator optical-I/O and NPO comparator dossier](accelerator-optical-io-comparator-dossier.md)
 
 ### Why Lumentum and Coherent matter
 
