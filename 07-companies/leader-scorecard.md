@@ -1,7 +1,7 @@
 # CPO Company Leadership Scorecard
 
 **Status:** Framework with provisional evidence-adjusted leadership view
-**Last updated:** 2026-08-07
+**Last updated:** 2026-08-08
 
 ## Purpose
 
@@ -90,8 +90,8 @@ This is a triage result, not the completed weighted scorecard. Scores remain unp
 
 | Leadership layer | Provisional leader or set | Evidence-adjusted interpretation |
 |---|---|---|
-| Switch-side CPO platform control | NVIDIA | Strongest full-stack system route and named early ecosystem adopters; CPO-specific customer volume remains unverified. See [platform dossier](broadcom-nvidia-switch-cpo-platform-dossier.md). |
-| Merchant switch CPO product definition | Broadcom | Most specific disclosed 102.4T CPO architecture. Broadcom now separately says the Tomahawk 6 family is shipping in production volume, but the CPO configuration, units and optical-engine content remain unisolated; the earlier TH6 CPO release also contains early-access wording. Celestica's unnamed hyperscaler CPO-switch program with a planned 2027 ramp strengthens the route-to-production evidence but does not identify units or a CPO-specific TH6 SKU. See [platform dossier](broadcom-nvidia-switch-cpo-platform-dossier.md) and `CMP-031`. |
+| Switch-side CPO platform control | NVIDIA | Strongest full-stack system route; its May 2026 release states Spectrum-X Ethernet Photonics is a 200Gb/s-SerDes CPO switch now in production and names early ecosystem partners/adopters. Customer units, supplier allocation and CPO-specific economics remain unverified. See [platform dossier](broadcom-nvidia-switch-cpo-platform-dossier.md). |
+| Merchant switch CPO product definition | Broadcom | Most specific disclosed 102.4T CPO architecture and a stated third-generation 200G/lane CPO line. Broadcom's TH5-Bailly volume-production statement and TH6 announcement remain company claims with no isolated CPO units, final-engine yield or optical-engine content; Celestica's unnamed hyperscaler CPO-switch program with a planned 2027 ramp strengthens the route-to-production evidence but does not identify units or a CPO-specific TH6 SKU. See [platform dossier](broadcom-nvidia-switch-cpo-platform-dossier.md), `PRI-032` and `CMP-031`. |
 | External-laser commercial visibility | Lumentum | Clearest disclosed CPO order value and delivery window. The NVIDIA agreement and Greensboro announcement add a customer-linked 6-inch InP capacity route with a mid-2028 ramp, but customer, margin, product allocation, qualified output and order conversion remain undisclosed (`CMP-033`). |
 | Photonic component breadth and manufacturing | Coherent | Broad SiPh, InP, VCSEL, detector, passive, fibre-attach, module, and test stack; the NVIDIA agreement adds a multibillion-dollar purchase commitment, capacity rights and $2B investment, but product allocation, conversion and margin remain undisclosed |
 | Accelerator optical-I/O public-company option | Marvell | Celestial AI plus custom XPU, switching, DSP, and NVIDIA relationship create the strongest public-company strategic bundle; production proof remains weak |
@@ -145,6 +145,8 @@ The cross-company evidence boundary is summarized in the [company evidence-gap m
 External lasers and InP manufacturing may become a scarce, architecture-agnostic profit pool across switch CPO and accelerator optical I/O. Both Lumentum and Coherent now have direct NVIDIA capacity/customer-route commitments, so the differentiator is no longer simply “who has a hyperscaler relationship.” Lumentum has the clearest external-laser order and planned 6-inch InP capacity milestone; Coherent has the broader publicly disclosed multi-technology engine stack. Neither disclosure identifies product allocation, qualified output, supplier share, ASP, cancellation protection or realised gross profit.
 
 The content-attribution map now makes the critical negative explicit: NVIDIA's executed agreements with Coherent and Lumentum are nonexclusive and product-unallocated. They cannot be assigned to CoreWeave's Spectrum-X deployment, Lambda's Quantum-X deployment, Broadcom TH6, or any other named CPO system without a supplier-linked SKU and shipment record. See [CPO content-attribution map](../08-model/cpo-content-attribution-map.md) and `CLM-197`–`CLM-198`.
+
+The latest first-party production packet changes timing confidence, not profit-pool attribution: NVIDIA says Spectrum-X Ethernet Photonics is now in production; Broadcom states a 200G/lane CPO product line; Coherent shows multiple 200G/400G CPO routes; and Lumentum identifies its UHP laser/200G EML content in live NVIDIA 1.6T modules. These records should raise the commercial-timing state while leaving the supplier-content, yield, ASP and margin gates open.[CLM-345–CLM-350]
 
 The input-gate framework now makes the scorecard boundary operational: no company should receive a numeric investment-attractiveness score until system volume, attributable content, supplier share, realised product margin, cannibalisation and the relevant cost/capital terms are traceably evidenced. Consolidated margin, a product demonstration, capacity expansion or an order headline is not a substitute.
 

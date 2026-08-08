@@ -3,7 +3,7 @@
 **Owner:** Nur Alpys  
 **Status:** Evidence register; not a shipment forecast  
 **Scope:** Customer and partner evidence for 200G/lane switch-side and inter-rack CPO  
-**As of:** 2026-08-07
+**As of:** 2026-08-08
 
 ## Purpose
 
@@ -19,6 +19,7 @@ Vendor production language and partner quotations are not interchangeable with c
 | Lambda, `CMP-024`, `CLM-226`–`CLM-227` | Future scale-up and scale-out roadmap; Quantum-X plus Spectrum-X | Lambda says future clusters are being prepared with both Quantum-X and Spectrum-X Photonics | Spectrum-X production shipment, exact SKU, qualification, units or date | **Roadmap/preparation only for Spectrum-X** |
 | Meta–NVIDIA, `CMP-011`, `CLM-081` | NVIDIA Spectrum-X Ethernet platform | Meta confirms adoption of Spectrum-X across its infrastructure footprint | Spectrum-X Photonics/CPO isolation, switch count, optical-engine content, deployment date, field data or economics | **Platform adoption; not CPO proof** |
 | NVIDIA platform page, `CMP-025`, `CLM-228`–`CLM-229` | Spectrum-X and Quantum-X product/ecosystem route | NVIDIA says Spectrum-X reaches full production, names first adopters, and lists technology partners | Customer acceptance, units, exact partner-to-layer mapping, BOM, ASP, yield or margin | **Vendor ecosystem evidence** |
+| NVIDIA Vera Rubin release, `PRI-033`, `CLM-346`–`CLM-347` | Switch-side Ethernet; Spectrum-X Ethernet Photonics, 200Gb/s SerDes | NVIDIA states the CPO switch is now in production and names CoreWeave, Lambda and OCI among first ecosystem partners/adopters | Units, repeat shipments, exact SKU configuration, supplier allocation, qualification, matched power protocol, ASP and margin | **First-party production claim; numerator open** |
 | Broadcom, `CMP-018`, `CLM-076`–`CLM-078` | Merchant switch-side Ethernet; TH6-Davisson BCM78919 | Broadcom defines a 102.4T, sixteen-engine, 200G/link CPO product and reports both “now shipping” and early-access sampling language | Named customer deployment, accepted SKU, units, repeat shipments, qualification, supplier content, yield or margin | **Early-access/product-definition evidence** |
 | Broadcom partners, `CMP-018`, `CLM-246`–`CLM-249` | TH6 solution and integrator route | HPE, Celestica, Micas and Nexthop are quoted as collaborators or solution-route partners; Micas separately references extensive TH5 testing | None of the quotations identifies a completed TH6 customer deployment, units, date, repeat order or field population | **Partner-route evidence only** |
 | Celestica Q1 2026, `CMP-028`, `CLM-255`–`CLM-256` | Switch-side Ethernet CPO; unnamed hyperscaler program | Celestica reports an awarded design-and-manufacturing program for a CPO Ethernet switch using 1.6T switch silicon, co-packaged optical interconnects and liquid cooling; production ramp is expected in 2027 | Customer identity, SKU, units, qualification completion, repeat order, optical BOM, supplier share, ASP, margin and field history | **Customer-program evidence; planned ramp, not shipped volume** |
@@ -54,6 +55,7 @@ Fields 5–7 are needed to connect adoption to the optical-engine profit pool ra
 - **Strongest merchant product definition:** Broadcom TH6-Davisson; its current public record remains conservative early-access sampling because “now shipping” and sampling language coexist.
 - **Strongest partner-route map:** Broadcom's HPE/Celestica/Micas/Nexthop quotations and NVIDIA's broader partner/adopter list; neither clears customer shipment gates.
 - **Strongest new named-program evidence:** Celestica's unnamed hyperscaler CPO-switch design/manufacturing award with an expected 2027 production ramp. It advances the route-to-production gate but still supplies no units or realized economics.
+- **Strongest new timing evidence:** NVIDIA's May 2026 release states that Spectrum-X Ethernet Photonics is now in production. This upgrades the first-party timing record but does not replace the missing customer-side unit numerator or repeat-shipment evidence.
 
 These are different leadership dimensions. No record currently clears a repeat-volume or optical-engine profit-pool gate.
 
