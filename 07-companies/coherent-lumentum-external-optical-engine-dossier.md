@@ -85,6 +85,8 @@ Reduce the supplier thesis if any of the following occurs:
 4. Multiple high-power InP and ELS suppliers qualify rapidly, removing the expected bottleneck rent.
 5. Disclosed orders do not convert to repeat revenue at an identifiable attractive margin.
 
+The Tower/Coherent 420 Gb/s PAM4 demonstration adds a useful 400G silicon-photonics countercase: Coherent's InP CW laser was paired with a Tower silicon MZM in a stated production-ready SiPho process. It strengthens Coherent's component breadth and the possibility that 400G does not automatically force fixed CPO, but it remains a component demonstration without BER/FEC, TDECQ, reach, yield, qualification, customer SKU or margin. [CMP-045][CLM-367–CLM-369]
+
 The next evidence to obtain is a customer-side CPO confirmation, CPO-specific company revenue/margin commentary, and physical-engine manufacturing/qualification data. Broadcom and NVIDIA must then be assessed separately as platform owners rather than treated as component suppliers.
 
 ## Sources
@@ -93,6 +95,7 @@ The next evidence to obtain is a customer-side CPO confirmation, CPO-specific co
 - `CMP-015`: Coherent, [Multiple CPO technologies demonstrated at OFC 2026](../01-sources/product-materials/CMP-015-coherent-cpo-ofc-2026.html), 17 March 2026. Canonical publisher URL is retained in the source manifest.
 - `CMP-016`: Lumentum, [UHP laser sources for CPO](../01-sources/product-materials/CMP-016-lumentum-uhp-lasers-cpo.html), accessed 7 August 2026. Canonical publisher URL is retained in the source manifest.
 - `CMP-017`: Lumentum, [OFC 2026 scale-out, scale-up and scale-across technologies](../01-sources/product-materials/CMP-017-lumentum-ofc-2026-ai-optics.html), 17 March 2026. Canonical publisher URL is retained in the source manifest.
+- `CMP-045`: Tower Semiconductor and Coherent, [400G/lane silicon-photonics demonstration](../01-sources/product-materials/CMP-045-tower-coherent-400g-lane-sipho-2026-evidence-note.md), 23 March 2026. SEC HTML and readable PDF snapshot retained locally; canonical SEC link is in the evidence note.
 - `FIL-002`: Coherent, [Q3 FY26 Form 8-K and earnings release](https://www.sec.gov/Archives/edgar/data/820318/000119312526208972/d57080dex991.htm), 6 May 2026.
 - `FIL-003`: Lumentum, [Q3 FY26 Form 10-Q](https://www.sec.gov/Archives/edgar/data/1633978/000162828026030777/lite-20260328.htm), filed 6 May 2026.
 - `PRS-003`: Coherent, [OFC 2026 investor event](../01-sources/conference-presentations/PRS-003-coherent-ofc-investor-event-2026.pdf), 17 March 2026.
