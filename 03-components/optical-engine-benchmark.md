@@ -109,6 +109,19 @@ Fibre attach, connector, assembly and serviceability evidence from `PAP-015` thr
 
 The additional packaging records `PAP-028`–`PAP-031` reinforce why the rows above cannot be scored on PIC bandwidth alone: detachable known-good-module testing, FOWLP engine construction, external-light polymer distribution and glass-interposer thermal/RF behavior each improve a different part of the engine flow. Their reported losses, short-duration stability and test-vehicle temperatures remain non-comparable to a qualified 200G/lane or 400G/lane engine, so they are constraints and design options rather than ranking inputs. See `CLM-239`–`CLM-245` and the [packaging benchmark](packaging-reliability-benchmark.md).
 
+## First-party 200G/lane production and deployment packet
+
+The current company-source packet improves the timing benchmark but does not convert vendor claims into comparable product economics:
+
+| Company | First-party record | What it establishes | What remains open |
+|---|---|---|---|
+| Broadcom | Third-generation CPO announcement | 200G/lane CPO product line; TH5-Bailly described as volume-production; process learning in OSAT, automated test, thermal design, fibre routing and yield | Current units, final-engine yield, qualification, ASP, margin and field reliability |
+| NVIDIA | Vera Rubin / Spectrum-X Photonics release | 200Gb/s SerDes CPO switch stated to be in production; first ecosystem partners/adopters named | Switch units, supplier allocation, complete-engine boundary, matched power protocol, ASP and margin |
+| Coherent | OFC 2026 demonstrations | 6.4T (32×200G) socketed SiPh CPO with ELS; VCSEL CPO; 400G/lane InP modulator-on-silicon | Which demonstration enters production, complete power, yield, qualification, customer and price |
+| Lumentum | OFC 2026 technology update | Live NVIDIA 1.6T modules using UHP laser or 200G EMLs; CPO industrialization and 400G/lane roadmap language | CPO/engine content ownership, production units, qualification, ASP, margin and yield |
+
+These records support a **200G/lane commercial-timing lead** for Broadcom/NVIDIA switch-side CPO claims, with Coherent and Lumentum supplying multiple optical routes. They do not clear the matched-engine benchmark: none publishes the same lane BER/TDECQ, full power tree, final good-unit yield, loss distribution, service cost and price on a common boundary.[CLM-345–CLM-350]
+
 The electrical-channel countercase is recorded in [Linear-Drive Optics Boundary Benchmark](../02-architecture/linear-drive-boundary-benchmark.md). It matters here because an excellent PIC does not create an automatic CPO profit pool if a customer can retain LPO margin at its required topology and service boundary.
 
 The first supplier comparison is in [Coherent and Lumentum External Optical-Engine Supplier Dossier](../07-companies/coherent-lumentum-external-optical-engine-dossier.md). It keeps demonstrated component breadth and ELSFP serviceability separate from unknown complete-engine yield, qualification and CPO-specific profitability.

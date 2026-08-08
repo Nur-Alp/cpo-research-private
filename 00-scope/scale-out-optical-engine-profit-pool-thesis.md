@@ -20,6 +20,8 @@ The March 2026 NVIDIA agreements with both Coherent and Lumentum were subsequent
 
 TSMC's 2025 Annual Report and 2026 technology update add a distinct manufacturing-control layer. TSMC reports 200G COUPE transmission with several customers, greater than 99% 3D-stacking yield on engineering samples, and a COUPE-on-substrate CPO production milestone beginning in 2026. This strengthens TSMC's process/stacking-control case, but the yield is not a final-engine yield and no complete-engine commercial allocation is disclosed. [PRI-029; PRI-030; CLM-213–CLM-217]
 
+The latest first-party product packet sharpens the commercial clock: Broadcom states that its third-generation 200G/lane CPO line follows a TH5-Bailly volume-production learning cycle; NVIDIA states that Spectrum-X Ethernet Photonics, a 200Gb/s-SerDes CPO switch, is now in production; Coherent shows a 6.4T (32×200G) socketed SiPh/ELS demonstration plus a 400G/lane InP route; and Lumentum shows live NVIDIA 1.6T modules using its UHP laser or 200G EMLs. These records support a near-term 200G/lane deployment pathway, but none identifies final-engine yield, matched power, qualification lot, supplier content, ASP, margin or repeat units.[PRI-032; PRI-033; PRI-034; PRI-035; CLM-345–CLM-350]
+
 This changes the research priority from a single universal CPO winner to a domain-gated question: which architecture first clears its own technical, qualification, service and total-cost gates, and which supplier controls the scarce content in that domain?
 
 ## Thesis in one sentence
