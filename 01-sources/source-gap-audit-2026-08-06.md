@@ -2,7 +2,7 @@
 
 **Owner:** Nur Alpys
 
-**As of:** 2026-08-07 (refreshed after the PAP-028–PAP-032 review)
+**As of:** 2026-08-10 (refreshed after the PAP-049 review)
 
 **Decision question:** Which architecture becomes commercially meaningful first, and which company captures the largest sustainable incremental profit pool?
 
@@ -101,6 +101,12 @@ PAP-015 through PAP-018 are now reviewed and establish attach-metrology, mechani
 5. Peter O'Brien, *Photonic and Electronic Co-Packaging Technologies - From Research to Pilot Manufacturing*, OFC 2025, W4A.1, DOI 10.1364/OFC.2025.W4A.1. Obtain the presentation video if the proceedings contain only an abstract.
 
 The first four records are now retained locally as `PAP-028`–`PAP-031`: Psaila's abstract HTML, Li's abstract HTML, Suda's open-access abstract HTML, and Gupta's author-hosted PDF. O'Brien's OFC 2025 pilot-manufacturing abstract is now retained as `PAP-032`; the full presentation/video remains inaccessible. These records add useful mechanism and manufacturing questions, but do not clear production package yield. Primary research with packaging engineers, OSATs, fibre-attach suppliers, and system manufacturers will still be necessary. See the [packaging benchmark](../03-components/packaging-reliability-benchmark.md), [academic evidence matrix](../03-components/academic-evidence-matrix.md), and [source viewing guide](source-viewing-guide.md).
+
+The subsequent interface packet adds two additional boundaries. imec's `PAP-043` reports development-run edge-coupler yield of 75.5%, 68% and 57% for three coupler lengths and identifies voids/misalignment as loss mechanisms; Kang et al.'s `PAP-044` reports a measured 400-Gbps TGV optical-engine boundary and a localized replacement concept. Both remain below the final-engine yield, qualification, field-service and economics gates (`CLM-421`–`CLM-427`). Yi and Wilkerson's `PAP-047` then adds a system-level counterweight: packaging, thermal stability, compounded yield, standardization, serviceability and lifecycle robustness must be treated as adoption determinants, not post-hoc implementation details (`CLM-448`–`CLM-450`). The preprint is a perspective, not production evidence. The later `PAP-048` abstract adds a distinct TSV/TGV interposer boundary (>67 GHz TSV, >110 GHz TGV, 128-Gbaud support), but still supplies no full-text engine, yield, qualification, service or economics (`CLM-451`–`CLM-453`).
+
+The pilot-manufacturing gap is partially advanced by `WHT-002`, O’Brien and Kumar’s Chip Scale Review article on glass interposers, TGVs, LIDE, panel processing and automation. Its full issue is retained by canonical link rather than local PDF because direct retrieval is blocked; it provides process-route context but no pilot-line yield, throughput, qualification or cost data (`CLM-428`–`CLM-431`). `PAP-049` adds a full review of FOWLP, TSV and TGV route trade-offs and cited 400-Gbps demonstrations, but no new production lot or economics (`CLM-454`–`CLM-457`). The full `PAP-046` paper now adds measured 110-GHz TGV/RDL bandwidth and 128-Gb/s OOK eyes, while exposing a large single-device post-package EML optical-output loss; this sharpens the assembly-loss gate but does not clear it (`CLM-476`–`CLM-478`). `PAP-051` is now a full measured 180-GBaud driver/modulator paper and `PAP-056` adds measured FOWLP-package data, but both remain below the production-yield, qualification and economics boundary (`CLM-461`–`CLM-463`, `CLM-578`–`CLM-584`). The targeted acquisition priorities are tracked in the [academic acquisition queue](academic-acquisition-queue.md).
+
+NVIDIA's `CMP-053` production-ramp article further advances the manufacturing-responsibility map by naming TSMC, SPIL, TFC and Foxconn across fabrication, packaging/test, laser-module validation and system assembly. It remains a first-party role disclosure: customer-accepted CPO units, final-engine yield, supplier allocation and economics are still open (`CLM-435`–`CLM-437`).
 
 ### 4. CPO-specific customer proof
 

@@ -8,6 +8,8 @@ This directory contains the research source index, reading sequence, and any leg
 
 `claim-ledger.csv` is the canonical assertion database. Add only thesis-relevant claims and label each as fact, company claim, estimate, inference, opinion, or unknown. Every material adoption, timing, leadership, or financial conclusion should be traceable to this ledger.
 
+Run `python3 ../scripts/audit_evidence.py` after editing either CSV. The audit checks duplicate IDs, source/claim references in both ledgers and Markdown, local paths across source citations, relative Markdown links, required fields, allowed confidence/status values, and CSV schema width; a malformed or missing local reference must be fixed before the batch is considered usable.
+
 `../03-components/optical-engine-benchmark.md` is the working matched-boundary comparison for scale-out optical engines. It distinguishes measured device results from full-engine validation, qualification and commercial production.
 
 `source-gap-audit-2026-08-06.md` is the current evidence-coverage and company-leadership audit. It separates provisional category leaders from the evidence still needed to name a durable overall winner, and contains the remaining university-download queue.
@@ -26,6 +28,8 @@ The new workflow fields are:
 - `review_status`: queued, in progress, reviewed, or archived
 
 Do not mark confidence until the material has been reviewed. Important claims should be checked against standards, filings, official documentation, papers, or other primary evidence.
+
+Current queue status: 166 of 169 source records are reviewed; the three remaining queued records are orientation videos (`VID-001`–`VID-003`). Their public pages were not transcript-accessible in the current environment, so they remain orientation-only and are not used as evidence.
 
 ## Source-retention rule
 
@@ -90,6 +94,8 @@ Use these for CPO architecture, AI networking, NVIDIA platform context, and furt
 
 1. `PRS-001`: Yole Group, *Status of High-End Performance Packaging (2.5D & 3D) and Co-packaged Optics*, presented by Vishal Saroha at the SEMI 3D & Systems Summit, 2025.
 
+   [Local evidence note](conference-presentations/PRS-001-yole-high-end-packaging-and-cpo-2025-evidence-note.md) records the page-level review and limitations.
+
 Use conference decks for orientation, market framing, and diligence questions. Treat market forecasts and third-party estimates cautiously, record their definitions, and reconcile them against physical unit assumptions where possible.
 
 ### Academic core
@@ -120,7 +126,9 @@ All four local files were checked against their contents rather than filenames. 
 
 ### Focused PIC, packaging, and profit-pool expansion
 
-The verified `PAP-012` through `PAP-032` packet covers electronic-photonic co-optimisation, optical-I/O chiplets, interposers, fibre attach, thermomechanical reliability, detachable connectors, external lasers, switch-radix economics, microring and InP PICs, VCSELs, design tools, CMOS/silicon-photonics integration, FOWLP engines, polymer external-light distribution, glass-interposer thermal/electrical behavior, and pilot-manufacturing equipment questions. `PAP-028`–`PAP-030` are locally retained publisher abstract archives because the full papers require institutional access; `PAP-031` is a full author-hosted PDF; `PAP-032` is an OFC abstract with the full presentation/video unavailable. Prioritise:
+The verified `PAP-012` through `PAP-056` packet, together with `WHT-002`, covers electronic-photonic co-optimisation, optical-I/O chiplets, interposers, fibre attach, thermomechanical reliability, detachable connectors, external lasers, switch-radix economics, microring and InP PICs, VCSELs, design tools, CMOS/silicon-photonics integration, FOWLP engines, polymer external-light distribution, glass-interposer thermal/electrical behavior, pilot-manufacturing equipment, interface yield, thermal drift, passive vertical coupling, full-module polymer-waveguide reliability, historical 51.2T CPO system/reliability evidence, measured 180-GBaud driver/modulator evidence, TEC-less 400G/lane InP PIC evidence, 225-GBaud TFLN advanced-pluggable transmission, and measured 400-Gbps/1.79-Tbps/TGV optical-engine boundaries. `PAP-028`, `PAP-029`, `PAP-030`, `PAP-044`, `PAP-051`, `PAP-055` and `PAP-056` now have locally retained full PDFs; `PAP-031`, `PAP-034`, `PAP-035`, `PAP-038`, `PAP-039`, `PAP-043`, `PAP-046`, `PAP-049`, `PAP-050`, `PAP-052`, `PAP-053`, and `PAP-054` are also locally retained PDFs; `PAP-032` is an OFC abstract with the full presentation/video generally inaccessible for this research cycle; `PAP-045` and `PAP-048` remain journal/conference abstract/evidence notes with full-text retrieval blocked; `PAP-047` is a full 19-page open-access arXiv perspective/preprint; and `WHT-002` is canonical-link-only because the publisher PDF is blocked. Prioritise:
+
+The [academic acquisition queue](academic-acquisition-queue.md) records the remaining high-value papers and the exact evidence boundary each must close. The [full-text download list](academic-full-text-download-list.md) is the practical handoff for papers that still need to be downloaded through university access. The current priority is targeted acquisition of full text for 400G/lane engine, matched CPO/LPO/NPO, packaging yield/rework and accelerator optical-I/O comparisons; collecting more general reviews is lower value.
 
 1. `PAP-024` for the current device and integration map.
 2. `PAP-012`, `PAP-021`, `PAP-025`, and `PAP-013` for scale-out optical-engine and PIC design.
@@ -130,7 +138,17 @@ The verified `PAP-012` through `PAP-032` packet covers electronic-photonic co-op
 6. `PAP-020` for the system-level value mechanism behind higher-radix CPO switches.
 7. `PAP-028`–`PAP-032` for detachable known-good-module flow, FOWLP engine construction, external-light waveguides, glass-interposer thermal/RF boundaries, and pilot-manufacturing equipment questions. Treat them as abstract, mechanism, or test-vehicle evidence—not final-engine yield or margin evidence.
 
-The retained packet is not uniformly full-text: `PAP-028`–`PAP-030` are publisher abstract archives, `PAP-031` is a full author-hosted PDF, and `PAP-032` is an abstract-only OFC record. The access boundary and remaining acquisition requests are recorded in `papers/acquisition-issues.md` and the [academic evidence matrix](../03-components/academic-evidence-matrix.md).
+The retained packet is not uniformly full-text: `PAP-031` is a full author-hosted PDF, and `PAP-032` is an abstract-only OFC record whose full presentation remains inaccessible. `PAP-028`, `PAP-029`, `PAP-030` and `PAP-044` now have locally retained full PDFs and page-reviewed evidence notes; `PAP-048` remains intentionally untouched in the open-access download queue. The access boundary and remaining acquisition requests are recorded in `papers/acquisition-issues.md` and the [academic evidence matrix](../03-components/academic-evidence-matrix.md).
+
+The CSV's original acquisition fields for recently upgraded records are reconciled in [`source-log-reconciliation-2026-08-10.md`](source-log-reconciliation-2026-08-10.md).
+
+The distinction between raw HTML preservation copies and directly readable PDFs is tracked in [`html-archive-coverage-2026-08-10.md`](html-archive-coverage-2026-08-10.md).
+
+The latest referential-integrity results are recorded in the [evidence-integrity audit](evidence-integrity-audit-2026-08-10.md). This verifies IDs and links only; it does not turn company claims or incomplete production evidence into independent facts.
+
+### Downloaded-PDF reconciliation (2026-08-10)
+
+The Downloads review upgraded `PAP-036`, `PAP-045`, and `PAP-053` from abstract/bibliographic evidence to retained full PDFs. Their evidence notes and claim-ledger entries now reflect the complete papers; the measured results remain research or prototype boundaries and do not establish production yield, qualification, customer volume, ASP, or margin.
 
 ### Current leadership-diligence packet
 

@@ -16,6 +16,8 @@ At 100G, 200G and 400G per lane, when does linear-drive optics keep a pluggable 
 
 **FACT:** The reviewed 400G/lane paper directly measures component behaviour at 160 and 180 GBd PAM4, not a 212.5 GBd end-to-end 400G/lane link. Its 212.5 GBd result is a model in which TDECQ below 3.5 dB and BER floor below 1e-6 hold only up to 12 dB back-to-back loss at 106 GHz; the 15 dB case fails those targets.[PAP-011]
 
+**BOUNDARY CONTROL:** Broadcom's 2025 release names Meta as the high-temperature lab-characterisation setting for a historical 1M cumulative 400G-equivalent flap-free CPO port-device-hour result. The released boundary is historical TH5/100G-lane context, not a matched CPO-versus-LPO/NPO experiment, TH6 200G/lane result, customer acceptance record or field-return series.[CMP-063][CMP-064] It therefore informs the reasonableness of a historical reliability route but cannot rank architectures or support a current deployment conclusion.
+
 The current evidence therefore supports a boundary view: LPO can defer CPO in a validated low-loss 100G and potentially 200G channel, while 400G/lane currently pulls the electrical boundary inward toward NPO/CPO. It does not establish adoption dates, full-system power, production yield, serviceability or which architecture will be more profitable.
 
 ## Standards anchor: useful, but not a 400G/lane answer
@@ -63,6 +65,10 @@ The 22/23, 26 and 31 dB figures answer different questions under different chann
 
 ## 400G/lane: measured boundary versus projection
 
+![FIG-001 — 400G/lane modeled TDECQ, extinction ratio and BER versus bump-to-bump loss. Source: PAP-011, p. 3, Fig. 4; snapshot registered in `11-figures/figure-register.md`.](../11-figures/FIG-001-pap-011-400g-lane-bump-loss-tdecq-ber.png)
+
+The snapshot makes the boundary visible: in the paper's 212.5-GBd PAM4 model, the 12-dB point is the last shown point inside the stated TDECQ target, while the 15-dB case is outside it. This does not establish a measured 400G/lane link or a universal loss limit; see `PAP-011`, claims `CLM-065`–`CLM-067`.
+
 | Result | Status | Key outcome | Architecture implication |
 |---|---|---|---|
 | 160 GBd PAM4 with KP4 FEC | Measured | 3.7 dB TDECQ with 15-tap FFE | Useful component evidence, below a 400G/lane gross-rate requirement |
@@ -87,7 +93,11 @@ Oracle's March 2026 Acceleron architecture post is an important operator-side co
 
 LPO is a real countercase to any thesis that power alone forces switch CPO. The relevant bottleneck moves with the electrical channel: packaging, host-SerDes, connector and module placement determine whether linear pluggables can retain sufficient margin. This makes 200G/lane a coexistence problem rather than a binary CPO-versus-pluggable decision.
 
-At 400G/lane, the present evidence shifts the diligence focus to short electrical interconnect, high-bandwidth drivers/modulators, packaging and test. That could favour NPO/CPO engine suppliers, but no reviewed paper yet shows their production economics or proves that the additional integration creates superior investor returns.
+At 400G/lane, the present evidence shifts the diligence focus to short electrical interconnect, high-bandwidth drivers/modulators, packaging and test. PAP-051 now provides a full-paper 180-GBaud PAM4 driver/modulator checkpoint: 76-GHz InP MZM plus 224-GBaud-class EML driver, below the 20%-HD-FEC BER threshold at 40°C under TEC control. The partial 1.45-pJ/bit figure excludes DSP, laser and TEC; reach, fibre attach, yield and qualification remain open. That could favour NPO/CPO engine suppliers, but no reviewed paper yet shows their production economics or proves that the additional integration creates superior investor returns (`CLM-461`–`CLM-463`, `CLM-582`–`CLM-584`).
+
+PAP-044 adds a useful but non-comparable engine datapoint: the full JLT paper reports a TGV-interposer optical engine with 51.8 GHz S21 bandwidth, TDECQ ≤1.6 dB, real-time 4 × 106-Gbps operation at the KP4-FEC threshold and 10-km BER measurements. Because the application is on-board/pluggable rather than a 400G/lane CPO system, it strengthens the measured-engine comparator without changing the conclusion that a complete 400G/lane LPO/NPO/CPO boundary remains open.[PAP-044][CLM-504–CLM-508]
+
+PAP-054 changes the 400G/lane countercase: a full paper demonstrates 225-GBaud TFLN PAM4 with a 3-nm SerDes at 3.36 Tb/s aggregate over 2 km under 7% HD-FEC, and DR8 operation at 500 m and 2 km with an uncooled laser sweep from 30–85°C. It does not establish production module power, yield or field qualification, but it shows that a 400G-class lane can be demonstrated without CPO packaging. The technical boundary therefore remains an economic, service and electrical-reach comparison—not a lane-rate inevitability claim.[PAP-054][CLM-471–CLM-475]
 
 ## Sources
 
@@ -95,7 +105,10 @@ At 400G/lane, the present evidence shifts the diligence focus to short electrica
 - `PAP-008`: Jianying Zhou, Lei Xin and Jin Hong, [*Performance Limitations and Optimizations of Linear Driver Optics for 200G/Lane and beyond*](../01-sources/papers/PAP-008-zhou-linear-driver-optics-200g-2025.pdf), OFC 2025 paper M2H.1, DOI 10.1364/OFC.2025.M2H.1.
 - `PAP-010`: E. M. Kimber and E. Frlan, [*200G LPO: Design Challenges and Latest Test Data*](../01-sources/papers/PAP-010-kimber-frlan-200g-lpo-2026.pdf), OFC 2026 paper M2B.1, DOI 10.1364/OFC.2026.M2B.1.
 - `PAP-011`: Jianying Zhou et al., [*400G/lane for Linear-drive Optics Applications*](../01-sources/papers/PAP-011-zhou-400g-linear-drive-optics-2026.pdf), OFC 2026 paper Th1C.3, DOI 10.1364/OFC.2026.Th1C.3.
+- `PAP-051`: Son Tran et al., [*180 GBaud PAM4 Driver-Modulator Engine for IM/DD Transmissions in the O-Band*](../01-sources/papers/PAP-051-tran-180gbaud-driver-modulator-engine-2026-evidence-note.md), OFC 2026 W3E.6, DOI 10.1364/OFC.2026.W3E.6. Full three-page driver/modulator paper; not a fibre-attached engine.
+- `PAP-054`: Charles St-Arnault et al., [*Net 3.2 Tbps 225 Gbaud PAM4 O-Band IM/DD 2 km Transmission Using FR8 and DR8 with a CMOS 3 nm SerDes and TFLN Modulators*](../01-sources/papers/PAP-054-st-arnault-225gbaud-tfln-3p2tbps-2025-evidence-note.md), arXiv:2503.24147. Full measured 225-GBaud/TFLN transmission counterexample; no production or CPO economics.
 - `STD-007`: OIF, [*Next Generation CEI-224G Framework*](../01-sources/standards/STD-007-oif-cei-224g-framework.pdf), OIF-FD-CEI-224G-01.0, 7 February 2022.
 - `STD-008`: IEEE P802.3dj, [*Key Motions*](../01-sources/standards/STD-008-ieee-p8023dj-key-motions-2024.pdf), compilation through 16 May 2024.
 - `STD-009`: IEEE 802.3 400GPL Study Group, [*400GPL SG Objectives*](../01-sources/standards/STD-009-ieee-400gpl-objectives-2026.pdf), approved 10 June 2026; project status updated July/August 2026.
 - `STD-010`: China Mobile, [*Consideration on NPO and CPO at 400G/Lane*](../01-sources/standards/STD-010-ieee-400gpl-npo-cpo-consideration-2026.md), IEEE 802.3 400GPL public contribution, May 2026.
+- `PAP-044`: Eun Kyu Kang et al., [*Through-Glass-Via Interposer for High-Speed Electrical Interfacing in a 400 Gbps Optical Engine*](../01-sources/papers/PAP-044-kang-tgv-400g-optical-engine-2025.pdf), *Journal of Lightwave Technology* 43 (2025), full ten-page paper; DOI 10.1109/JLT.2025.3546984.

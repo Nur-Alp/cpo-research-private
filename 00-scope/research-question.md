@@ -1,9 +1,9 @@
 # CPO Research Question and Decision Scope
 
 **Owner:** Nur Alpys
-**Status:** In progress
+**Status:** Provisional conclusion issued; evidence gates remain open
 **Scope horizon:** 2026 to 2032
-**Last updated:** 2026-08-07
+**Last updated:** 2026-08-12
 
 ## Decision objective
 
@@ -25,7 +25,7 @@ The active workstream narrows the broader question to scale-out optical engines 
 
 > Which company can manufacture the lowest-total-cost, qualification-ready 200G/lane and later 400G/lane scale-out optical engine, and how much sustainable gross profit can it retain after customers, switch-platform owners and manufacturing partners take their shares?
 
-The current provisional view, economic logic, required evidence and falsification conditions are documented in [Scale-Out Optical Engine and PIC Profit-Pool Thesis](scale-out-optical-engine-profit-pool-thesis.md).
+The current provisional view, economic logic, required evidence and falsification conditions are documented in [Scale-Out Optical Engine and PIC Profit-Pool Thesis](scale-out-optical-engine-profit-pool-thesis.md). The synthesized conclusion is in [CPO research conclusion — 2026-08-10](final-conclusion-2026-08-10.md).
 
 ## Three linked questions
 
@@ -97,6 +97,12 @@ An architecture can be viable in one domain and unattractive in another.
 11. Consensus and variant-perception tracker
 12. Falsification dashboard and thesis-change log
 
+The manufacturing output is now split into a [cost-per-qualified-good-engine gate](../08-model/manufacturing-cost-per-good-engine-gate.md) and a [fibre-count/yield sensitivity](../08-model/fibre-count-yield-sensitivity.md). This prevents an isolated PIC, laser or coupling result from being mistaken for a complete production-engine economics result.
+
+The forecast layer now separates bounded [commercial-proof probability priors](../08-model/commercial-proof-probability-priors.md) from adoption-share estimates. Adoption shares remain gated until customer/system denominators, accepted units, repeat shipments and matched TCO/service evidence are available.
+
+The active commercial/economic boundary is controlled through the [NVIDIA and Broadcom commercial-proof dossiers](../07-companies/commercial-proof-dossiers/README.md), the [six-company content-attribution register](../07-companies/six-company-content-attribution-register.md), and the [common architecture system-boundary scorecard](../02-architecture/system-boundary-comparison-scorecard.md). These documents exist to prevent platform, partnership or component evidence from being converted into supplier revenue without a matched SKU, content and economics record.
+
 ## Final answer format
 
 The eventual conclusion must state:
@@ -120,7 +126,7 @@ Do not force a company winner when evidence is insufficient. `No decision`, `no 
 
 ## Completion audit
 
-The current requirement-by-requirement evidence status and research sequence are maintained in [CPO Decision-Output Completion Audit](decision-output-completion-audit.md). This prevents the study from being treated as complete merely because its framework or source library is extensive.
+The current requirement-by-requirement evidence status and research sequence are maintained in the [CPO Decision-Output Completion Audit](decision-output-completion-audit.md) and the [Final CPO Decision-Readiness Matrix](final-decision-readiness-matrix.md). These controls prevent the study from being treated as complete merely because its framework or source library is extensive.
 
 ## Scope controls
 

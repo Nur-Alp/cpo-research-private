@@ -1,7 +1,7 @@
 # Architecture trigger matrix: when optics move inward
 
 **Status:** Evidence-gated architecture decision tool; not an adoption forecast  
-**As of:** 2026-08-08  
+**As of:** 2026-08-11
 **Scope:** 100G, 200G and 400G per lane across scale-out Ethernet and accelerator fabrics
 
 ## Decision rule
@@ -21,7 +21,7 @@ No lane rate alone makes CPO inevitable. The architecture trigger is the first p
 ## Gate hierarchy
 
 1. **Electrical gate:** measured channel loss, return loss, crosstalk, FEC/BER and temperature at the exact lane rate.
-2. **System gate:** complete power/cooling, reach, port count, workload utilisation and failure-domain boundary.
+2. **System gate:** complete power/cooling and thermal load, reach, port count, workload utilisation and failure-domain boundary.
 3. **Manufacturing gate:** final-engine/package yield, attach cycle time, test escape, rework and qualification.
 4. **Service gate:** replacement procedure, MTTR, spares, warranty allocation and field failure rate.
 5. **Economic gate:** module/engine ASP, supplier share, price-down, capex, cannibalisation and cost per delivered bit.
@@ -47,5 +47,6 @@ Failure at an earlier gate cannot be repaired by a favorable later-stage assumpt
 - [102.4T CPO versus advanced pluggables](102.4t-cpo-vs-advanced-pluggables.md).
 - [Linear-drive optics boundary benchmark](linear-drive-boundary-benchmark.md).
 - [NPO interoperability and serviceability boundary](npo-interoperability-boundary.md).
+- [Common system-boundary comparison scorecard](system-boundary-comparison-scorecard.md).
 - [Accelerator optical-I/O and NPO comparator](../07-companies/accelerator-optical-io-comparator-dossier.md).
 - `PAP-007`, `PAP-008`, `PAP-010`, `PAP-011`, `STD-009`, `STD-012`; see the source log and claim ledger.

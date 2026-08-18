@@ -2,7 +2,7 @@
 
 **Status:** Empty evidence-gated model; no forecast values populated  
 **Scope:** A defined 200G/lane or 400G/lane scale-out optical engine  
-**As of:** 2026-08-08
+**As of:** 2026-08-09
 
 This template is deliberately blank. It specifies the calculation needed to convert manufacturing evidence into cost per shipped engine; it does not substitute assumptions for missing company data.
 

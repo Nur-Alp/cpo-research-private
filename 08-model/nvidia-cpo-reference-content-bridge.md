@@ -45,7 +45,7 @@ Quantum-X reference denominator ≠ Lambda shipped-unit denominator
 | Single-ASIC ELS boundary | 16 ELS modules; 8 lasers per ELS | 128 laser sources per reference package | Company technical claim; laser supplier and lifetime unknown [CLM-237] |
 | Quad-ASIC ELS boundary | 64 ELS modules; 8 lasers per ELS | 512 laser sources per reference package | Company technical claim; does not establish a shipped quad-ASIC system [CLM-237] |
 
-CoreWeave independently claims deployment of the 102.4T SN6600-LD with 64 x 1.6T ports and 200G SerDes.[CLM-221; CLM-223] A later CoreWeave post describes 128 x 800GbE, while NVIDIA's hardware manual separately lists 128 data interfaces and 64 high-power OSFP ports.[CLM-370; CLM-373–CLM-375] These records expose a physical/logical interface distinction but do **not** establish that the deployed SN6600-LD uses NVIDIA's 32-engine Spectrum-X reference package, the 16-ELS single-ASIC boundary, or any particular supplier. Those relationships require a product BOM or customer qualification record.
+CoreWeave independently claims deployment of the 102.4T SN6600-LD with 64 x 1.6T ports and 200G SerDes.[CLM-221; CLM-223] A later CoreWeave post describes 128 x 800GbE. NVIDIA's full hardware manual now resolves the architecture boundary: SN6600-LD uses 64 RHS OSFP cages and a pluggable RHS-transceiver ecosystem, while SN6810-LD and SN6800-LD are the silicon-photonics/CPO families.[CLM-370; CLM-373–CLM-375; CLM-380–CLM-381] Therefore the CoreWeave SN6600-LD record cannot be used as evidence that the deployed switch contains NVIDIA's 32-engine Spectrum-X CPO reference package. The separate CoreWeave Photonics-adopter statement remains unallocated to an exact SKU.[CLM-382; CLM-383]
 
 ## Supplier and profit-pool bridge
 
@@ -53,7 +53,7 @@ The architecture denominator can be connected to a supplier model only after the
 
 | Required field | Current state | Why it matters |
 |---|---|---|
-| Exact customer SKU and configuration | CoreWeave names SN6600-LD; Lambda names GB300/Quantum-X production-scale cluster; exact optical BOM missing | Prevents applying a reference count to the wrong product |
+| Exact customer SKU and configuration | CoreWeave names SN6600-LD, which CMP-048 classifies as pluggable; Lambda names GB300/Quantum-X production-scale cluster; exact CPO SKU/BOM missing | Prevents applying a CPO reference count to the wrong product |
 | PIC/EIC/COUPE supplier | TSMC is named as a COUPE collaborator; transfer boundary is unknown | Determines wafer, bonded-die, engine or process revenue |
 | Laser/ELS supplier | NVIDIA names an ELS architecture; Coherent/Lumentum are candidate ecosystem suppliers | Determines laser/ELS content, serviceability and supplier share |
 | Fibre attach / connector / package supplier | NVIDIA describes detachable connector and wafer-level microlens mechanisms; partner list is not a BOM | Determines attach yield, rework, test and package economics |

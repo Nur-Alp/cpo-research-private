@@ -1,0 +1,7 @@
+/.quarto/
+**/*.quarto_ipynb
+
+# Licensed analyst research is a restricted private input. Keep controlled Markdown
+# intake records tracked, but never stage reports, model exports, spreadsheets or screenshots.
+/01-sources/analyst-estimates/*
+!/01-sources/analyst-estimates/*.md

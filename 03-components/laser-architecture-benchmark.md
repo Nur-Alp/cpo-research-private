@@ -6,13 +6,15 @@
 
 **Target generations:** 200G per lane and later 400G per lane, 2026-2032
 
-**Last updated:** 2026-08-07
+**Last updated:** 2026-08-09
 
 ## Decision question
 
 Which laser architecture provides the lowest qualified cost per delivered optical watt after fibre coupling, distribution loss, redundancy, cooling, control, serviceability, lifetime, yield and warranty - and which supplier can retain an attractive share of that value?
 
 The source with the highest laboratory output or efficiency does not automatically win. The relevant unit is usable optical power at the engine input over life, not power at an unmatched chip facet.
+
+The quantitative boundary conversion is maintained in the [laser delivered-power waterfall](../08-model/laser-delivered-power-waterfall.md). It applies prototype fan-out loss only as a labelled sensitivity and does not combine unrelated supplier products into a production claim.
 
 ## Comparison rules
 

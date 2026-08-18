@@ -1,6 +1,6 @@
 # Company leadership source manifest
 
-Access date: 2026-08-08
+Access date: 2026-08-12
 
 This manifest maps each provisional company-leadership conclusion to the locally retained official source. The source log remains the canonical metadata index.
 
@@ -35,30 +35,30 @@ This manifest maps each provisional company-leadership conclusion to the locally
 | `FIL-011` | TSMC | `filings/FIL-011-tsmc-feb-2026-board-capex-evidence-note.md` | Canonical publisher link + local evidence note; direct local retention unavailable | <https://pr.tsmc.com/english/news/3287> |
 | `CMP-018` | Broadcom | Not locally retrievable | Official publisher link | <https://www.broadcom.com/company/news/product-releases/63626> |
 | `CMP-019` | NVIDIA | `product-materials/CMP-019-nvidia-rubin-full-production-2026.pdf` | Publisher PDF | <https://nvidianews.nvidia.com/news/vera-rubin-full-production-agentic-ai-factory> |
-| `CMP-021` | CoreWeave | `product-materials/CMP-021-coreweave-spectrum-x-photonics-cpo.html` | Publisher HTML only; readable PDF snapshot not yet generated | <https://www.coreweave.com/blog/why-ai-factories-need-proof-before-production> |
-| `CMP-022` | CoreWeave | `product-materials/CMP-022-coreweave-sn6600-ld-deployment.html` | Publisher HTML only; readable PDF snapshot not yet generated | <https://coreweave.com/blog/liquid-cooled-switching-doubles-ai-network-bandwidth-per-rack> |
-| `CMP-023` | Lambda | `product-materials/CMP-023-lambda-quantum-x-photonics-production.html` | Publisher HTML only; readable PDF snapshot not yet generated | <https://lambda.ai/blog/lambda-at-gtc-2026-building-the-superintelligence-cloud> |
-| `CMP-024` | Lambda | `product-materials/CMP-024-lambda-spectrum-x-photonics-roadmap.html` | Publisher HTML only; readable PDF snapshot not yet generated | <https://lambda.ai/blog/silicon-photonics-for-ai-clusters-performance> |
-| `CMP-025` | NVIDIA | `product-materials/CMP-025-nvidia-silicon-photonics-partners.html` | Publisher HTML only; readable PDF snapshot not yet generated | <https://www.nvidia.com/en-us/networking/products/silicon-photonics/> |
-| `CMP-026` | NVIDIA | `product-materials/CMP-026-nvidia-cpo-power-efficiency.html` | Publisher HTML only; readable PDF snapshot not yet generated | <https://developer.nvidia.com/blog/scaling-ai-factories-with-co-packaged-optics-for-better-power-efficiency/> |
-| `CMP-027` | NVIDIA | `product-materials/CMP-027-nvidia-cpo-industry-collaboration.html` | Publisher HTML only; readable PDF snapshot not yet generated | <https://developer.nvidia.com/blog/how-industry-collaboration-fosters-nvidia-co-packaged-optics/> |
+| `CMP-021` | CoreWeave | `product-materials/CMP-021-coreweave-spectrum-x-photonics-cpo.html`, evidence note and `-web-archive.pdf` | Publisher HTML + readable PDF snapshot + Markdown evidence note | <https://www.coreweave.com/blog/why-ai-factories-need-proof-before-production> |
+| `CMP-022` | CoreWeave | `product-materials/CMP-022-coreweave-sn6600-ld-deployment.html`, evidence note and `-web-archive.pdf` | Publisher HTML + readable PDF snapshot + Markdown evidence note | <https://coreweave.com/blog/liquid-cooled-switching-doubles-ai-network-bandwidth-per-rack> |
+| `CMP-023` | Lambda | `product-materials/CMP-023-lambda-quantum-x-photonics-production.html`, evidence note and `-web-archive.pdf` | Publisher HTML + readable PDF snapshot + Markdown evidence note | <https://lambda.ai/blog/lambda-at-gtc-2026-building-the-superintelligence-cloud> |
+| `CMP-024` | Lambda | `product-materials/CMP-024-lambda-spectrum-x-photonics-roadmap.html`, evidence note and `-web-archive.pdf` | Publisher HTML + readable PDF snapshot + Markdown evidence note | <https://lambda.ai/blog/silicon-photonics-for-ai-clusters-performance> |
+| `CMP-025` | NVIDIA | `product-materials/CMP-025-nvidia-silicon-photonics-partners.html`, evidence note and `-web-archive.pdf` | Publisher HTML + readable PDF snapshot + Markdown evidence note | <https://www.nvidia.com/en-us/networking/products/silicon-photonics/> |
+| `CMP-026` | NVIDIA | `product-materials/CMP-026-nvidia-cpo-power-efficiency.html`, evidence note and `-web-archive.pdf` | Publisher HTML + readable PDF snapshot + Markdown evidence note | <https://developer.nvidia.com/blog/scaling-ai-factories-with-co-packaged-optics-for-better-power-efficiency/> |
+| `CMP-027` | NVIDIA | `product-materials/CMP-027-nvidia-cpo-industry-collaboration.html`, evidence note and `-web-archive.pdf` | Publisher HTML + readable PDF snapshot + Markdown evidence note | <https://developer.nvidia.com/blog/how-industry-collaboration-fosters-nvidia-co-packaged-optics/> |
 | `CMP-028` | Celestica | Not locally retained; official publisher PDF link in source log | Official financial-results PDF | <https://corporate.celestica.com/static-files/7e777cad-64eb-4ae4-90c7-c715a29d100d> |
 | `CMP-029` | Celestica | Not locally retained; official publisher HTML link in source log | Official product announcement | <https://corporate.celestica.com/news-releases/news-release-details/celestica-accelerates-ai-scale-networking-ds6000-series-16tbe> |
 | `CMP-030` | Celestica | Not locally retained; official publisher PDF link in source log | Official Q3 2024 financial-results PDF | <https://corporate.celestica.com/static-files/b8b34ab0-e623-4573-a592-41e16a49cf45> |
 
 ## Preservation notes
 
-- HTML files are publisher pages saved as received. They may depend on remote styling or images, but their source text remains locally searchable. Every retained HTML source now also has a readable local `*-web-archive.pdf` snapshot; see [the viewing guide](source-viewing-guide.md) for the canonical publisher URL next to each PDF.
+- HTML files are publisher pages saved as received. They may depend on remote styling or images, but their source text remains locally searchable. Every retained HTML source must have either a readable local PDF snapshot or a matching Markdown source card with its canonical publisher URL; see [the viewing guide](source-viewing-guide.md) and each source's companion file.
 - TSMC returned HTTP 403 for both its official HTML page and attached PDF during automated retrieval. `CMP-014` therefore remains URL-canonical; the local note records the failed retrieval and the relevant source boundary without presenting reconstructed text as an original download.
 - The original Coherent and Lumentum product/announcement pages for `CMP-015` through `CMP-017` are retained locally. The source log links those retained originals and preserves the publisher URL in its notes.
 - The original Ayar Labs and Lightmatter pages for `CMP-012` and `CMP-013` are retained locally and contain the claimed product, architecture and/or sampling statements. They remain company claims, not evidence of customer qualification or volume production.
 - The four Q3/Q1/Q2 financial records `FIL-002` through `FIL-005` are now retained as full SEC HTML with local evidence notes. The canonical SEC URLs remain the citation sources; the local copies are preservation records, not reconstructed summaries.
 - Broadcom's `CMP-018` official web response was a JavaScript shell without the article text and its official investor PDF returned HTTP 403. The canonical publisher URL remains in the source log and dossier; the empty shell was discarded rather than retained as if it were the source.
 - NVIDIA's `CMP-019` original three-page publisher PDF was retained and verified with PDF text extraction.
-- CoreWeave's `CMP-021` customer blog was retained as the original HTML because the page is a dynamic Webflow article; its canonical URL remains the citation source. It is intentionally marked HTML-only until a faithful readable snapshot can be generated.
-- CoreWeave's `CMP-022` deployment blog is retained as original HTML for the same reason; it corroborates the named SN6600-LD/Vera Rubin deployment but remains a customer claim rather than an audited fleet record.
-- Lambda's `CMP-023` GTC announcement is retained as original HTML; it is customer-side production-scale evidence for Quantum-X InfiniBand Photonics CPO and is kept separate from switch-side Spectrum-X Ethernet evidence.
-- Lambda's `CMP-024` technology blog is retained as original HTML; it names Spectrum-X Photonics Ethernet in preparation/roadmap language, not as a production deployment. This negative boundary is used to prevent domain overcounting.
-- NVIDIA's `CMP-025` platform page and `CMP-026` technical blog are retained as original HTML. They are company ecosystem, architecture and roadmap claims; neither is treated as independent supplier or performance verification.
-- NVIDIA's `CMP-027` technical blog is retained as original HTML. Its engine, ELS, packaging and TSMC-collaboration details are the strongest public NVIDIA content map, but remain company technical claims rather than audited production economics.
+- CoreWeave's `CMP-021` customer blog has a faithful readable PDF snapshot and Markdown evidence note alongside the dynamic original HTML. It remains customer claim evidence, not a customer-SKU/volume proof.
+- CoreWeave's `CMP-022` deployment blog has a readable PDF snapshot and evidence note; it corroborates the named SN6600-LD/Vera Rubin deployment but remains a customer claim rather than an audited fleet record.
+- Lambda's `CMP-023` GTC announcement has a readable PDF snapshot and evidence note; it is customer-side production-scale evidence for Quantum-X InfiniBand Photonics CPO and remains separate from switch-side Spectrum-X Ethernet evidence.
+- Lambda's `CMP-024` technology blog has a readable PDF snapshot and evidence note; it names Spectrum-X Photonics Ethernet in preparation/roadmap language, not as a production deployment.
+- NVIDIA's `CMP-025` platform page and `CMP-026` technical blog have readable PDF snapshots and evidence notes. They remain company ecosystem, architecture and roadmap claims rather than independent supplier or performance verification.
+- NVIDIA's `CMP-027` technical blog has a readable PDF snapshot and evidence note. Its engine, ELS, packaging and TSMC-collaboration details remain company technical claims rather than audited production economics.
 - Local retention does not convert company claims into independently verified facts. Continue to apply the limitations and confidence fields in `source-log.csv`.

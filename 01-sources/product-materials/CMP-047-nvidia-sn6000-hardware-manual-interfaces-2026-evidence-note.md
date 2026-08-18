@@ -9,8 +9,8 @@ NVIDIA's Spectrum-6 hardware manual lists the SN6600-LD data-interface capabilit
 
 ## Boundary and limitations
 
-This is an official hardware-interface specification, not a CPO BOM or customer shipment record. The page does not state whether the 128 data interfaces represent physical optical cages, breakout/logical lanes, or a configuration abstraction relative to the 64 high-power OSFP ports. It does not identify CPO engine count, laser/ELS count, supplier, qualification, yield or margin.
+This is an official hardware-interface specification, not a CPO BOM or customer shipment record. The page does not state whether the 128 data interfaces represent physical optical cages, breakout/logical lanes, or a configuration abstraction relative to the 64 high-power OSFP ports. The full 61-page family manual retained as [CMP-048](CMP-048-nvidia-sn6000-hardware-manual-full-evidence-note.md) resolves the product architecture: SN6600-LD uses pluggable RHS transceivers, while SN6810-LD/SN6800-LD are the CPO families. CMP-047 itself does not identify CPO engine count, laser/ELS count, supplier, qualification, yield or margin.
 
 ## Research use
 
-CMP-047 materially improves configuration reconciliation: CoreWeave's 64 × 1.6T description and its separate 128-port/800GbE description should not be treated as automatically contradictory or automatically identical. Preserve the physical-port, logical-interface and optical-engine boundaries separately until a product bill of materials or detailed system manual resolves them.
+CMP-047 materially improved interface reconciliation; CMP-048 now adds the stronger architecture boundary. CoreWeave's 64 × 1.6T description and its separate 128-port/800GbE description remain different interface descriptions of a pluggable SN6600-LD record, not evidence of a CPO engine count. Preserve physical-port, logical-interface and optical-engine boundaries separately.

@@ -3,7 +3,7 @@
 - **Authors:** Jef Van Asch et al.
 - **Affiliations:** imec / Ghent University; Huawei (one author)
 - **Canonical paper:** https://arxiv.org/abs/2503.02712
-- **Retained PDF:** `PAP-032-van-asch-polymer-waveguides-cpo-2025.pdf`
+- **Retained PDF:** `PAP-034-van-asch-polymer-waveguides-cpo-2025.pdf`
 - **Publication:** 2025-03-04 (arXiv)
 
 ## Evidence extracted

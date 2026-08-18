@@ -3,7 +3,7 @@
 **Status:** Evidence-gated comparison; no forecast values populated  
 **Owner:** Nur Alpys  
 **Scope:** 200G/lane scale-out optical engines and directly supplied external-light-source layers  
-**As of:** 2026-08-07
+**As of:** 2026-08-12
 
 ## Decision question
 
@@ -25,7 +25,7 @@ The first comparable unit should be a bidirectional 6.4-Tb/s optical engine (32 
 | Package / thermal path | Socketed CPO claimed; package thermal data not disclosed [CMP-015] | Laser/module package only; engine thermal path excluded [CMP-016] | Not comparable |
 | Final test / qualification | No final-engine lot or customer qualification disclosed | No ELSFP lifetime distribution or customer qualification disclosed | Open |
 | Service / warranty | Socketed engine replacement procedure and warranty split unknown | Laser source is positioned as serviceable; engine, fibre and PIC failure remain outside the ELSFP boundary [CLM-071] | Partially comparable |
-| Commercial unit | 6.4T CPO demonstration, not a priced production engine | ELSFP product and multi-hundred-million-dollar CPO order, but product allocation unknown [CMP-010] | Not comparable |
+| Commercial unit | 6.4T CPO demonstration, not a priced production engine | ELSFP product, multi-hundred-million-dollar CPO order and later initial ELS-module order, but product allocation is unknown [CMP-010; CLM-531] | Not comparable |
 
 **Rule:** Do not divide Lumentum's disclosed order by 32 lanes or assign it to Coherent's 6.4T engine. The order may include lasers, modules, ELSFPs, other optics, or multiple product generations.
 
@@ -36,7 +36,7 @@ The first comparable unit should be a bidirectional 6.4-Tb/s optical engine (32 
 | Technical breadth | SiPh CPO, ELS/high-power InP, VCSEL CPO, InP-on-silicon 400G modulation and packaging demonstrations [CMP-015; PRS-003] | UHP/SHP lasers, ELSFP, 200G EMLs, DWDM external-light demonstrations [CMP-016; CMP-017] | Coherent has broader disclosed engine options; Lumentum has a sharper light-source boundary |
 | Customer route | Executed $2B NVIDIA private placement plus access to five additional Coherent product families related to CPO; multibillion purchase/capacity commitment remains product-unallocated [PRI-026; CLM-197] | Executed $2B NVIDIA private placement plus multibillion purchase/capacity rights for advanced laser components [PRI-027; CLM-198] | Both now have executed primary NVIDIA route evidence; neither filing allocates product quantities or volume |
 | Manufacturing signal | Six-inch InP volume-production claim and expansion; CPO allocation and qualified yield missing [PRS-003] | Greensboro 6-inch InP facility planned to ramp mid-2028; hundreds of millions of dollars planned; qualified output missing [PRI-025; CLM-196] | Coherent has earlier disclosed capacity; Lumentum has a dated future fab milestone |
-| Commercial signal | Very-high-volume multi-year CPO order claim plus a $15B+ CPO SAM-by-2030 estimate and H2 2026 CPO/NPO new-revenue label; customer, product and terms undisclosed [PRS-003; CLM-250; CLM-251] | Multi-hundred-million-dollar CPO order for first-half 2027 delivery; product and customer undisclosed [CMP-010; CLM-083] | Lumentum has the clearer disclosed order magnitude/timing; Coherent has a broader market/roadmap framing; neither has product-level conversion |
+| Commercial signal | Very-high-volume multi-year CPO order claim plus a $15B+ CPO SAM-by-2030 estimate and H2 2026 CPO/NPO new-revenue label; customer, product and terms undisclosed [PRS-003; CLM-250; CLM-251] | Multi-hundred-million-dollar CPO order for first-half 2027 delivery plus a later initial ELS-module-order statement; customer, product, quantity and terms undisclosed [CMP-010; CLM-083; CLM-531] | Lumentum has the clearer disclosed order magnitude/timing and an incremental external-light signal; Coherent has a broader market/roadmap framing; neither has product-level conversion |
 | Potential content capture | Could span PIC, laser, package, fibre attach and test if Coherent supplies the complete engine | Most clearly captures laser/ELSFP content; complete-engine share is not shown | Coherent has higher potential content but more unproven process boundaries |
 | Main economic risk | Broad stack may require more capex, yield closure and warranty ownership | Customer or platform owner may retain engine/package value while Lumentum remains a component supplier | Do not infer margin leadership from breadth or order size |
 
@@ -104,7 +104,7 @@ Until those records exist, the evidence-adjusted conclusion remains:
 
 ### Financial evidence added in the current batch
 
-Coherent's Q3 FY2026 revenue and gross margin establish a $1.806B / 37.7% GAAP company denominator, while Lumentum's Q3 filing establishes $808.4M revenue and 44.2% GAAP gross margin. Lumentum's utilization/mix disclosures, component-versus-system increase, cloud-transceiver growth, optical-circuit-switch shipments, customer concentration and $284.5M nine-month capex sharpen the operating context. None is allocated to a CPO engine, so consolidated margins and capex remain blocked inputs rather than model values.[CLM-335][CLM-336][CLM-337][CLM-338][CLM-339][CLM-340]
+Coherent's Q3 FY2026 revenue and gross margin establish a $1.806B / 37.7% GAAP company denominator. Lumentum's later Q4 FY2026 release reports $1.0063B revenue and 47.4% GAAP gross margin, plus an initial ELS-module order and ultra-high-power CPO-laser demand statement. Those are consolidated/company-level results and a customer-unallocated commercial signal, not CPO-engine revenue, ASP, yield, margin or attributable capacity. Consolidated margins and capex remain blocked inputs rather than model values.[CLM-335][CLM-531]
 
 > Coherent is the broader potential complete-engine content owner; Lumentum is the clearer external-laser/ELSFP and near-term commercial-conversion candidate. Neither is yet proven to capture the largest sustainable CPO profit pool.
 

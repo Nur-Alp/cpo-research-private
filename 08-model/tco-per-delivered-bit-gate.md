@@ -3,7 +3,7 @@
 **Owner:** Nur Alpys  
 **Status:** Framework only; no company forecast values populated  
 **Scope:** Matched 102.4T switch-side CPO, LPO, advanced/retimed pluggables and later 400G/lane alternatives  
-**As of:** 2026-08-08
+**As of:** 2026-08-11
 
 ## Decision question
 
@@ -104,6 +104,8 @@ The most important unresolved commercial question is not whether CPO can save wa
 
 The service-cost boundary is now explicit in [Service and failure-domain cost model](service-and-failure-domain-cost-model.md). ELSFP can make the light source replaceable, but it does not establish replacement economics for the PIC/package, delivery fibre, connector, control map, cooling or correlated package failures. Those terms remain blocked in the TCO identity.
 
+The [power-to-cost sensitivity](tco-power-cost-sensitivity.md) shows why the central CPO-versus-LPO power gap is economically small under illustrative electricity assumptions, while the CPO-versus-fully-retimed gap is materially larger. This does not clear the TCO gate because hardware, yield, service, qualification and capex inputs remain unpopulated.
+
 ## Linked controls
 
 - [102.4T switch-side optical power model](102.4t-switch-side-power-model.md)
@@ -112,3 +114,5 @@ The service-cost boundary is now explicit in [Service and failure-domain cost mo
 - [CPO customer-proof register](customer-proof-register.md)
 - [Service and failure-domain cost model](service-and-failure-domain-cost-model.md)
 - [CPO decision-output completion audit](../00-scope/decision-output-completion-audit.md)
+- [Matched architecture-comparison acquisition specification](../09-primary-research/matched-architecture-comparison-acquisition-spec.md)
+- [TCO sensitivity arithmetic check](../scripts/validate-tco-sensitivity.py)

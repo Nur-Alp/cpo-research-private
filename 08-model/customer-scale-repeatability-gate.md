@@ -2,7 +2,7 @@
 
 **Owner:** Nur Alpys
 **Status:** Analytical control; not a CPO shipment estimate
-**As of:** 2026-08-08
+**As of:** 2026-08-09
 
 ## Why this gate exists
 
@@ -21,7 +21,7 @@ Only levels 3–5 can support the optical-engine profit-pool model. Levels 1–2
 | Level | Current evidence | What can be inferred | What remains unavailable |
 |---|---|---|---|
 | Operator scale | CoreWeave reports $66.8B backlog, 43 active data centers, >850 MW active power and >3.1 GW contracted power in its March 2026 presentation [CLM-376–CLM-377]. | CoreWeave is a sufficiently large operator for a repeat-deployment claim to become economically meaningful. | CPO-specific share of the buildout, switch count and optical-engine units. |
-| Platform deployment | CoreWeave describes SN6600-LD deployment and early Photonics CPO adoption [CLM-220–CLM-223; CLM-320; CLM-370]. | A named customer-side deployment and operating boundary exist. | Whether every described SN6600 unit is CPO, exact revision, units and repeat shipments. |
+| Platform deployment | CoreWeave describes SN6600-LD deployment and separately describes early Photonics CPO adoption [CLM-220–CLM-223; CLM-320; CLM-370]. CMP-048 classifies SN6600-LD as pluggable RHS. | A named customer-side pluggable deployment and a separate CPO-adoption statement exist. | Exact CPO SKU, units and repeat shipments linking the two claims. |
 | CPO attribution | NVIDIA states Spectrum-X Ethernet Photonics is a 200G-SerDes CPO switch in production [CLM-346]. Lambda describes Quantum-X Photonics in a 10,000+ GPU production-scale cluster [CLM-224]. | CPO has first-party production and customer-side scale-up evidence in separate domains. | A reconciled SKU-to-engine BOM, supplier allocation and customer CPO unit count. |
 | Repeatability | No retained source currently discloses a dated CPO unit count plus an expansion, renewal or repeat shipment. | Repeatability is an explicit open diligence item, not a hidden assumption. | Numerator, denominator, field population, failure distribution and replacement flow. |
 | Profit-pool attribution | NVIDIA lists ecosystem partners; POET, Coherent and Lumentum disclose manufacturing or component routes [CLM-229; CLM-360–CLM-369]. | Candidate supply routes can be mapped. | Qualified share, engine ASP, yield/rework, warranty burden and realised gross margin. |
@@ -32,7 +32,7 @@ The minimum record must contain the exact product/revision, a qualification or a
 
 ## Consequence for the investment case
 
-CoreWeave's scale increases the value of finding a real CPO numerator; it does not create one. Until that numerator is disclosed, the defensible conclusion is that NVIDIA has the strongest named switch-side route, while the optical-engine profit pool remains unallocated among NVIDIA, Coherent, Lumentum, foundry, OSAT and system partners.
+CoreWeave's scale increases the value of finding a real CPO numerator; it does not create one. After CMP-048, the defensible conclusion is that NVIDIA has the strongest first-party switch-CPO platform route, while the strongest named CoreWeave deployment is pluggable and the optical-engine profit pool remains unallocated among NVIDIA, Coherent, Lumentum, foundry, OSAT and system partners.
 
 ## Linked controls
 
