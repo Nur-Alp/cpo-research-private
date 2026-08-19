@@ -369,6 +369,15 @@ figcaption { color: var(--cpo-muted); font-size: .88rem; }
   background: #fff8ed;
   color: var(--cpo-ink);
 }
+.digest-takeaway {
+  max-width: 48rem;
+  margin: 1.25rem auto 1.75rem;
+  padding: .8rem 1rem;
+  border-left: 4px solid var(--cpo-blue);
+  border-radius: .3rem;
+  background: #f4f8fb;
+  color: var(--cpo-ink);
+}
 @media (max-width: 768px) {
   .architecture-diagram > p { flex-wrap: wrap; }
   .architecture-name { flex: 0 0 100%; padding-bottom: .15rem; }
