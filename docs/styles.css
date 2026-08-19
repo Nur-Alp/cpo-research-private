@@ -336,3 +336,42 @@ figcaption { color: var(--cpo-muted); font-size: .88rem; }
 .digest-details > summary::marker { color: var(--cpo-blue); }
 .digest-details[open] > summary { margin-bottom: .65rem; }
 .digest-details p:last-child { margin-bottom: .2rem; }
+.architecture-diagram {
+  max-width: 48rem;
+  padding: .65rem;
+  border: 1px solid var(--cpo-line);
+  border-radius: .4rem;
+  background: #fbfdff;
+}
+.architecture-diagram > p {
+  display: flex;
+  align-items: stretch;
+  width: 100%;
+  margin: .4rem 0;
+  gap: .3rem;
+}
+.architecture-name {
+  display: flex;
+  flex: 0 0 8.5rem;
+  align-items: center;
+  color: var(--cpo-ink);
+  font-size: .82rem;
+  font-weight: 700;
+}
+.architecture-diagram .process-step { font-size: .78rem; padding: .42rem .3rem; }
+.architecture-diagram .process-arrow { font-size: .95rem; }
+.digest-gate {
+  max-width: 48rem;
+  margin: 1rem auto 1.5rem;
+  padding: .85rem 1rem;
+  border-left: 4px solid #d97706;
+  border-radius: .3rem;
+  background: #fff8ed;
+  color: var(--cpo-ink);
+}
+@media (max-width: 768px) {
+  .architecture-diagram > p { flex-wrap: wrap; }
+  .architecture-name { flex: 0 0 100%; padding-bottom: .15rem; }
+  .architecture-diagram .process-step { flex-basis: calc(50% - .1rem); }
+  .digest-gate { margin-left: .2rem; margin-right: .2rem; }
+}
