@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.18">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Nur Alpys">
+
+<title>Manufacturing, reliability and serviceability – Nur Alpys | Personal Portfolio</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-857442aafe57c8d0a401f1a8434a7a25.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../../styles.css">
+<meta property="og:title" content="Manufacturing, reliability and serviceability – Nur Alpys | Personal Portfolio">
+<meta property="og:description" content="A personal technical portfolio of projects, engineering, software, hardware, data, experiments, research, and selected writing.">
+<meta property="og:site_name" content="Nur Alpys | Personal Portfolio">
+<meta name="twitter:title" content="Manufacturing, reliability and serviceability – Nur Alpys | Personal Portfolio">
+<meta name="twitter:description" content="A personal technical portfolio of projects, engineering, software, hardware, data, experiments, research, and selected writing.">
+<meta name="twitter:card" content="summary">
+</head>
+
+<body class="nav-sidebar docked nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Nur Alpys | Personal Portfolio</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../projects.html"> 
+<span class="menu-text">Projects</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../research.html"> 
+<span class="menu-text">Research</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../about.html"> 
+<span class="menu-text">About</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/Nur-Alp"> <i class="bi bi-github" role="img" aria-label="GitHub">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Manufacturing, reliability and serviceability</li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../research/cpo/digest.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">CPO digest</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../research/cpo/cpo-investment-brief.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">CPO investment brief</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../research/cpo/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Executive summary</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#the-adoption-bottleneck-may-be-manufacturing" id="toc-the-adoption-bottleneck-may-be-manufacturing" class="nav-link active" data-scroll-target="#the-adoption-bottleneck-may-be-manufacturing">The adoption bottleneck may be manufacturing</a></li>
+  <li><a href="#cost-per-qualified-shippable-engine" id="toc-cost-per-qualified-shippable-engine" class="nav-link" data-scroll-target="#cost-per-qualified-shippable-engine">Cost per qualified, shippable engine</a></li>
+  <li><a href="#serviceability-is-an-architecture-variable" id="toc-serviceability-is-an-architecture-variable" class="nav-link" data-scroll-target="#serviceability-is-an-architecture-variable">Serviceability is an architecture variable</a></li>
+  <li><a href="#yield-compounds-across-interfaces" id="toc-yield-compounds-across-interfaces" class="nav-link" data-scroll-target="#yield-compounds-across-interfaces">Yield compounds across interfaces</a></li>
+  <li><a href="#test-and-service-define-the-real-failure-domain" id="toc-test-and-service-define-the-real-failure-domain" class="nav-link" data-scroll-target="#test-and-service-define-the-real-failure-domain">Test and service define the real failure domain</a></li>
+  <li><a href="#what-would-clear-the-gate" id="toc-what-would-clear-the-gate" class="nav-link" data-scroll-target="#what-would-clear-the-gate">What would clear the gate</a></li>
+  <li><a href="#reliability-is-a-system-property" id="toc-reliability-is-a-system-property" class="nav-link" data-scroll-target="#reliability-is-a-system-property">Reliability is a system property</a></li>
+  <li><a href="#the-cost-of-a-late-failure" id="toc-the-cost-of-a-late-failure" class="nav-link" data-scroll-target="#the-cost-of-a-late-failure">The cost of a late failure</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/Nur-Alp/Nur-Alp.github.io/blob/main/research/cpo/05-manufacturing-reliability.qmd" class="toc-action"><i class="bi bi-github"></i>View source</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Manufacturing, reliability and serviceability</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Nur Alpys </p>
+          </div>
+  </div>
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="the-adoption-bottleneck-may-be-manufacturing" class="level2">
+<h2 class="anchored" data-anchor-id="the-adoption-bottleneck-may-be-manufacturing">The adoption bottleneck may be manufacturing</h2>
+<p>The technical case for short electrical paths is necessary but insufficient. In CPO, optical alignment, fibre attach, final package integration and qualification sit closer to the system critical path. IBM’s full-module test vehicle and a recent heterogeneous-integration review both identify packaging, reliability and maintainability as coupled constraints, not afterthoughts <span class="citation" data-cites="knickerbocker2024cpo gao2025heterogeneous">(<a href="#ref-knickerbocker2024cpo" role="doc-biblioref"><span class="nocase">Knickerbocker et al.</span> 2024</a>; <a href="#ref-gao2025heterogeneous" role="doc-biblioref">Gao et al. 2025</a>)</span>.</p>
+</section>
+<section id="cost-per-qualified-shippable-engine" class="level2">
+<h2 class="anchored" data-anchor-id="cost-per-qualified-shippable-engine">Cost per qualified, shippable engine</h2>
+<p><span class="math display">\[
+\text{Cost per qualified engine} = \frac{\text{materials + assembly + test + rework + capital + warranty}}{\text{engines that pass}}
+\]</span></p>
+<p>The calculation asks what each shippable engine costs after failed units, rework and support costs are included. For example, a $16,000 batch that produces 80 accepted engines costs $200 per accepted engine—not $160 per attempted unit.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Gate</th>
+<th>Why it matters</th>
+<th>Public read</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Fibre attach and package</td>
+<td>Set first-pass yield and scrap</td>
+<td><strong>Fact:</strong> process boundaries are documented; yields remain undisclosed</td>
+</tr>
+<tr class="even">
+<td>Test and burn-in</td>
+<td>Find defects and control throughput</td>
+<td><strong>Fact:</strong> equipment and insertions are public; time, coverage and escapes are not</td>
+</tr>
+<tr class="odd">
+<td>Qualification and rework</td>
+<td>Determine accepted output</td>
+<td><strong>Partial:</strong> prototype stress evidence; no production waterfall</td>
+</tr>
+<tr class="even">
+<td>Field service</td>
+<td>Determines lifetime operating cost</td>
+<td><strong>Open:</strong> no comparable CPO field data</td>
+</tr>
+</tbody>
+</table>
+<p>Recent ASE, Teradyne, Advantest, ficonTEC and Aehr sources map the wafer-to-engine- to-module flow; TSMC and Lumentum add production and component-qualification signals <span class="citation" data-cites="ase2025cpo teradyne2026photon advantest2026cpo ficontec2025dlt aehr2026burnin tsmc2026coupe lumentum2026elsfp">(<a href="#ref-ase2025cpo" role="doc-biblioref">ASE 2025a</a>; <a href="#ref-teradyne2026photon" role="doc-biblioref">Teradyne 2026</a>; <a href="#ref-advantest2026cpo" role="doc-biblioref">Advantest 2026</a>; <a href="#ref-ficontec2025dlt" role="doc-biblioref"><span class="nocase">ficonTEC</span> 2025</a>; <a href="#ref-aehr2026burnin" role="doc-biblioref">Aehr Test Systems 2026</a>; <a href="#ref-tsmc2026coupe" role="doc-biblioref">TSMC 2026</a>; <a href="#ref-lumentum2026elsfp" role="doc-biblioref">Lumentum 2026</a>)</span>. They improve the process map, but do not yet supply the yield, rework or cost data needed to rank companies.</p>
+</section>
+<section id="serviceability-is-an-architecture-variable" class="level2">
+<h2 class="anchored" data-anchor-id="serviceability-is-an-architecture-variable">Serviceability is an architecture variable</h2>
+<p>External laser sources, detachable optical interfaces and socketed engines may reduce the operational penalty of deep integration. The OIF’s ELSFP work and a detachable-chiplet-connector prototype show the relevant service boundary, but neither establishes a production field-service model <span class="citation" data-cites="oif2025elsfp psaila2023connector">(<a href="#ref-oif2025elsfp" role="doc-biblioref">Optical Internetworking Forum 2025</a>; <a href="#ref-psaila2023connector" role="doc-biblioref">Psaila et al. 2023</a>)</span>.</p>
+</section>
+<section id="yield-compounds-across-interfaces" class="level2">
+<h2 class="anchored" data-anchor-id="yield-compounds-across-interfaces">Yield compounds across interfaces</h2>
+<p>The central manufacturing point is mathematical before it is proprietary. imec’s development-run data show why optical-interface yield and alignment tolerance matter <span class="citation" data-cites="imec2024interfacing">(<a href="#ref-imec2024interfacing" role="doc-biblioref"><span class="nocase">imec</span> 2024</a>)</span>. If an engine requires many independent connections, finished-board yield compounds across those connections before die yield, attach, rework, burn-in and system acceptance are added. At 1,024 interfaces, a 99.90% assumed connection yield gives about 35.9% all-good yield without rework; 95% board yield requires approximately 99.995% per-connection first-pass yield. These figures define the sensitivity, not a supplier-specific production result.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: right;">Assumed per-connection first-pass yield</th>
+<th style="text-align: right;">288 interfaces</th>
+<th style="text-align: right;">512 interfaces</th>
+<th style="text-align: right;">1,024 interfaces</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">99.500%</td>
+<td style="text-align: right;">23.6%</td>
+<td style="text-align: right;">7.7%</td>
+<td style="text-align: right;">0.6%</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">99.800%</td>
+<td style="text-align: right;">56.2%</td>
+<td style="text-align: right;">35.9%</td>
+<td style="text-align: right;">12.9%</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">99.900%</td>
+<td style="text-align: right;">75.0%</td>
+<td style="text-align: right;">59.9%</td>
+<td style="text-align: right;">35.9%</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">99.950%</td>
+<td style="text-align: right;">86.6%</td>
+<td style="text-align: right;">77.4%</td>
+<td style="text-align: right;">59.9%</td>
+</tr>
+</tbody>
+</table>
+<p>The sensitivity is steepest at high interface counts. Even a small improvement in per-connection yield has a large effect on all-good output, which is why automated alignment, screening and rework can matter more than a marginal component-level efficiency gain. ASE’s warpage and coplanarity disclosures add a second failure mechanism after attach: package geometry can move the binding constraint into assembly even when the optical interface itself is controlled <span class="citation" data-cites="ase2025warpage">(<a href="#ref-ase2025warpage" role="doc-biblioref">ASE 2025b</a>)</span>. These are scenario mechanics, not reported factory yields.</p>
+<p class="process-label">
+Build and screen
+</p>
+<div class="process-row">
+<p><span class="process-step">Known-good dies</span><span class="process-arrow">→</span><span class="process-step process-step-cpo">Optical attach</span><span class="process-arrow">→</span><span class="process-step">Electrical / optical test</span></p>
+</div>
+<p class="process-label">
+Integrate and qualify
+</p>
+<div class="process-row">
+<p><span class="process-step">Package + thermal integration</span><span class="process-arrow">→</span><span class="process-step">Stress + burn-in</span><span class="process-arrow">→</span><span class="process-step">Customer acceptance</span></p>
+</div>
+<p class="process-note">
+Rework, scrap and warranty can reduce yield or raise cost at every stage.
+</p>
+</section>
+<section id="test-and-service-define-the-real-failure-domain" class="level2">
+<h2 class="anchored" data-anchor-id="test-and-service-define-the-real-failure-domain">Test and service define the real failure domain</h2>
+<p>The difference between a replaceable laser module and a replaceable optical engine is commercially important. A field-replaceable ELS can isolate a laser failure, but it does not automatically make the PIC, fibre attach or package replaceable. A socket, detachable fibre interface or known-good subassembly can improve serviceability, but it introduces its own insertion-loss, contamination, connector-life and handling requirements. The relevant operator metric is not only power; it is recovery time, spare inventory, field procedure, warranty ownership and blast radius.</p>
+<p>Teradyne’s current Photon 100 platform, together with Advantest and ficonTEC capability descriptions, makes the test boundary more concrete: wafer, die/engine, package and CPO-module test are separate insertions rather than one conventional module test <span class="citation" data-cites="teradyne2026photon advantest2026cpo ficontec2025dlt">(<a href="#ref-teradyne2026photon" role="doc-biblioref">Teradyne 2026</a>; <a href="#ref-advantest2026cpo" role="doc-biblioref">Advantest 2026</a>; <a href="#ref-ficontec2025dlt" role="doc-biblioref"><span class="nocase">ficonTEC</span> 2025</a>)</span>. Aehr’s follow-on production order further shows that wafer-level silicon-photonics burn-in is being purchased for an expanding manufacturing programme, although the customer, architecture and pass/fail distribution remain undisclosed <span class="citation" data-cites="aehr2026burnin">(<a href="#ref-aehr2026burnin" role="doc-biblioref">Aehr Test Systems 2026</a>)</span>. The public record still does not disclose test seconds, escape rate or cost per accepted engine.</p>
+</section>
+<section id="what-would-clear-the-gate" class="level2">
+<h2 class="anchored" data-anchor-id="what-would-clear-the-gate">What would clear the gate</h2>
+<p>A credible manufacturing upgrade would disclose a defined product boundary and at least three of the following: fibre-attach yield distribution; rework route and recovery rate; environmental qualification sample/condition; optical/electrical test coverage; accepted-engine yield; field-replacement procedure; warranty allocation; or multi-customer production repetition. A lab coupler result is useful engineering evidence, but it is not a manufacturing business model.</p>
+</section>
+<section id="reliability-is-a-system-property" class="level2">
+<h2 class="anchored" data-anchor-id="reliability-is-a-system-property">Reliability is a system property</h2>
+<p>Thermal, optical and mechanical stresses interact in a CPO assembly. IBM’s work reports full-module reflow and stress testing, while its test-vehicle boundary still falls short of production-lot yield and fleet reliability <span class="citation" data-cites="knickerbocker2024cpo">(<a href="#ref-knickerbocker2024cpo" role="doc-biblioref"><span class="nocase">Knickerbocker et al.</span> 2024</a>)</span>. A separated laser does not remove the PIC, interposer, fibre-interface or connector reliability burden. Lumentum’s accelerated UHP-laser programme is a stronger component-level qualification signal—more than 100 million accelerated device-hours with no reported catastrophic failures—but it is not a finished ELSFP-module or engine field result <span class="citation" data-cites="lumentum2026elsfp">(<a href="#ref-lumentum2026elsfp" role="doc-biblioref">Lumentum 2026</a>)</span>. The report distinguishes <strong>device</strong> reliability, <strong>assembly</strong> reliability and <strong>operational</strong> reliability; only the last establishes whether an operator can isolate and repair the failure domain at acceptable cost.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Reliability layer</th>
+<th>Typical evidence</th>
+<th>What a positive result means</th>
+<th>What remains unknown</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Device</td>
+<td>Laser/PIC ageing, thermal sweep, optical output</td>
+<td>The tested component has a defined stress response</td>
+<td>Final-package coupling, system use and field distribution</td>
+</tr>
+<tr class="even">
+<td>Assembly</td>
+<td>Connector mating, reflow, thermal cycling, humidity</td>
+<td>The test vehicle survives a stated integration exposure</td>
+<td>Production variation, rework and acceptance yield</td>
+</tr>
+<tr class="odd">
+<td>Product</td>
+<td>Qualification, burn-in, acceptance test</td>
+<td>A product boundary met a specified standard</td>
+<td>Customer volume and in-field return distribution</td>
+</tr>
+<tr class="even">
+<td>Operation</td>
+<td>MTTR, spares, swap procedure, warranty</td>
+<td>The operator can manage the failure domain</td>
+<td>Economics across the installed base</td>
+</tr>
+</tbody>
+</table>
+<p>The layers are sequential, not interchangeable. Device ageing can pass while an assembly fails thermal cycling; an assembly can qualify while field replacement is too slow or expensive. A commercial CPO claim therefore needs evidence through the operation layer, not only a component or test-vehicle result.</p>
+</section>
+<section id="the-cost-of-a-late-failure" class="level2">
+<h2 class="anchored" data-anchor-id="the-cost-of-a-late-failure">The cost of a late failure</h2>
+<p>The reason yield and service are central is the value of the assembly at the point of failure. A bare photonic die failure can be screened relatively early. A fibre-attach defect after the PIC, EIC, advanced package, substrate and laser distribution have been added consumes much more value. A field failure can add logistics, downtime, diagnosis, replacement inventory and warranty exposure. This creates a non-linear economic outcome: small changes in attach yield, test coverage or reworkability can be more valuable than a modest improvement in component power.</p>
+<p>That logic is not a claim that CPO is uneconomic. It is a guide to what the winning implementation must demonstrate. A supplier that can improve test-before-integration, passive/automated attach, known-good-engine screening, detachable service boundaries or final qualification could capture more durable value than a supplier whose device is marginally faster but operationally hard to deploy.</p>
+
+
+
+</section>
+
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-advantest2026cpo" class="csl-entry" role="listitem">
+Advantest. 2026. <span>“Silicon Photonics and Co-Packaged Optics Test Capability.”</span> <a href="https://www.advantest.com/tw/products/semiconductor-test-system/soc/v93000/">https://www.advantest.com/tw/products/semiconductor-test-system/soc/v93000/</a>.
+</div>
+<div id="ref-aehr2026burnin" class="csl-entry" role="listitem">
+Aehr Test Systems. 2026. <span>“Follow-on Production Order from Lead Silicon-Photonics Customer.”</span> <a href="https://www.aehr.com/2026/08/aehr-test-systems-expands-silicon-photonics-production-momentum-with-follow-on-production-order-from-lead-customer/">https://www.aehr.com/2026/08/aehr-test-systems-expands-silicon-photonics-production-momentum-with-follow-on-production-order-from-lead-customer/</a>.
+</div>
+<div id="ref-ase2025cpo" class="csl-entry" role="listitem">
+ASE. 2025a. <span>“Advanced Packaging for AI, Chiplet and Co-Packaged Optics.”</span> <a href="https://ase.aseglobal.com/blog/technology/advanced-packaging-for-ai-chiplet-and-cpo/">https://ase.aseglobal.com/blog/technology/advanced-packaging-for-ai-chiplet-and-cpo/</a>.
+</div>
+<div id="ref-ase2025warpage" class="csl-entry" role="listitem">
+ASE. 2025b. <span>“ASE Demonstrates Co-Packaged Optics for AI Applications.”</span> <a href="https://ase.aseglobal.com/press-room/ase-demonstrates-cpo-for-ai-applications/">https://ase.aseglobal.com/press-room/ase-demonstrates-cpo-for-ai-applications/</a>.
+</div>
+<div id="ref-ficontec2025dlt" class="csl-entry" role="listitem">
+<span class="nocase">ficonTEC</span>. 2025. <span>“Multi-Site Die-Level Tester for Double-Sided Compact 3D CPO Optical Engines.”</span> <a href="https://www.ficontec.com/jp/multi-site-die-level-tester-for-double-sided-compact-3d-cpo-optical-engines/">https://www.ficontec.com/jp/multi-site-die-level-tester-for-double-sided-compact-3d-cpo-optical-engines/</a>.
+</div>
+<div id="ref-gao2025heterogeneous" class="csl-entry" role="listitem">
+Gao, Han, Wanyi Yan, Dan Zhang, and Daquan Yu. 2025. <span>“Heterogeneous Integration Technology Drives the Evolution of Co-Packaged Optics.”</span> <em>Micromachines</em> 16 (9): 1037. <a href="https://doi.org/10.3390/mi16091037">https://doi.org/10.3390/mi16091037</a>.
+</div>
+<div id="ref-imec2024interfacing" class="csl-entry" role="listitem">
+<span class="nocase">imec</span>. 2024. <span>“Interfacing Silicon Photonics for High-Density Co-Packaged Optics.”</span> <a href="https://www.imec-int.com/en/articles/interfacing-silicon-photonics-high-density-co-packaged-optics">https://www.imec-int.com/en/articles/interfacing-silicon-photonics-high-density-co-packaged-optics</a>.
+</div>
+<div id="ref-knickerbocker2024cpo" class="csl-entry" role="listitem">
+<span class="nocase">Knickerbocker, John et al.</span> 2024. <em>Next Generation Co-Packaged Optics Technology to Train and Run Generative <span>AI</span> Models in Data Centers and Other Computing Applications</em>. <a href="https://doi.org/10.48550/arXiv.2412.06570">https://doi.org/10.48550/arXiv.2412.06570</a>.
+</div>
+<div id="ref-lumentum2026elsfp" class="csl-entry" role="listitem">
+Lumentum. 2026. <span>“External-Laser CPO Reliability White Paper.”</span> <a href="https://www.lumentum.com/sites/default/files/2026-06/elsfpreliability-wp-cl-ae.pdf">https://www.lumentum.com/sites/default/files/2026-06/elsfpreliability-wp-cl-ae.pdf</a>.
+</div>
+<div id="ref-oif2025elsfp" class="csl-entry" role="listitem">
+Optical Internetworking Forum. 2025. <em>External Laser Small Form Factor Pluggable Implementation Agreement 2.0</em>. <a href="https://www.oiforum.com/wp-content/uploads/OIF-ELSFP-02.0-1.pdf">https://www.oiforum.com/wp-content/uploads/OIF-ELSFP-02.0-1.pdf</a>.
+</div>
+<div id="ref-psaila2023connector" class="csl-entry" role="listitem">
+Psaila, Nicholas, Srikant Nekkanty, David Shia, and Pooya Tadayon. 2023. <span>“Detachable Optical Chiplet Connector for Co-Packaged Photonics.”</span> <em>Journal of Lightwave Technology</em> 41 (19): 6315–23. <a href="https://doi.org/10.1109/JLT.2023.3285149">https://doi.org/10.1109/JLT.2023.3285149</a>.
+</div>
+<div id="ref-teradyne2026photon" class="csl-entry" role="listitem">
+Teradyne. 2026. <span>“Photon 100 Silicon-Photonics Test Platform.”</span> <a href="https://www.teradyne.com/products/photon-100/">https://www.teradyne.com/products/photon-100/</a>.
+</div>
+<div id="ref-tsmc2026coupe" class="csl-entry" role="listitem">
+TSMC. 2026. <span>“COUPE-on-Substrate Co-Packaged Optics Production Milestone.”</span> <a href="https://pr.tsmc.com/english/news/3302">https://pr.tsmc.com/english/news/3302</a>.
+</div>
+</div></section></div></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/nur-alp\.github\.io\/portfolio\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>© 2026 Nur Alpys</p>
+</div>   
+    <div class="nav-footer-center">
+<p>Built with <a href="https://quarto.org">Quarto</a></p>
+<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/Nur-Alp/Nur-Alp.github.io/blob/main/research/cpo/05-manufacturing-reliability.qmd" class="toc-action"><i class="bi bi-github"></i>View source</a></li></ul></div></div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+    <a class="nav-link" href="../../disclosures.html">
+<p>Disclosures</p>
+</a>
+  </li>  
+    <li class="nav-item">
+    <a class="nav-link" href="https://github.com/Nur-Alp">
+<p>GitHub</p>
+</a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
+
+
+
+
+<script src="../../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>
