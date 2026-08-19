@@ -323,7 +323,7 @@ figcaption { color: var(--cpo-muted); font-size: .88rem; }
 .digest-hero h2 { margin-top: 0; color: var(--cpo-ink); }
 .digest-details {
   margin: .65rem 0;
-  padding: .7rem .9rem;
+  padding: .7rem 2rem 1rem;
   border: 1px solid var(--cpo-line);
   border-radius: .35rem;
   background: #fff;
