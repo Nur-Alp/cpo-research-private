@@ -176,6 +176,7 @@ div.csl-indent {
    
   <ul>
   <li><a href="#the-short-version" id="toc-the-short-version" class="nav-link active" data-scroll-target="#the-short-version">The short version</a></li>
+  <li><a href="#before-you-start" id="toc-before-you-start" class="nav-link" data-scroll-target="#before-you-start">Before you start</a></li>
   <li><a href="#why-the-industry-needs-a-new-interconnect" id="toc-why-the-industry-needs-a-new-interconnect" class="nav-link" data-scroll-target="#why-the-industry-needs-a-new-interconnect">1. Why the industry needs a new interconnect</a></li>
   <li><a href="#what-stage-is-the-industry-at" id="toc-what-stage-is-the-industry-at" class="nav-link" data-scroll-target="#what-stage-is-the-industry-at">2. What stage is the industry at?</a></li>
   <li><a href="#architecture-choices" id="toc-architecture-choices" class="nav-link" data-scroll-target="#architecture-choices">3. Architecture choices</a></li>
@@ -223,6 +224,57 @@ div.csl-indent {
 <h2 class="anchored" data-anchor-id="the-short-version">The short version</h2>
 <p>AI data centres are pushing more data through every switch. The old answer—put a replaceable optical module on the front of the switch—still works, but the electrical connection between the switch chip and that module becomes harder to drive at higher speeds. <strong>Co-packaged optics (CPO)</strong> moves the optical engine next to the switch chip to shorten that electrical path.</p>
 <p>That may reduce power and improve density. It also makes the switch harder to manufacture, qualify and repair. The central question is therefore not whether CPO can work in a demonstration. It is whether a qualified CPO system can beat the best pluggable, LPO or NPO alternative after yield, service and replacement costs.</p>
+</section>
+<section id="before-you-start" class="level2">
+<h2 class="anchored" data-anchor-id="before-you-start">Before you start</h2>
+<p>These are the few terms needed to follow the rest of the digest. The full report’s <a href="../../research/cpo/appendix-glossary.html">glossary</a> goes further.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Term</th>
+<th>Plain-language meaning</th>
+<th>Why it matters here</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>CPO — co-packaged optics</strong></td>
+<td>The optical engine sits next to the switch ASIC in the same package or package system, shortening the highest-speed electrical path.</td>
+<td>It can reduce electrical loss and interface power, but makes assembly, qualification and field service more integrated.</td>
+</tr>
+<tr class="even">
+<td><strong>Optical engine</strong></td>
+<td>The working optical assembly: PIC/EIC, drivers and receivers, laser light, fibre coupling and supporting package structures.</td>
+<td>This is the unit whose qualified cost, yield and replaceability determine whether CPO scales.</td>
+</tr>
+<tr class="odd">
+<td><strong>PIC — photonic integrated circuit</strong></td>
+<td>The chip that guides and modulates light; <strong>EIC</strong> is the companion electronic driver/receiver circuitry.</td>
+<td>PIC design, laser strategy and EIC integration are the main component-level control points.</td>
+</tr>
+<tr class="even">
+<td><strong>LPO — linear pluggable optics</strong></td>
+<td>A replaceable module with little or no retiming DSP, relying more heavily on the host electrical channel.</td>
+<td>It is the closest low-power countercase when the board channel has enough margin.</td>
+</tr>
+<tr class="odd">
+<td><strong>NPO — near-packaged optics</strong></td>
+<td>Optics move closer to the ASIC without necessarily taking on the full CPO package and service boundary.</td>
+<td>It can capture some electrical benefit while preserving an intermediate replacement boundary.</td>
+</tr>
+<tr class="even">
+<td><strong>Optical I/O</strong></td>
+<td>Optical links built into or beside accelerator packages for scale-up fabrics.</td>
+<td>It uses related photonics, but has a different customer, topology and adoption curve from switch-side CPO.</td>
+</tr>
+</tbody>
+</table>
+<p>The rest of the digest uses these short names. The comparison is always between systems at the same lane rate, reach, throughput, power boundary and replacement policy—not between isolated component specifications <span class="citation" data-cites="oif2023cpo oif2024eei ieee2026npo marvell2025engine">(<a href="#ref-oif2023cpo" role="doc-biblioref">Optical Internetworking Forum 2023</a>, <a href="#ref-oif2024eei" role="doc-biblioref">2024</a>; <a href="#ref-ieee2026npo" role="doc-biblioref">China Mobile and IEEE 802.3 400G per Lane Study Group 2026</a>; <a href="#ref-marvell2025engine" role="doc-biblioref">Marvell 2025</a>)</span>.</p>
 </section>
 <section id="why-the-industry-needs-a-new-interconnect" class="level2">
 <h2 class="anchored" data-anchor-id="why-the-industry-needs-a-new-interconnect">1. Why the industry needs a new interconnect</h2>
