@@ -170,11 +170,12 @@ div.csl-indent {
 <li><a class="nav-link" data-scroll-target="#why-the-industry-needs-a-new-interconnect" href="#why-the-industry-needs-a-new-interconnect" id="toc-why-the-industry-needs-a-new-interconnect">1. Why the industry needs a new interconnect</a></li>
 <li><a class="nav-link" data-scroll-target="#what-stage-is-the-industry-at" href="#what-stage-is-the-industry-at" id="toc-what-stage-is-the-industry-at">2. What stage is the industry at?</a>
 <ul class="collapse">
-<li><a class="nav-link" data-scroll-target="#the-decision-gate-in-one-view" href="#the-decision-gate-in-one-view" id="toc-the-decision-gate-in-one-view">The decision gate in one view</a></li>
+<li><a class="nav-link" data-scroll-target="#the-commercial-evidence-gate-in-one-view" href="#the-commercial-evidence-gate-in-one-view" id="toc-the-commercial-evidence-gate-in-one-view">The commercial-evidence gate in one view</a></li>
 </ul></li>
 <li><a class="nav-link" data-scroll-target="#architecture-choices" href="#architecture-choices" id="toc-architecture-choices">3. Architecture choices</a></li>
 <li><a class="nav-link" data-scroll-target="#which-companies-matter" href="#which-companies-matter" id="toc-which-companies-matter">4. Which companies matter?</a></li>
 <li><a class="nav-link" data-scroll-target="#bottom-line" href="#bottom-line" id="toc-bottom-line">Bottom line</a></li>
+<li><a class="nav-link" data-scroll-target="#bibliography" href="#bibliography" id="toc-bibliography">References</a></li>
 </ul>
 </nav>
 </div>
@@ -202,12 +203,18 @@ div.csl-indent {
 </header>
 <section class="level2 digest-hero" id="the-short-version">
 <h2 class="anchored" data-anchor-id="the-short-version">The short version</h2>
-<p>AI data centres are pushing more data through every switch. The old answer—put a replaceable optical module on the front of the switch—still works, but the electrical connection between the switch chip and that module becomes harder to drive at higher speeds. <strong>Co-packaged optics (CPO)</strong> moves the optical engine next to the switch chip to shorten that electrical path.</p>
-<p>That may reduce power and improve density. It also makes the switch harder to manufacture, qualify and repair. The central question is therefore not whether CPO can work in a demonstration. It is whether a qualified CPO system can beat the best pluggable, LPO or NPO alternative after yield, service and replacement costs.</p>
+<p>AI data centres are pushing more data through every network switch. Today, most switches turn electrical signals into light inside small, replaceable modules at the front of the box. That design still works, but the electrical signal must travel farther across the switch before it reaches the module. At higher speeds, keeping that signal clean takes more power and becomes harder. <strong>Co-packaged optics (CPO)</strong> moves the parts that create and receive light next to the switch chip, making the difficult electrical journey much shorter.</p>
+<p>This can reduce power and fit more network capacity into one switch. The trade-off is that the optics become part of a larger, more complicated assembly that may be harder to build, test and repair. The central question is therefore not simply “does CPO work?” It is: <strong>after failed parts, manufacturing losses, maintenance and replacement are included, is CPO better than the strongest alternative?</strong></p>
 </section>
 <section class="level2" id="before-you-start">
 <h2 class="anchored" data-anchor-id="before-you-start">Before you start</h2>
-<p>These are the few terms needed to follow the rest of the digest. The full report’s <a href="../../research/cpo/appendix-glossary.html">glossary</a> goes further.</p>
+<details class="digest-details digest-primer">
+<summary>
+<strong>Definitions, boundaries and orientation</strong>
+</summary>
+<p>
+You do not need an optics background to read this digest. These terms explain the parts, the alternatives and the evidence tests used below. The full report’s <a href="../../research/cpo/appendix-glossary.html">glossary</a> goes further.
+</p>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 33%"/>
@@ -224,53 +231,73 @@ div.csl-indent {
 <tbody>
 <tr class="odd">
 <td><strong>CPO — co-packaged optics</strong></td>
-<td>The optical engine sits next to the switch ASIC in the same package or package system, shortening the highest-speed electrical path.</td>
-<td>It can reduce electrical loss and interface power, but makes assembly, qualification and field service more integrated.</td>
+<td>The light-producing and light-receiving parts sit next to the switch chip instead of in a front-panel module.</td>
+<td>The short electrical connection can save power, but a fault may affect a larger and more expensive assembly.</td>
 </tr>
 <tr class="even">
 <td><strong>Optical engine</strong></td>
-<td>The working optical assembly: PIC/EIC, drivers and receivers, laser light, fibre coupling and supporting package structures.</td>
-<td>This is the unit whose qualified cost, yield and replaceability determine whether CPO scales.</td>
+<td>The group of parts that turns electrical data into light and back again. It includes optical and electronic chips, laser light, fibre connections and packaging.</td>
+<td>CPO becomes practical only if manufacturers can build, test and repair this whole unit at an acceptable cost.</td>
 </tr>
 <tr class="odd">
 <td><strong>PIC — photonic integrated circuit</strong></td>
-<td>The chip that guides and modulates light; <strong>EIC</strong> is the companion electronic driver/receiver circuitry.</td>
-<td>PIC design, laser strategy and EIC integration are the main component-level control points.</td>
+<td>A chip that guides and changes light. Its companion <strong>EIC</strong> supplies the electronic driving and receiving functions.</td>
+<td>These chips sit at the centre of the optical engine and are possible sources of technical advantage.</td>
 </tr>
 <tr class="even">
 <td><strong>LPO — linear pluggable optics</strong></td>
-<td>A replaceable module with little or no retiming DSP, relying more heavily on the host electrical channel.</td>
-<td>It is the closest low-power countercase when the board channel has enough margin.</td>
+<td>A replaceable front-panel module that removes much of the signal-repair electronics and asks the switch to send a cleaner signal.</td>
+<td>It can cut power without giving up easy module replacement, so it is an important alternative to CPO.</td>
 </tr>
 <tr class="odd">
 <td><strong>NPO — near-packaged optics</strong></td>
-<td>Optics move closer to the ASIC without necessarily taking on the full CPO package and service boundary.</td>
-<td>It can capture some electrical benefit while preserving an intermediate replacement boundary.</td>
+<td>A separate optical engine is placed close to the switch chip, but is not integrated as deeply as CPO.</td>
+<td>It may capture some power benefit while keeping a more practical replacement point.</td>
 </tr>
 <tr class="even">
 <td><strong>Optical I/O</strong></td>
-<td>Optical links built into or beside accelerator packages for scale-up fabrics.</td>
-<td>It uses related photonics, but has a different customer, topology and adoption curve from switch-side CPO.</td>
+<td>Optical links used to connect computing chips inside a scale-up system.</td>
+<td>It uses similar technology, but solves a different problem from moving Ethernet traffic through a network switch.</td>
 </tr>
 <tr class="odd">
-<td><strong>ASIC</strong></td>
+<td><strong>ASIC — application-specific integrated circuit</strong></td>
 <td>The switch’s main processing chip—the part that makes forwarding decisions.</td>
 <td>It is the electrical starting point: CPO changes how quickly data leaves this chip as light.</td>
 </tr>
 <tr class="even">
-<td><strong>SerDes</strong></td>
-<td>“Serializer/deserializer”: circuitry that turns the chip’s parallel data into fast serial lanes and back again.</td>
-<td>Its lane rate and electrical loss budget help determine whether pluggables, LPO, NPO or CPO is viable.</td>
+<td><strong>Port / lane</strong></td>
+<td>A port is one external network connection. Each port combines several smaller data paths called lanes.</td>
+<td>“200G/lane” means each lane carries 200 gigabits per second; faster lanes make the electrical path harder to drive.</td>
 </tr>
 <tr class="odd">
+<td><strong>102.4T</strong></td>
+<td>Total switch capacity of 102.4 terabits per second, or 102.4 trillion bits each second.</td>
+<td>It describes total traffic capacity, not the speed of one port or proof of customer adoption.</td>
+</tr>
+<tr class="even">
+<td><strong>Scale-out / scale-up</strong></td>
+<td>Scale-out connects many servers or racks through a network. Scale-up tightly connects processors inside one large computing system.</td>
+<td>Switch-side CPO mainly targets scale-out Ethernet; accelerator optical I/O mainly targets scale-up connections.</td>
+</tr>
+<tr class="odd">
+<td><strong>SerDes</strong></td>
+<td>Circuitry that turns many slower data streams into a few very fast electrical lanes, then reverses the process at the other end.</td>
+<td>Faster lanes are harder to move across a circuit board; that difficulty is the main reason CPO is being considered.</td>
+</tr>
+<tr class="even">
 <td><strong>DSP / retimer</strong></td>
-<td>Signal-repair electronics. A DSP reshapes data; a retimer restores timing and margin between two electrical segments.</td>
-<td>They can extend a conventional link, but add power, heat, latency and cost.</td>
+<td>Electronics that clean up a damaged signal and restore its timing.</td>
+<td>They make longer electrical links possible, but consume power, create heat and add cost.</td>
+</tr>
+<tr class="odd">
+<td><strong>FEC — forward error correction</strong></td>
+<td>Extra information sent with the data so the receiver can correct some errors.</td>
+<td>It can rescue a difficult link, but uses power and adds delay. Competing designs must be compared with the same error-correction requirement.</td>
 </tr>
 <tr class="even">
 <td><strong>FAU / fibre attach</strong></td>
-<td>The fibre-array connector and the precision alignment/bonding step that couples many fibres to the engine.</td>
-<td>Alignment accuracy, stability and reworkability are central to engine yield.</td>
+<td>The fibre-array unit and the precise process used to line up many fibres with the optical engine.</td>
+<td>A tiny alignment error can cause failure. Whether the fibre can be detached and reworked affects manufacturing cost and repair.</td>
 </tr>
 <tr class="odd">
 <td><strong>OSAT</strong></td>
@@ -278,197 +305,404 @@ div.csl-indent {
 <td>Package/test capacity can become a scale constraint even when the PIC itself is manufacturable.</td>
 </tr>
 <tr class="even">
+<td><strong>SKU — stock-keeping unit</strong></td>
+<td>A specific product configuration that a customer can order, rather than a general product family.</td>
+<td>Naming the exact SKU prevents an ordinary pluggable switch from being counted as a CPO deployment.</td>
+</tr>
+<tr class="odd">
+<td><strong>ASP — average selling price</strong></td>
+<td>The average price a supplier actually receives for each unit sold.</td>
+<td>Price, manufacturing pass rate and warranty cost together determine whether technical content becomes profit.</td>
+</tr>
+<tr class="even">
+<td><strong>VCSEL — vertical-cavity surface-emitting laser</strong></td>
+<td>A laser structure that emits light perpendicular to the wafer surface.</td>
+<td>It is one possible optical source; laser choice affects cost, coupling, temperature range and manufacturability.</td>
+</tr>
+<tr class="odd">
+<td><strong>FOWLP — fan-out wafer-level packaging</strong></td>
+<td>A way to package several small chips by embedding them in a larger reconstructed wafer and building new connections around them.</td>
+<td>It is one possible manufacturing route. A process diagram alone does not show how many finished units pass or what they cost.</td>
+</tr>
+<tr class="even">
+<td><strong>WDM — wavelength-division multiplexing</strong></td>
+<td>Sending several colours of light through the same fibre, with each colour carrying its own data.</td>
+<td>It increases the amount of data per fibre, but does not by itself prove that the complete system is economical.</td>
+</tr>
+<tr class="odd">
 <td><strong>Yield</strong></td>
-<td>The pass rate at a defined process stage: the share of units that meet the required test.</td>
-<td>Late failures compound into a higher qualified cost per accepted engine.</td>
+<td>The percentage of manufactured units that pass a test.</td>
+<td>A low pass rate—especially near the end of assembly—raises the cost of every good engine shipped.</td>
+</tr>
+<tr class="even">
+<td><strong>Qualification</strong></td>
+<td>The tests used to prove that a product keeps working across heat, vibration, ageing and other expected conditions.</td>
+<td>A laboratory prototype is not ready for customers until the complete product passes these tests.</td>
 </tr>
 <tr class="odd">
 <td><strong>pJ/bit</strong></td>
-<td>“Picojoules per bit”: the energy used to move one bit at a stated component or system boundary.</td>
-<td>It is useful only when the compared boundaries, reach and throughput match.</td>
+<td>Picojoules per bit: a measure of the energy used to move one bit of data.</td>
+<td>The number is meaningful only when both systems include the same parts and perform the same job.</td>
 </tr>
 </tbody>
 </table>
-<p>The rest of the digest uses these short names. The comparison is always between systems at the same lane rate, reach, throughput, power boundary and replacement policy—not between isolated component specifications <span class="citation" data-cites="oif2023cpo oif2024eei ieee2026npo marvell2025engine">(<a href="#ref-oif2023cpo" role="doc-biblioref">Optical Internetworking Forum 2023</a>, <a href="#ref-oif2024eei" role="doc-biblioref">2024</a>; <a href="#ref-ieee2026npo" role="doc-biblioref">China Mobile and IEEE 802.3 400G per Lane Study Group 2026</a>; <a href="#ref-marvell2025engine" role="doc-biblioref">Marvell 2025</a>)</span>.</p>
+<p>The rest of the digest uses these short names. To compare designs fairly, they must carry the same amount of data over the same distance, include the same major power loads and follow the same repair policy. A low-power chip is not enough if the rest of its system performs a different job <span class="citation" data-cites="oif2023cpo oif2024eei ieee2026npo marvell2025engine">(<a href="#ref-oif2023cpo" role="doc-biblioref">Optical Internetworking Forum 2023</a>, <a href="#ref-oif2024eei" role="doc-biblioref">2024</a>; <a href="#ref-ieee2026npo" role="doc-biblioref">China Mobile and IEEE 802.3 400G per Lane Study Group 2026</a>; <a href="#ref-marvell2025engine" role="doc-biblioref">Marvell 2025</a>)</span>.</p>
+<div alt="A front-panel pluggable path and a switch-side CPO path, with accelerator optical I/O shown as a separate adjacent track." class="digest-figure quarto-float quarto-figure quarto-figure-center anchored" id="fig-digest-cpo-boundary">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-digest-cpo-boundary-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img alt="A front-panel pluggable path and a switch-side CPO path, with accelerator optical I/O shown as a separate adjacent track." class="digest-figure img-fluid figure-img" src="figures/digest-cpo-boundary.png"/>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-digest-cpo-boundary-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure 1: CPO moves optical conversion closer to the switch ASIC. This original analytical recreation is conceptual, not to scale, and shows accelerator optical I/O as an adjacent technology track rather than a direct switch-CPO competitor <span class="citation" data-cites="wan2026integration oif2023cpo">(<a href="#ref-wan2026integration" role="doc-biblioref">Wan et al. 2026</a>; <a href="#ref-oif2023cpo" role="doc-biblioref">Optical Internetworking Forum 2023</a>)</span>.
+</figcaption>
+</figure>
+</div>
+<p>Figure 1 sets the report’s boundary: switch-side CPO shortens the electrical path to the optical engine, while accelerator optical I/O is shown as a separate scale-up route rather than a direct substitute.</p>
+</details>
 </section>
 <section class="level2" id="why-the-industry-needs-a-new-interconnect">
 <h2 class="anchored" data-anchor-id="why-the-industry-needs-a-new-interconnect">1. Why the industry needs a new interconnect</h2>
-<p>The problem is a chain of linked constraints. CPO addresses some of them, but transfers difficulty into the package and manufacturing process.</p>
-<details class="digest-details" open="">
+<p>The industry is not facing one isolated problem. Faster electrical links use more power, take more space and become harder to keep reliable. CPO addresses that problem by shortening the electrical link, but it moves some of the difficulty into manufacturing, testing and repair.</p>
+<details class="digest-details">
 <summary>
 <strong>Problem A — the electrical path is becoming expensive</strong>
 </summary>
-<p>At high lane rates, data travels from the switch ASIC through the package, circuit board, connectors and front-panel module before becoming light. That path consumes signal margin and power. CPO places the optical engine close to the ASIC, reducing the length of the most demanding electrical connection <span class="citation" data-cites="oif2023cpo oif2024eei">(<a href="#ref-oif2023cpo" role="doc-biblioref">Optical Internetworking Forum 2023</a>, <a href="#ref-oif2024eei" role="doc-biblioref">2024</a>)</span>.</p>
+<p>At high lane rates, data leaves the switch chip as an electrical signal and travels through the chip package, circuit board and connectors before reaching the front-panel optical module. Every part of that route weakens and distorts the signal. Engineers can repair it, but doing so costs power and creates heat. CPO places the optical engine close to the switch chip, shortening the hardest part of the route <span class="citation" data-cites="oif2023cpo oif2024eei">(<a href="#ref-oif2023cpo" role="doc-biblioref">Optical Internetworking Forum 2023</a>, <a href="#ref-oif2024eei" role="doc-biblioref">2024</a>)</span>.</p>
+<div alt="Four rows compare retimed pluggable, LPO, NPO and switch-side CPO signal paths." class="digest-figure quarto-float quarto-figure quarto-figure-center anchored" id="fig-digest-architecture-comparison">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-digest-architecture-comparison-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img alt="Four rows compare retimed pluggable, LPO, NPO and switch-side CPO signal paths." class="digest-figure img-fluid figure-img" src="figures/digest-architecture-comparison.png"/>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-digest-architecture-comparison-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure 2: The architecture comparison separates retimed pluggables, LPO, NPO and switch-side CPO by electrical reach, signal repair and optical-engine location. It does not by itself establish the lowest-cost system <span class="citation" data-cites="chou2024lpo oif2024eei ieee2026npo">(<a href="#ref-chou2024lpo" role="doc-biblioref">Chou et al. 2024</a>; <a href="#ref-oif2024eei" role="doc-biblioref">Optical Internetworking Forum 2024</a>; <a href="#ref-ieee2026npo" role="doc-biblioref">China Mobile and IEEE 802.3 400G per Lane Study Group 2026</a>)</span>.
+</figcaption>
+</figure>
+</div>
+<p>Figure 2 shows where each design turns the electrical signal into light. LPO leaves the optics at the front of the switch and relies on the long electrical route to remain clean enough. NPO moves a separate optical engine closer to the switch chip. CPO moves it into the same package system as the switch chip. Bringing the optics closer makes the electrical problem easier, but makes the package harder to build and repair.</p>
+<div alt="Panel A places a DSP inside the optical module; panel B removes the module DSP and exposes the host-channel loss between the switch ASIC and linear optical module." class="digest-source-figure quarto-float quarto-figure quarto-figure-center anchored" id="fig-source-chou">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-source-chou-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img alt="Panel A places a DSP inside the optical module; panel B removes the module DSP and exposes the host-channel loss between the switch ASIC and linear optical module." class="digest-source-figure img-fluid figure-img" src="figures/digest-chou-signal-path.png"/>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-source-chou-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure 3: Where the signal is regenerated in retimed and linear-drive optics. This original analytical recreation preserves the transmit, receive and DSP boundaries in Chou et al.; it does not establish total-system cost or adoption <span class="citation" data-cites="chou2024lpo">(<a href="#ref-chou2024lpo" role="doc-biblioref">Chou et al. 2024</a>)</span>.
+</figcaption>
+</figure>
+</div>
+<p><strong>How to read Figure 3:</strong> in panel A, the DSP inside the module rebuilds a clean signal before the optical section handles it. This isolates the optical module from much of the damage created on the circuit board. Panel B removes that DSP. The switch chip must now compensate for the entire route, including the orange section marked “host-channel loss.” Blue arrows show data travelling toward the fibre; green arrows show the return path. Both LPO and CPO can remove the module DSP. The key difference is distance: CPO places the optics much closer to the switch chip <span class="citation" data-cites="chou2024lpo">(<a href="#ref-chou2024lpo" role="doc-biblioref">Chou et al. 2024</a>)</span>.</p>
+<div alt="Four cards compare monolithic, hybrid 2D, hybrid 3D and hybrid 2.5D electronic-photonic integration, followed by an illustrative path from pluggable optics to tighter co-packaging." class="digest-source-figure quarto-float quarto-figure quarto-figure-center anchored" id="fig-source-wan">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-source-wan-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img alt="Four cards compare monolithic, hybrid 2D, hybrid 3D and hybrid 2.5D electronic-photonic integration, followed by an illustrative path from pluggable optics to tighter co-packaging." class="digest-source-figure img-fluid figure-img" src="figures/digest-wan-integration-pathway.png"/>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-source-wan-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure 4: Four electronic–photonic integration approaches and an illustrative pathway toward tighter co-packaging. This original analytical recreation preserves the taxonomy in Wan et al.; the pathway is not a market-share or adoption forecast <span class="citation" data-cites="wan2026integration">(<a href="#ref-wan2026integration" role="doc-biblioref">Wan et al. 2026</a>)</span>.
+</figcaption>
+</figure>
+</div>
+<p><strong>How to read Figure 4:</strong> cards A–D show four ways to place the electronic and light-handling chips together: build both functions on one chip; place two chips side by side; stack one chip above the other; or connect separate chips through an intermediate layer called an interposer. The lower row moves from replaceable modules toward tighter packaging. Tighter integration can shorten connections and fit more bandwidth into less space. It also means that heat, packaging stress or failure in one part can affect more of the assembly. The sequence describes design choices; it does not predict which one customers will adopt <span class="citation" data-cites="wan2026integration">(<a href="#ref-wan2026integration" role="doc-biblioref">Wan et al. 2026</a>)</span>.</p>
 <p><strong>What would solve it:</strong> shorten the electrical path, or make the existing path efficient enough with retimers, LPO, better equalisation or active electrical cables.</p>
 <p><strong>Why CPO is not automatically the winner:</strong> a shorter path is valuable only if its manufacturing and service burden is lower than the electrical burden it removes.</p>
-<p>The boundary becomes more important as the lane rate rises. At 200G/lane, Broadcom’s BCM78919 and NVIDIA’s Spectrum-X Ethernet Photonics show that vendors are defining a product around a short electrical path. At 400G/lane, the same logic becomes more sensitive to package loss, bump-to-bump loss and reach assumptions. A laboratory result at one loss boundary cannot settle the architecture decision for every switch <span class="citation" data-cites="broadcom2025th6 nvidia2026production zhou2026lpo">(<a href="#ref-broadcom2025th6" role="doc-biblioref">Broadcom 2025b</a>; <a href="#ref-nvidia2026production" role="doc-biblioref">NVIDIA 2026a</a>; <a href="#ref-zhou2026lpo" role="doc-biblioref"><span class="nocase">Zhou et al.</span> 2026</a>)</span>.</p>
+<p>This choice becomes more important as each lane carries more data. At 200 gigabits per second per lane (200G/lane), Broadcom and NVIDIA have named products built around a short electrical path. At 400G/lane, even small losses inside the chip package matter more. Results from one laboratory setup therefore cannot prove that the same design wins in every switch <span class="citation" data-cites="broadcom2025th6 nvidia2026production zhou2026lpo">(<a href="#ref-broadcom2025th6" role="doc-biblioref">Broadcom 2025c</a>; <a href="#ref-nvidia2026production" role="doc-biblioref">NVIDIA 2026a</a>; <a href="#ref-zhou2026lpo" role="doc-biblioref"><span class="nocase">Zhou et al.</span> 2026</a>)</span>.</p>
 <p><strong>So what?</strong> Higher lane rates increase the value of a shorter electrical path, but they also make package loss, thermal design and manufacturing variation more consequential.</p>
-For an investor, the useful mental model is a shrinking signal budget. Each connector, via, trace and package transition consumes part of that budget; equalisation and retiming recover margin, but at the cost of power, latency, heat and board complexity. CPO removes some transitions by moving the electro-optic conversion closer to the ASIC. It does not remove the need for a complete optical link budget, thermal design or field-replacement plan. The architecture wins only when the saved electrical margin is worth more than the integration burden.
+<p>
+A useful mental model is a voice becoming harder to hear as it passes through several walls. Every connector and section of circuit board makes the electrical signal less clear. Equalisation and retiming can “speak louder” or rebuild the message, but they use power and create heat. CPO removes part of that difficult route by converting the signal to light earlier. It wins only if the electrical benefit is larger than the added cost of building and servicing the integrated package.
+</p>
 </details>
 <details class="digest-details">
 <summary>
 <strong>Problem B — power and density are becoming system constraints</strong>
 </summary>
-<p>Every switch port has a power budget. At very high port counts, the optics, DSPs, electrical losses and cooling can consume space and energy that operators would rather use for compute. NVIDIA and Broadcom both present CPO as a route to higher-bandwidth AI networking, but their public material does not provide a matched, independently measured total-system comparison <span class="citation" data-cites="nvidia2025power broadcom2025cpo">(<a href="#ref-nvidia2025power" role="doc-biblioref">NVIDIA 2025</a>; <a href="#ref-broadcom2025cpo" role="doc-biblioref">Broadcom 2025a</a>)</span>.</p>
+<p>Every switch has a limited supply of electricity and cooling. As the number and speed of its connections rise, optical modules, signal-repair chips and cooling equipment consume power and space that could otherwise support more computing. NVIDIA and Broadcom present CPO as a way to increase network capacity, but neither has published an independently measured comparison in which CPO and its alternatives perform exactly the same job <span class="citation" data-cites="nvidia2025power broadcom2025cpo">(<a href="#ref-nvidia2025power" role="doc-biblioref">NVIDIA 2025</a>; <a href="#ref-broadcom2025cpo" role="doc-biblioref">Broadcom 2025b</a>)</span>.</p>
 <p><strong>What would solve it:</strong> demonstrate lower delivered power at the same lane rate, reach, throughput and cooling boundary—not just a lower component number.</p>
-<p>The report’s 102.4T thought experiment illustrates the scale without pretending to be a chassis measurement: 64 × 1.6T ports at an assumed 7.2 W CPO interface use 460.8 W, versus 1,536 W at 24 W for a fully retimed interface. An 8 W LPO case is only about 10% above the assumed CPO interface. The conclusion is conditional: CPO has a large advantage against a heavily retimed boundary, but a much smaller advantage against an efficient linear or near-packaged alternative <span class="citation" data-cites="nvidia2025power marvell2025engine">(<a href="#ref-nvidia2025power" role="doc-biblioref">NVIDIA 2025</a>; <a href="#ref-marvell2025engine" role="doc-biblioref">Marvell 2025</a>)</span>.</p>
+<p>The full report uses a simple example to show the possible scale. A 102.4-terabit switch has 64 ports carrying 1.6 terabits per second each. If each CPO interface uses 7.2 watts, the interfaces together use 460.8 watts. If each fully retimed interface uses 24 watts, they use 1,536 watts. But an efficient LPO interface at 8 watts would use only about 10% more than the assumed CPO case. These are illustrative assumptions, not measurements of complete switches. They show that CPO looks much better against a power-hungry retimed design than against an efficient LPO or NPO alternative <span class="citation" data-cites="nvidia2025power marvell2025engine">(<a href="#ref-nvidia2025power" role="doc-biblioref">NVIDIA 2025</a>; <a href="#ref-marvell2025engine" role="doc-biblioref">Marvell 2025</a>)</span>.</p>
 <p><strong>So what?</strong> CPO’s apparent advantage depends on what it replaces. It is substantial against a heavily retimed link, but modest against an efficient LPO or NPO design.</p>
-Power must be measured at a common boundary. A component pJ/bit figure can omit the external laser, host SerDes, voltage conversion, cooling and endpoint optics. Conversely, a switch-level number can include loads that every architecture shares. The meaningful test is delivered facility power for the same throughput, reach, FEC, cooling method and replacement policy. Until that comparison is disclosed, the calculation is a sensitivity analysis rather than a claim that every CPO chassis saves 70%.
+<p>
+The comparison must count the same parts on both sides. A component-level energy number may exclude the laser, switch electronics, power conversion and cooling. A whole-switch number may include loads that every design needs. The useful test is total operating power while moving the same amount of data over the same distance with the same cooling and error correction. Until such a comparison is public, the calculation shows how the answer changes under different assumptions; it does not prove that every CPO switch saves 70%.
+</p>
 </details>
 <details class="digest-details">
 <summary>
 <strong>Problem C — dense optical assembly is difficult to manufacture</strong>
 </summary>
-<p>An optical engine combines a PIC, drivers and receivers, laser light, fibre connections, thermal structures, package materials and test. A defect found late can scrap far more value than a defect found at wafer level. Public manufacturing sources map wafer probing, optical assembly, package test and burn-in, but do not disclose a full production yield waterfall <span class="citation" data-cites="ase2025cpo teradyne2026photon advantest2026cpo ficontec2025dlt aehr2026burnin">(<a href="#ref-ase2025cpo" role="doc-biblioref">ASE 2025</a>; <a href="#ref-teradyne2026photon" role="doc-biblioref">Teradyne 2026</a>; <a href="#ref-advantest2026cpo" role="doc-biblioref">Advantest 2026</a>; <a href="#ref-ficontec2025dlt" role="doc-biblioref"><span class="nocase">ficonTEC</span> 2025</a>; <a href="#ref-aehr2026burnin" role="doc-biblioref">Aehr Test Systems 2026</a>)</span>.</p>
+<p>An optical engine combines several fragile and expensive parts: light-handling chips, electronic drivers and receivers, a laser, precisely aligned fibres, cooling structures and packaging. A bad chip found before assembly is one lost chip. The same defect found after all parts are attached may waste the whole engine. Public sources describe the separate manufacturing and test steps, but they do not show how many units pass each step in real production <span class="citation" data-cites="ase2025cpo teradyne2026photon advantest2026cpo ficontec2025dlt aehr2026burnin">(<a href="#ref-ase2025cpo" role="doc-biblioref">ASE 2025</a>; <a href="#ref-teradyne2026photon" role="doc-biblioref">Teradyne 2026</a>; <a href="#ref-advantest2026cpo" role="doc-biblioref">Advantest 2026</a>; <a href="#ref-ficontec2025dlt" role="doc-biblioref"><span class="nocase">ficonTEC</span> 2025</a>; <a href="#ref-aehr2026burnin" role="doc-biblioref">Aehr Test Systems 2026</a>)</span>.</p>
 <p><strong>What would solve it:</strong> test earlier, use known-good components, automate alignment and make rework possible without destroying the rest of the engine.</p>
-<p>The practical flow is wafer probe → die or PIC screening → optical alignment and fibre attach → engine test → package integration → module or switch test → burn-in and qualification. A defect found before attach may consume a die; the same defect found after attach can consume an engine, package, labour and test time. Public equipment descriptions establish that these are distinct process insertions, but they do not publish the stage-by-stage yield or rework waterfall needed to calculate qualified cost <span class="citation" data-cites="ase2025cpo teradyne2026photon advantest2026cpo ficontec2025dlt aehr2026burnin">(<a href="#ref-ase2025cpo" role="doc-biblioref">ASE 2025</a>; <a href="#ref-teradyne2026photon" role="doc-biblioref">Teradyne 2026</a>; <a href="#ref-advantest2026cpo" role="doc-biblioref">Advantest 2026</a>; <a href="#ref-ficontec2025dlt" role="doc-biblioref"><span class="nocase">ficonTEC</span> 2025</a>; <a href="#ref-aehr2026burnin" role="doc-biblioref">Aehr Test Systems 2026</a>)</span>.</p>
-<p><strong>So what?</strong> The important manufacturing metric is the cost of an accepted engine, not the speed of one assembly step. Until stage yields and rework are disclosed, the binding constraint cannot be ranked confidently.</p>
-The manufacturing question is therefore not simply “can the machine align fibres?” It is whether alignment stays stable across temperature, vibration and reflow; whether a marginal engine can be reworked; whether test coverage catches latent optical and electrical defects; and whether the line can repeat the result at volume. Known-good-die screening and wafer-level probing can move failures earlier, but they add equipment, data and cycle time. The winning process minimises qualified cost, not just assembly time.
+<p>The practical flow is: test the wafer → screen the individual chips → align and attach the fibres → test the optical engine → add it to the package → test the module or switch → run heat and lifetime tests. A defect found early may waste one chip. Found late, it can waste the chip, engine, package, labour and test time already invested. Equipment makers confirm that these are separate steps, but do not publish the pass rate or repair success at each one. Without those numbers, the cost of a finished, accepted engine cannot be calculated <span class="citation" data-cites="ase2025cpo teradyne2026photon advantest2026cpo ficontec2025dlt aehr2026burnin">(<a href="#ref-ase2025cpo" role="doc-biblioref">ASE 2025</a>; <a href="#ref-teradyne2026photon" role="doc-biblioref">Teradyne 2026</a>; <a href="#ref-advantest2026cpo" role="doc-biblioref">Advantest 2026</a>; <a href="#ref-ficontec2025dlt" role="doc-biblioref"><span class="nocase">ficonTEC</span> 2025</a>; <a href="#ref-aehr2026burnin" role="doc-biblioref">Aehr Test Systems 2026</a>)</span>.</p>
+<div alt="Seven-stage flow from wafer and die test through fibre attach, engine test, package integration, module test, burn-in and qualification." class="digest-figure quarto-float quarto-figure quarto-figure-center anchored" id="fig-digest-qualified-engine-flow">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-digest-qualified-engine-flow-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img alt="Seven-stage flow from wafer and die test through fibre attach, engine test, package integration, module test, burn-in and qualification." class="digest-figure img-fluid figure-img" src="figures/digest-qualified-engine-flow.png"/>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-digest-qualified-engine-flow-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure 5: A finished engine must pass several assembly and test stages. Public sources describe the stages, but not the percentage of production units that pass each one. This original analytical recreation uses IBM’s public qualification summary and public package/test process descriptions <span class="citation" data-cites="knickerbocker2024cpo ase2025cpo">(<a href="#ref-knickerbocker2024cpo" role="doc-biblioref"><span class="nocase">Knickerbocker et al.</span> 2024</a>; <a href="#ref-ase2025cpo" role="doc-biblioref">ASE 2025</a>)</span>.
+</figcaption>
+</figure>
+</div>
+<p>Figure 5 follows the product from its earliest chip tests to final approval. Each step adds more materials and work. A failure near the end therefore costs more than a failure near the beginning. Companies have not published the pass rate at every stage, so outsiders cannot calculate this cost precisely.</p>
+<div alt="Seven stages show photonic-die placement, molding, debonding, front- and back-side redistribution layers, electronic-die assembly and final solder-ball attachment." class="digest-source-figure quarto-float quarto-figure quarto-figure-center anchored" id="fig-source-wu">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-source-wu-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img alt="Seven stages show photonic-die placement, molding, debonding, front- and back-side redistribution layers, electronic-die assembly and final solder-ball attachment." class="digest-source-figure img-fluid figure-img" src="figures/digest-wu-fowlp-process.png"/>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-source-wu-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure 6: One possible fan-out wafer-level packaging process for an optical engine. This original analytical recreation follows Wu et al., Proc. SPIE 13905, article 139050H; it does not disclose the pass rate or cost at each production stage <span class="citation" data-cites="wu2026fowlp">(<a href="#ref-wu2026fowlp" role="doc-biblioref"><span class="nocase">Wu et al.</span> 2026</a>)</span>.
+</figcaption>
+</figure>
+</div>
+<p><strong>How to read Figure 6:</strong> steps 1–3 place the light-handling chip face down, surround it with protective material and release the newly formed wafer. Steps 4–5 build electrical connections on both sides and through the package. Steps 6–7 attach the electronic chip and add the package’s external contacts. The arrow at the bottom shows the main economic point: every completed step adds value that may be lost if a later test fails. The figure shows how one package can be built; it does not show the pass rate, repair success or cost in volume production <span class="citation" data-cites="wu2026fowlp">(<a href="#ref-wu2026fowlp" role="doc-biblioref"><span class="nocase">Wu et al.</span> 2026</a>)</span>.</p>
+<p><strong>So what?</strong> What matters is the cost of each engine that passes every test, not the speed of one machine or assembly step. Until companies disclose pass rates and repair results, outsiders cannot tell which manufacturing step is the largest constraint.</p>
+<p>
+The manufacturing question is not simply “can a machine line up the fibres once?” The alignment must survive heat, vibration and the high-temperature steps used to join components. Tests must find hidden defects before customers do, and failed units should be repairable where possible. Testing chips earlier can prevent expensive late failures, but it also adds equipment and time. The best process is the one that produces the lowest cost per fully tested engine—not merely the fastest assembly step.
+</p>
 </details>
 <details class="digest-details">
 <summary>
 <strong>Problem D — replacing a failed part may be harder</strong>
 </summary>
-<p>A front-panel optical module can normally be replaced without replacing the switch. A deeply integrated engine may not be independently replaceable. External-laser and detachable-interface standards can separate part of the failure domain, but they do not automatically make the PIC or package serviceable <span class="citation" data-cites="oif2025elsfp psaila2023connector">(<a href="#ref-oif2025elsfp" role="doc-biblioref">Optical Internetworking Forum 2025</a>; <a href="#ref-psaila2023connector" role="doc-biblioref">Psaila et al. 2023</a>)</span>.</p>
+<p>A front-panel optical module can normally be pulled out and replaced while the rest of the switch stays in place. A deeply integrated CPO engine may not be removable on its own. A separate laser or detachable fibre connector can isolate one possible failure, but it does not automatically make the light-handling chip or the whole package repairable <span class="citation" data-cites="oif2025elsfp psaila2023connector">(<a href="#ref-oif2025elsfp" role="doc-biblioref">Optical Internetworking Forum 2025</a>; <a href="#ref-psaila2023connector" role="doc-biblioref">Psaila et al. 2023</a>)</span>.</p>
+<div alt="Three panels compare fixed fibre attach, a detachable fibre-array unit and a separately replaceable external laser." class="digest-figure quarto-float quarto-figure quarto-figure-center anchored" id="fig-digest-serviceability-boundary">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-digest-serviceability-boundary-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img alt="Three panels compare fixed fibre attach, a detachable fibre-array unit and a separately replaceable external laser." class="digest-figure img-fluid figure-img" src="figures/digest-serviceability-boundary.png"/>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-digest-serviceability-boundary-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure 7: Fixed fibres, a detachable fibre unit and a separate external laser make different parts replaceable. This original analytical recreation separates the repair boundaries described in connector studies and external-laser specifications <span class="citation" data-cites="watanabe2025reflow brusberg2025detachable oif2025elsfp">(<a href="#ref-watanabe2025reflow" role="doc-biblioref">Watanabe et al. 2025</a>; <a href="#ref-brusberg2025detachable" role="doc-biblioref">Brusberg et al. 2025</a>; <a href="#ref-oif2025elsfp" role="doc-biblioref">Optical Internetworking Forum 2025</a>)</span>.
+</figcaption>
+</figure>
+</div>
+<p>Figure 7 shows that the word “detachable” is incomplete unless we say what can be detached. A removable fibre-array unit lets a technician replace the fibre connection. A separate external laser lets the light source be replaced. Neither design necessarily allows the full optical engine to be replaced.</p>
+<details class="digest-subdetails">
+<summary>
+<strong>Engineering examples: two detachable connector routes</strong>
+</summary>
+<div alt="A fixed substrate terminal and removable fibre-array terminal use lens arrays, magnets and guide pins across a non-contact optical gap." class="digest-source-figure quarto-float quarto-figure quarto-figure-center anchored" id="fig-source-watanabe">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-source-watanabe-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img alt="A fixed substrate terminal and removable fibre-array terminal use lens arrays, magnets and guide pins across a non-contact optical gap." class="digest-source-figure img-fluid figure-img" src="figures/digest-watanabe-detachable-connector.png"/>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-source-watanabe-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure 8: A detachable expanded-beam interface between a fixed glass-waveguide terminal and a removable fibre-array terminal. This original analytical recreation follows Watanabe et al.; the design does not establish field-replacement economics <span class="citation" data-cites="watanabe2025reflow">(<a href="#ref-watanabe2025reflow" role="doc-biblioref">Watanabe et al. 2025</a>)</span>.
+</figcaption>
+</figure>
+</div>
+<p><strong>How to read Figure 8:</strong> the part on the left stays attached to the glass base throughout manufacturing. The fibre unit on the right is added later and can be removed. Lenses widen and refocus the light across a small air gap; guide pins keep the two sides lined up; magnets hold them together. Only the fibre unit is detachable—not the optical chip or the whole package. Laboratory connector measurements do not tell us how long a field repair takes or what it costs <span class="citation" data-cites="watanabe2025reflow">(<a href="#ref-watanabe2025reflow" role="doc-biblioref">Watanabe et al. 2025</a>)</span>.</p>
+<div alt="A PIC couples to a fixed glass transfer waveguide, which terminates at a detachable fibre connector; a lower inset shows optical engines around a switch ASIC on a glass substrate." class="digest-source-figure quarto-float quarto-figure quarto-figure-center anchored" id="fig-source-brusberg">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-source-brusberg-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img alt="A PIC couples to a fixed glass transfer waveguide, which terminates at a detachable fibre connector; a lower inset shows optical engines around a switch ASIC on a glass substrate." class="digest-source-figure img-fluid figure-img" src="figures/digest-brusberg-glass-interconnect.png"/>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-source-brusberg-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure 9: A fixed PIC-to-glass transfer interface followed by a detachable glass-to-fibre connector. This original analytical recreation follows Brusberg et al.; it is an architecture concept, not evidence of field-service cost <span class="citation" data-cites="brusberg2025detachable">(<a href="#ref-brusberg2025detachable" role="doc-biblioref">Brusberg et al. 2025</a>)</span>.
+</figcaption>
+</figure>
+</div>
+<p><strong>How to read Figure 9:</strong> light crosses two connection points. First, the optical chip transfers light into a glass path that remains permanently attached. Second, a guide-pin connector joins that glass path to the removable external fibre. The lower drawing shows a longer-term idea in which several optical engines surround one switch chip on a glass base. In this design, only the second connection—the fibre connector—is presented as replaceable <span class="citation" data-cites="brusberg2025detachable">(<a href="#ref-brusberg2025detachable" role="doc-biblioref">Brusberg et al. 2025</a>)</span>.</p>
+</details>
 <p><strong>What would solve it:</strong> define which part can be replaced in the field, how long the repair takes, what spares are needed and who carries the warranty cost.</p>
-<p>This is a system-design choice, not a minor connector detail. A detachable external-laser or fibre interface may isolate one failure domain, while a failed PIC, interposer or bonded optical engine may still require replacement of a larger assembly. The relevant operating metrics are mean time to repair, spare-module policy, escape rate and warranty allocation—not merely whether a connector can be unplugged <span class="citation" data-cites="oif2025elsfp psaila2023connector">(<a href="#ref-oif2025elsfp" role="doc-biblioref">Optical Internetworking Forum 2025</a>; <a href="#ref-psaila2023connector" role="doc-biblioref">Psaila et al. 2023</a>)</span>.</p>
-The service boundary also changes inventory economics. A replaceable laser may require a small, qualified spare; a non-replaceable engine can require an entire switch tray or chassis intervention. Operators will trade lower power against truck rolls, spares, downtime and warranty exposure. Public CPO disclosures rarely report these costs, so serviceability remains a first-order adoption variable rather than a footnote.
+<p>This is a major system-design choice, not a minor connector detail. A detachable laser or fibre connection may make one type of failure easy to fix, while a failed optical chip or bonded engine may still require replacing a much larger assembly. The practical questions are: how long does repair take, what spare parts must be stocked, how often do tests miss defects and who pays for failures under warranty <span class="citation" data-cites="oif2025elsfp psaila2023connector">(<a href="#ref-oif2025elsfp" role="doc-biblioref">Optical Internetworking Forum 2025</a>; <a href="#ref-psaila2023connector" role="doc-biblioref">Psaila et al. 2023</a>)</span>.</p>
+<p>
+The replacement design also changes operating cost. A replaceable laser may need only a small spare part. A non-replaceable engine may require work on an entire switch tray or chassis. Customers will weigh lower power against repair visits, spare inventory, downtime and warranty cost. Public CPO disclosures rarely report these figures, so repairability remains one of the main adoption questions.
+</p>
 </details>
 <details class="digest-details">
 <summary>
 <strong>Problem E — technical success does not identify the profit winner</strong>
 </summary>
-<p>CPO can move content from a pluggable module into the optical engine, laser, fibre interface, package and test flow. That changes where work happens, but not automatically who earns the profit. Supplier share, realised price, yield, rework and warranty remain mostly undisclosed.</p>
-<p><strong>What would solve it:</strong> connect a named product to a named supplier, qualified volume, content share and margin after manufacturing costs.</p>
-<p>The economic chain is: architecture need → qualified engine → attributable supplier content → yield and rework → realised gross profit. A supplier can own an essential technical step and still earn weak returns if the step is multi-sourced, capital-intensive, exposed to price-down or burdened by warranty. That is why the report refuses to treat a partnership, demonstration or capacity announcement as proof of profit capture.</p>
-The value pool can also migrate rather than grow. CPO may reduce the bill for a conventional pluggable DSP while increasing content in PICs, lasers, fibre interfaces, advanced packages, automated alignment and test. If several suppliers qualify interchangeable parts, the content may be strategically important but economically competitive. A durable profit pool requires scarcity, qualification friction, switching cost or system-level control—not simply a larger component count.
+<p>CPO moves parts and spending out of the traditional front-panel module and into the optical engine, laser, fibre connection, package and testing process. That changes who does the work, but does not tell us who will earn the most profit. Public disclosures identify companies that may control important steps, but rarely reveal their share of each product, selling price, manufacturing pass rate, repair cost or warranty responsibility <span class="citation" data-cites="nvidia2026coherent lumentum2026nvidia tsmc2026coupe ase2025cpo">(<a href="#ref-nvidia2026coherent" role="doc-biblioref">NVIDIA and Coherent 2026</a>; <a href="#ref-lumentum2026nvidia" role="doc-biblioref">Lumentum 2026c</a>; <a href="#ref-tsmc2026coupe" role="doc-biblioref">TSMC 2026b</a>; <a href="#ref-ase2025cpo" role="doc-biblioref">ASE 2025</a>)</span>.</p>
+<p><strong>What would solve it:</strong> connect a named product to a named supplier, show how many customer-accepted units use that supplier’s parts and disclose the profit after manufacturing costs.</p>
+<p>
+The economic chain is: a customer needs the architecture → a complete engine passes qualification → a supplier is confirmed in that engine → manufacturing and repair costs are known → the supplier earns gross profit. A company can provide an essential part and still earn little if customers can buy it from several suppliers, its factories are expensive or prices fall quickly. A partnership, demonstration or factory expansion therefore shows opportunity—not proven profit.
+</p>
+<p>
+Profit can also move from one part of the supply chain to another without increasing overall. CPO may reduce spending on signal-processing chips inside pluggable modules while increasing spending on optical chips, lasers, fibre connections, advanced packaging and test. If several suppliers can provide interchangeable parts, those parts may be technically important but offer weak pricing power. Lasting profit requires something difficult to copy or replace: scarce capability, a long customer-approval process, high switching costs or control of the complete system.
+</p>
 </details>
 <div class="digest-takeaway">
-<strong>Chapter takeaway.</strong> CPO addresses a real electrical and power problem, but it shifts difficulty into optical assembly, qualification, service and supplier economics. The winning design is the one with the lowest qualified system cost—not automatically the shortest electrical path.
+<strong>Chapter takeaway.</strong> CPO addresses a real electrical and power problem, but makes optical assembly, testing, repair and supplier profit harder to assess. The winning design will be the one with the lowest total cost per accepted, serviceable system—not automatically the one with the shortest electrical path.
 </div>
 </section>
 <section class="level2" id="what-stage-is-the-industry-at">
 <h2 class="anchored" data-anchor-id="what-stage-is-the-industry-at">2. What stage is the industry at?</h2>
-<p>The industry is beyond basic laboratory curiosity, but short of public commercial proof.</p>
-<details class="digest-details" open="">
+<p>The technology has moved beyond isolated laboratory experiments. However, the public record still does not show repeat customer deployment with known costs and supplier profits.</p>
+<details class="digest-details">
 <summary>
 <strong>Stage 1 — component and laboratory evidence</strong>
 </summary>
-<p>Academic and vendor demonstrations show that high-speed PICs, optical engines, external lasers, packaging and test methods can work at bounded conditions. These results establish technical routes, not customer adoption or production economics <span class="citation" data-cites="amiralizadeh2025cpo wu2026fowlp tran2026driver">(<a href="#ref-amiralizadeh2025cpo" role="doc-biblioref"><span class="nocase">Amiralizadeh et al.</span> 2025</a>; <a href="#ref-wu2026fowlp" role="doc-biblioref"><span class="nocase">Wu et al.</span> 2026</a>; <a href="#ref-tran2026driver" role="doc-biblioref"><span class="nocase">Tran et al.</span> 2026</a>)</span>.</p>
-<p>The distinction matters in plain language: a measured optical package can prove that a coupling or modulation method works; it cannot prove that thousands of engines pass final test at an acceptable cost. The strongest academic results in the evidence set therefore support the engineering feasibility of the building blocks while leaving commercial scale, service and margin as open questions.</p>
-This stage is still valuable. It narrows which mechanisms deserve manufacturing attention: external-light strategies, PIC/EIC co-integration, fibre coupling, thermal management and test-before-integration. It does not rank vendors, because a paper generally reports a device or test vehicle rather than a complete customer product with warranty and field data.
+<p>Academic papers and vendor demonstrations show that high-speed optical chips, engines, external lasers, packaging and test methods can work under stated laboratory conditions. They prove that engineers have workable building blocks. They do not show that customers are buying complete systems or that those systems can be produced profitably <span class="citation" data-cites="amiralizadeh2025cpo wu2026fowlp tran2026driver">(<a href="#ref-amiralizadeh2025cpo" role="doc-biblioref"><span class="nocase">Amiralizadeh et al.</span> 2025</a>; <a href="#ref-wu2026fowlp" role="doc-biblioref"><span class="nocase">Wu et al.</span> 2026</a>; <a href="#ref-tran2026driver" role="doc-biblioref"><span class="nocase">Tran et al.</span> 2026</a>)</span>.</p>
+<p>In plain language, a successful prototype proves that light can enter, leave or be changed by the device as intended. It does not prove that a factory can build thousands of identical engines, that most will pass final test or that customers can repair them cheaply. The academic evidence therefore supports technical feasibility, while production scale, service cost and profit remain open.</p>
+<p>
+This evidence is still valuable because it shows where manufacturers must focus: supplying laser light, joining optical and electronic chips, aligning fibres, removing heat and testing parts before expensive assembly. It cannot rank companies, because a research paper usually studies one device or prototype rather than a customer product with production, repair and warranty data.
+</p>
 </details>
 <details class="digest-details">
 <summary>
 <strong>Stage 2 — defined products and platforms</strong>
 </summary>
-<p>Broadcom has defined a 102.4T Tomahawk 6/Davisson CPO route, and NVIDIA describes Spectrum-X Ethernet Photonics as a 200G-SerDes CPO system <span class="citation" data-cites="broadcom2025th6 nvidia2026production">(<a href="#ref-broadcom2025th6" role="doc-biblioref">Broadcom 2025b</a>; <a href="#ref-nvidia2026production" role="doc-biblioref">NVIDIA 2026a</a>)</span>. This is stronger than a lab demo because a product boundary exists.</p>
-<p>Product definition also narrows the diligence question. The relevant question is no longer “can CPO be built?” but “which configuration is actually being sold, to whom, in what quantity, and with what service boundary?” A broad switch-family announcement does not answer those questions for the CPO configuration.</p>
-<p>This is why the digest names the product routes but avoids converting them into market-share forecasts. A specified 102.4T switch or 200G-SerDes photonics system establishes that the vendor has committed engineering and product resources. It does not reveal whether customers receive a CPO configuration, a pluggable configuration, or both under the same platform label.</p>
+<p>Broadcom has named a 102.4-terabit Tomahawk 6/Davisson CPO design, and NVIDIA describes Spectrum-X Ethernet Photonics as a CPO system using 200G electrical lanes <span class="citation" data-cites="broadcom2025th6 nvidia2026photonicsrefresh">(<a href="#ref-broadcom2025th6" role="doc-biblioref">Broadcom 2025c</a>; <a href="#ref-nvidia2026photonicsrefresh" role="doc-biblioref">NVIDIA 2026b</a>)</span>. This is stronger than a laboratory demonstration because each company has described a product customers could potentially buy.</p>
+<p>
+A defined product changes the research question. We no longer ask only “can CPO be built?” We ask: which exact version is being sold, who bought it, how many were accepted and what can be replaced if it fails? An announcement about a whole family of switches does not answer those questions for the CPO version.
+</p>
+<p>
+This is why the digest names the products but does not turn them into market-share forecasts. A specified switch proves that a vendor has committed engineering and product resources. It may not reveal whether customers are receiving the CPO version, a conventional pluggable version or both under the same product-family name.
+</p>
 <strong>So what?</strong> A named product route moves CPO beyond laboratory feasibility, but it still cannot support a volume or earnings forecast until the exact configuration and customer uptake are disclosed.
 </details>
 <details class="digest-details">
 <summary>
 <strong>Stage 3 — production signals, but not complete commercial proof</strong>
 </summary>
-<p>NVIDIA uses “in production” language for Spectrum-X Ethernet Photonics, and Broadcom reports production-volume shipping for the broader Tomahawk 6 family. Public evidence still does not join an exact CPO SKU to a named customer, accepted unit range, repeat shipment, qualified yield or supplier economics. The report therefore treats this as <strong>early production evidence with an open commercial gate</strong>.</p>
-<p>That is a positive timing signal, not a negative technology verdict. It means the public record has crossed from component proof into vendor-declared product activity, while the evidence needed to estimate market share or supplier earnings remains unavailable. The key risk is that “production” resolves to evaluation systems, a wider platform family, or configurations that still use pluggable optics.</p>
-The distinction is especially important for company analysis. NVIDIA can benefit from platform differentiation even if optical-engine economics sit with suppliers. Broadcom can ship a switch family in volume without disclosing the share of CPO configurations. Coherent, Lumentum, TSMC and test suppliers can have strong technical roles without a public record of allocation or realised margin. The public evidence therefore supports exposure rankings, not a proven earnings winner.
+<p>NVIDIA says Spectrum-X Ethernet Photonics is “in production,” while Broadcom says the broader Tomahawk 6 family is shipping in production volume. Public evidence still does not connect an exact CPO model to a named customer, the number accepted, repeat orders, manufacturing pass rates or supplier profit. The report therefore treats these announcements as <strong>early production evidence, not complete commercial proof</strong> <span class="citation" data-cites="nvidia2026photonicsrefresh broadcom2026th6shipping">(<a href="#ref-nvidia2026photonicsrefresh" role="doc-biblioref">NVIDIA 2026b</a>; <a href="#ref-broadcom2026th6shipping" role="doc-biblioref">Broadcom 2026a</a>)</span>.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%"/>
+<col style="width: 25%"/>
+<col style="width: 25%"/>
+<col style="width: 25%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th>Vendor</th>
+<th>Exact disclosed CPO route</th>
+<th>What the public record establishes</th>
+<th>What remains unproven</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>NVIDIA</strong></td>
+<td><code>SN6800</code> / <code>SN6810</code> Spectrum-X Ethernet Photonics</td>
+<td>Named CPO models using 200G electrical lanes; NVIDIA describes the platform as in production <span class="citation" data-cites="nvidia2026production nvidia2026photonicsrefresh">(<a href="#ref-nvidia2026production" role="doc-biblioref">NVIDIA 2026a</a>, <a href="#ref-nvidia2026photonicsrefresh" role="doc-biblioref">2026b</a>)</span>.</td>
+<td>A customer confirming the exact model, accepted units and repeat orders; manufacturing pass rate, repair cost and CPO profit.</td>
+</tr>
+<tr class="even">
+<td><strong>Broadcom</strong></td>
+<td><code>BCM78919</code> / Tomahawk 6 Davisson</td>
+<td>A defined 102.4T CPO switch using 200G lanes; Broadcom says the broader Tomahawk 6 family is shipping in production volume <span class="citation" data-cites="broadcom2025bcm78919 broadcom2025th6 broadcom2026th6shipping">(<a href="#ref-broadcom2025bcm78919" role="doc-biblioref">Broadcom 2025a</a>, <a href="#ref-broadcom2025th6" role="doc-biblioref">2025c</a>, <a href="#ref-broadcom2026th6shipping" role="doc-biblioref">2026a</a>)</span>.</td>
+<td>Proof that repeat customer shipments include this exact CPO version; manufacturing pass rate, repair cost and supplier profit.</td>
+</tr>
+</tbody>
+</table>
+<p>
+These statements are encouraging: the industry has moved from component demonstrations to vendor-declared products. But “production” may refer to evaluation systems, the wider product family or versions that still use ordinary pluggable optics. Without customer and unit data, it is too early to estimate CPO market share or supplier earnings.
+</p>
+<p>
+This matters when comparing companies. NVIDIA could make its overall networking system more attractive even if another supplier earns the optical-engine profit. Broadcom could ship many Tomahawk 6 switches without saying how many use CPO. Coherent, Lumentum, TSMC and test suppliers may perform important work without disclosing their share or profit. Public evidence therefore shows who may benefit, but not who will earn the most.
+</p>
 </details>
 <details class="digest-details">
 <summary>
 <strong>What would count as commercial proof?</strong>
 </summary>
-<p>The decisive record would combine a clear CPO SKU, named customer, accepted unit or port range, repeat shipment, supplier/content boundary and at least one qualified-yield, service or margin metric. Until that appears, “production” is a positive timing signal—not proof of market leadership.</p>
-<p>The evidence gate is cumulative. A customer name without a CPO SKU is insufficient; a SKU without accepted units is insufficient; accepted units without repetition may still be a pilot; repetition without qualified yield or service data does not establish economic scale. This is the standard used throughout the full report.</p>
-There are three useful outcomes from the gate. <strong>Pass:</strong> customer-confirmed, repeat paid production with an attributable supplier and qualified economics. <strong>Partial pass:</strong> a product is shipping, but units, service or supplier economics remain opaque. <strong>Fail for investment purposes:</strong> the claimed production resolves to a demo, evaluation quantity, non-CPO configuration or an architecture that is abandoned after qualification. A partial pass can support a timing view without supporting a profit-pool call.
+<p>Strong commercial proof would connect six facts: an exact CPO model, a named customer, the number of accepted units or ports, repeat orders, the supplier responsible for each major part and at least one measure of manufacturing pass rate, repair cost or profit. Until then, “production” is encouraging, but does not prove market leadership.</p>
+<p>
+The evidence builds one step at a time. A customer name without an exact CPO model is ambiguous. A model without accepted units may never have moved beyond evaluation. One order may still be a pilot. Repeat orders without manufacturing and repair data do not prove profitable scale. The full report applies this same test throughout.
+</p>
+<p>
+The result can be classified three ways. <strong>Pass:</strong> a customer confirms repeat paid deployment, the suppliers are identifiable and the economics are known. <strong>Partial pass:</strong> a product is shipping, but unit numbers, repair costs or supplier profits remain unknown. <strong>Fail for investment purposes:</strong> “production” turns out to mean a demonstration, a small evaluation, a non-CPO version or a design customers later abandon. A partial pass can show that adoption is beginning without proving who will profit.
+</p>
 </details>
-<section class="level3" id="the-decision-gate-in-one-view">
-<h3 class="anchored" data-anchor-id="the-decision-gate-in-one-view">The decision gate in one view</h3>
-<p>The diagram below shows where each architecture places the electro-optic boundary. The boxes are deliberately simplified: the investment question is which boundary delivers the required bandwidth and power <strong>without creating a larger qualified-cost or service burden</strong>.</p>
+<section class="level3" id="the-commercial-evidence-gate-in-one-view">
+<h3 class="anchored" data-anchor-id="the-commercial-evidence-gate-in-one-view">The commercial-evidence gate in one view</h3>
+<p>The ladder separates “engineers made it work” from “customers repeatedly bought it and suppliers made money.” Each later step depends on the earlier ones.</p>
 <div class="process-label">
-Simplified signal path at the same lane rate
+Public evidence progression
 </div>
-<div class="process-row architecture-diagram">
-<p>
-<span class="architecture-name">Retimed pluggable</span><span class="process-step">ASIC</span><span class="process-arrow">→</span><span class="process-step">Board / connector</span><span class="process-arrow">→</span><span class="process-step">Retimer + optical module</span><span class="process-arrow">→</span><span class="process-step">Fibre</span>
-</p>
-<p>
-<span class="architecture-name">LPO</span><span class="process-step">ASIC</span><span class="process-arrow">→</span><span class="process-step">Board / connector</span><span class="process-arrow">→</span><span class="process-step process-step-cpo">Linear optical module</span><span class="process-arrow">→</span><span class="process-step">Fibre</span>
-</p>
-<p>
-<span class="architecture-name">NPO</span><span class="process-step">ASIC</span><span class="process-arrow">→</span><span class="process-step process-step-cpo">Short package / cable path</span><span class="process-arrow">→</span><span class="process-step process-step-cpo">Near-package engine</span><span class="process-arrow">→</span><span class="process-step">Fibre</span>
-</p>
-<p>
-<span class="architecture-name">Switch-side CPO</span><span class="process-step">ASIC</span><span class="process-arrow">→</span><span class="process-step process-step-cpo">Co-package</span><span class="process-arrow">→</span><span class="process-step process-step-cpo">Optical engine</span><span class="process-arrow">→</span><span class="process-step">Fibre</span>
-</p>
+<div aria-label="Six-stage evidence ladder from laboratory result to qualified economics" class="evidence-ladder" role="img">
+<div class="evidence-step evidence-established">
+<span>1</span><strong>Laboratory result</strong><small>Building blocks work</small>
+</div>
+<div class="evidence-step evidence-established">
+<span>2</span><strong>Defined product</strong><small>A sellable route exists</small>
+</div>
+<div class="evidence-step evidence-current">
+<span>3</span><strong>Exact CPO SKU</strong><small>Configuration is identifiable</small>
+</div>
+<div class="evidence-step evidence-open">
+<span>4</span><strong>Customer acceptance</strong><small>A named customer uses it</small>
+</div>
+<div class="evidence-step evidence-open">
+<span>5</span><strong>Repeat shipments</strong><small>Deployment extends beyond a pilot</small>
+</div>
+<div class="evidence-step evidence-open">
+<span>6</span><strong>Proven economics</strong><small>Production, repair and profit work</small>
+</div>
 </div>
 <p class="process-note">
-The arrows show the principal electrical path; all four still require optical coupling, thermal management, qualification and a field-service policy.
+<strong>Current public position:</strong> NVIDIA and Broadcom have identifiable product routes. The missing link is public proof that customers repeatedly bought the exact CPO versions and that those systems can be manufactured and serviced economically.
 </p>
 <div class="digest-gate">
-<p><strong>Investment decision rule.</strong> CPO becomes investably compelling only when public evidence connects a named CPO product to repeat customer deployment, acceptable qualified-engine yield, a workable replacement/service boundary and attributable supplier economics. Until then, CPO is technically credible and strategically important, but not a proven profit-pool winner.</p>
+<p><strong>Investment decision rule.</strong> CPO becomes a strong investment theme only when public evidence connects a named product to repeat customer use, an acceptable manufacturing pass rate, a practical repair plan and identifiable supplier profit. Until then, the technology is credible and strategically important, but the financial winner remains unproven.</p>
 </div>
 <div class="digest-takeaway">
-<strong>Chapter takeaway.</strong> The public record has reached defined products and early production signals, but the commercial proof chain remains incomplete. Timing can be constructive without proving a volume leader or a supplier profit pool.
+<strong>Chapter takeaway.</strong> Companies have defined products and reported early production activity, but the commercial proof chain remains incomplete. Adoption may be starting even though no company has proved leadership in volume or profit.
 </div>
 </section>
 </section>
 <section class="level2" id="architecture-choices">
 <h2 class="anchored" data-anchor-id="architecture-choices">3. Architecture choices</h2>
-<p>These options solve different parts of the problem. The best choice depends on lane rate, reach, power, serviceability and the operator’s tolerance for integration risk.</p>
-<details class="digest-details" open="">
+<p>These designs are different answers to the same trade-off: how close should the optics sit to the switch chip? Moving them closer can save power, but usually makes manufacturing and repair harder. The best choice depends on speed, distance, power, repair needs and how much integration risk the customer will accept.</p>
+<details class="digest-details">
 <summary>
 <strong>Retimed pluggables — the mature baseline</strong>
 </summary>
 <p><strong>What they do:</strong> keep the optical module replaceable and put more signal-processing electronics inside it.</p>
-<p><strong>Why they can win:</strong> excellent serviceability, mature supply chain and clear field replacement.</p>
-<p><strong>Where they struggle:</strong> module power, electrical reach, front-panel density and cooling at very high lane rates.</p>
-<p><strong>Best fit:</strong> links where modular replacement matters more than the last increment of density or power efficiency.</p>
-<p>Retimed optics are the control case because they preserve the cleanest operational model. Their weakness is not that they stop working; it is that DSP, host electrical reach and front-panel power can become expensive at the same bandwidth. If those costs remain manageable, the modular baseline can defeat a technically superior but harder-to-service CPO design.</p>
-The comparison should include the full replacement burden. Retimed modules may be individually expensive and power-hungry, but they can be swapped without disturbing the switch ASIC, package or neighbouring links. That operational advantage has an economic value which is often absent from optical-engine power demonstrations. CPO must overcome this value through density, power, reach or a lower qualified-cost curve.
+<p><strong>Why they can win:</strong> technicians can replace one failed module; the supply chain and operating procedures are mature.</p>
+<p><strong>Where they struggle:</strong> at very high speeds, each module can use considerable power, the long electrical route becomes difficult and the front panel runs out of space and cooling.</p>
+<p><strong>Best fit:</strong> systems where simple replacement matters more than achieving the highest possible density or lowest possible power <span class="citation" data-cites="oif2023cpo oif2024eei chou2024lpo">(<a href="#ref-oif2023cpo" role="doc-biblioref">Optical Internetworking Forum 2023</a>, <a href="#ref-oif2024eei" role="doc-biblioref">2024</a>; <a href="#ref-chou2024lpo" role="doc-biblioref">Chou et al. 2024</a>)</span>.</p>
+<p>Retimed modules are the practical baseline because customers already know how to install, monitor and replace them. They do not suddenly stop working at higher speeds. The problem is that the signal-repair chip, long electrical route and front-panel cooling may become too costly. If those costs remain manageable, a replaceable module can beat a more efficient but harder-to-repair CPO system.</p>
+<p>
+A fair comparison must include replacement cost. A retimed module may be expensive and power-hungry, but a technician can swap it without touching the switch chip or neighbouring connections. That simplicity has real financial value, even though laboratory power charts often ignore it. CPO must save enough power, space or total cost to compensate.
+</p>
 </details>
 <details class="digest-details">
 <summary>
-<strong>LPO — the power countercase</strong>
+<strong>LPO — the lower-power pluggable alternative</strong>
 </summary>
-<p><strong>What it does:</strong> removes or reduces module DSP and relies on the host channel and system equalisation to carry the link.</p>
+<p><strong>What it does:</strong> removes most or all of the signal-repair chip inside the module. The switch and circuit board must then keep the signal clean enough by themselves.</p>
 <p><strong>Why it can win:</strong> lower module power while keeping a replaceable module.</p>
-<p><strong>Where it struggles:</strong> tighter host-channel margin, interoperability and reach requirements.</p>
-<p><strong>Best fit:</strong> systems where the electrical channel is good enough that deep package integration is unnecessary.</p>
-<p>LPO therefore tests whether the host channel—not the optical engine—is the real bottleneck. It can retain a replaceable module while reducing module electronics, but it transfers more responsibility to board design, equalisation, interoperability and system validation. A fair comparison must hold lane rate, reach, FEC and cooling boundary constant.</p>
-LPO is strongest where the switch package and board can maintain enough margin without a retimer. It is weakest where channel variation, connector loss or system reach forces conservative equalisation and lowers manufacturing yield. The relevant evidence is not a low module-power headline alone; it is interoperability across hosts, stable error performance and field qualification at the target lane rate.
+<p><strong>Where it struggles:</strong> it has less tolerance for circuit-board loss and variation, and modules from different vendors may be harder to mix reliably.</p>
+<p><strong>Best fit:</strong> systems where the electrical channel is good enough that deep package integration is unnecessary <span class="citation" data-cites="chou2024lpo oif2024eei">(<a href="#ref-chou2024lpo" role="doc-biblioref">Chou et al. 2024</a>; <a href="#ref-oif2024eei" role="doc-biblioref">Optical Internetworking Forum 2024</a>)</span>.</p>
+<p>LPO asks whether better switch and circuit-board design can avoid deep optical integration. It keeps the replaceable module and removes power-hungry electronics from it, but the switch maker must do more work to keep the end-to-end signal reliable. Designs must still be compared at the same speed, distance, error correction and cooling requirement.</p>
+<p>
+LPO is strongest when the switch and circuit board can deliver a clean signal without a retimer. It is weakest when connectors, manufacturing variation or longer distance damage the signal too much. A low module-power figure is not enough; the design must also work reliably across different switches and modules in real deployments <span class="citation" data-cites="chou2024lpo oif2024eei">(<a href="#ref-chou2024lpo" role="doc-biblioref">Chou et al. 2024</a>; <a href="#ref-oif2024eei" role="doc-biblioref">Optical Internetworking Forum 2024</a>)</span>.
+</p>
 </details>
 <details class="digest-details">
 <summary>
 <strong>NPO — the intermediate route</strong>
 </summary>
 <p><strong>What it does:</strong> places optics nearer to the ASIC than a front-panel module, without necessarily integrating every optical function into the ASIC package.</p>
-<p><strong>Why it can win:</strong> some electrical and power benefit with fewer service penalties than deep CPO.</p>
+<p><strong>Why it can win:</strong> it shortens the difficult electrical path while keeping more of the optics as a separate, potentially replaceable assembly.</p>
 <p><strong>Where it struggles:</strong> it can introduce its own package, connector, thermal and cable-management complexity.</p>
 <p><strong>Best fit:</strong> deployments that need a shorter electrical path but still value an intermediate replacement boundary <span class="citation" data-cites="ieee2026npo oif2026cei448">(<a href="#ref-ieee2026npo" role="doc-biblioref">China Mobile and IEEE 802.3 400G per Lane Study Group 2026</a>; <a href="#ref-oif2026cei448" role="doc-biblioref">Optical Internetworking Forum 2026</a>)</span>.</p>
-<p>NPO is not simply “CPO later.” It can be a durable compromise if it captures enough electrical benefit while keeping an engine, tray or connector replaceable. Its risk is that it creates a new package and cable-management boundary without obtaining the full electrical advantage of deep integration <span class="citation" data-cites="ieee2026npo oif2026cei448">(<a href="#ref-ieee2026npo" role="doc-biblioref">China Mobile and IEEE 802.3 400G per Lane Study Group 2026</a>; <a href="#ref-oif2026cei448" role="doc-biblioref">Optical Internetworking Forum 2026</a>)</span>.</p>
-NPO can also change who controls the platform. A detachable engine or optical tray may give an engine supplier more content while leaving the switch owner responsible for the package and service interface. That can make NPO attractive when operators value supplier choice, but the intermediate boundary must be standardised enough that customers do not inherit a bespoke maintenance model.
+<p>NPO is not merely a temporary step on the way to CPO. It could remain a long-term compromise if it saves enough power while keeping an engine, tray or connector replaceable. The risk is that it creates new packaging and cable complexity without gaining the full electrical benefit of CPO <span class="citation" data-cites="ieee2026npo oif2026cei448">(<a href="#ref-ieee2026npo" role="doc-biblioref">China Mobile and IEEE 802.3 400G per Lane Study Group 2026</a>; <a href="#ref-oif2026cei448" role="doc-biblioref">Optical Internetworking Forum 2026</a>)</span>.</p>
+<p>
+NPO can also change which company has influence. A detachable optical engine may give the engine supplier a larger role, while the switch maker still controls the package and repair interface. Customers may like the extra supplier choice, but only if the connection is standard enough to avoid a unique maintenance process for every vendor.
+</p>
 </details>
 <details class="digest-details">
 <summary>
 <strong>Switch-side CPO — the deepest integration route</strong>
 </summary>
 <p><strong>What it does:</strong> places the optical engine next to the switch ASIC, shortening the highest-speed electrical path.</p>
-<p><strong>Why it can win:</strong> maximum electrical reach relief, high port density and potentially lower interface power.</p>
-<p><strong>Where it struggles:</strong> fibre attach, thermal integration, final test, rework, serviceability and supplier attribution.</p>
-<p><strong>Best fit:</strong> high-bandwidth Ethernet fabrics where the electrical and power constraints are binding enough to justify the integration burden.</p>
-<p>The strongest public timing signal is at 200G/lane switch-side Ethernet, where product routes are specified by both NVIDIA and Broadcom. At 400G/lane, the engineering pressure is stronger but the commercial evidence is thinner; loss, thermal and package assumptions still determine whether CPO or NPO/LPO is the better system boundary <span class="citation" data-cites="broadcom2025cpo broadcom2026ofc zhou2026lpo">(<a href="#ref-broadcom2025cpo" role="doc-biblioref">Broadcom 2025a</a>, <a href="#ref-broadcom2026ofc" role="doc-biblioref">2026b</a>; <a href="#ref-zhou2026lpo" role="doc-biblioref"><span class="nocase">Zhou et al.</span> 2026</a>)</span>.</p>
-Deep integration concentrates both upside and failure risk. It can reduce the longest electrical path and improve front-panel density, but it also couples optical alignment, thermal expansion, package stress and switch availability. The adoption threshold is crossed only when operators accept that coupling because the alternative cannot meet the same bandwidth and power envelope at an acceptable service cost.
+<p><strong>Why it can win:</strong> it gives the shortest electrical path, can fit more connections into one switch and may use less interface power.</p>
+<p><strong>Where it struggles:</strong> precise fibre attachment, heat, final testing, repair, field replacement and identifying which supplier captures the value.</p>
+<p><strong>Best fit:</strong> very high-bandwidth Ethernet networks where ordinary electrical links use enough power or lose enough signal to justify the harder CPO package.</p>
+<p>The clearest public product activity is in Ethernet switches using 200G lanes, where NVIDIA and Broadcom have both specified CPO routes. At 400G/lane, the reason for shortening the electrical path becomes stronger, but commercial evidence is weaker. Small differences in package loss, heat and required distance can still determine whether CPO, NPO or LPO is the better complete system <span class="citation" data-cites="broadcom2025cpo broadcom2026ofc zhou2026lpo">(<a href="#ref-broadcom2025cpo" role="doc-biblioref">Broadcom 2025b</a>, <a href="#ref-broadcom2026ofc" role="doc-biblioref">2026b</a>; <a href="#ref-zhou2026lpo" role="doc-biblioref"><span class="nocase">Zhou et al.</span> 2026</a>)</span>.</p>
+<p>
+Deep integration concentrates both the benefit and the risk. It shortens the hardest electrical link and frees front-panel space. But fibre alignment, heat expansion, package stress and switch uptime become connected problems. Customers will accept that trade-off only when less integrated designs cannot deliver the required speed and power at an acceptable repair cost.
+</p>
 </details>
 <details class="digest-details">
 <summary>
 <strong>Accelerator optical I/O — adjacent, not a direct CPO competitor</strong>
 </summary>
-<p>Optical I/O connects accelerator chips, packages or scale-up fabrics. It uses related PIC, laser and packaging technologies, but serves a different topology, customer and failure domain. It should not be combined with switch-side CPO in one adoption forecast.</p>
+<p>Optical I/O uses light to connect computing accelerators—such as AI chips—inside a tightly connected scale-up system. It shares optical chips, lasers and packaging techniques with switch-side CPO, but it serves a different part of the data centre and follows a different buying cycle. It should therefore have its own adoption forecast.</p>
 <p><strong>Why it matters here:</strong> Marvell and some component suppliers may gain more from scale-up optical I/O than from Ethernet switch CPO. It is an adjacent value-pool opportunity, not a replacement for the switch-CPO comparison <span class="citation" data-cites="marvell2025engine marvell2026annual">(<a href="#ref-marvell2025engine" role="doc-biblioref">Marvell 2025</a>; <a href="#ref-marvell2026annual" role="doc-biblioref">Marvell Technology 2026</a>)</span>.</p>
-<p>The distinction protects the analysis from double counting. Switch-side CPO is bought as an Ethernet networking platform; optical I/O is tied to accelerator packages, scale-up fabrics and a different software and system architecture. The PIC, laser and packaging technologies overlap, but the customer denominator, product cycle and failure domain do not.</p>
-Optical I/O can still matter to the same suppliers. A PIC or laser vendor may sell into both tracks, while a platform company may have very different strategic exposure in each. The correct method is to maintain separate adoption curves and then ask whether shared supplier content is material enough to change the company-level conclusion.
+<p>Keeping the two markets separate prevents double counting. Switch-side CPO moves Ethernet traffic through network switches. Optical I/O connects accelerators inside a computing system. They may buy similar optical parts, but the products, customers, replacement rules and adoption schedules differ.</p>
+<p>
+The same supplier can still benefit from both markets. An optical-chip or laser company may sell similar parts into each, while a platform company may be strong in one and weak in the other. The analysis should forecast the markets separately, then add only the supplier revenue that can be attributed to each product.
+</p>
 </details>
 <div class="digest-takeaway">
 <strong>Chapter takeaway.</strong> Retimed pluggables, LPO, NPO and CPO are competing system boundaries; optical I/O is an adjacent scale-up track. CPO wins only when its electrical and density benefits outweigh the added qualification and service burden at the same operating requirement.
@@ -476,7 +710,7 @@ Optical I/O can still matter to the same suppliers. A PIC or laser vendor may se
 </section>
 <section class="level2" id="which-companies-matter">
 <h2 class="anchored" data-anchor-id="which-companies-matter">4. Which companies matter?</h2>
-<p>The companies do not all offer the same exposure. “CPO success” could benefit a platform owner, an optical-engine supplier, a laser supplier or a packaging manufacturer—and those are different investment cases.</p>
+<p>The companies would benefit for different reasons. A switch company may use CPO to protect its platform. A component company may sell more optical engines or lasers. A manufacturer may earn more packaging and test work. These are separate investment cases, even if the same technology drives them.</p>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 25%"/>
@@ -495,99 +729,105 @@ Optical I/O can still matter to the same suppliers. A PIC or laser vendor may se
 <tbody>
 <tr class="odd">
 <td><strong>NVIDIA</strong></td>
-<td>Integrated networking platform</td>
-<td>Positive strategic exposure</td>
+<td>Complete networking platform</td>
+<td>Likely strategic beneficiary</td>
 <td>Medium</td>
 </tr>
 <tr class="even">
 <td><strong>Broadcom</strong></td>
-<td>Merchant switch silicon and CPO interface</td>
-<td>Positive enabling exposure</td>
+<td>Switch chips sold to many equipment makers</td>
+<td>Likely technology enabler</td>
 <td>Medium</td>
 </tr>
 <tr class="odd">
 <td><strong>Coherent</strong></td>
-<td>PIC, laser and optical-engine breadth</td>
-<td>Constructive component exposure</td>
+<td>Optical chips, lasers and engines</td>
+<td>Potential component beneficiary</td>
 <td>Medium</td>
 </tr>
 <tr class="even">
 <td><strong>Lumentum</strong></td>
-<td>External-laser boundary</td>
-<td>Constructive/watch</td>
+<td>External lasers</td>
+<td>Promising; watch for volume</td>
 <td>Medium</td>
 </tr>
 <tr class="odd">
 <td><strong>TSMC</strong></td>
-<td>Process and advanced packaging control</td>
-<td>Infrastructure watch</td>
+<td>Chip processes and advanced packaging</td>
+<td>Watch for manufacturing value</td>
 <td>Medium</td>
 </tr>
 <tr class="even">
 <td><strong>Marvell</strong></td>
-<td>Accelerator optical-I/O optionality</td>
-<td>Strategic watch</td>
+<td>Accelerator optical I/O</td>
+<td>Longer-term opportunity</td>
 <td>Low–medium</td>
 </tr>
 </tbody>
 </table>
-<p>The table is the map; the cards below explain the evidence, economic relevance and falsification trigger for each view.</p>
-<details class="digest-details" open="">
+<p>The table gives the short answer. The sections below explain what each company controls, how it could make money and what evidence would weaken the view.</p>
+<details class="digest-details">
 <summary>
 <strong>NVIDIA — platform control</strong>
 </summary>
-<p>NVIDIA has the strongest integrated route: switch silicon, networking systems, software, customer relationships and a stated CPO production path. The upside is architecture control and platform differentiation. The unknown is how much incremental CPO profit remains with NVIDIA rather than its suppliers <span class="citation" data-cites="nvidia2026production nvidia2026photonicsrefresh">(<a href="#ref-nvidia2026production" role="doc-biblioref">NVIDIA 2026a</a>, <a href="#ref-nvidia2026photonicsrefresh" role="doc-biblioref">2026b</a>)</span>.</p>
-<p><strong>View:</strong> positive strategic exposure, medium confidence. <strong>What would strengthen it:</strong> customer-confirmed CPO SKU, repeat deployment and system economics.</p>
-<p>NVIDIA’s control point is integration: it can coordinate switch silicon, networking software, rack design and the customer deployment even if suppliers manufacture the optical engine. That makes it the clearest platform route, but not automatically the largest CPO content or margin beneficiary. The view is weakened if announced photonics systems are mainly pluggable configurations or if service and yield costs limit deployment <span class="citation" data-cites="nvidia2026production nvidia2026photonicsrefresh">(<a href="#ref-nvidia2026production" role="doc-biblioref">NVIDIA 2026a</a>, <a href="#ref-nvidia2026photonicsrefresh" role="doc-biblioref">2026b</a>)</span>.</p>
-For a reader deciding what to monitor, the highest-value NVIDIA evidence is a product-linked customer acceptance record that distinguishes CPO from adjacent Spectrum-X configurations. The next layer is repeat deployment and evidence that CPO improves rack density, system ASP or customer lock-in. Consolidated NVIDIA earnings cannot be treated as CPO earnings without that bridge.
+<p>NVIDIA sells the switch chip, networking system and software as one platform and has described a CPO route using 200G electrical lanes. This gives NVIDIA control over how the complete system works, even if suppliers build the optical engine. Public disclosures do not yet connect an exact CPO model to accepted customer units, repeat orders, named suppliers or CPO profit <span class="citation" data-cites="nvidia2026production nvidia2026photonicsrefresh">(<a href="#ref-nvidia2026production" role="doc-biblioref">NVIDIA 2026a</a>, <a href="#ref-nvidia2026photonicsrefresh" role="doc-biblioref">2026b</a>)</span>.</p>
+<p><strong>View:</strong> likely strategic beneficiary, with medium confidence. <strong>Stronger if:</strong> a customer confirms an exact CPO model, repeat use and attractive operating cost. <strong>Weaker if:</strong> customers mainly buy pluggable versions or manufacturing and repair costs limit adoption.</p>
+<p>
+CPO matters financially to NVIDIA if it allows more computing and network capacity in each rack, supports a higher system price or makes customers more likely to remain with NVIDIA. NVIDIA’s overall earnings growth does not prove that CPO itself is contributing.
+</p>
 </details>
 <details class="digest-details">
 <summary>
-<strong>Broadcom — direct merchant-switch exposure</strong>
+<strong>Broadcom — CPO switch chips for many equipment makers</strong>
 </summary>
-<p>Broadcom has the clearest merchant switch-silicon and CPO product-definition route. If switch-side CPO becomes a standard high-end Ethernet option, Broadcom could influence the ASIC, optical interface and ecosystem qualification. The unknown is whether the optical content is economically meaningful to Broadcom <span class="citation" data-cites="broadcom2025cpo broadcom2026ofc">(<a href="#ref-broadcom2025cpo" role="doc-biblioref">Broadcom 2025a</a>, <a href="#ref-broadcom2026ofc" role="doc-biblioref">2026b</a>)</span>.</p>
-<p><strong>View:</strong> positive enabling exposure, medium confidence. <strong>What would strengthen it:</strong> exact CPO customer deployment, repeat shipments and differentiated content or margin evidence.</p>
-<p>Broadcom’s control point is merchant silicon and the product interface: its CPO route can influence the engine specification, ecosystem qualification and customer reference design. The public gap is unusually important because Tomahawk 6 production-volume language covers a broader family than the exact Davisson/BCM78919 CPO configuration. A stronger case requires external evidence that the CPO route itself is shipping repeatedly <span class="citation" data-cites="broadcom2025th6 broadcom2026th6shipping">(<a href="#ref-broadcom2025th6" role="doc-biblioref">Broadcom 2025b</a>, <a href="#ref-broadcom2026th6shipping" role="doc-biblioref">2026a</a>)</span>.</p>
-Broadcom’s upside is leverage rather than necessarily optical content. If customers standardise on the merchant CPO interface, Broadcom may protect switch-silicon share and shape qualification even when an external supplier builds the engine. The downside is that the optical route becomes pass-through content, while customer service and yield risk remain with the platform ecosystem.
+<p>Broadcom has the clearest CPO design among companies that sell switch chips to many equipment makers: the <code>BCM78919</code> / Tomahawk 6 Davisson route. By controlling the switch chip and its connection to the optical engine, Broadcom can influence technical requirements and which suppliers qualify. However, Broadcom’s production-volume statement refers to the wider Tomahawk 6 family, not confirmed repeat shipments of this exact CPO version <span class="citation" data-cites="broadcom2025bcm78919 broadcom2025cpo broadcom2026ofc broadcom2026th6shipping">(<a href="#ref-broadcom2025bcm78919" role="doc-biblioref">Broadcom 2025a</a>, <a href="#ref-broadcom2025cpo" role="doc-biblioref">2025b</a>, <a href="#ref-broadcom2026ofc" role="doc-biblioref">2026b</a>, <a href="#ref-broadcom2026th6shipping" role="doc-biblioref">2026a</a>)</span>.</p>
+<p><strong>View:</strong> likely technology enabler, with medium confidence. <strong>Stronger if:</strong> a customer confirms repeat use of the exact CPO version and Broadcom earns extra content or margin. <strong>Weaker if:</strong> customers prefer pluggable or LPO versions, or most optical revenue goes to other suppliers.</p>
+<p>
+Broadcom could benefit by protecting its share of the switch-chip market and setting the rules for qualified optical engines, even when another company manufactures them. The unanswered question is whether this influence creates extra profit after integration and service costs.
+</p>
 </details>
 <details class="digest-details">
 <summary>
 <strong>Coherent — broad optical-engine and PIC option value</strong>
 </summary>
-<p>Coherent spans silicon photonics, InP lasers, VCSELs, external lasers and packaging. That gives it more ways to participate if the industry adopts several engine designs. The risk is that demonstrations and technology breadth do not prove qualified share or margin <span class="citation" data-cites="coherent2026cpo coherent2026deck">(<a href="#ref-coherent2026cpo" role="doc-biblioref">Coherent 2026a</a>, <a href="#ref-coherent2026deck" role="doc-biblioref">2026b</a>)</span>.</p>
-<p><strong>View:</strong> constructive component exposure, medium confidence. <strong>What would strengthen it:</strong> a named design win, defined content boundary and repeat qualified revenue.</p>
-<p>Coherent’s advantage is optionality across the engine stack: PICs, InP and VCSEL sources, external lasers and packaging. Optionality has value when several architectures compete, but it can also mean that no single route earns durable share. The investment case improves only when breadth converts into a product-linked, qualified and economically visible role <span class="citation" data-cites="coherent2026cpo coherent2026deck">(<a href="#ref-coherent2026cpo" role="doc-biblioref">Coherent 2026a</a>, <a href="#ref-coherent2026deck" role="doc-biblioref">2026b</a>)</span>.</p>
-The key diligence question is which layer Coherent controls in the final qualified engine. A capability list can span many technologies without proving that one customer product uses them, that Coherent supplies the scarce step, or that the step carries attractive gross margin. Design-win disclosure and repeat qualified revenue matter more than the number of demonstrations.
+<p>Coherent can supply several relevant technologies: silicon-photonics chips, other laser materials and devices, external lasers and optical packaging. This broad range gives it several ways to participate while designs compete. It does not tell us which Coherent parts are selected in customer products, whether they are difficult to replace or what margin they earn <span class="citation" data-cites="coherent2026cpo coherent2026deck">(<a href="#ref-coherent2026cpo" role="doc-biblioref">Coherent 2026a</a>, <a href="#ref-coherent2026deck" role="doc-biblioref">2026b</a>)</span>.</p>
+<p><strong>View:</strong> potential component beneficiary, with medium confidence. <strong>Stronger if:</strong> a named customer product identifies Coherent’s parts and produces repeat revenue. <strong>Weaker if:</strong> customers can easily use competing suppliers or Coherent remains concentrated in demonstrations.</p>
+<p>
+The investment case depends on which parts Coherent actually supplies to production engines and how replaceable those parts are—not on the number of technologies it can demonstrate.
+</p>
 </details>
 <details class="digest-details">
 <summary>
 <strong>Lumentum — external-laser conversion</strong>
 </summary>
-<p>Lumentum is most relevant if external lasers become a scarce, replaceable and valuable CPO boundary. Its high-power laser work and NVIDIA partnership strengthen the strategic signal, but the public record does not yet show finished-module volume or CPO-specific margin <span class="citation" data-cites="lumentum2026ofc lumentum2026nvidia lumentum2026elsfp">(<a href="#ref-lumentum2026ofc" role="doc-biblioref">Lumentum 2026b</a>, <a href="#ref-lumentum2026nvidia" role="doc-biblioref">2026c</a>, <a href="#ref-lumentum2026elsfp" role="doc-biblioref">2026a</a>)</span>.</p>
-<p><strong>View:</strong> constructive/watch, medium confidence. <strong>What would strengthen it:</strong> product-linked laser content, volume, realised price and margin.</p>
-<p>Lumentum is a focused bet on the external-light boundary. A detachable laser can improve serviceability and isolate a high-value failure domain, but it may also be multi-sourced and exposed to price pressure. The decisive evidence is not another laser demonstration; it is product-linked volume, content per engine, qualification and margin <span class="citation" data-cites="lumentum2026elsfp lumentum2026nvidia">(<a href="#ref-lumentum2026elsfp" role="doc-biblioref">Lumentum 2026a</a>, <a href="#ref-lumentum2026nvidia" role="doc-biblioref">2026c</a>)</span>.</p>
-The upside case is a laser that is difficult to qualify, replaceable in the field and scarce enough to command content. The downside case is a qualified component with several sources and little pricing power. Lumentum’s reliability work improves confidence in the device, but it does not establish finished-engine reliability or CPO-specific earnings.
+<p>Lumentum’s clearest role is supplying laser light from outside the main optical engine. Its high-power laser work, reliability programme and NVIDIA partnership support this route. The company has not disclosed how many finished CPO systems use its lasers, how much Lumentum content sits in each engine or what margin it earns <span class="citation" data-cites="lumentum2026ofc lumentum2026nvidia lumentum2026elsfp">(<a href="#ref-lumentum2026ofc" role="doc-biblioref">Lumentum 2026b</a>, <a href="#ref-lumentum2026nvidia" role="doc-biblioref">2026c</a>, <a href="#ref-lumentum2026elsfp" role="doc-biblioref">2026a</a>)</span>.</p>
+<p><strong>View:</strong> promising, but watch for volume; medium confidence. <strong>Stronger if:</strong> a named product converts Lumentum’s laser work into repeat shipments, known pricing and profit. <strong>Weaker if:</strong> customers can qualify several laser suppliers and force prices down.</p>
+<p>
+The strongest case would be a laser that is difficult to replace as a supplier but easy to replace in the field. A reliable laser device alone does not prove that the finished engine is reliable or profitable.
+</p>
 </details>
 <details class="digest-details">
 <summary>
 <strong>TSMC — process and packaging control</strong>
 </summary>
-<p>TSMC matters as a possible manufacturing control point for silicon photonics and advanced packaging. It is not a directly comparable merchant optical-engine supplier, and CPO economics may remain invisible inside its broader foundry business <span class="citation" data-cites="tsmc2024symposium tsmc2025annual tsmc2026coupe">(<a href="#ref-tsmc2024symposium" role="doc-biblioref">TSMC 2024</a>, <a href="#ref-tsmc2025annual" role="doc-biblioref">2026a</a>, <a href="#ref-tsmc2026coupe" role="doc-biblioref">2026b</a>)</span>.</p>
-<p><strong>View:</strong> infrastructure watch, medium confidence. <strong>What would strengthen it:</strong> programme-level production throughput, constrained capacity or pricing-power evidence.</p>
-<p>TSMC’s control point is manufacturability: silicon photonics, heterogeneous integration and advanced packaging can determine which designs reach volume. That position may be strategically important while remaining financially hard to isolate in a large foundry. A production-start statement is therefore a process-readiness signal, not evidence of CPO revenue or pricing power <span class="citation" data-cites="tsmc2024symposium tsmc2025annual tsmc2026coupe">(<a href="#ref-tsmc2024symposium" role="doc-biblioref">TSMC 2024</a>, <a href="#ref-tsmc2025annual" role="doc-biblioref">2026a</a>, <a href="#ref-tsmc2026coupe" role="doc-biblioref">2026b</a>)</span>.</p>
-TSMC can win even if no merchant CPO component becomes a large standalone business, because process control may determine which platforms are manufacturable. Conversely, a broad foundry capability can be strategically useful without creating scarcity or margin. The evidence to watch is capacity allocation, customer-specific process qualification and signs that the package flow is difficult to substitute.
+<p>TSMC is relevant because it can manufacture silicon-photonics chips and combine different chips in advanced packages. It does not sell a standard optical engine to equipment makers. TSMC’s statement that its COUPE process is entering production suggests manufacturing readiness, but does not reveal the customers, accepted output, available capacity or profit from CPO work <span class="citation" data-cites="tsmc2024symposium tsmc2025annual tsmc2026coupe">(<a href="#ref-tsmc2024symposium" role="doc-biblioref">TSMC 2024</a>, <a href="#ref-tsmc2025annual" role="doc-biblioref">2026a</a>, <a href="#ref-tsmc2026coupe" role="doc-biblioref">2026b</a>)</span>.</p>
+<p><strong>View:</strong> watch for manufacturing value, with medium confidence. <strong>Stronger if:</strong> production volume, scarce capacity or stronger pricing becomes visible. <strong>Weaker if:</strong> other manufacturers can reproduce the process easily or CPO remains too small to affect TSMC’s results.</p>
+<p>
+TSMC benefits most if its manufacturing process is necessary for designs to reach volume and is difficult to replace. Being strategically important does not automatically mean earning a higher margin.
+</p>
 </details>
 <details class="digest-details">
 <summary>
-<strong>Marvell — separate optical-I/O optionality</strong>
+<strong>Marvell — a separate optical-I/O opportunity</strong>
 </summary>
-<p>Marvell’s most relevant route is accelerator optical I/O and Photonic Fabric, not switch-side CPO. It could benefit if scale-up optical connectivity becomes a large market, but switch-CPO production evidence should not be used as evidence for Marvell’s optical-I/O revenue <span class="citation" data-cites="marvell2025engine marvell2026annual">(<a href="#ref-marvell2025engine" role="doc-biblioref">Marvell 2025</a>; <a href="#ref-marvell2026annual" role="doc-biblioref">Marvell Technology 2026</a>)</span>.</p>
-<p><strong>View:</strong> strategic watch, low-to-medium confidence. <strong>What would strengthen it:</strong> named optical-I/O product, customer adoption and realised revenue or margin evidence.</p>
-<p>Marvell should be evaluated on the optical-I/O track rather than awarded switch-CPO credit. Celestial AI and Photonic Fabric may become strategically important if scale-up bandwidth and package reach become binding, but that market has a different adoption curve. The correct evidence is a named optical-I/O product and customer revenue, not a switch-CPO production headline <span class="citation" data-cites="marvell2025engine marvell2026annual">(<a href="#ref-marvell2025engine" role="doc-biblioref">Marvell 2025</a>; <a href="#ref-marvell2026annual" role="doc-biblioref">Marvell Technology 2026</a>)</span>.</p>
-Marvell is therefore an optionality case, not a direct switch-CPO leader. Its upside depends on optical I/O becoming a repeatable platform product with a customer denominator and content model that can be separated from the broader acquisition and connectivity portfolio. Until then, the appropriate stance remains strategic watch.
+<p>Marvell’s relevant opportunity is accelerator optical I/O and its Photonic Fabric platform. This connects AI chips inside scale-up systems, so it has different customers, products and adoption timing from Ethernet switch CPO <span class="citation" data-cites="marvell2025engine marvell2026annual">(<a href="#ref-marvell2025engine" role="doc-biblioref">Marvell 2025</a>; <a href="#ref-marvell2026annual" role="doc-biblioref">Marvell Technology 2026</a>)</span>.</p>
+<p><strong>View:</strong> longer-term opportunity, with low-to-medium confidence. <strong>Stronger if:</strong> a named optical-I/O product gains customers and produces identifiable revenue or profit. <strong>Weaker if:</strong> it remains a demonstration or its economics cannot be separated from Marvell’s wider connectivity business.</p>
+<p>
+The investment case requires a repeatable optical-I/O product with named customer adoption and measurable economics. Announcements about switch-side CPO do not provide that evidence.
+</p>
 </details>
 <div class="digest-takeaway">
-<strong>Chapter takeaway.</strong> NVIDIA and Broadcom have the clearest platform routes; Coherent and Lumentum offer component exposure; TSMC and Marvell are more conditional. None has public evidence that independently proves CPO-specific volume, margin or profit-pool leadership.
+<strong>Chapter takeaway.</strong> NVIDIA and Broadcom have the clearest complete-system routes. Coherent and Lumentum may benefit by supplying components. TSMC and Marvell depend on more specific outcomes. None has publicly proved CPO-specific sales volume, margin or profit leadership.
 </div>
 </section>
 <section class="level2" id="bottom-line">
@@ -599,8 +839,10 @@ Marvell is therefore an optionality case, not a direct switch-CPO leader. Its up
 <li><strong>External-light content:</strong> Lumentum and Coherent.</li>
 <li><strong>Manufacturing control:</strong> TSMC, ASE and advanced package/test partners.</li>
 </ol>
-<p>The strongest direct switch-CPO exposure is Broadcom; the broadest engine/PIC optionality is Coherent; the clearest platform exposure is NVIDIA; and Lumentum is the focused external-laser case. Those are conditional views, not target prices. The full report explains what evidence would confirm or invalidate each one.</p>
+<p>Broadcom has the most direct exposure through CPO switch chips sold to equipment makers. Coherent has the broadest range of optical-engine and PIC components. NVIDIA has the clearest complete-platform position. Lumentum is the most focused external-laser case. These views describe possible beneficiaries, not target prices or proven earnings. The full report explains what would strengthen or weaken each conclusion.</p>
 <p><a class="btn btn-primary" href="../../research/cpo/index.html">Read the full report</a> <a class="btn btn-outline-primary" href="../../research/cpo/cpo-investment-brief.html">Read the investment brief</a></p>
+</section>
+<section class="level1 unnumbered" id="bibliography">
 </section>
 <div class="default" id="quarto-appendix"><section class="quarto-appendix-contents" id="quarto-bibliography" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div class="references csl-bib-body hanging-indent" id="refs" role="list">
 <div class="csl-entry" id="ref-advantest2026cpo" role="listitem">
@@ -615,20 +857,29 @@ Aehr Test Systems. 2026. <span>“Follow-on Production Order from Lead Silicon-P
 <div class="csl-entry" id="ref-ase2025cpo" role="listitem">
 ASE. 2025. <span>“Advanced Packaging for AI, Chiplet and Co-Packaged Optics.”</span> <a href="https://ase.aseglobal.com/blog/technology/advanced-packaging-for-ai-chiplet-and-cpo/">https://ase.aseglobal.com/blog/technology/advanced-packaging-for-ai-chiplet-and-cpo/</a>.
 </div>
+<div class="csl-entry" id="ref-broadcom2025bcm78919" role="listitem">
+Broadcom. 2025a. <span>“BCM78919 102.4-Tb/s Multilayer CPO Switch with 200G SerDes.”</span> <a href="https://www.broadcom.com/products/fiber-optic-modules-components/co-packaged-optics/switches/bcm78919">https://www.broadcom.com/products/fiber-optic-modules-components/co-packaged-optics/switches/bcm78919</a>.
+</div>
 <div class="csl-entry" id="ref-broadcom2025cpo" role="listitem">
-Broadcom. 2025a. <em>Broadcom Announces Third-Generation Co-Packaged Optics Technology with 200G/Lane Capability</em>. <a href="https://investors.broadcom.com/news-releases/news-release-details/broadcom-announces-third-generation-co-packaged-optics-cpo">https://investors.broadcom.com/news-releases/news-release-details/broadcom-announces-third-generation-co-packaged-optics-cpo</a>.
+Broadcom. 2025b. <em>Broadcom Announces Third-Generation Co-Packaged Optics Technology with 200G/Lane Capability</em>. <a href="https://investors.broadcom.com/news-releases/news-release-details/broadcom-announces-third-generation-co-packaged-optics-cpo">https://investors.broadcom.com/news-releases/news-release-details/broadcom-announces-third-generation-co-packaged-optics-cpo</a>.
 </div>
 <div class="csl-entry" id="ref-broadcom2025th6" role="listitem">
-Broadcom. 2025b. <em>Tomahawk 6 Davisson: 102.4-Tb/s Ethernet Switch with Co-Packaged Optics</em>. <a href="https://www.broadcom.com/company/news/product-releases/63626">https://www.broadcom.com/company/news/product-releases/63626</a>.
+Broadcom. 2025c. <em>Tomahawk 6 Davisson: 102.4-Tb/s Ethernet Switch with Co-Packaged Optics</em>. <a href="https://www.broadcom.com/company/news/product-releases/63626">https://www.broadcom.com/company/news/product-releases/63626</a>.
 </div>
 <div class="csl-entry" id="ref-broadcom2026th6shipping" role="listitem">
-Broadcom. 2026a. <span>“Broadcom Now Shipping the World’s First 1.024 Tbps Switch in Production.”</span> <a href="https://investors.broadcom.com/news-releases/news-release-details/broadcom-now-shipping-worlds-first-1024-tbps-switch-production">https://investors.broadcom.com/news-releases/news-release-details/broadcom-now-shipping-worlds-first-1024-tbps-switch-production</a>.
+Broadcom. 2026a. <span>“Broadcom Now Shipping the World’s First 102.4 Tbps Switch in Production Volume.”</span> <a href="https://investors.broadcom.com/news-releases/news-release-details/broadcom-now-shipping-worlds-first-1024-tbps-switch-production">https://investors.broadcom.com/news-releases/news-release-details/broadcom-now-shipping-worlds-first-1024-tbps-switch-production</a>.
 </div>
 <div class="csl-entry" id="ref-broadcom2026ofc" role="listitem">
 Broadcom. 2026b. <em>Broadcom Showcases Industry-Leading Solutions for Scaling AI Infrastructure at OFC 2026</em>. March. <a href="https://investors.broadcom.com/node/64036/pdf">https://investors.broadcom.com/node/64036/pdf</a>.
 </div>
+<div class="csl-entry" id="ref-brusberg2025detachable" role="listitem">
+Brusberg, Lars, Jorge A. Holguin-Lerma, Janderson R. Rodrigues, et al. 2025. <span>“High-Density Evanescent Chip Coupling with Detachable Fiber Connector for Co-Packaged Optics.”</span> <em>Optical Fiber Communication Conference</em>. <a href="https://doi.org/10.1364/OFC.2025.Th3H.1">https://doi.org/10.1364/OFC.2025.Th3H.1</a>.
+</div>
 <div class="csl-entry" id="ref-ieee2026npo" role="listitem">
 China Mobile and IEEE 802.3 400G per Lane Study Group. 2026. <em>Consideration on NPO and CPO at 400G/Lane</em>. <a href="https://www.ieee802.org/3/400GPL/public/2605/wang_h_400GPL_01_2605.pdf">https://www.ieee802.org/3/400GPL/public/2605/wang_h_400GPL_01_2605.pdf</a>.
+</div>
+<div class="csl-entry" id="ref-chou2024lpo" role="listitem">
+Chou, Elaine S., Yishen Huang, Siamak Amiralizadeh, et al. 2024. <span>“100G and 200G Per Lane Linear Drive Optics for Data Center Applications.”</span> <em>Optical Fiber Communication Conference</em>. <a href="https://doi.org/10.1364/OFC.2024.W4H.3">https://doi.org/10.1364/OFC.2024.W4H.3</a>.
 </div>
 <div class="csl-entry" id="ref-coherent2026cpo" role="listitem">
 Coherent. 2026a. <em>Coherent Demonstrates Multiple Technologies for Co-Packaged Optics at OFC 2026</em>. March. <a href="https://www.coherent.com/news/press-releases/coherent-co-packaged-optics-cpo-technologies-ofc-2026">https://www.coherent.com/news/press-releases/coherent-co-packaged-optics-cpo-technologies-ofc-2026</a>.
@@ -638,6 +889,9 @@ Coherent. 2026b. <em>Technology Innovation: OFC 2026 Investor Event</em>. <a hre
 </div>
 <div class="csl-entry" id="ref-ficontec2025dlt" role="listitem">
 <span class="nocase">ficonTEC</span>. 2025. <span>“Multi-Site Die-Level Tester for Double-Sided Compact 3D CPO Optical Engines.”</span> <a href="https://www.ficontec.com/jp/multi-site-die-level-tester-for-double-sided-compact-3d-cpo-optical-engines/">https://www.ficontec.com/jp/multi-site-die-level-tester-for-double-sided-compact-3d-cpo-optical-engines/</a>.
+</div>
+<div class="csl-entry" id="ref-knickerbocker2024cpo" role="listitem">
+<span class="nocase">Knickerbocker, John et al.</span> 2024. <em>Next Generation Co-Packaged Optics Technology to Train and Run Generative <span>AI</span> Models in Data Centers and Other Computing Applications</em>. <a href="https://doi.org/10.48550/arXiv.2412.06570">https://doi.org/10.48550/arXiv.2412.06570</a>.
 </div>
 <div class="csl-entry" id="ref-lumentum2026elsfp" role="listitem">
 Lumentum. 2026a. <span>“External-Laser CPO Reliability White Paper.”</span> <a href="https://www.lumentum.com/sites/default/files/2026-06/elsfpreliability-wp-cl-ae.pdf">https://www.lumentum.com/sites/default/files/2026-06/elsfpreliability-wp-cl-ae.pdf</a>.
@@ -663,6 +917,9 @@ NVIDIA. 2026a. <em>NVIDIA Vera Rubin Ramps into Full Production to Power Agentic
 <div class="csl-entry" id="ref-nvidia2026photonicsrefresh" role="listitem">
 NVIDIA. 2026b. <span>“Silicon Photonics Networking Products and Adopters.”</span> <a href="https://www.nvidia.com/en-us/networking/products/silicon-photonics/">https://www.nvidia.com/en-us/networking/products/silicon-photonics/</a>.
 </div>
+<div class="csl-entry" id="ref-nvidia2026coherent" role="listitem">
+NVIDIA and Coherent. 2026. <em>NVIDIA and Coherent Announce Strategic Partnership to Develop Optics Technology to Scale Next-Generation Data Center Architecture</em>. <a href="https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-and-Coherent-Announce-Strategic-Partnership-to-Develop-Optics-Technology-to-Scale-Next-Generation-Data-Center-Architecture/default.aspx">https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-and-Coherent-Announce-Strategic-Partnership-to-Develop-Optics-Technology-to-Scale-Next-Generation-Data-Center-Architecture/default.aspx</a>.
+</div>
 <div class="csl-entry" id="ref-oif2023cpo" role="listitem">
 Optical Internetworking Forum. 2023. <em>Implementation Agreement for a 3.2 Tb/s Co-Packaged Module</em>. <a href="https://www.oiforum.com/wp-content/uploads/OIF-Co-Packaging-3.2T-Module-01.0.pdf">https://www.oiforum.com/wp-content/uploads/OIF-Co-Packaging-3.2T-Module-01.0.pdf</a>.
 </div>
@@ -670,7 +927,7 @@ Optical Internetworking Forum. 2023. <em>Implementation Agreement for a 3.2 Tb/s
 Optical Internetworking Forum. 2024. <em>System Vendor Requirements Document for Energy Efficient Interfaces</em>. <a href="https://www.oiforum.com/wp-content/uploads/OIF-EEI-Requirements-RD-01.0.pdf">https://www.oiforum.com/wp-content/uploads/OIF-EEI-Requirements-RD-01.0.pdf</a>.
 </div>
 <div class="csl-entry" id="ref-oif2025elsfp" role="listitem">
-Optical Internetworking Forum. 2025. <em>External Laser Small Form Factor Pluggable Implementation Agreement 2.0</em>. <a href="https://www.oiforum.com/wp-content/uploads/OIF-ELSFP-IA-2.0.pdf">https://www.oiforum.com/wp-content/uploads/OIF-ELSFP-IA-2.0.pdf</a>.
+Optical Internetworking Forum. 2025. <em>External Laser Small Form Factor Pluggable Implementation Agreement 2.0</em>. <a href="https://www.oiforum.com/wp-content/uploads/OIF-ELSFP-02.0-1.pdf">https://www.oiforum.com/wp-content/uploads/OIF-ELSFP-02.0-1.pdf</a>.
 </div>
 <div class="csl-entry" id="ref-oif2026cei448" role="listitem">
 Optical Internetworking Forum. 2026. <em>Next Generation CEI-448G Framework</em>. <a href="https://www.oiforum.com/wp-content/uploads/OIF-FD-CEI-448G-01.0.pdf">https://www.oiforum.com/wp-content/uploads/OIF-FD-CEI-448G-01.0.pdf</a>.
@@ -692,6 +949,12 @@ TSMC. 2026a. <em>Annual Report 2025</em>. <a href="https://investor.tsmc.com/sit
 </div>
 <div class="csl-entry" id="ref-tsmc2026coupe" role="listitem">
 TSMC. 2026b. <span>“COUPE-on-Substrate Co-Packaged Optics Production Milestone.”</span> <a href="https://pr.tsmc.com/english/news/3302">https://pr.tsmc.com/english/news/3302</a>.
+</div>
+<div class="csl-entry" id="ref-wan2026integration" role="listitem">
+Wan, Yating, William He, James Jaussi, et al. 2026. <span>“Integrating Silicon Photonics with Complementary Metal–Oxide–Semiconductor Technologies.”</span> <em>Nature Reviews Electrical Engineering</em> 3: 15–31. <a href="https://doi.org/10.1038/s44287-025-00223-0">https://doi.org/10.1038/s44287-025-00223-0</a>.
+</div>
+<div class="csl-entry" id="ref-watanabe2025reflow" role="listitem">
+Watanabe, Kengo, Shosuke Ikeda, Yuki Fujimaki, Tsunetoshi Saito, and Masaki Kotoku. 2025. <span>“Ultra-Compact Reflow-Compatible Detachable Optical Connector for Co-Packaged Optics.”</span> <em>Optical Fiber Communication Conference</em>. <a href="https://doi.org/10.1364/OFC.2025.M4J.2">https://doi.org/10.1364/OFC.2025.M4J.2</a>.
 </div>
 <div class="csl-entry" id="ref-wu2026fowlp" role="listitem">
 <span class="nocase">Wu, Shih-Chang et al.</span> 2026. <span>“Fan-Out Wafer-Level Packaging for High-Speed Optical Engine Interconnects.”</span> <em>SPIE Photonics West</em>. <a href="https://doi.org/10.1117/12.3085221">https://doi.org/10.1117/12.3085221</a>.
