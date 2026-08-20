@@ -357,7 +357,7 @@ Figure 1: CPO moves optical conversion closer to the switch ASIC. This original
 </figcaption>
 </figure>
 </div>
-<p>Figure 1 sets the report’s boundary: switch-side CPO shortens the electrical path to the optical engine, while accelerator optical I/O is shown as a separate scale-up route rather than a direct substitute.</p>
+<p><strong>Key takeaway from Figure 1:</strong> switch-side CPO shortens the electrical path inside a network switch. Accelerator optical I/O serves a different scale-up connection and should not be treated as a direct competitor.</p>
 </details>
 </section>
 <section class="level2" id="why-the-industry-needs-a-new-interconnect">
@@ -378,7 +378,8 @@ Figure 2: The architecture comparison separates retimed pluggables, LPO, NPO an
 </figcaption>
 </figure>
 </div>
-<p>Figure 2 shows where each design turns the electrical signal into light. LPO leaves the optics at the front of the switch and relies on the long electrical route to remain clean enough. NPO moves a separate optical engine closer to the switch chip. CPO moves it into the same package system as the switch chip. Bringing the optics closer makes the electrical problem easier, but makes the package harder to build and repair.</p>
+<p>Figure 2 shows where each design turns the electrical signal into light. LPO leaves the optics at the front of the switch and relies on the long electrical route to remain clean enough. NPO moves a separate optical engine closer to the switch chip. CPO moves it into the same package system as the switch chip.</p>
+<p><strong>Key takeaway from Figure 2:</strong> moving the optics closer makes the electrical connection easier to drive, but makes the complete package harder to build and repair.</p>
 <div alt="Panel A places a digital signal processor, or DSP, inside the optical module; panel B removes it and exposes the host-channel loss between the switch ASIC and linear optical module." class="digest-source-figure quarto-float quarto-figure quarto-figure-center anchored" id="fig-source-chou">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-source-chou-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -390,6 +391,7 @@ Figure 3: Where the signal is regenerated in retimed and linear-drive optics. T
 </figure>
 </div>
 <p><strong>How to read Figure 3:</strong> a digital signal processor (DSP) is a signal-repair chip. In panel A, the DSP inside the module rebuilds a clean signal before the optical section handles it. Panel B removes that chip, so the switch must keep the signal usable across the entire circuit-board route, including the orange section marked “host-channel loss.” Blue arrows show data travelling toward the fibre; green arrows show the return path. Both LPO and CPO can remove the module DSP. CPO then shortens the remaining distance by placing the optics much closer to the switch chip <span class="citation" data-cites="chou2024lpo">(<a href="#ref-chou2024lpo" role="doc-biblioref">Chou et al. 2024</a>)</span>.</p>
+<p><strong>Key takeaway from Figure 3:</strong> removing the module DSP saves power only if the remaining electrical path still works reliably. CPO’s additional advantage over LPO is that it also shortens that path.</p>
 <div alt="Four cards show one combined chip, two chips side by side, stacked chips and two chips joined by a connecting bridge. A lower row moves from a replaceable optical module toward a fully integrated package." class="digest-source-figure quarto-float quarto-figure quarto-figure-center anchored" id="fig-source-wan">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-source-wan-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -401,6 +403,7 @@ Figure 4: Four ways to arrange the electronic and light-handling chips, followe
 </figure>
 </div>
 <p><strong>How to read Figure 4:</strong> the four cards show the same two jobs—processing electrical data and handling light—arranged in different ways. Moving the chips closer shortens the electrical connection and can fit more bandwidth into less space. The trade-off is that heat, manufacturing problems or a failed part can affect more of the package. The lower row summarises that trade-off from an easily replaced module to a tightly integrated package. It compares design choices; it does not predict which one customers will adopt <span class="citation" data-cites="wan2026integration">(<a href="#ref-wan2026integration" role="doc-biblioref">Wan et al. 2026</a>)</span>.</p>
+<p><strong>Key takeaway from Figure 4:</strong> tighter integration can improve speed, power and density, but it concentrates manufacturing, heat and repair risk. The most integrated design is not automatically the most economical one.</p>
 <p><strong>What would solve it:</strong> shorten the electrical path, or make the existing path efficient enough with retimers, LPO, better equalisation or active electrical cables.</p>
 <p><strong>Why CPO is not automatically the winner:</strong> a shorter path is valuable only if its manufacturing and service burden is lower than the electrical burden it removes.</p>
 <p>This choice becomes more important as each lane carries more data. At 200 gigabits per second per lane (200G/lane), Broadcom and NVIDIA have named products built around a short electrical path. At 400G/lane, even small losses inside the chip package matter more. Results from one laboratory setup therefore cannot prove that the same design wins in every switch <span class="citation" data-cites="broadcom2025th6 nvidia2026production zhou2026lpo">(<a href="#ref-broadcom2025th6" role="doc-biblioref">Broadcom 2025c</a>; <a href="#ref-nvidia2026production" role="doc-biblioref">NVIDIA 2026a</a>; <a href="#ref-zhou2026lpo" role="doc-biblioref"><span class="nocase">Zhou et al.</span> 2026</a>)</span>.</p>
@@ -438,7 +441,8 @@ Figure 5: A finished engine must pass several assembly and test stages. Public 
 </figcaption>
 </figure>
 </div>
-<p>Figure 5 follows the product from its earliest chip tests to final approval. Each step adds more materials and work. A failure near the end therefore costs more than a failure near the beginning. Companies have not published the pass rate at every stage, so outsiders cannot calculate this cost precisely.</p>
+<p>Figure 5 follows the product from its earliest chip tests to final approval. Each step adds more materials and work. Companies have not published the pass rate at every stage, so outsiders cannot calculate the complete production cost precisely.</p>
+<p><strong>Key takeaway from Figure 5:</strong> failures become more expensive later in assembly. Early testing and the ability to repair failed units can matter as much as the performance of the optical chip itself.</p>
 <div alt="Seven stages show photonic-die placement, molding, debonding, front- and back-side redistribution layers, electronic-die assembly and final solder-ball attachment." class="digest-source-figure quarto-float quarto-figure quarto-figure-center anchored" id="fig-source-wu">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-source-wu-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -450,7 +454,7 @@ Figure 6: One possible fan-out wafer-level packaging process for an optical eng
 </figure>
 </div>
 <p><strong>How to read Figure 6:</strong> steps 1–3 place the light-handling chip face down, surround it with protective material and release the newly formed wafer. Steps 4–5 build electrical connections on both sides and through the package. Steps 6–7 attach the electronic chip and add the package’s external contacts. The arrow at the bottom shows the main economic point: every completed step adds value that may be lost if a later test fails. The figure shows how one package can be built; it does not show the pass rate, repair success or cost in volume production <span class="citation" data-cites="wu2026fowlp">(<a href="#ref-wu2026fowlp" role="doc-biblioref"><span class="nocase">Wu et al.</span> 2026</a>)</span>.</p>
-<p><strong>So what?</strong> What matters is the cost of each engine that passes every test, not the speed of one machine or assembly step. Until companies disclose pass rates and repair results, outsiders cannot tell which manufacturing step is the largest constraint.</p>
+<p><strong>Key takeaway from Figure 6:</strong> what matters is the cost of each engine that passes every test, not the speed of one machine or assembly step. Until companies disclose pass rates and repair results, outsiders cannot tell which manufacturing step is the largest constraint.</p>
 <p>
 The manufacturing question is not simply “can a machine line up the fibres once?” The alignment must survive heat, vibration and the high-temperature steps used to join components. Tests must find hidden defects before customers do, and failed units should be repairable where possible. Testing chips earlier can prevent expensive late failures, but it also adds equipment and time. The best process is the one that produces the lowest cost per fully tested engine—not merely the fastest assembly step.
 </p>
@@ -470,7 +474,8 @@ Figure 7: Fixed fibres, a detachable fibre unit and a separate external laser m
 </figcaption>
 </figure>
 </div>
-<p>Figure 7 shows that the word “detachable” is incomplete unless we say what can be detached. A removable fibre-array unit lets a technician replace the fibre connection. A separate external laser lets the light source be replaced. Neither design necessarily allows the full optical engine to be replaced.</p>
+<p>Figure 7 shows that a removable fibre-array unit lets a technician replace the fibre connection, while a separate external laser lets the light source be replaced.</p>
+<p><strong>Key takeaway from Figure 7:</strong> “detachable” does not mean that the entire optical engine is replaceable. The repair benefit depends on which specific part can be removed.</p>
 <details class="digest-subdetails">
 <summary>
 <strong>Engineering examples: two detachable connector routes</strong>
@@ -486,6 +491,7 @@ Figure 8: A detachable expanded-beam interface between a fixed glass-waveguide 
 </figure>
 </div>
 <p><strong>How to read Figure 8:</strong> the part on the left stays attached to the glass base throughout manufacturing. The fibre unit on the right is added later and can be removed. Lenses widen and refocus the light across a small air gap; guide pins keep the two sides lined up; magnets hold them together. Only the fibre unit is detachable—not the optical chip or the whole package. Laboratory connector measurements do not tell us how long a field repair takes or what it costs <span class="citation" data-cites="watanabe2025reflow">(<a href="#ref-watanabe2025reflow" role="doc-biblioref">Watanabe et al. 2025</a>)</span>.</p>
+<p><strong>Key takeaway from Figure 8:</strong> the design may make fibre replacement easier, but it does not make the optical chip replaceable. Its economic value depends on preserving alignment while reducing repair time and scrap.</p>
 <div alt="A PIC couples to a fixed glass transfer waveguide, which terminates at a detachable fibre connector; a lower inset shows optical engines around a switch ASIC on a glass substrate." class="digest-source-figure quarto-float quarto-figure quarto-figure-center anchored" id="fig-source-brusberg">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-source-brusberg-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -497,6 +503,7 @@ Figure 9: A fixed PIC-to-glass transfer interface followed by a detachable glas
 </figure>
 </div>
 <p><strong>How to read Figure 9:</strong> light crosses two connection points. First, the optical chip transfers light into a glass path that remains permanently attached. Second, a guide-pin connector joins that glass path to the removable external fibre. The lower drawing shows a longer-term idea in which several optical engines surround one switch chip on a glass base. In this design, only the second connection—the fibre connector—is presented as replaceable <span class="citation" data-cites="brusberg2025detachable">(<a href="#ref-brusberg2025detachable" role="doc-biblioref">Brusberg et al. 2025</a>)</span>.</p>
+<p><strong>Key takeaway from Figure 9:</strong> the added glass path creates a useful replacement boundary, but also introduces another optical connection that must remain low-loss, aligned and manufacturable.</p>
 </details>
 <p><strong>What would solve it:</strong> define which part can be replaced in the field, how long the repair takes, what spares are needed and who carries the warranty cost.</p>
 <p>This is a major system-design choice, not a minor connector detail. A detachable laser or fibre connection may make one type of failure easy to fix, while a failed optical chip or bonded engine may still require replacing a much larger assembly. The practical questions are: how long does repair take, what spare parts must be stocked, how often do tests miss defects and who pays for failures under warranty <span class="citation" data-cites="oif2025elsfp psaila2023connector">(<a href="#ref-oif2025elsfp" role="doc-biblioref">Optical Internetworking Forum 2025</a>; <a href="#ref-psaila2023connector" role="doc-biblioref">Psaila et al. 2023</a>)</span>.</p>
