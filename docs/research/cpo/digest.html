@@ -285,9 +285,9 @@ These terms explain the parts, the alternatives and the evidence tests used belo
 <td>Faster lanes are harder to move across a circuit board; that difficulty is the main reason CPO is being considered.</td>
 </tr>
 <tr class="even">
-<td><strong>DSP / retimer</strong></td>
-<td>Electronics that clean up a damaged signal and restore its timing.</td>
-<td>They make longer electrical links possible, but consume power, create heat and add cost.</td>
+<td><strong>DSP — digital signal processor / retimer</strong></td>
+<td>A signal-repair chip that rebuilds a clean data signal and restores its timing.</td>
+<td>It makes longer electrical links possible, but consumes power, creates heat and adds cost.</td>
 </tr>
 <tr class="odd">
 <td><strong>FEC — forward error correction</strong></td>
@@ -379,28 +379,28 @@ Figure 2: The architecture comparison separates retimed pluggables, LPO, NPO an
 </figure>
 </div>
 <p>Figure 2 shows where each design turns the electrical signal into light. LPO leaves the optics at the front of the switch and relies on the long electrical route to remain clean enough. NPO moves a separate optical engine closer to the switch chip. CPO moves it into the same package system as the switch chip. Bringing the optics closer makes the electrical problem easier, but makes the package harder to build and repair.</p>
-<div alt="Panel A places a DSP inside the optical module; panel B removes the module DSP and exposes the host-channel loss between the switch ASIC and linear optical module." class="digest-source-figure quarto-float quarto-figure quarto-figure-center anchored" id="fig-source-chou">
+<div alt="Panel A places a digital signal processor, or DSP, inside the optical module; panel B removes it and exposes the host-channel loss between the switch ASIC and linear optical module." class="digest-source-figure quarto-float quarto-figure quarto-figure-center anchored" id="fig-source-chou">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-source-chou-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img alt="Panel A places a DSP inside the optical module; panel B removes the module DSP and exposes the host-channel loss between the switch ASIC and linear optical module." class="digest-source-figure img-fluid figure-img" src="figures/digest-chou-signal-path.png"/>
+<img alt="Panel A places a digital signal processor, or DSP, inside the optical module; panel B removes it and exposes the host-channel loss between the switch ASIC and linear optical module." class="digest-source-figure img-fluid figure-img" src="figures/digest-chou-signal-path.png"/>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-source-chou-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure 3: Where the signal is regenerated in retimed and linear-drive optics. This original analytical recreation preserves the transmit, receive and DSP boundaries in Chou et al.; it does not establish total-system cost or adoption <span class="citation" data-cites="chou2024lpo">(<a href="#ref-chou2024lpo" role="doc-biblioref">Chou et al. 2024</a>)</span>.
 </figcaption>
 </figure>
 </div>
-<p><strong>How to read Figure 3:</strong> in panel A, the DSP inside the module rebuilds a clean signal before the optical section handles it. This isolates the optical module from much of the damage created on the circuit board. Panel B removes that DSP. The switch chip must now compensate for the entire route, including the orange section marked “host-channel loss.” Blue arrows show data travelling toward the fibre; green arrows show the return path. Both LPO and CPO can remove the module DSP. The key difference is distance: CPO places the optics much closer to the switch chip <span class="citation" data-cites="chou2024lpo">(<a href="#ref-chou2024lpo" role="doc-biblioref">Chou et al. 2024</a>)</span>.</p>
-<div alt="Four cards compare monolithic, hybrid 2D, hybrid 3D and hybrid 2.5D electronic-photonic integration, followed by an illustrative path from pluggable optics to tighter co-packaging." class="digest-source-figure quarto-float quarto-figure quarto-figure-center anchored" id="fig-source-wan">
+<p><strong>How to read Figure 3:</strong> a digital signal processor (DSP) is a signal-repair chip. In panel A, the DSP inside the module rebuilds a clean signal before the optical section handles it. Panel B removes that chip, so the switch must keep the signal usable across the entire circuit-board route, including the orange section marked “host-channel loss.” Blue arrows show data travelling toward the fibre; green arrows show the return path. Both LPO and CPO can remove the module DSP. CPO then shortens the remaining distance by placing the optics much closer to the switch chip <span class="citation" data-cites="chou2024lpo">(<a href="#ref-chou2024lpo" role="doc-biblioref">Chou et al. 2024</a>)</span>.</p>
+<div alt="Four cards show one combined chip, two chips side by side, stacked chips and two chips joined by a connecting bridge. A lower row moves from a replaceable optical module toward a fully integrated package." class="digest-source-figure quarto-float quarto-figure quarto-figure-center anchored" id="fig-source-wan">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-source-wan-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img alt="Four cards compare monolithic, hybrid 2D, hybrid 3D and hybrid 2.5D electronic-photonic integration, followed by an illustrative path from pluggable optics to tighter co-packaging." class="digest-source-figure img-fluid figure-img" src="figures/digest-wan-integration-pathway.png"/>
+<img alt="Four cards show one combined chip, two chips side by side, stacked chips and two chips joined by a connecting bridge. A lower row moves from a replaceable optical module toward a fully integrated package." class="digest-source-figure img-fluid figure-img" src="figures/digest-wan-integration-pathway.png"/>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-source-wan-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure 4: Four electronic–photonic integration approaches and an illustrative pathway toward tighter co-packaging. This original analytical recreation preserves the taxonomy in Wan et al.; the pathway is not a market-share or adoption forecast <span class="citation" data-cites="wan2026integration">(<a href="#ref-wan2026integration" role="doc-biblioref">Wan et al. 2026</a>)</span>.
+Figure 4: Four ways to arrange the electronic and light-handling chips, followed by progressively tighter packaging. Technical names are retained as secondary labels; the arrows do not predict adoption <span class="citation" data-cites="wan2026integration">(<a href="#ref-wan2026integration" role="doc-biblioref">Wan et al. 2026</a>)</span>.
 </figcaption>
 </figure>
 </div>
-<p><strong>How to read Figure 4:</strong> cards A–D show four ways to place the electronic and light-handling chips together: build both functions on one chip; place two chips side by side; stack one chip above the other; or connect separate chips through an intermediate layer called an interposer. The lower row moves from replaceable modules toward tighter packaging. Tighter integration can shorten connections and fit more bandwidth into less space. It also means that heat, packaging stress or failure in one part can affect more of the assembly. The sequence describes design choices; it does not predict which one customers will adopt <span class="citation" data-cites="wan2026integration">(<a href="#ref-wan2026integration" role="doc-biblioref">Wan et al. 2026</a>)</span>.</p>
+<p><strong>How to read Figure 4:</strong> the four cards show the same two jobs—processing electrical data and handling light—arranged in different ways. Moving the chips closer shortens the electrical connection and can fit more bandwidth into less space. The trade-off is that heat, manufacturing problems or a failed part can affect more of the package. The lower row summarises that trade-off from an easily replaced module to a tightly integrated package. It compares design choices; it does not predict which one customers will adopt <span class="citation" data-cites="wan2026integration">(<a href="#ref-wan2026integration" role="doc-biblioref">Wan et al. 2026</a>)</span>.</p>
 <p><strong>What would solve it:</strong> shorten the electrical path, or make the existing path efficient enough with retimers, LPO, better equalisation or active electrical cables.</p>
 <p><strong>Why CPO is not automatically the winner:</strong> a shorter path is valuable only if its manufacturing and service burden is lower than the electrical burden it removes.</p>
 <p>This choice becomes more important as each lane carries more data. At 200 gigabits per second per lane (200G/lane), Broadcom and NVIDIA have named products built around a short electrical path. At 400G/lane, even small losses inside the chip package matter more. Results from one laboratory setup therefore cannot prove that the same design wins in every switch <span class="citation" data-cites="broadcom2025th6 nvidia2026production zhou2026lpo">(<a href="#ref-broadcom2025th6" role="doc-biblioref">Broadcom 2025c</a>; <a href="#ref-nvidia2026production" role="doc-biblioref">NVIDIA 2026a</a>; <a href="#ref-zhou2026lpo" role="doc-biblioref"><span class="nocase">Zhou et al.</span> 2026</a>)</span>.</p>
