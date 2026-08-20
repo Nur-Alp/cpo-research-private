@@ -334,6 +334,7 @@ figcaption { color: var(--cpo-muted); font-size: .88rem; }
 .digest-subdetails { margin: 1rem 0; padding: 0 1rem 1rem; border: 1px solid var(--cpo-line); border-radius: .35rem; background: #fbfcfe; }
 .digest-subdetails > summary { cursor: pointer; margin: 0 -1rem; padding: .7rem 1rem; color: var(--cpo-ink); font-size: .95rem; }
 .digest-subdetails[open] > summary { margin-bottom: .8rem; border-bottom: 1px solid var(--cpo-line); background: #f4f8fb; }
+.digest-subdetails > table { width: 100%; margin: .75rem 0; }
 .digest-subdetails figure { max-width: 100%; }
 #quarto-content main.content .cell-output-display { width: min(100%, 38rem); max-width: 38rem; margin: 1rem auto; }
 #quarto-content main.content .cell-output-display figure.figure { width: 100% !important; max-width: 100% !important; margin: 0 auto !important; }
